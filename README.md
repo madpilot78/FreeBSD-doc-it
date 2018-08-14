@@ -2,7 +2,7 @@
 
 This repository stores files used to translate FreeBSD documents from https://www.freebsd.org to the Italian language.
 
-At present work is being performed only on the Handbook.
+At present work is being performed only on the [Handbook](https://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/).
 
 # How to help
 
