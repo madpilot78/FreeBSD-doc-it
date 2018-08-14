@@ -2,14 +2,14 @@
 # #-#-#-#-#  handbook.po  #-#-#-#-#
 # #-#-#-#-#  handbook.po  #-#-#-#-#
 # #-#-#-#-#  handbook.po  #-#-#-#-#
-# Guido Falsi <mad@madpilot.net>, 2018. #zanata
+# Guido Falsi <madpilot@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"PO-Revision-Date: 2018-08-13 09:22+0000\n"
-"Last-Translator: Guido Falsi <mad@madpilot.net>\n"
+"PO-Revision-Date: 2018-08-14 09:17+0000\n"
+"Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
 "X-Generator: Zanata 4.6.0\n"
@@ -620,6 +620,10 @@ msgid ""
 "trademark> devices with FreeBSD, setting up wireless networks, and "
 "Asynchronous Transfer Mode (ATM) networking."
 msgstr ""
+"<xref linkend=\"advanced-networking\"/> ?? stata estesa con nuove "
+"informazioni su come usare periferiche <trademark class="
+"\"registered\">Bluetooth</trademark> con FreeBSD, impostare reti wireless e "
+"reti Asynchronous Transfer Mode (ATM)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:983
@@ -627,6 +631,8 @@ msgid ""
 "A glossary has been added to provide a central location for the definitions "
 "of technical terms used throughout the book."
 msgstr ""
+"?? stato aggiunto un glossario per fornire un luogo centralizzato per le "
+"definizioni dei termini tecnici usato nel libro."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:989
@@ -634,12 +640,14 @@ msgid ""
 "A number of aesthetic improvements have been made to the tables and figures "
 "throughout the book."
 msgstr ""
+"Sono state apportate varie migliorie estetiche alle tabelle e figure in "
+"tutto il libro."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-changes
 #: book.translate.xml:994
 msgid "Changes from the First Edition (2001)"
-msgstr ""
+msgstr "Modifiche dalla Prima Edizione (2001)"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:997
@@ -648,16 +656,21 @@ msgid ""
 "dedicated members of the FreeBSD Documentation Project. The following were "
 "the major changes in this edition:"
 msgstr ""
+"La Seconda edizione ?? stato il culmine di oltre due anni di lavoro di "
+"impegnati membri del FreeBSD Documentation Project. Seguono le maggiori "
+"modifiche in questa nuova edizione:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1005
 msgid "A complete Index has been added."
-msgstr ""
+msgstr "Un indice completo ?? stato aggiunto."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1009
 msgid "All ASCII figures have been replaced by graphical diagrams."
 msgstr ""
+"Tutte le figure in caratteri ASCII sono state sostituite con diagrammi "
+"grafici."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1014
@@ -666,6 +679,9 @@ msgid ""
 "of what information the chapter contains, and what the reader is expected to "
 "know."
 msgstr ""
+"A ogni capitolo ?? stato aggiunto un sommario per dare una veloce idea di "
+"quali informazioni siano contenute in esso e cosa ci si aspetta il lettore "
+"sappia gi??."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1020
@@ -674,6 +690,9 @@ msgid ""
 "Started</quote>, <quote>System Administration</quote>, and "
 "<quote>Appendices</quote>."
 msgstr ""
+"Il contenuto ?? stato riorganizzato logicamente in tre parti:<quote>Primi "
+"passi</quote>, <quote>Amministrazione di sistema</quote> e <quote>Appendici</"
+"quote>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1027
@@ -681,6 +700,8 @@ msgid ""
 "<xref linkend=\"basics\"/> has been expanded to contain additional "
 "information about processes, daemons, and signals."
 msgstr ""
+"<xref linkend=\"basics\"/> ?? stata espansa per contenere informazioni "
+"addizionali riguardo a processi, demoni e segnali."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1033
@@ -688,6 +709,8 @@ msgid ""
 "<xref linkend=\"ports\"/> has been expanded to contain additional "
 "information about binary package management."
 msgstr ""
+"<xref linkend=\"ports\"/> ?? stata espansa per contenere informazioni "
+"addizionali sulla gestione dei pacchetti binari."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1039
@@ -696,11 +719,15 @@ msgid ""
 "using modern desktop technologies such as <application>KDE</application> and "
 "<application>GNOME</application> on <trademark>XFree86</trademark> 4.X."
 msgstr ""
+"<xref linkend=\"x11\"/> ?? stata completamente riscritta con una enfasi "
+"sull'utilizzo delle moderne tecnologie desktop come <application>KDE</"
+"application> e <application>GNOME</application> su <trademark>XFree86</"
+"trademark> 4.X."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1046
 msgid "<xref linkend=\"boot\"/> has been expanded."
-msgstr ""
+msgstr "<xref linkend=\"boot\"/> ?? stata espansa."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1050
@@ -710,6 +737,11 @@ msgid ""
 "the topics are easier to comprehend when presented as a single chapter. A "
 "section on RAID (both hardware and software) has also been added."
 msgstr ""
+"<xref linkend=\"disks\"/> ?? stata riscritta da quelli che in precedenza "
+"erano due capitoli separati su <quote>Dischi</quote> e <quote>Backup</quote>."
+" Riteniamo che tali argomenti siano di pi?? semplice comprensione se "
+"presentati come un unico capitolo. ?? stata inoltre aggiunta una sezione sui "
+"RAID (sia hardware che software)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1059
@@ -717,11 +749,13 @@ msgid ""
 "<xref linkend=\"serialcomms\"/> has been completely reorganized and updated "
 "for FreeBSD 4.X/5.X."
 msgstr ""
+"<xref linkend=\"serialcomms\"/> ?? stata completamente riorganizzata e "
+"aggiornata per FreeBSD 4.X/5.X."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1064
 msgid "<xref linkend=\"ppp-and-slip\"/> has been substantially updated."
-msgstr ""
+msgstr "<xref linkend=\"ppp-and-slip\"/> ?? stata aggiornata massicciamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1069
@@ -729,6 +763,7 @@ msgid ""
 "Many new sections have been added to <xref linkend=\"advanced-networking\"/>."
 ""
 msgstr ""
+"Sono state aggiunte molte sezioni a <xref linkend=\"advanced-networking\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1073
@@ -736,6 +771,8 @@ msgid ""
 "<xref linkend=\"mail\"/> has been expanded to include more information about "
 "configuring <application>sendmail</application>."
 msgstr ""
+"<xref linkend=\"mail\"/> ?? stata espansa per includere pi?? informazioni "
+"sulla configurazione di <application>sendmail</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1079
@@ -745,11 +782,15 @@ msgid ""
 "application> and <application><trademark class=\"registered\">SAP</"
 "trademark><trademark class=\"registered\">R/3</trademark></application>."
 msgstr ""
+"<xref linkend=\"linuxemu\"/> ?? stata espansa per includere informazioni "
+"sull'installazione di <application><trademark class=\"registered\">Oracle</"
+"trademark></application> e <application><trademark class=\"registered\">SAP</"
+"trademark><trademark class=\"registered\">R/3</trademark></application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1086
 msgid "The following new topics are covered in this second edition:"
-msgstr ""
+msgstr "La seconda edizione copre i seguenti nuovi argomenti:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1091
