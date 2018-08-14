@@ -6,7 +6,7 @@ At present work is being performed only on the [Handbook](https://www.freebsd.or
 
 # How to help
 
-Please go here(link to wiki article to be added) for instructions on how to get started and contacts to talk to.
+Please go [here](https://wiki.freebsd.org/ItalianDocumentationProject) for instructions on how to get started and contacts to talk to.
 
 # For contributors
 
