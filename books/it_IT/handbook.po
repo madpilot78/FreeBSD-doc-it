@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"PO-Revision-Date: 2018-08-17 04:36+0000\n"
+"PO-Revision-Date: 2018-08-17 05:46+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -790,7 +790,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1086
 msgid "The following new topics are covered in this second edition:"
-msgstr "La seconda edizione copre i seguenti nuovi argomenti:"
+msgstr "La seconda edizione tratta i seguenti nuovi argomenti:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1091
@@ -825,6 +825,21 @@ msgid ""
 "Communication</emphasis>, covers networking and server topics. The fifth "
 "section contains appendices of reference information."
 msgstr ""
+"Il libro è suddiviso in 5 sezioni logicamente distinte. La prima sezione, "
+"<emphasis>Per Cominciare</emphasis>, tratta l'installazione e l'uso basilare "
+"di FreeBSD.  Ci si aspetta che il lettore segua questi capitoli in sequenza, "
+"con la possibilità di saltare i capitoli che trattano argomenti familiari. "
+"La seconda sezione <emphasis>Compiti Comuni</emphasis> tratta alcune "
+"funzionalità di FreeBSD frequentemente utilizzate. Questa sezione, e tutte "
+"le sezioni successive, possono essere lette non in sequenza. Ogni capitolo "
+"inizia con un succinto sommario che descrive ciò che il capitolo tratta e "
+"ciò che il lettore dovrebbe aspettarsi di conoscere dopo la lettura dello "
+"stesso. Questo ha l'intenzione di permettere al lettore di trovare "
+"velocemente i capitoli di proprio interesse. La terza sezione, "
+"<emphasis>Amministrazione del Sistema</emphasis>, tratta argomentazioni di "
+"amministrazione. La quarta sezione, <emphasis>Comunicazione di Rete</"
+"emphasis>, tratta argomenti di rete e relativi servizi. La quinta sezione "
+"contiene appendici con informazioni di riferimento."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1128
@@ -832,6 +847,8 @@ msgid ""
 "Introduces FreeBSD to a new user. It describes the history of the FreeBSD "
 "Project, its goals and development model."
 msgstr ""
+"Introduce FreeBSD ai nuovi utenti. Descrive la storia del FreeBSD Project, "
+"gli obbiettivi e il modello di sviluppo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1138
@@ -840,6 +857,9 @@ msgid ""
 "<replaceable>x</replaceable> and later using <application>bsdinstall</"
 "application>."
 msgstr ""
+"Accompagna l'utente attraverso l'intero processo di installazione di FreeBSD "
+"9.<replaceable>x</replaceable> o superiore usando <application>bsdinstall</"
+"application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1148
@@ -849,6 +869,10 @@ msgid ""
 "or another flavor of <trademark class=\"registered\">UNIX</trademark> then "
 "you can probably skip this chapter."
 msgstr ""
+"Tratta i comandi e le funzionalità di base del sistema operativo FreeBSD. Se "
+"hai familiarità con <trademark class=\"registered\">Linux</trademark> o con "
+"altri tipi di <trademark class=\"registered\">UNIX</trademark> allora puoi "
+"probabilmente saltare questo capitolo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1159
@@ -856,6 +880,9 @@ msgid ""
 "Covers the installation of third-party software with both FreeBSD's "
 "innovative <quote>Ports Collection</quote> and standard binary packages."
 msgstr ""
+"Tratta l'installazione di software di terze parti sia tramite l'innovativa "
+"<quote>Ports Collection</quote> di FreeBSD che tramite i pacchetti binari "
+"standard."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1169
@@ -864,6 +891,9 @@ msgid ""
 "particular. Also describes common desktop environments such as "
 "<application>KDE</application> and <application>GNOME</application>."
 msgstr ""
+"Descrive X Window System in generale e l'uso di X11 su FreeBSD in "
+"particolare. Inoltre descrive i diffusi ambienti desktop <application>KDE</"
+"application> e <application>GNOME</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1182
@@ -871,6 +901,8 @@ msgid ""
 "Lists some common desktop applications, such as web browsers and "
 "productivity suites, and describes how to install them on FreeBSD."
 msgstr ""
+"Elenca le più comuni applicazioni desktop, come browser web e suite di "
+"produttività, e descrive come installarle su FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1191
@@ -878,6 +910,8 @@ msgid ""
 "Shows how to set up sound and video playback support for your system. Also "
 "describes some sample audio and video applications."
 msgstr ""
+"Mostra come configurare il supporto audio/video per il sistema. Inoltre "
+"descrive alcune applicazioni audio/video di esempio."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1201
@@ -885,13 +919,19 @@ msgid ""
 "Explains why you might need to configure a new kernel and provides detailed "
 "instructions for configuring, building, and installing a custom kernel."
 msgstr ""
+"Spiega perché potresti aver bisogno di configurare un nuovo kernel e "
+"fornisce istruzioni dettagliate per la configurazione, la compilazione, e "
+"l'installazione di un kernel personalizzato."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1211
+#, fuzzy
 msgid ""
 "Describes managing printers on FreeBSD, including information about banner "
 "pages, printer accounting, and initial setup."
 msgstr ""
+"Spiega come gestire le stampanti su FreeBSD, incluse informazioni sulle "
+"pagine banner, sull'accounting di stampa, e sulla configurazione iniziale."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1221
@@ -903,6 +943,12 @@ msgid ""
 "\"registered\">Oracle</trademark></application> and <application><trademark "
 "class=\"registered\">Mathematica</trademark></application>."
 msgstr ""
+"Descrive le caratteristiche di compatibilità con <trademark class="
+"\"registered\">Linux</trademark> di FreeBSD. Inoltre fornisce istruzioni "
+"dettagliate sull'installazione di molte popolari applicazioni <trademark "
+"class=\"registered\">Linux</trademark> come <application><trademark class="
+"\"registered\">Oracle</trademark></application> e <application><trademark "
+"class=\"registered\">Mathematica</trademark></application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1235
@@ -911,6 +957,9 @@ msgid ""
 "FreeBSD system for optimum performance. Also describes the various "
 "configuration files used in FreeBSD and where to find them."
 msgstr ""
+"Descrive i parametri disponibili agli amministratori di sistema per "
+"ottimizzare le performance di un sistema FreeBSD. Inoltre descrive i vari "
+"file di configurazione usati in FreeBSD e dove trovarli."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1246
@@ -918,6 +967,8 @@ msgid ""
 "Describes the FreeBSD boot process and explains how to control this process "
 "with configuration options."
 msgstr ""
+"Descrive il processo di avvio di FreeBSD e spiega come controllare questo "
+"processo con le opzioni di configurazione."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1255
@@ -925,6 +976,8 @@ msgid ""
 "Describes many different tools available to help keep your FreeBSD system "
 "secure, including Kerberos, IPsec and OpenSSH."
 msgstr ""
+"Descrive vari strumenti disponibili per aiutarti a mantenere il tuo sistema "
+"FreeBSD sicuro, tra cui Kerberos, IPsec and OpenSSH."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1265
@@ -932,6 +985,8 @@ msgid ""
 "Describes the jails framework, and the improvements of jails over the "
 "traditional chroot support of FreeBSD."
 msgstr ""
+"Descrive il funzionamento delle jail, e i miglioramenti rispetto al "
+"tradizionale supporto chroot di FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1274
@@ -939,13 +994,19 @@ msgid ""
 "Explains what Mandatory Access Control (MAC) is and how this mechanism can "
 "be used to secure a FreeBSD system."
 msgstr ""
+"Spiega cosa sia il Controllo di Accesso Vincolato (MAC) e come questo "
+"meccanismo può essere usato per fortificare un sistema FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1284
+#, fuzzy
 msgid ""
 "Describes what FreeBSD Event Auditing is, how it can be installed, "
 "configured, and how audit trails can be inspected or monitored."
 msgstr ""
+"Descrive cos'è il controllo degli Eventi di FreeBSD, come può essere "
+"abilitato, configurato, e come i log possano essere ispezionati o monitorati."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1294
@@ -954,6 +1015,9 @@ msgid ""
 "includes physical disks, RAID arrays, optical and tape media, memory-backed "
 "disks, and network filesystems."
 msgstr ""
+"Descrive come gestire i dispositivi di archiviazione e i file system con "
+"FreeBSD. Questo include dischi fisici, array RAID, dispositivi ottici e a "
+"nastro, dischi di memoria, e file system di rete."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1305
@@ -961,6 +1025,8 @@ msgid ""
 "Describes what the GEOM framework in FreeBSD is and how to configure various "
 "supported RAID levels."
 msgstr ""
+"Descrive cos'è il framework GEOM in FreeBSD e come configurare vari livelli "
+"di RAID supportati."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1314
@@ -968,6 +1034,8 @@ msgid ""
 "Examines support of non-native file systems in FreeBSD, like the Z File "
 "System from <trademark>Sun</trademark>."
 msgstr ""
+"Esamina il supporto in FreeBSD per i file system non nativi, come lo Z File "
+"System della <trademark>Sun</trademark>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1323
@@ -975,6 +1043,8 @@ msgid ""
 "Describes what virtualization systems offer, and how they can be used with "
 "FreeBSD."
 msgstr ""
+"Descrive cosa offrono i sistemi di virtualizzazione, e come possano essere "
+"usati con FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1332
@@ -982,6 +1052,8 @@ msgid ""
 "Describes how to use FreeBSD in languages other than English. Covers both "
 "system and application level localization."
 msgstr ""
+"Descrive come usare FreeBSD in altre lingue oltre all'inglese. Copre la "
+"localizzazione a livello sia del sistema che applicativo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1342
@@ -991,14 +1063,23 @@ msgid ""
 "development system and outlines that process. Covers the methods users may "
 "take to update their system to the latest security release."
 msgstr ""
+"Spiega le differenze tra FreeBSD-STABLE, FreeBSD-CURRENT, e le release "
+"FreeBSD. Descrive quali utenti possano trarre beneficio utlizzando una "
+"versione di sviluppo e spiega come effettuare questa procedura. Tratta i "
+"metodi che gli utenti possono utilizzare per aggiornare i propri sistemi "
+"all'ultima release di sicurezza."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1355
+#, fuzzy
 msgid ""
 "Describes how to configure and use the DTrace tool from <trademark>Sun</"
 "trademark> in FreeBSD. Dynamic tracing can help locate performance issues, "
 "by performing real time system analysis."
 msgstr ""
+"Descrive come configurare e usare lo strumento DTrace della <trademark>Sun</"
+"trademark> in FreeBSD. Il tracciamento dinamico può aiutare a identificare "
+"problemi di performance attraverso analisi in tempo reale del sistema"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1368
@@ -1006,11 +1087,13 @@ msgid ""
 "Explains how to connect terminals and modems to your FreeBSD system for both "
 "dial in and dial out connections."
 msgstr ""
+"Spiega come connettere terminali e modem al tuo sistema FreeBSD sia per "
+"connessioni in ingresso che in uscita."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1378
 msgid "Describes how to use PPP to connect to remote systems with FreeBSD."
-msgstr ""
+msgstr "Descrive come usare PPP per connettersi a sistemi remoti con FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1387
@@ -1019,14 +1102,22 @@ msgid ""
 "configuration topics for the most popular mail server software: "
 "<application>sendmail</application>."
 msgstr ""
+"Spiega i diversi componenti di un mail server e introduce semplici "
+"configurazioni per il mail server più popolare: <application>sendmail</"
+"application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1398
+#, fuzzy
 msgid ""
 "Provides detailed instructions and example configuration files to set up "
 "your FreeBSD machine as a network filesystem server, domain name server, "
 "network information system server, or time synchronization server."
 msgstr ""
+"Fornisce istruzioni dettagliate e file di configurazione di esempio per "
+"impostare la tua macchina FreeBSD come filesystem server di rete (NFS), "
+"server dei nomi di dominio (DNS), network information system (NIS) server, o "
+"server di sincronizzazione temporale (NTP)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1409
@@ -1035,6 +1126,9 @@ msgid ""
 "detailed information about the configuration of the different firewalls "
 "available for FreeBSD."
 msgstr ""
+"Illustra la filosofia dei firewall software e fornisce informazioni "
+"dettagliate sulla configurazione dei diversi firewall disponibili su FreeBSD."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1419
@@ -1044,6 +1138,10 @@ msgid ""
 "networking, <trademark class=\"registered\">Bluetooth</trademark>, ATM, "
 "IPv6, and much more."
 msgstr ""
+"Descrive molti argomenti sul networking, incluso come condividere una "
+"connessione a Internet con altri computer sulla stessa LAN, argomenti di "
+"routing avanzati, rete wireless, <trademark class=\"registered\">Bluetooth</"
+"trademark>, ATM, IPv6, e molto altro."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1432
@@ -1052,6 +1150,8 @@ msgid ""
 "as different sites on the Internet that allow you to download and install "
 "FreeBSD."
 msgstr ""
+"Elenca varie fonti per ottenere FreeBSD su CD-ROM o DVD così come vari siti "
+"su Internet che permettono di scaricare e installare FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1442
@@ -1060,6 +1160,9 @@ msgid ""
 "more detailed explanation. The bibliography lists many excellent books that "
 "are referenced in the text."
 msgstr ""
+"Questo libro tocca svariati argomenti che possono lasciarti desideroso di "
+"spiegazioni più dettagliate. La bibliografia elenca molti ottimi libri che "
+"sono referenziati nel testo."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1453
@@ -1067,17 +1170,19 @@ msgid ""
 "Describes the many forums available for FreeBSD users to post questions and "
 "engage in technical conversations about FreeBSD."
 msgstr ""
+"Elenca i numerosi forum disponibili per gli utenti FreeBSD dove poter "
+"inviare domande e intraprendere conversazioni tecniche su FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1463
 msgid "Lists the PGP fingerprints of several FreeBSD Developers."
-msgstr ""
+msgstr "Elenca i fingerprint PGP di molti sviluppatori di FreeBSD."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv
 #: book.translate.xml:1469
 msgid "Conventions used in this book"
-msgstr ""
+msgstr "Convenzioni usate in questo libro"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1472
@@ -1085,17 +1190,19 @@ msgid ""
 "To provide a consistent and easy to read text, several conventions are "
 "followed throughout the book."
 msgstr ""
+"Per fornire un testo consistente e facile da leggere, sono state seguite "
+"numerose convenzioni in tutto il libro."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv-typographic
 #: book.translate.xml:1475
 msgid "Typographic Conventions"
-msgstr ""
+msgstr "Convenzioni Tipografiche"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1479
 msgid "<emphasis>Italic</emphasis>"
-msgstr ""
+msgstr "<emphasis>Italico</emphasis>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1482
@@ -1103,11 +1210,13 @@ msgid ""
 "An <emphasis>italic</emphasis> font is used for filenames, URLs, emphasized "
 "text, and the first usage of technical terms."
 msgstr ""
+"Un font <emphasis>italic</emphasis> viene usato per i nomi dei file, per gli "
+"URL, per il testo enfatizzato, e per il primo utilizzo dei termini tecnici."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1489
 msgid "<literal>Monospace</literal>"
-msgstr ""
+msgstr "<literal>Monospazio</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1492
@@ -1116,23 +1225,29 @@ msgid ""
 "environment variables, names of ports, hostnames, user names, group names, "
 "device names, variables, and code fragments."
 msgstr ""
+"Un font <literal>monospazio</literal> viene usato per i messaggi di errore, "
+"i comandi, le variabili di ambiente, i nomi dei port, i nomi di host, i nomi "
+"degli utenti, i nomi dei gruppi, i nomi dei device, le variabili, e i "
+"frammenti di codice."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:1500
 msgid "<application>Bold</application>"
-msgstr ""
+msgstr "<application>Grassetto</application>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1503
 msgid ""
 "A <keycap>bold</keycap> font is used for applications, commands, and keys."
 msgstr ""
+"Un font in <keycap>grassetto</keycap> viene usato per le applicazioni, i "
+"comandi, e i tasti."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv-commands
 #: book.translate.xml:1510
 msgid "User Input"
-msgstr ""
+msgstr "Input dell'Utente"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1513
@@ -1141,6 +1256,10 @@ msgid ""
 "combinations that are meant to be typed simultaneously are shown with "
 "`<literal>+</literal>' between the keys, such as:"
 msgstr ""
+"I tasti sono visualizzati in <keycap>rassetto</keycap> per farli risaltare "
+"nel testo normale. Le combinazioni di tasti che devono essere digitate "
+"contemporaneamente sono visualizzate con un `<literal>+</literal>' tra i "
+"tasti, come:"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1518
@@ -1148,6 +1267,8 @@ msgid ""
 "<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
 "<keycap>Del</keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>Alt</keycap> "
+"<keycap>Del</keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1524
@@ -1155,6 +1276,8 @@ msgid ""
 "Meaning the user should type the <keycap>Ctrl</keycap>, <keycap>Alt</"
 "keycap>, and <keycap>Del</keycap> keys at the same time."
 msgstr ""
+"Significa che l'utente deve premete i tasti <keycap>Ctrl</keycap>, "
+"<keycap>Alt</keycap>, e <keycap>Del</keycap> nello stesso momento."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1528
@@ -1162,6 +1285,8 @@ msgid ""
 "Keys that are meant to be typed in sequence will be separated with commas, "
 "for example:"
 msgstr ""
+"I tasti che devono essere digitati in sequenza saranno separati da virgole, "
+"come per esempio:"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1531
@@ -1170,6 +1295,9 @@ msgid ""
 "keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>S</"
 "keycap></keycombo>"
 msgstr ""
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>X</keycap> </"
+"keycombo>, <keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>S</"
+"keycap></keycombo>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1540
@@ -1178,12 +1306,15 @@ msgid ""
 "<keycap>X</keycap> keys simultaneously and then to type the <keycap>Ctrl</"
 "keycap> and <keycap>S</keycap> keys simultaneously."
 msgstr ""
+"Vuol dire che l'utente deve digitare i tasti <keycap>Ctrl</keycap> e "
+"<keycap>X</keycap> contemporaneamente e poi i tasti <keycap>Ctrl</keycap> e "
+"<keycap>S</keycap> insieme."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-conv-examples
 #: book.translate.xml:1546
 msgid "Examples"
-msgstr ""
+msgstr "Esempi"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1548
@@ -1194,6 +1325,12 @@ msgid ""
 "in a modern <trademark class=\"registered\">Microsoft</trademark><trademark "
 "class=\"registered\">Windows</trademark> environment."
 msgstr ""
+"Gli esempi che iniziano con <filename>C:\\&gt;</filename> indicano un "
+"comando <trademark class=\"registered\">MS-DOS</trademark>. A meno di note "
+"specifiche, questi comandi possono essere eseguiti da una finestra "
+"<quote>Prompt dei Comandi</quote> in un moderno ambiente <trademark class="
+"\"registered\">Microsoft</trademark><trademark class=\"registered\">Windows</"
+"trademark>."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1554
@@ -1202,6 +1339,8 @@ msgid ""
 "<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp A:</"
 "userinput>"
 msgstr ""
+"<prompt>E:\\&gt;</prompt> <userinput>tools\\fdimage floppies\\kern.flp A:</"
+"userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1556
@@ -1212,12 +1351,18 @@ msgid ""
 "account and use <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to gain superuser privileges."
 msgstr ""
+"Gli esempi che iniziano con <prompt>#</prompt> indicano un comando che deve "
+"essere invocato dal superuser in FreeBSD. Puoi effettuare il login come "
+"<systemitem class=\"username\">root</systemitem> per digitare il comando, o "
+"loggarti con il tuo normale account e usare <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> per acquisire i "
+"privilegi da superuser."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1562
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>dd if=kern.flp of=/dev/fd0</userinput>"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1564
@@ -1226,18 +1371,21 @@ msgid ""
 "invoked from a normal user account. Unless otherwise noted, C-shell syntax "
 "is used for setting environment variables and other shell commands."
 msgstr ""
+"Gli esempi che iniziano con <prompt>%</prompt> indicano un comando che deve "
+"essere eseguito da un normale utente. Dove non indicato, è usata la sintassi "
+"C-shell per impostare variabili di ambiente e altri comandi di shell."
 
 #. (itstool) path: preface/screen
 #: book.translate.xml:1569
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>top</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>top</userinput>"
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-acknowledgements
 #: book.translate.xml:1571
 msgid "Acknowledgments"
-msgstr ""
+msgstr "Riconoscimenti"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1573
@@ -1246,6 +1394,10 @@ msgid ""
 "around the world. Whether they sent in fixes for typos, or submitted "
 "complete chapters, all the contributions have been useful."
 msgstr ""
+"Il libro che stai leggendo rappresenta gli sforzi di molte centinaia di "
+"persone in tutto il mondo. Sia che abbiano inviato correzioni per errori di "
+"battitura, sia che abbiano inviato interi capitoli, tutti i contributi sono "
+"stati utili."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1578
@@ -1264,6 +1416,20 @@ msgid ""
 "several contributors to improve the Handbook in preparation for the third "
 "printed edition."
 msgstr ""
+"Molte aziende hanno supportato lo sviluppo di questo documento pagando gli "
+"autori per lavorarci a tempo pieno, pagando per la pubblicazione, ecc. In "
+"particolare BSDi (in seguito acquisita da <link xlink:href=\"http://www."
+"windriver.com\">Wind River Systems</link>) ha pagato i membri del FreeBSD "
+"Documentation Project per lavorare a tempo pieno sul miglioramento di questo "
+"libro fino alla pubblicazione della prima edizione inglese stampata nel "
+"Marzo 2000 (ISBN 1-57176-241-8).  Wind River Systems ha in seguito pagato "
+"numerosi autori aggiuntivi per fare una serie di miglioramenti "
+"all'infrastruttura di stampa e per aggiungere altri capitoli al testo. "
+"Questo lavoro è culminato nella pubblicazione della seconda edizione inglese "
+"stampata nel Novembre 2001 (ISBN 1-57176-303-1). Nel 2003-2004, <link xlink:"
+"href=\"http://www.freebsdmall.com\">FreeBSD Mall, Inc</link>, ha pagato "
+"diversi contributori per migliorare il Manuale in preparazione per la terza "
+"edizione inglese cartacea."
 
 #. (itstool) path: part/title
 #: book.translate.xml:1597
