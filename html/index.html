@@ -43,8 +43,22 @@
     </p>
     <p>
       <a href="handbook.html">Qui</a> trovate la versione renderizzata
-      della traduzione fatta fino adesso. (attualmente ho dei problemi
-      di encoding nel generare l'html, sto studiando una soluzione)
+      della traduzione fatta fino adesso.
+    </p>
+    <p>
+      <em class="att">NOTA:</em> Per evitare problemi di encoding è 
+      necessario che ogni software che usate per effettuare le 
+      traduzioni(firefox, chrome, poedit, gtranslator, ecc.) sia 
+      lanciato con un locale che usi UTF-8, altrimenti le lettere 
+      accentate e altri caratteri non ASCII saranno rappresentati da 
+      "??" nell'output finale.<br>
+      Per fare questo basta eseguire il comando con sh:
+      <pre><code>export LANG="en_US.UTF-8"</code></pre>
+      Oppure con csh:
+      <pre><code>setenv LANG "en_US.UTF-8"</code></pre>
+      prima di lanciare il programma che intendete usare. Se avete già  
+      una impostazione locale idonea di default nel vostro sistema non 
+      avete bisogno di fare niente.
     </p>
     <p>
       <em class="att">IMPORTANTE:</em> leggete le <a href="lineeguida.html">linee guida</a>
