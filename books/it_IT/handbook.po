@@ -3,12 +3,13 @@
 # #-#-#-#-#  handbook.po  #-#-#-#-#
 # #-#-#-#-#  handbook.po  #-#-#-#-#
 # Guido Falsi <madpilot@FreeBSD.org>, 2018. #zanata
+# Luca Pizzamiglio <pizzamig@FreeBSD.org>, 2018. #zanata
 msgid ""
 msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"PO-Revision-Date: 2018-08-14 09:17+0000\n"
+"PO-Revision-Date: 2018-08-17 04:36+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -74,7 +75,7 @@ msgid ""
 msgstr ""
 "Le ridistribuzioni del codice sorgente (XML DocBook) devono conservare la "
 "nota di copyright sopra riportata, questa lista di condizioni e la seguente "
-"dichiarazione di esclusione di responsabilit?? nelle prime linee di questo "
+"dichiarazione di esclusione di responsabilità nelle prime linee di questo "
 "file senza modifiche."
 
 #. (itstool) path: listitem/para
@@ -88,7 +89,7 @@ msgstr ""
 "Le ridistribuzioni in forma compilata (trasformazioni in altri DTD, "
 "conversioni in PDF, PostScript, RTF e altri formati) devono riprodurre la "
 "nota di copyright sopra riportata, questa lista di condizioni e il la "
-"seguente dichiarazione di esclusione di responsabilit?? nella documentazione "
+"seguente dichiarazione di esclusione di responsabilità nella documentazione "
 "e/o altro materiale fornito con la distribuzione."
 
 #. (itstool) path: important/para
@@ -107,22 +108,22 @@ msgid ""
 "THE POSSIBILITY OF SUCH DAMAGE."
 msgstr ""
 "LA PRESENTE DOCUMENTAZIONE VIENE FORNITE DAL FREEBSD DOCUMENTATION PROJECT "
-"\"COS?? COM'??\" (STATO DI FATTO) E QUALSIASI GARANZIA ESPRESSA O IMPLICITA, "
-"INCLUSIVA DI, MA NON LIMITATA A, GARANZIE IMPLICITA DI COMMERCIABILIT??, O "
-"IDONEIT?? AD UNO SCOPO PARTICOLARE, VIENE DISCONOSCIUTA. IN NESSUN CASO IL "
-"FREEBSD DOCUMENTATION PROJECT SAR?? RITENUTO RESPONSABILE PER QUALSIASI "
-"DANNO DIRETTO, INDIRETTO, CONNESSO, PARTICOLARE, ESEMPLARE O CONSEGUENTE "
+"\"COSÌ COM'È\" (STATO DI FATTO) E QUALSIASI GARANZIA ESPRESSA O IMPLICITA, "
+"INCLUSIVA DI, MA NON LIMITATA A, GARANZIE IMPLICITA DI COMMERCIABILITÀ, O "
+"IDONEITÀ AD UNO SCOPO PARTICOLARE, VIENE DISCONOSCIUTA. IN NESSUN CASO IL "
+"FREEBSD DOCUMENTATION PROJECT SARÀ RITENUTO RESPONSABILE PER QUALSIASI DANNO "
+"DIRETTO, INDIRETTO, CONNESSO, PARTICOLARE, ESEMPLARE O CONSEGUENTE "
 "(INCLUSIVO DI, MA NON LIMITATO A, APPROVVIGIONAMENTI DI BENI O SERVIZI "
-"ALTERNATIVI, PERDITA DI UTILIT??, DATI O PROFITTI; INTERRUZIONE DI AFFARI) "
-"COMUNQUE CAUSATI E SU QUALSIASI IPOTESI DI RESPONSABILIT??, COME DA "
-"CONTRATTO, RESPONSABILIT?? OGGETTIVA, O TORTO (COMPRESA NEGLIGENZA O ALTRO) "
+"ALTERNATIVI, PERDITA DI UTILITÀ, DATI O PROFITTI; INTERRUZIONE DI AFFARI) "
+"COMUNQUE CAUSATI E SU QUALSIASI IPOTESI DI RESPONSABILITÀ, COME DA "
+"CONTRATTO, RESPONSABILITÀ OGGETTIVA, O TORTO (COMPRESA NEGLIGENZA O ALTRO) "
 "DERIVANTE IN QUALSIASI MODO DALL'UTILIZZO DI QUESTO SOFTWARE ANCHE SE AL "
-"CORRENTE DELLA POSSIBILIT?? DI TALE DANNO."
+"CORRENTE DELLA POSSIBILITÀ DI TALE DANNO."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:741
 msgid "FreeBSD is a registered trademark of the FreeBSD Foundation."
-msgstr "FreeBSD ?? un marchio registrato di FreeBSD Foundation."
+msgstr "FreeBSD è un marchio registrato di FreeBSD Foundation."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:743
@@ -132,17 +133,17 @@ msgstr "3Com e HomeConnect sono marchi registrati di 3Com Corporation"
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:745
 msgid "3ware is a registered trademark of 3ware Inc."
-msgstr "3ware ?? un marchio registrato di 3ware Inc."
+msgstr "3ware è un marchio registrato di 3ware Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:747
 msgid "ARM is a registered trademark of ARM Limited."
-msgstr "ARM ?? un marchio registrato di ARM Limited."
+msgstr "ARM è un marchio registrato di ARM Limited."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:749
 msgid "Adaptec is a registered trademark of Adaptec, Inc."
-msgstr "Adaptec ?? un marchio registrato di Adaptec, Inc."
+msgstr "Adaptec è un marchio registrato di Adaptec, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:751
@@ -168,7 +169,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:760
 msgid "Android is a trademark of Google Inc."
-msgstr "Android ?? un marchio di Google Inc."
+msgstr "Android è un marchio di Google Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:762
@@ -196,7 +197,7 @@ msgid ""
 "IEEE, POSIX, and 802 are registered trademarks of Institute of Electrical "
 "and Electronics Engineers, Inc. in the United States."
 msgstr ""
-"IEEE, POSIX e 802 ono marchi registrati dell' Institute of Electrical and "
+"IEEE, POSIX e 802 sono marchi registrati dell'Institute of Electrical and "
 "Electronics Engineers, Inc. negli Stati Uniti."
 
 #. (itstool) path: legalnotice/para
@@ -224,7 +225,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:780
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr "Linux ?? un marchio registrato di Linux Torvalds."
+msgstr "Linux è un marchio registrato di Linux Torvalds."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:782
@@ -259,7 +260,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:793
 msgid "Oracle is a registered trademark of Oracle Corporation."
-msgstr "Oracle ?? un marchio registrato della Oracle Corporation"
+msgstr "Oracle è un marchio registrato della Oracle Corporation"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:795
@@ -294,27 +295,27 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:806
 msgid "MATLAB is a registered trademark of The MathWorks, Inc."
-msgstr "MATLAB ?? un marchio registrato di The MathWorks, Inc."
+msgstr "MATLAB è un marchio registrato di The MathWorks, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:808
 msgid "SpeedTouch is a trademark of Thomson."
-msgstr "SpeedTouch ?? un marchio di Thomson."
+msgstr "SpeedTouch è un marchio di Thomson."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:810
 msgid "VMware is a trademark of VMware, Inc."
-msgstr "VMWare ?? un marchio di VMware, Inc."
+msgstr "VMWare è un marchio di VMware, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:812
 msgid "Mathematica is a registered trademark of Wolfram Research, Inc."
-msgstr "Mathematica ?? un marchio registrato di Wolfram Research, Inc."
+msgstr "Mathematica è un marchio registrato di Wolfram Research, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:814
 msgid "XFree86 is a trademark of The XFree86 Project, Inc."
-msgstr "XFree86 ?? un marchio di The XFree86 Project, Inc."
+msgstr "XFree86 è un marchio di The XFree86 Project, Inc."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:816
@@ -323,7 +324,6 @@ msgstr "Ogg Vorbis e Xiph.Org sono marchi di Xiph.Org"
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:818
-#, fuzzy
 msgid ""
 "Many of the designations used by manufacturers and sellers to distinguish "
 "their products are claimed as trademarks. Where those designations appear in "
@@ -334,8 +334,8 @@ msgstr ""
 "Molte delle designazioni usati dai produttori e venditori per distinguere i "
 "propri prodotti sono affermati come marchi commerciali. Laddove tali "
 "designazioni appaiono in questo documento, e il Progetto FreeBSD sia a "
-"conoscenza di tale affermazione di marchio commerciale, la designazione "
-"sar?? seguita dal simbolo <quote></quote> o <quote></quote>."
+"conoscenza di tale affermazione di marchio commerciale, la designazione sarà "
+"seguita dal simbolo <quote></quote> o <quote></quote>."
 
 #. (itstool) path: abstract/para
 #: book.translate.xml:827
@@ -351,7 +351,7 @@ msgstr ""
 "Benvenuti in FreeBSD! Questo manuale riguarda l'installazione e l'uso "
 "quotidiano di  <emphasis>FreeBSD 11.2-RELEASE</emphasis>, <emphasis>FreeBSD "
 "11.1-RELEASE</emphasis> e <emphasis>FreeBSD 10.4-RELEASE</emphasis>. Questo "
-"libro ?? il risultato del lavoro continuo di molti individui. Alcune parti "
+"libro è il risultato del lavoro continuo di molti individui. Alcune parti "
 "possono essere obsolete. Le persone interessate ad aiutare ad aggiornare e "
 "estendere questo documento possono inviare una email a <link xlink:href="
 "\"http://lists.FreeBSD.org/mailman/listinfo/freebsd-doc\">FreeBSD "
@@ -372,11 +372,11 @@ msgid ""
 "on the <link xlink:href=\"@@URL_RELPREFIX@@/search/index.html\">search page</"
 "link>."
 msgstr ""
-"La versione pi?? recente di questo libro ?? disponibile dal <link xlink:href="
+"La versione più recente di questo libro è disponibile dal <link xlink:href="
 "\"https://www.FreeBSD.org/\">sito web di FreeBSD</link>. Le versioni "
 "precedenti possono essere ottenute da <uri xlink:href=\"https://docs.FreeBSD."
-"org/doc/\">https://docs.FreeBSD.org/doc/</uri>. Il libro pu?? essere "
-"scaricato in una variet?? di formati e tipi di compressione dal <link xlink:"
+"org/doc/\">https://docs.FreeBSD.org/doc/</uri>. Il libro può essere "
+"scaricato in una varietà di formati e tipi di compressione dal <link xlink:"
 "href=\"https://download.freebsd.org/ftp/doc/\">server FTP di FreeBSD</link> "
 "o uno dei numerosi <link linkend=\"mirrors-ftp\">mirror</link>. Copie "
 "stampate possono essere acquistate presso la <link xlink:href=\"http://www."
@@ -407,9 +407,9 @@ msgid ""
 msgstr ""
 "Gli utenti alla prime armi con FreeBSD scopriranno che la prima sezione di "
 "questo libro guida l'utente attraverso il processo di installazione di "
-"FreeBSD e introduce gradualmente i concetti e le convensioni su cui si basa "
+"FreeBSD e introduce gradualmente i concetti e le convenzioni su cui si basa "
 "<trademark class=\"registered\">UNIX</trademark>. Affrontare questa sezione "
-"richiede poco pi?? che il desiderio di esplorare e l'abilit?? di fare propri "
+"richiede poco pi?? che il desiderio di esplorare e l'abilità di fare propri "
 "nuovi concetti via via che vengono introdotti."
 
 #. (itstool) path: preface/para
@@ -421,11 +421,11 @@ msgid ""
 "do some prior reading, and this is noted in the synopsis at the beginning of "
 "each chapter."
 msgstr ""
-"Una volta superata questa parte, la seconda, ben pi?? consistente, sezione "
-"del Manuale ?? una guida di riferimento completa a tutti i tipi di argomenti "
+"Una volta superata questa parte, la seconda, ben più consistente, sezione "
+"del Manuale è una guida di riferimento completa a tutti i tipi di argomenti "
 "di interesse per l'amministratore di un sistema FreeBSD. Alcuni di questi "
 "capitoli suggeriscono di effettuare prima la lettura di qualche altro "
-"capitolo, questo ?? evidenziato nel sommario all'inizio di ogni capitolo."
+"capitolo, questo è evidenziato nel sommario all'inizio di ogni capitolo."
 
 #. (itstool) path: preface/para
 #: book.translate.xml:876
@@ -452,8 +452,8 @@ msgid ""
 msgstr ""
 "La versione attualmente disponibile online del Manuale rappresenta lo sforzo "
 "cumulativo di molte centinaia di volontari nell'arco dei 10 anni passati. "
-"Quelle che seguono sono alcune delle modifiche piu significative da quando "
-"?? stata pubblicata la terza edizione in due volumi nel 2004:"
+"Quelle che seguono sono alcune delle modifiche più significative da quando è "
+"stata pubblicata la terza edizione in due volumi nel 2004:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:889
@@ -461,7 +461,7 @@ msgid ""
 "<xref linkend=\"dtrace\"/> has been added with information about the "
 "powerful DTrace performance analysis tool."
 msgstr ""
-"<xref linkend=\"dtrace\"/> ?? stata aggiunta con informazioni sul potente "
+"<xref linkend=\"dtrace\"/> è stata aggiunta con informazioni sul potente "
 "strumento di analisi della performance DTrace."
 
 #. (itstool) path: listitem/para
@@ -470,7 +470,7 @@ msgid ""
 "<xref linkend=\"filesystems\"/> has been added with information about non-"
 "native file systems in FreeBSD, such as ZFS from <trademark>Sun</trademark>."
 msgstr ""
-"<xref linkend=\"filesystems\"/> ?? stata aggiunta con informazioni "
+"<xref linkend=\"filesystems\"/> è stata aggiunta con informazioni "
 "riguardanti i file system non nativi in FreeBSD, come ZFS from "
 "<trademark>Sun</trademark>."
 
@@ -480,7 +480,7 @@ msgid ""
 "<xref linkend=\"audit\"/> has been added to cover the new auditing "
 "capabilities in FreeBSD and explain its use."
 msgstr ""
-"<xref linkend=\"audit\"/> ?? stata aggiunta per trattare le nuove capacit?? di "
+"<xref linkend=\"audit\"/> è stata aggiunta per trattare le nuove capacità di "
 "auditing presenti in FreeBSD e spiegarne l'utilizzo."
 
 #. (itstool) path: listitem/para
@@ -489,7 +489,7 @@ msgid ""
 "<xref linkend=\"virtualization\"/> has been added with information about "
 "installing FreeBSD on virtualization software."
 msgstr ""
-"<xref linkend=\"virtualization\"/> ?? stata aggiunta con informazioni su come "
+"<xref linkend=\"virtualization\"/> è stata aggiunta con informazioni su come "
 "installare FreeBSD su software di virtualizzazione."
 
 #. (itstool) path: listitem/para
@@ -500,8 +500,8 @@ msgid ""
 "FreeBSD using the new installation utility, <application>bsdinstall</"
 "application>."
 msgstr ""
-"<xref linkend=\"bsdinstall\"/> ?? stata aggiunta per trattare l'installazione "
-"di FreeBSD utilizzando la nuova utilit?? di installazione, "
+"<xref linkend=\"bsdinstall\"/> è stata aggiunta per trattare l'installazione "
+"di FreeBSD utilizzando la nuova utilità di installazione, "
 "<application>bsdinstall</application>."
 
 #. (itstool) path: preface/bridgehead
@@ -518,9 +518,9 @@ msgid ""
 "grew to such a size that it was necessary to publish as two separate volumes."
 " The following are the major changes in this new edition:"
 msgstr ""
-"La terza edizione ?? stata il culmine di oltre due anni di lavoro da parte di "
-"impegnati membri del FreeBSD Documentation Project. La versione stampata ?? "
-"cresciuta a una dimensione tale che ?? stato necessario pubblicarla come due "
+"La terza edizione è stata il culmine di oltre due anni di lavoro da parte di "
+"impegnati membri del FreeBSD Documentation Project. La versione stampata è "
+"cresciuta a una dimensione tale che è stato necessario pubblicarla come due "
 "volumi separati. Seguono le maggiori modifiche in questa nuova edizione:"
 
 #. (itstool) path: listitem/para
@@ -530,8 +530,8 @@ msgid ""
 "about the ACPI power and resource management, the <command>cron</command> "
 "system utility, and more kernel tuning options."
 msgstr ""
-"<xref linkend=\"config-tuning\"/> ?? stata estesa con nuove informazioni "
-"sulla gestione energia e risorse ACPI, l'utilit?? di sistema <command>cron</"
+"<xref linkend=\"config-tuning\"/> è stata estesa con nuove informazioni "
+"sulla gestione energia e risorse ACPI, l'utilità di sistema <command>cron</"
 "command>, e ulteriori opzioni di messa a punto del kernel."
 
 #. (itstool) path: listitem/para
@@ -541,7 +541,7 @@ msgid ""
 "virtual private networks (VPNs), file system access control lists (ACLs), "
 "and security advisories."
 msgstr ""
-"<xref linkend=\"security\"/> ?? stata estesa con nuove informazioni sulle "
+"<xref linkend=\"security\"/> è stata estesa con nuove informazioni sulle "
 "reti virtuali private (VPNs), liste di controllo accessi al filesystem "
 "(ACLs), e avvisi di sicurezza."
 
@@ -552,8 +552,8 @@ msgid ""
 "<xref linkend=\"mac\"/> is a new chapter with this edition. It explains what "
 "MAC is and how this mechanism can be used to secure a FreeBSD system."
 msgstr ""
-"<xref linkend=\"mac\"/> ?? un nuovo capitolo in questa ediziione. Spiega cosa "
-"?? MAC e come tale meccanismo pu?? essere usato per blindare un sistema "
+"<xref linkend=\"mac\"/> è un nuovo capitolo in questa ediziione. Spiega cosa "
+"è MAC e come tale meccanismo può essere usato per blindare un sistema "
 "FreeBSD."
 
 #. (itstool) path: listitem/para
@@ -564,7 +564,7 @@ msgid ""
 "storage devices, file system snapshots, file system quotas, file and network "
 "backed filesystems, and encrypted disk partitions."
 msgstr ""
-"<xref linkend=\"disks\"/> ?? stata estesa con nuove informazioni sulle "
+"<xref linkend=\"disks\"/> è stata estesa con nuove informazioni sulle "
 "periferiche di archiviazione USB, istantanee (snapshot) del filesystem, "
 "quote del filesystem, filesystem supportati da file e dalla rete, partizioni "
 "disco cifrate."
@@ -575,7 +575,7 @@ msgid ""
 "A troubleshooting section has been added to <xref linkend=\"ppp-and-slip\"/>."
 ""
 msgstr ""
-"Una sezione di risoluzione problemi ?? stata aggiunta a <xref linkend=\"ppp-"
+"Una sezione di risoluzione problemi è stata aggiunta a <xref linkend=\"ppp-"
 "and-slip\"/>."
 
 #. (itstool) path: listitem/para
@@ -587,7 +587,7 @@ msgid ""
 "<application>fetchmail</application>, <application>procmail</application>, "
 "and other advanced topics."
 msgstr ""
-"<xref linkend=\"mail\"/> ?? stata estesa con nuove informazioni su come usare "
+"<xref linkend=\"mail\"/> è stata estesa con nuove informazioni su come usare "
 "agenti di trasporto alternativi, autenticazione SMTP, UUCP, "
 "<application>fetchmail</application>, <application>procmail</application> e "
 "altri argomenti avanzati."
@@ -603,7 +603,7 @@ msgid ""
 "application>. Some sections from <xref linkend=\"advanced-networking\"/> "
 "were moved here to improve the presentation."
 msgstr ""
-"<xref linkend=\"network-servers\"/> ?? completamente nuova in questa edizione."
+"<xref linkend=\"network-servers\"/> è completamente nuova in questa edizione."
 " Questo capitolo include informazioni su come impostare <application>Apache "
 "HTTP Server</application>, <application>ftpd</application>, e impostare un "
 "server per client <trademark class=\"registered\">Microsoft</trademark> "
@@ -620,7 +620,7 @@ msgid ""
 "trademark> devices with FreeBSD, setting up wireless networks, and "
 "Asynchronous Transfer Mode (ATM) networking."
 msgstr ""
-"<xref linkend=\"advanced-networking\"/> ?? stata estesa con nuove "
+"<xref linkend=\"advanced-networking\"/> è stata estesa con nuove "
 "informazioni su come usare periferiche <trademark class="
 "\"registered\">Bluetooth</trademark> con FreeBSD, impostare reti wireless e "
 "reti Asynchronous Transfer Mode (ATM)."
@@ -631,7 +631,7 @@ msgid ""
 "A glossary has been added to provide a central location for the definitions "
 "of technical terms used throughout the book."
 msgstr ""
-"?? stato aggiunto un glossario per fornire un luogo centralizzato per le "
+"È stato aggiunto un glossario per fornire un luogo centralizzato per le "
 "definizioni dei termini tecnici usato nel libro."
 
 #. (itstool) path: listitem/para
@@ -656,14 +656,14 @@ msgid ""
 "dedicated members of the FreeBSD Documentation Project. The following were "
 "the major changes in this edition:"
 msgstr ""
-"La Seconda edizione ?? stato il culmine di oltre due anni di lavoro di "
+"La Seconda edizione è stato il culmine di oltre due anni di lavoro di "
 "impegnati membri del FreeBSD Documentation Project. Seguono le maggiori "
 "modifiche in questa nuova edizione:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1005
 msgid "A complete Index has been added."
-msgstr "Un indice completo ?? stato aggiunto."
+msgstr "Un indice completo è stato aggiunto."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1009
@@ -679,9 +679,9 @@ msgid ""
 "of what information the chapter contains, and what the reader is expected to "
 "know."
 msgstr ""
-"A ogni capitolo ?? stato aggiunto un sommario per dare una veloce idea di "
+"A ogni capitolo è stato aggiunto un sommario per dare una veloce idea di "
 "quali informazioni siano contenute in esso e cosa ci si aspetta il lettore "
-"sappia gi??."
+"sappia già."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1020
@@ -690,7 +690,7 @@ msgid ""
 "Started</quote>, <quote>System Administration</quote>, and "
 "<quote>Appendices</quote>."
 msgstr ""
-"Il contenuto ?? stato riorganizzato logicamente in tre parti:<quote>Primi "
+"Il contenuto è stato riorganizzato logicamente in tre parti:<quote>Primi "
 "passi</quote>, <quote>Amministrazione di sistema</quote> e <quote>Appendici</"
 "quote>."
 
@@ -700,7 +700,7 @@ msgid ""
 "<xref linkend=\"basics\"/> has been expanded to contain additional "
 "information about processes, daemons, and signals."
 msgstr ""
-"<xref linkend=\"basics\"/> ?? stata espansa per contenere informazioni "
+"<xref linkend=\"basics\"/> è stata espansa per contenere informazioni "
 "addizionali riguardo a processi, demoni e segnali."
 
 #. (itstool) path: listitem/para
@@ -709,7 +709,7 @@ msgid ""
 "<xref linkend=\"ports\"/> has been expanded to contain additional "
 "information about binary package management."
 msgstr ""
-"<xref linkend=\"ports\"/> ?? stata espansa per contenere informazioni "
+"<xref linkend=\"ports\"/> è stata espansa per contenere informazioni "
 "addizionali sulla gestione dei pacchetti binari."
 
 #. (itstool) path: listitem/para
@@ -719,7 +719,7 @@ msgid ""
 "using modern desktop technologies such as <application>KDE</application> and "
 "<application>GNOME</application> on <trademark>XFree86</trademark> 4.X."
 msgstr ""
-"<xref linkend=\"x11\"/> ?? stata completamente riscritta con una enfasi "
+"<xref linkend=\"x11\"/> è stata completamente riscritta con una enfasi "
 "sull'utilizzo delle moderne tecnologie desktop come <application>KDE</"
 "application> e <application>GNOME</application> su <trademark>XFree86</"
 "trademark> 4.X."
@@ -727,7 +727,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1046
 msgid "<xref linkend=\"boot\"/> has been expanded."
-msgstr "<xref linkend=\"boot\"/> ?? stata espansa."
+msgstr "<xref linkend=\"boot\"/> è stata espansa."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1050
@@ -737,10 +737,10 @@ msgid ""
 "the topics are easier to comprehend when presented as a single chapter. A "
 "section on RAID (both hardware and software) has also been added."
 msgstr ""
-"<xref linkend=\"disks\"/> ?? stata riscritta da quelli che in precedenza "
+"<xref linkend=\"disks\"/> è stata riscritta da quelli che in precedenza "
 "erano due capitoli separati su <quote>Dischi</quote> e <quote>Backup</quote>."
-" Riteniamo che tali argomenti siano di pi?? semplice comprensione se "
-"presentati come un unico capitolo. ?? stata inoltre aggiunta una sezione sui "
+" Riteniamo che tali argomenti siano di più semplice comprensione se "
+"presentati come un unico capitolo. È stata inoltre aggiunta una sezione sui "
 "RAID (sia hardware che software)."
 
 #. (itstool) path: listitem/para
@@ -749,13 +749,13 @@ msgid ""
 "<xref linkend=\"serialcomms\"/> has been completely reorganized and updated "
 "for FreeBSD 4.X/5.X."
 msgstr ""
-"<xref linkend=\"serialcomms\"/> ?? stata completamente riorganizzata e "
+"<xref linkend=\"serialcomms\"/> è stata completamente riorganizzata e "
 "aggiornata per FreeBSD 4.X/5.X."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1064
 msgid "<xref linkend=\"ppp-and-slip\"/> has been substantially updated."
-msgstr "<xref linkend=\"ppp-and-slip\"/> ?? stata aggiornata massicciamente."
+msgstr "<xref linkend=\"ppp-and-slip\"/> è stata aggiornata massicciamente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1069
@@ -771,7 +771,7 @@ msgid ""
 "<xref linkend=\"mail\"/> has been expanded to include more information about "
 "configuring <application>sendmail</application>."
 msgstr ""
-"<xref linkend=\"mail\"/> ?? stata espansa per includere pi?? informazioni "
+"<xref linkend=\"mail\"/> è stata espansa per includere più informazioni "
 "sulla configurazione di <application>sendmail</application>."
 
 #. (itstool) path: listitem/para
@@ -782,7 +782,7 @@ msgid ""
 "application> and <application><trademark class=\"registered\">SAP</"
 "trademark><trademark class=\"registered\">R/3</trademark></application>."
 msgstr ""
-"<xref linkend=\"linuxemu\"/> ?? stata espansa per includere informazioni "
+"<xref linkend=\"linuxemu\"/> è stata espansa per includere informazioni "
 "sull'installazione di <application><trademark class=\"registered\">Oracle</"
 "trademark></application> e <application><trademark class=\"registered\">SAP</"
 "trademark><trademark class=\"registered\">R/3</trademark></application>."
@@ -795,18 +795,18 @@ msgstr "La seconda edizione copre i seguenti nuovi argomenti:"
 #. (itstool) path: listitem/para
 #: book.translate.xml:1091
 msgid "<xref linkend=\"config-tuning\"/>."
-msgstr ""
+msgstr "<xref linkend=\"config-tuning\"/>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1095
 msgid "<xref linkend=\"multimedia\"/>."
-msgstr ""
+msgstr "<xref linkend=\"multimedia\"/>."
 
 #. (itstool) path: preface/bridgehead
 #. (itstool) id: book.translate.xml#preface-overview
 #: book.translate.xml:1101
 msgid "Organization of This Book"
-msgstr ""
+msgstr "Come è Organizzato Questo Libro"
 
 #. (itstool) path: preface/para
 #: book.translate.xml:1103
@@ -96990,7 +96990,7 @@ msgstr ""
 #. (itstool) path: glossentry/glossterm
 #: book.translate.xml:65535
 msgid "Unix File System Version 1"
-msgstr ""
+msgstr "Unix File System Version 1"
 
 #. (itstool) path: glossdef/para
 #: book.translate.xml:65535
@@ -96998,11 +96998,13 @@ msgid ""
 "The original <trademark class=\"registered\">UNIX</trademark> file system, "
 "sometimes called the Berkeley Fast File System."
 msgstr ""
+"Il file system originale di <trademark class=\"registered\">UNIX</"
+"trademark>, talvolta chiamato Berkeley Fast File System."
 
 #. (itstool) path: glossentry/glossterm
 #: book.translate.xml:65535
 msgid "Unix File System Version 2"
-msgstr ""
+msgstr "Unix File System Version 2"
 
 #. (itstool) path: glossdef/para
 #: book.translate.xml:65535
@@ -97011,6 +97013,9 @@ msgid ""
 "<acronym>UFS2</acronym> adds 64 bit block pointers (breaking the 1T "
 "barrier), support for extended file storage and other features."
 msgstr ""
+"'oUn'estensione di <acronym>UFS1</acronym>, introdotto in FreeBSD 5-CURRENT. "
+"<acronym>UFS2</acronym> aggiunge puntatori a 64 bit (superando la barriera "
+"del Terabyte), il supporto extended file storage e altre funzionalità."
 
 #. (itstool) path: glossentry/glossterm
 #: book.translate.xml:65535
