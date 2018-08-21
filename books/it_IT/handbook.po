@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"PO-Revision-Date: 2018-08-18 02:19+0000\n"
+"PO-Revision-Date: 2018-08-21 09:07+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -1491,7 +1491,7 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:1642 book.translate.xml:23603 book.translate.xml:65535
 msgid "Introduction"
-msgstr ""
+msgstr "Introduzione"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:1645 book.translate.xml:2748
@@ -1500,6 +1500,9 @@ msgid ""
 "personname> <contrib>Restructured, reorganized, and parts rewritten by </"
 "contrib>"
 msgstr ""
+"<personname> <firstname>Jim</firstname> <surname>Mock</surname> </"
+"personname> <contrib>Ristrutturato, riorganizzato e parti scrittte da </"
+"contrib>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1657 book.translate.xml:2803 book.translate.xml:5459
@@ -1513,7 +1516,7 @@ msgstr ""
 #: book.translate.xml:48857 book.translate.xml:50525 book.translate.xml:52438
 #: book.translate.xml:56937 book.translate.xml:60624
 msgid "Synopsis"
-msgstr ""
+msgstr "Sinossi"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1659
@@ -1522,6 +1525,9 @@ msgid ""
 "aspects of the FreeBSDProject, such as its history, goals, development "
 "model, and so on."
 msgstr ""
+"Grazie per il tuo interesse per FreeBSD! Il seguente capitolo tratta vari "
+"aspetti del FreeBSD Project, come la sua storia, gli obiettivi, il modello "
+"di sviluppo e così via."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1663 book.translate.xml:2874 book.translate.xml:5466
@@ -1533,43 +1539,45 @@ msgstr ""
 #: book.translate.xml:46317 book.translate.xml:46674 book.translate.xml:48868
 #: book.translate.xml:50536 book.translate.xml:56992 book.translate.xml:60629
 msgid "After reading this chapter, you will know:"
-msgstr ""
+msgstr "Dopo aver letto questo capitolo, saprai:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1667
 msgid "How FreeBSD relates to other computer operating systems."
 msgstr ""
+"Come si relaziona FreeBSD rispetto agli altri sistemi operativi per computer."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1672
 msgid "The history of the FreeBSDProject."
-msgstr ""
+msgstr "La storia del FreeBSD Project."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1676
 msgid "The goals of the FreeBSDProject."
-msgstr ""
+msgstr "Gli obiettivi del FreeBSD Project."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1680
 msgid "The basics of the FreeBSD open-source development model."
-msgstr ""
+msgstr "Le basi del modello di sviluppo open source di FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1685
 msgid "And of course: where the name <quote>FreeBSD</quote> comes from."
-msgstr ""
+msgstr "E naturalmente: da dove deriva il nome <quote>FreeBSD</quote>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:1692
 msgid "Welcome to FreeBSD!"
-msgstr ""
+msgstr "Benvenuto in FreeBSD!"
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1694 book.translate.xml:1785
 msgid "<primary>4.4BSD-Lite</primary>"
-msgstr ""
+msgstr "<primary>4.4BSD-Lite</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1696
@@ -1586,6 +1594,18 @@ msgid ""
 "different languages and frameworks, and desktop features centered around X "
 "Window System, KDE, or GNOME. Its particular strengths are:"
 msgstr ""
+"FreeBSD è un sistema operativo di tipo Unix, open source, conforme agli "
+"standard per computer x86 (sia a 32 che a 64 bit),  <trademark class="
+"\"registered\">ARM</trademark>, AArch64, <trademark class="
+"\"registered\">RISC-V</trademark>, <trademark class=\"registered\">MIPS</"
+"trademark>, <trademark class=\"registered\">POWER</trademark>, <trademark "
+"class=\"registered\">PowerPC</trademark>, e Sun <trademark class="
+"\"registered\">UltraSPARC</trademark>. È dotato di tutte le funzionalità  "
+"che sono oggi date per scontate, come il preemptive multitasking, protezione "
+"della memoria, memoria virtuale, infrastrutture multi utente, supporto SMP, "
+"tutti gli strumenti di sviluppo Open Source per diversi linguaggi e "
+"framework e funzionalità desktop basate su X Window System, KDE, o GNOME. I "
+"suoi punti di forza specifici sono:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1709
@@ -1596,11 +1616,16 @@ msgid ""
 "copyleft licenses, as well as avoiding potential license incompatibility "
 "problems."
 msgstr ""
+"<emphasis>Licenza Open Source liberale</emphasis>, che ti garantisce i "
+"diritti di modificare ed estendere liberamente il suo codice sorgente e "
+"incorporarlo sia in progetti Open Source che in prodotti chiusi senza "
+"imporre le restrizioni tipiche delle licenze copyleft e anche di evitare "
+"potenziali problemi di incompatibilità tra licenze."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1720
 msgid "<primary>TCP/IP networking</primary>"
-msgstr ""
+msgstr "<primary>Sistema di rete TCP/IP</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1719
@@ -1611,6 +1636,11 @@ msgid ""
 "firewalling roles - and indeed many companies and vendors use it precisely "
 "for that purpose."
 msgstr ""
+"<emphasis>Solido sitema di rete TCP/IP</emphasis> <_:indexterm-1/> - FreeBSD "
+"implementa I protocolli standard nell'industria con sempre maggiori "
+"prestazioni e scalabilità. Questo lo rende competitivo sia nel ruolo di "
+"server, che nei ruoli di router/firewall - E in effetti molte aziende e "
+"fornitori lo usano proprio per questi scopi. "
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1730
@@ -1620,6 +1650,10 @@ msgid ""
 "support for jails, FreeBSD specific documentation, and system installer "
 "support."
 msgstr ""
+"<emphasis>Support OpenZFS completamente integrato</emphasis>, Inclusivo di "
+"root-on-ZFS, ZFS Boot Environments, gestione dei guasti, delegazione "
+"amministrativa, supporto per le jail, documentazione specifica per FreeBSD e "
+"supporto nell'installatore del sistema."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1738
@@ -1627,6 +1661,9 @@ msgid ""
 "<emphasis>Extensive security features</emphasis>, from the Mandatory Access "
 "Control framework to Capsicum capability and sandbox mechanisms."
 msgstr ""
+"<emphasis>Ampia gamma di funzionalità di sicurezza</emphasis>, dal Controllo "
+"di Accesso Vincolato (MAC) alle capability Capsicum e i meccanismi di "
+"sandbox."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1744
@@ -1635,6 +1672,9 @@ msgid ""
 "architectures, and the Ports Collection which makes it easy to build your "
 "own, customized ones."
 msgstr ""
+"<emphasis>Più di 30 mila pacchetti binari precompilati</emphasis> per tutte "
+"le architetture supportate, e la Ports Collection che rende facile compilare "
+"i propri pacchetti personalizzati."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1751
@@ -1646,6 +1686,13 @@ msgid ""
 "userspace daemons, utilities, and configuration files, but also for kernel "
 "driver APIs (section 9) and individual drivers (section 4)."
 msgstr ""
+"<emphasis>Documentazione</emphasis> - oltre al Manuale e e libri di diversi "
+"autori che trattano argomenti dall'amministrazione di sistema al "
+"funzionamento interno del kernel, ci sono le "
+"<citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> pages, non solo per i demoni utente, le utilità, e i file di "
+"configurazione, ma anche per le API dei driver del kernel (sezione 9) e per "
+"i singoli driver (sezione 4)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1761
@@ -1656,6 +1703,12 @@ msgid ""
 "build system and a well thought out development process makes it easy to "
 "integrate FreeBSD with build infrastructure for your own product."
 msgstr ""
+"<emphasis>Struttura del repositorio e infrastruttura di compilazione "
+"semplice e coerente</emphasis> - FreeBSD utilizza un unico repositorio per "
+"tutti i suoi componenti, sia il kernel che le parti utente. Questo, insieme "
+"all'infrastruttura di compilazione unificata e semplice da personalizzare e "
+"un processo di sviluppo ben pianificato rende semplice l'integrazione di "
+"FreeBSD con l'infrastruttura del tuo progetto."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1771
@@ -1664,12 +1717,16 @@ msgid ""
 "composability instead of monolithic <quote>all in one</quote> daemons with "
 "hardcoded behavior."
 msgstr ""
+"<emphasis>Fedeltà alla vera filosofia di Unix</emphasis>, preferendo la "
+"compatibilità anziché i demoni monolitici <quote>tutto compreso</quote> con "
+"comportamenti prestabiliti."
 
 #. (itstool) path: para/indexterm
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:1777 book.translate.xml:17864
 msgid "<primary>binary compatibility</primary> <secondary>Linux</secondary>"
-msgstr ""
+msgstr "<primary>comatibilita binaria</primary>\n"
+"<secondary>Linux</secondary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1777
@@ -1678,11 +1735,14 @@ msgid ""
 "makes it possible to run many Linux binaries without the need for "
 "virtualisation."
 msgstr ""
+"<_:indexterm-1/> <emphasis>Compatibilità binaria</emphasis> con Linux, che "
+"rende possibile far girare molti binari Linux senza bisogno di ricorrere "
+"alla virtualizzazione."
 
 #. (itstool) path: para/indexterm
 #: book.translate.xml:1788
 msgid "<primary>Computer Systems Research Group (CSRG)</primary>"
-msgstr ""
+msgstr "<primary>Computer Systems Research Group (CSRG)</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:1785
@@ -1697,11 +1757,20 @@ msgid ""
 "reliability on par with other Open Source and commercial offerings, combined "
 "with cutting-edge features not available anywhere else."
 msgstr ""
+"FreeBSD è basato sulla release 4.4BSD-Lite<_:indexterm-1/> del Computer "
+"Systems Research Group (CSRG)<_:indexterm-2/> all'Università della "
+"California a Berkeley, e prosegue nella distinta tradizione dello sviluppo "
+"dei sistemi BSD. In aggiunta all'ottimo lavoro fornito dal CSRG, Il FreeBSD "
+"Project ha contribuito migliaia di ore uomo nell'estendere la funzionalità e "
+"nell'ottimizzare il sistema per le massime prestazioni e affidabilità in "
+"condizioni di carico reali. FreeBSD offre prestazioni e affidabilità allo "
+"stesso livello di altri sistemi Open Source e commerciali, combinati con "
+"funzionalità all'avanguardia non disponibili in altre offerte."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:1802
 msgid "What Can FreeBSD Do?"
-msgstr ""
+msgstr "Cosa Può fare FreeBSD?"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1804
@@ -1715,6 +1784,15 @@ msgid ""
 "applications developed by research centers and universities around the "
 "world, often available at little to no cost."
 msgstr ""
+"Le applicazioni a cui FreeBSD può essere messo alla base sono davvero "
+"limitate solo dalla tua immaginazione. Dallo sviluppo software "
+"all'automazione industriale, dal controllo di inventario alla correzione "
+"azimutale remote delle antenne satellitari; Se può essere fatto con un "
+"prodotto <trademark class=\"registered\">UNIX</trademark> commerciale allora "
+"è più che probabile che tu lo possa fare anche con FreeBSD! FreeBSD inoltre "
+"trae un significativo vantaggio da, letteralmente, migliaia di applicazioni "
+"di alta qualità sviluppate da centri di ricerca e università in tutto il "
+"mondo, spesso disponibili a basso o nessun costo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:1814
@@ -1725,6 +1803,12 @@ msgid ""
 "systems from most major commercial vendors. Here is just a sampling of some "
 "of the applications in which people are currently using FreeBSD:"
 msgstr ""
+"Poiché il codice sorgente di FreeBSD è completamente disponibile, il sistema "
+"può anche essere personalizzato fino ad un livello senza precedenti per "
+"applicazioni o progetti specializzati, e in modi generalmente non possibili "
+"con i sistemi operativi della maggior parte dei maggiori fornitori "
+"commerciali. Seguono alcuni esempi di applicazioni per cui varie persone "
+"stanno attualmente usando FreeBSD:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1824
@@ -2928,7 +3012,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:2745
 msgid "Installing FreeBSD"
-msgstr ""
+msgstr "Installazione di FreeBSD"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2773
@@ -2936,6 +3020,8 @@ msgid ""
 "<personname> <firstname>Gavin</firstname> <surname>Atkinson</surname> </"
 "personname> <contrib>Updated for bsdinstall by </contrib>"
 msgstr ""
+"<personname> <firstname>Gavin</firstname> <surname>Atkinson</surname> </"
+"personname> <contrib>Aggiornamento relativo a bsdinstall di </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2782
@@ -2943,6 +3029,8 @@ msgid ""
 "<personname> <firstname>Warren</firstname> <surname>Block</surname> </"
 "personname>"
 msgstr ""
+"<personname> <firstname>Warren</firstname> <surname>Block</surname> </"
+"personname>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:2791
@@ -2950,11 +3038,13 @@ msgid ""
 "<personname> <firstname>Allan</firstname> <surname>Jude</surname> </"
 "personname> <contrib>Updated for root-on-ZFS by </contrib>"
 msgstr ""
+"<personname> <firstname>Allan</firstname> <surname>Jude</surname> </"
+"personname> <contrib>Aggiornamento relativo a root-on-ZFS di </contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:2805
 msgid "<primary>installation</primary>"
-msgstr ""
+msgstr "<primary>installazione</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2807
@@ -2962,6 +3052,8 @@ msgid ""
 "There are several different ways of getting FreeBSD to run, depending on the "
 "environment. Those are:"
 msgstr ""
+"A seconda dell'ambiente, ci sono diversi modi di ottenere un'istanza di "
+"FreeBSD funzionante. I modi sono:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2812
@@ -2975,6 +3067,14 @@ msgid ""
 "(<quote>already installed</quote>) instances, ready to run and perform post-"
 "installation tasks."
 msgstr ""
+"immagine per Virtual Machine, da scaricare e importare nel'ambiente virtuale "
+"di preferenza. Le immagini sono disponibilie alla pagina <link xlink:href="
+"\"https://www.freebsd.org/where.html\">Download FreeBSD</link>. Ci sono "
+"immagini per KVM (<quote>qcow2</quote>), VMWare (<quote>vmdk</quote>), Hyper-"
+"V (<quote>vhd</quote>) e immagini in raw device, che sono universalmente "
+"supportate. Le immagini non sono immagini di isntallazione, ma bensì istanze "
+"preconfigurate (<quote>già installate</quote>), pronte all'uso e ai passaggi "
+"post-installazione."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2825
@@ -2990,6 +3090,17 @@ msgid ""
 "microsoft.com/en-us/azure/virtual-machines/linux/freebsd-intro-on-"
 "azure\">Azure Documentation</link>."
 msgstr ""
+"immagini per Virtual Machine disponibile nel <link xlink:href=\"https://aws."
+"amazon.com/mp/solutions/freebsd/\">AWS Marketplace</link> di Amazon, nel "
+"<link xlink:href=\"https://azuremarketplace.microsoft.com/en-us/marketplace/"
+"apps?search=freebsd&amp;page=1\">Microsoft Azure Marketplace</link>, e nella "
+"<link xlink:href=\"https://console.cloud.google.com/launcher/details/freebsd-"
+"cloud/freebsd-11\">Google Cloud Platform</link>, per essere eseguite nei "
+"rispettivi servizi di hosting. Per maggiori informazione sull'utilizzo di "
+"FreeBSD con Azure, si suggerisce di consultare il capitolo specifica "
+"disponibile nella <link xlink:href=\"https://docs.microsoft.com/en-us/azure/"
+"virtual-machines/linux/freebsd-intro-on-azure\">Documentazione di Azure</"
+"link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2836
@@ -3000,6 +3111,11 @@ msgid ""
 "uncompressed and written as a raw image to an SD card, from which the board "
 "will then boot."
 msgstr ""
+"immagini su card SD, per sistemi embedded come Raspberry Pi o BeagleBone "
+"Black. Possono essere scaricate dalla pagina <link xlink:href=\"https://www."
+"freebsd.org/where.html\">Download FreeBSD</link>. Queste immagini devono "
+"essere decompresse e scritte sulla card SD come immagine raw, dalla quale "
+"poi la board effettuerà il boot."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2846
@@ -3007,6 +3123,8 @@ msgid ""
 "Installation images, to install FreeBSD on a hard drive for the usual "
 "desktop, laptop, or server systems."
 msgstr ""
+"immagini di installazione, per installare FreeBSD su un disco fisso per "
+"sistemi desktop, laptop o server."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2852
@@ -3015,6 +3133,9 @@ msgid ""
 "install FreeBSD using the text-based installation program named "
 "<application>bsdinstall</application>."
 msgstr ""
+"Il resto di questo capitolo descrive i quattro casi, spiegando come "
+"installare FreeBSD il programma di installazione ad interfaccia di testo "
+"<application>bsdinstall</application>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2857
@@ -3026,6 +3147,13 @@ msgid ""
 "so use this chapter as a general guide rather than as a set of literal "
 "instructions."
 msgstr ""
+"In generale, le istruzioni di installazione di questo capitolo sono scritte "
+"per le architetture <trademark>i386</trademark> e <acronym>AMD64</acronym>. "
+"Ove applicabile, saranno riportate anche le istruzioni specifiche alle altre "
+"piattaforme. Ci possono essere alcune differenze minori tra il programma di "
+"installazione e ciò mostrato qui, quindi usa questo capitolo come guida "
+"generica piuttosto che come un insieme di istruzioni da seguire alla lettera."
+""
 
 #. (itstool) path: note/para
 #: book.translate.xml:2866
@@ -3037,21 +3165,29 @@ msgid ""
 "Handbook for details (<link xlink:href=\"https://www.trueos.org/handbook/"
 "trueos.html\">https://www.trueos.org/handbook/trueos.html</link>)."
 msgstr ""
+"Gli utenti che preferiscono installare FreeBSD usando un programma con "
+"interfaccia grafica, posono essere interessati a <application>pc-sysinstall</"
+"application>, il programma di installazione usato dal TrueOS Project. Può "
+"essere usato per installare sia un desktop con interfaccia grafica (TrueOS) "
+"o un versione a linea di comando di FreeBSD. Si prega di far riferiemtno al "
+"Manuale Utente di  TrueOS Users Handbook per maggiori dettagli (<link xlink:"
+"href=\"https://www.trueos.org/handbook/trueos.html\">https://www.trueos.org/"
+"handbook/trueos.html</link>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2878
 msgid "The minimum hardware requirements and FreeBSD supported architectures."
-msgstr ""
+msgstr "I requisiti hardware minimi e le architetture supportate da FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2883
 msgid "How to create the FreeBSD installation media."
-msgstr ""
+msgstr "Come create i dispositivi di installazione per FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2887
 msgid "How to start <application>bsdinstall</application>."
-msgstr ""
+msgstr "Come invocare <application>bsdinstall</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2892
@@ -3059,11 +3195,13 @@ msgid ""
 "The questions <application>bsdinstall</application> will ask, what they "
 "mean, and how to answer them."
 msgstr ""
+"Le domande poste da <application>bsdinstall</application>, cosa significano "
+"e come rispondere."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2897
 msgid "How to troubleshoot a failed installation."
-msgstr ""
+msgstr "Come risolvere i problemi dovuti ad un'installazione fallita."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2901
@@ -3071,6 +3209,8 @@ msgid ""
 "How to access a live version of FreeBSD before committing to an installation."
 ""
 msgstr ""
+"Come accedere ad una versione live di FreeBSD prima di dedicarsi "
+"all'installazione"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2906 book.translate.xml:10626 book.translate.xml:13818
@@ -3081,7 +3221,7 @@ msgstr ""
 #: book.translate.xml:46692 book.translate.xml:48894 book.translate.xml:50600
 #: book.translate.xml:57020 book.translate.xml:60671
 msgid "Before reading this chapter, you should:"
-msgstr ""
+msgstr "Prima di leggere questo capitolo, dovresti:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2910
@@ -3089,11 +3229,14 @@ msgid ""
 "Read the supported hardware list that shipped with the version of FreeBSD to "
 "be installed and verify that the system's hardware is supported."
 msgstr ""
+"Leggere la lista di hardware supportato dalla versione di FreeBSD che si "
+"vuole installare e verificare che il sistema di cui si dispone sia "
+"supportato"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2918
 msgid "Minimum Hardware Requirements"
-msgstr ""
+msgstr "Requisiti Hardware Minimi"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2920
@@ -3105,6 +3248,13 @@ msgid ""
 "html\">FreeBSD download page</link> also has recommendations for choosing "
 "the correct image for different architectures."
 msgstr ""
+"I requisiti hardware per installare FreeBSD variano da architettura ad "
+"architettura. Le architetture hardware e di dispositivi supportate da "
+"ciascuna versione di FreeBSD sono elencati alla pagina <link xlink:href="
+"\"@@URL_RELPREFIX@@/releases/index.html\">FreeBSD Release Information</link>."
+" La pagina <link xlink:href=\"@@URL_RELPREFIX@@/where.html\">FreeBSD "
+"download</link> contiene, inoltre, le raccomandazioni per scegliere "
+"l'immagine corretta a seconda delle diverse architetture in uso."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2927
@@ -3115,16 +3265,23 @@ msgid ""
 "embedded appliances. General-purpose desktop systems need more resources. 2-"
 "4GB RAM and at least 8GB hard drive space is a good starting point."
 msgstr ""
+"Un sistema FreeBSD richiede un minion di 96MB di <acronym>RAM</acronym> e 1."
+"5GB di spazio libero su disco fisso. In ogni caso, quantità di memoria e "
+"disco così ridotte sono realmente utilizzabili sono da applicazioni su "
+"misura come dispositivi embedded. Sistemi general-purpose, come un desktop, "
+"richiedono maggiori risorse. 2-4GB di RAM e almeno 8GB di spazio su disco "
+"sono un buon punto d'inizio"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:2935
 msgid "These are the processor requirements for each architecture:"
 msgstr ""
+"Questi sono i requisiti relativi ai processori per ciascun'architettura:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2940
 msgid "amd64"
-msgstr ""
+msgstr "amd64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2942
@@ -3134,6 +3291,10 @@ msgid ""
 "<acronym>Intel64</acronym>. Other manufacturers sometimes call it "
 "<acronym>x86-64</acronym>."
 msgstr ""
+"Questo è il tipo di processore più diffuso tra desktop e laptop, usato in "
+"molti sistemi moderni. <trademark class=\"registered\">Intel</trademark> la "
+"chiama <acronym>Intel64</acronym>. Altri produttori la chiamano talvolta "
+"<acronym>x86-64</acronym>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2947
@@ -3144,16 +3305,22 @@ msgid ""
 "class=\"registered\">Intel</trademark><trademark>Core</trademark>2 and later "
 "processors."
 msgstr ""
+"Esempi di processori compatibili con amd64 sono: <trademark>AMDAthlon</"
+"trademark>64, <trademark>AMDOpteron</trademark>, multi-core <trademark class="
+"\"registered\">Intel</trademark><trademark>Xeon</trademark>, <trademark "
+"class=\"registered\">Intel</trademark><trademark>Core</trademark>2 i "
+"processori successivi."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2955
 msgid "i386"
-msgstr ""
+msgstr "i386"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2957
 msgid "Older desktops and laptops often use this 32-bit, x86 architecture."
 msgstr ""
+"I desktop e i laptop più vecchi usano ancora l'architettura x86 a 32-bit."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2960
@@ -3162,6 +3329,9 @@ msgid ""
 "supported. All <trademark class=\"registered\">Intel</trademark> processors "
 "486 or higher are supported."
 msgstr ""
+"Quasi tutti i processore i386-compatibili con unità floating-point sono "
+"supportati. Tutti i processori <trademark class=\"registered\">Intel</"
+"trademark> o superiori sono supportati."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2964
@@ -3174,11 +3344,19 @@ msgid ""
 "<citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> for details."
 msgstr ""
+"FreeBSD è in grado di sfruttare supporto alla Physical Address Extensions "
+"(<acronym>PAE</acronym>) con le <acronym>CPU</acronym> che dispongono di "
+"questa funzionalità. Un kernel con la funzionalità  <acronym>PAE</acronym> "
+"abilitata potrà indirizzare la memoria oltre i 4GB e permettere al di "
+"sistema di usarla. Comunque, l'utilizzo di <acronym>PAE</acronym> implica "
+"dei vincoli o limiti ai driver e ad altre funzionalità di FreeBSD. Per i "
+"dettagli, fare riferimento a <citerefentry><refentrytitle>pae</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2976
 msgid "ia64"
-msgstr ""
+msgstr "ia64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2978
@@ -3195,7 +3373,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:2988
 msgid "pc98"
-msgstr ""
+msgstr "pc98"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2990
@@ -3222,7 +3400,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3010
 msgid "powerpc"
-msgstr ""
+msgstr "powerpc"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3012
@@ -3241,7 +3419,7 @@ msgstr ""
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3023
 msgid "sparc64"
-msgstr ""
+msgstr "sparc64"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3025
@@ -97183,7 +97361,7 @@ msgid ""
 "<acronym>UFS2</acronym> adds 64 bit block pointers (breaking the 1T "
 "barrier), support for extended file storage and other features."
 msgstr ""
-"'oUn'estensione di <acronym>UFS1</acronym>, introdotto in FreeBSD 5-CURRENT. "
+"Un'estensione di <acronym>UFS1</acronym>, introdotto in FreeBSD 5-CURRENT. "
 "<acronym>UFS2</acronym> aggiunge puntatori a 64 bit (superando la barriera "
 "del Terabyte), il supporto extended file storage e altre funzionalità."
 
