@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"PO-Revision-Date: 2018-08-29 11:51+0000\n"
+"PO-Revision-Date: 2018-09-08 03:22+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -73,8 +73,8 @@ msgid ""
 "notice, this list of conditions and the following disclaimer as the first "
 "lines of this file unmodified."
 msgstr ""
-"La ridistribuzione del codice sorgente (XML DocBook) devono conservare la "
-"nota di copyright sopra riportata, questa lista di condizioni e la seguente "
+"La ridistribuzione del codice sorgente (XML DocBook) deve conservare la nota "
+"di copyright sopra riportata, questa lista di condizioni e la seguente "
 "dichiarazione di esclusione di responsabilità nelle prime righe di questo "
 "file senza modifiche."
 
@@ -3223,7 +3223,7 @@ msgstr ""
 "Come la maggior parte degli sviluppatori, molti membri del core tram sono "
 "anch'essi volontari per quanto riguarda lo sviluppo di FreeBSD e non "
 "ricevono un compenso economico dal progetto, quindi l'<quote>impegno</quote> "
-"non dovrebbe essere frainteso come un <quote>supporto garantito.</quote> "
+"non dovrebbe essere frainteso come un <quote>supporto garantito</quote>. "
 "L'analogia fatta sopra a un <quote>consiglio di dirigenti</quote> non è "
 "molto calzante, e può essere più corretto dire che queste sono persone che "
 "hanno rinunciato alle loro vite private in favore di FreeBSD contro il loro "
@@ -3801,6 +3801,14 @@ msgid ""
 "PC-386/486/586 series, which are compatible with NEC PC-9801 series, are "
 "supported. The NEC FC-9801/9821 and NEC SV-98 series should be supported."
 msgstr ""
+"Sono supportate tutte le serie NEC PC-9801/9821 con quasi tutti i processori "
+"i386-compatibili, inclusi 80486, <trademark class=\"registered\">Pentium</"
+"trademark>, <trademark class=\"registered\">Pentium</trademark> Pro e "
+"<trademark class=\"registered\">Pentium</trademark> II. Sono inoltre "
+"supportati tutti i processori i386-compatibili di AMD, Cyrix, IBM e IDT. "
+"Sono supportate le serie EPSON PC-386/486/586, che sono compatibilit con le "
+"serie NEC PC-9801. Sono anche supportate le serie NEC FC-9801/9821 e NEC SV-"
+"98."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:2999
@@ -3811,6 +3819,11 @@ msgid ""
 "New Extend Standard Architecture (<acronym>NESA</acronym>) bus used in the "
 "PC-H98, SV-H98, and FC-H98 series, is not supported."
 msgstr ""
+"La modalità in alta risoluzione non è supportata. Le serie NEC PC-98XA/XL/RL/"
+"XL^2 e NEC PC-H98 sono supportate solo in modalità normale (compatibile PC-"
+"9801). Le funzionalità di FreeBSD relative a <acronym>SMP</acronym> non sono "
+"supportate. Il bus New Extend Standard Architecture (<acronym>NESA</"
+"acronym>) usato nelle serie PC-H98, SV-H98 e FC-H98 non è supportato."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3010
@@ -3825,11 +3838,17 @@ msgid ""
 "built-in <acronym>USB</acronym> are supported. <acronym>SMP</acronym> is "
 "supported on machines with multiple <acronym>CPU</acronym>s."
 msgstr ""
+"Tutti i sistemi New World <acronym>ROM</acronym> <trademark class="
+"\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</"
+"trademark> con <acronym>USB</acronym> integrato sono supportati. "
+"<acronym>SMP</acronym> è supportato su macchine con più <acronym>CPU</"
+"acronym>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3017
 msgid "A 32-bit kernel can only use the first 2GB of <acronym>RAM</acronym>."
 msgstr ""
+"Un kernel a 32-bit può usare solo i primi 2GB di <acronym>RAM</acronym>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:3023
@@ -3842,6 +3861,8 @@ msgid ""
 "Systems supported by FreeBSD/sparc64 are listed at the <link xlink:href="
 "\"@@URL_RELPREFIX@@/platforms/sparc.html\">FreeBSD/sparc64 Project</link>."
 msgstr ""
+"I sistemi supportati da FreeBSD/sparc64 sono elencati nel <link xlink:href="
+"\"@@URL_RELPREFIX@@/platforms/sparc.html\">FreeBSD/sparc64 Project</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3029
@@ -3850,11 +3871,14 @@ msgid ""
 "processor. A dedicated disk is required as it is not possible to share a "
 "disk with another operating system at this time."
 msgstr ""
+"<acronym>SMP</acronym> è supportato su tutti i sistemi con più di un "
+"processore. Al momento, è richiesto un disco dedicato, in quanto non è "
+"possibile condividere un disco con altri sistemi operativi."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:3039
 msgid "Pre-Installation Tasks"
-msgstr ""
+msgstr "Prima dell'installazione"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:3041
@@ -3865,11 +3889,16 @@ msgid ""
 "that the system is ready for an installation by verifying the items in this "
 "checklist:"
 msgstr ""
+"Dopo aver determinato che il sistema soddisfa i requisiti hardware minimi "
+"per l'installazione di Freebsd, si dovrebbe scaricare il file di "
+"installazione e preparare il dispositivo di installazione. Prima di ciò, è "
+"opportuno controllare che il sistema sia pronto per l'installazione, "
+"verificando le voci di questa checklist:"
 
 #. (itstool) path: step/title
 #: book.translate.xml:3050
 msgid "Back Up Important Data"
-msgstr ""
+msgstr "Fare un backup dei dati importanti"
 
 #. (itstool) path: step/para
 #: book.translate.xml:3052
@@ -3882,6 +3911,15 @@ msgid ""
 "sure it contains all of the needed files. Once the installer formats the "
 "system's disk, all data stored on that disk will be lost."
 msgstr ""
+"Prima di installare qualsiasi sistema operativo, si consiglia di fare "
+"<emphasis>sempre</emphasis> il backup di tutti i dati importanti. Il backup "
+"non dovrebbe essere memorizzato sullo stesso sistema dove è eseguita "
+"l'installazione. Piuttosto, si consiglia di salvare i dati su un disco "
+"removibile, come ad esempio un dispositivo <acronym>USB</acronym>, su un "
+"altro sistema in rete o attraverso un sistema di backup online. Verifica il "
+"backup prima di iniziare l'installazione, per essere sicure che siano "
+"presenti tutti i file necessari. Quando l'installazione formatterà il disco, "
+"tutti i dati memorizzati andranno persi."
 
 #. (itstool) path: step/title
 #: book.translate.xml:3064
@@ -7202,12 +7240,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:5470
 msgid "How to use and configure virtual consoles."
-msgstr ""
+msgstr "Come usare e configurare le console virtuali."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5474
 msgid "How to create and manage users and groups on FreeBSD."
-msgstr ""
+msgstr "Come creare e gestire utenti e gruppi su FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5479
@@ -7215,67 +7253,70 @@ msgid ""
 "How <trademark class=\"registered\">UNIX</trademark> file permissions and "
 "FreeBSD file flags work."
 msgstr ""
+"come funzionano i permessi dei file <trademark class=\"registered\">UNIX</"
+"trademark> e i flag dei file in FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5484
 msgid "The default FreeBSD file system layout."
-msgstr ""
+msgstr "La struttura di default del file system di FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5488
 msgid "The FreeBSD disk organization."
-msgstr ""
+msgstr "L'organizzazione del disco in FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5492
 msgid "How to mount and unmount file systems."
-msgstr ""
+msgstr "Come montare e smontare i file system."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5496
 msgid "What processes, daemons, and signals are."
-msgstr ""
+msgstr "Cosa sono i processi, i demoni e i segnali."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5500
 msgid "What a shell is, and how to change the default login environment."
 msgstr ""
+"Cos'è una shell, e come cambiare il proprio ambiente di login di default."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5505
 msgid "How to use basic text editors."
-msgstr ""
+msgstr "I principi di base sull'uso degli editor testuali."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5509
 msgid "What devices and device nodes are."
-msgstr ""
+msgstr "Cosa sono i dispositivi e i nodi dei dispositivi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5513
 msgid "How to read manual pages for more information."
-msgstr ""
+msgstr "Come leggere le pagine man per ottenere maggiori informazioni."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5519
 msgid "Virtual Consoles and Terminals"
-msgstr ""
+msgstr "Console Virtuali e Terminali"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5521
 msgid "<primary>virtual consoles</primary>"
-msgstr ""
+msgstr "<primary>console virtuali</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:5524 book.translate.xml:47296
 msgid "<primary>terminals</primary>"
-msgstr ""
+msgstr "<primary>terminali</primary>"
 
 #. (itstool) path: sect1/indexterm
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5527 book.translate.xml:23140
 msgid "<primary>console</primary>"
-msgstr ""
+msgstr "<primary>console</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5531
@@ -7284,6 +7325,9 @@ msgid ""
 "environment during startup, the system will boot into a command line login "
 "prompt, as seen in this example:"
 msgstr ""
+"A meno che FreeBSD non sia stato configurato per avviare automaticamente un "
+"ambiente grafico, dopo l'avvio il sistema mostra un prompt di riga di "
+"comando, come in questo esempio:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:5536
@@ -7291,7 +7335,9 @@ msgstr ""
 msgid "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
 "\n"
 "login:"
-msgstr ""
+msgstr "FreeBSD/amd64 (pc3.example.org) (ttyv0)\n"
+"\n"
+"login:"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5540
@@ -7302,6 +7348,11 @@ msgid ""
 "org</systemitem>, and <filename>ttyv0</filename> indicates that this is the "
 "<quote>system console</quote>. The second line is the login prompt."
 msgstr ""
+"La prima riga contiene alcune informazioni sul sistema. la voce "
+"<literal>amd64</literal> indica che il sistema in questo esempio sta usando "
+"una versione a 64-bit di FreeBSD. Il nome host è <systemitem>pc3.example."
+"org</systemitem>, e <filename>ttyv0</filename> indica che questa è la "
+"<quote>console di sistema</quote>. La seconda riga è il prompt di login."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5548
@@ -7312,6 +7363,11 @@ msgid ""
 "user has a unique name <quote>username</quote> and a personal "
 "<quote>password</quote>."
 msgstr ""
+"Poiche FreeBSD è un sistema multiutente, deve in qualche modo distinguere "
+"tra i vari utenti. Questo viene realizzato richiedendo ad ogni utente di "
+"registrarsi nel sistema prima di ottenere l'accesso au programmi sul sistema."
+" Ogni utente ha un nome unico <quote>username</quote> e una <quote>password</"
+"quote> personale."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5555
@@ -7322,6 +7378,12 @@ msgid ""
 "the username and press <keycap>Enter</keycap>. The password is <emphasis>not "
 "echoed</emphasis> for security reasons."
 msgstr ""
+"Per effettuare il login nella console di sistema, scrivi il nome utente che "
+"è stato configurato durante l'installazione del sistema, come descritto in "
+"<xref linkend=\"bsdinstall-addusers\"/>, e premi <keycap>Enter</keycap>. Poi "
+"inserisci la password associata con il  nome utente e premi <keycap>Enter</"
+"keycap>. La password <emphasis>non viene visualizzata</emphasis> per ragioni "
+"di sicurezza."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5563
@@ -7333,11 +7395,18 @@ msgid ""
 "character. The prompt indicates that the user is now logged into the FreeBSD "
 "system console and ready to try the available commands."
 msgstr ""
+"Una volta che la password corretta viene inserita, viene mostrato il "
+"messaggio del giorno(<acronym>MOTD</acronym>) seguito da un prompt dei "
+"comandi. A seconda della shell che è stata scelta quando l'utente è stato "
+"creato, il prompt sarà il carattere <literal>#</literal>, <literal>$</"
+"literal>, o <literal>%</literal>. Il prompt indica che l'utente è registrato "
+"nella console di sistema di FreeBSD e pronto per provare i comandi a "
+"disposizione."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5573
 msgid "Virtual Consoles"
-msgstr ""
+msgstr "Console Virtuali"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5575
@@ -7349,6 +7418,13 @@ msgid ""
 "messages will appear over the command or file that the user is working on, "
 "making it difficult to concentrate on the work at hand."
 msgstr ""
+"Per quanto la console di sistema possa essere usata per interagire con il "
+"sistema, un utente che lavora dalla riga di comando usando la tastiera di un "
+"sistema FreeBSD in genere si registrerà in una console virtuale. Questo "
+"poiché, di default, i messaggi di sistema sono configurati per essere "
+"visualizzati sulla console di sistema. Questi messaggi appariranno "
+"sovrascrivendo il comando o il file su cui l'utente sta lavorando, rendendo "
+"difficile concentrarsi sul lavoro che si sta svolgendo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5584
@@ -7359,6 +7435,11 @@ msgid ""
 "the command line equivalent of having several windows open at the same time "
 "in a graphical environment."
 msgstr ""
+"Di default, FreeBSD è configurato per fornire diverse console virtuali per "
+"l'inserimento dei comandi. Ogni console virtuale è dotata del proprio prompt "
+"di login e della propria shell ed è semplice passare da una console virtuale "
+"all'altra. Fondamentalmente questo fornisce l'equivalente da riga di comando "
+"di avere varie finestre aperte allo stesso tempo in un ambiente grafico."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5591
@@ -7373,6 +7454,15 @@ msgid ""
 "keycap><keycap>F3</keycap></keycombo> to access the second virtual console "
 "(<filename>ttyv2</filename>), and so on."
 msgstr ""
+"Le combinazioni di tasti da <keycombo><keycap>Alt</keycap><keycap>F1</"
+"keycap></keycombo> a <keycombo><keycap>Alt</keycap><keycap>F8</keycap></"
+"keycombo> sono state riservate da FreeBSD per cambiare tra le console "
+"virtuali. Usa <keycombo><keycap>Alt</keycap><keycap>F1</keycap></keycombo> "
+"per cambiare alla console di sistema (<filename>ttyv0</filename>), "
+"<keycombo><keycap>Alt</keycap><keycap>F2</keycap></keycombo> per accedere "
+"alla prima console virtuale (<filename>ttyv1</filename>), "
+"<keycombo><keycap>Alt</keycap><keycap>F3</keycap></keycombo> per accedere "
+"alla seconda console virtuale (<filename>ttyv2</filename>), e così via."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5607
@@ -7383,6 +7473,12 @@ msgid ""
 "that are launched in one virtual console do not stop running when the user "
 "switches to a different virtual console."
 msgstr ""
+"Quando si passa da una console alla seguente, FreeBSD gestisce l'output "
+"sullo schermo. Il risultato è l'illusione di avere più schermi virtuali e "
+"tastiere che possono essere usate per digitare comando da far eseguire a "
+"FreeBSD. I programmi che sono stati lanciati in una console virtuale non "
+"interrompono l'esecuzione quando l'utente passa a una diversa console "
+"virtuale."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5614
@@ -7397,6 +7493,15 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for a more technical "
 "description of the FreeBSD console and its keyboard drivers."
 msgstr ""
+"Consulta <citerefentry><refentrytitle>kbdcontrol</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>atkbd</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>syscons</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry>, e <citerefentry><refentrytitle>vt</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> per una descrizione "
+"più tecnica della console di FreeBSD e i suoi driver della tastiera."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5619
@@ -7404,6 +7509,8 @@ msgid ""
 "In FreeBSD, the number of available virtual consoles is configured in this "
 "section of <filename>/etc/ttys</filename>:"
 msgstr ""
+"In FreeBSD, il numero di console virtuali disponibili viene configurato "
+"tramite questa sezione del file <filename>/etc/ttys</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5623
@@ -7422,6 +7529,18 @@ msgid ""
 "ttyv7   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
 "ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
 msgstr ""
+"# name    getty                         type  status comments\n"
+"#\n"
+"ttyv0   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"# Virtual terminals\n"
+"ttyv1   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv2   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv3   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv4   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv5   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv6   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv7   \"/usr/libexec/getty Pc\"         xterm   on  secure\n"
+"ttyv8   \"/usr/X11R6/bin/xdm -nodaemon\"  xterm   off secure"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5637
@@ -7437,6 +7556,16 @@ msgid ""
 "<application>Xorg</application> has been installed and configured as "
 "described in <xref linkend=\"x11\"/>."
 msgstr ""
+"Per disabilitare una console virtuale, inserisci il simbolo di commento "
+"(<literal>#</literal>) all'inizio della riga che rappresenta detta console "
+"virtuale. Per esempio, per ridurre il numero di console virtuali disponibili "
+"da otto a quattro, inserisci un <literal>#</literal> all'inizio delle ultime "
+"quattro righe che rappresentano console virtuali da <filename>ttyv5</"
+"filename> a <filename>ttyv8</filename>. <emphasis>Non</emphasis> commentare "
+"la riga della console di sistema <filename>ttyv0</filename>. Da notare che "
+"l'ultima console virtuale (<filename>ttyv8</filename>) viene usata per "
+"accedere all'ambiente grafico se <application>Xorg</application> è stato "
+"installato e configurato come descritto in <xref linkend=\"x11\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5651
@@ -7446,11 +7575,15 @@ msgid ""
 "<citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Per una descrizione dettagliata di ogni colonna in questo file e le opzioni "
+"disponibili per le console virtuali, consultare "
+"<citerefentry><refentrytitle>ttys</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5657
 msgid "Single User Mode"
-msgstr ""
+msgstr "Modalità Singolo Utente"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5659
@@ -7468,6 +7601,19 @@ msgid ""
 "mode and determining who has physical access to the keyboard is something to "
 "consider when securing a FreeBSD system."
 msgstr ""
+"Il menù di avvio di FreeBSD contiene una opzione con etichetta <quote>Boot "
+"Single User</quote>. Se tale opzione viene selezionata, il sistema si "
+"avvierà in una modalità speciale conosciuta come <quote>modalità singolo "
+"utente</quote>. Questa modalità viene tipicamente usata per riparare un "
+"sistema che non vuole avviarsi o per reimpostare la password di <systemitem "
+"class=\"username\">root</systemitem> quando non è conosciuta. Quando si è in "
+"modalità singolo utente, la rete e le altre console virtuali non sono "
+"disponibili. Tuttavia viene dato pieno accesso di <systemitem class="
+"\"username\">root</systemitem> al sistema e, di default, non è necessaria la "
+"password di <systemitem class=\"username\">root</systemitem>. Per queste "
+"ragioni, è richiesto accesso fisico alla tastiera per avviare in questa "
+"modalità e determinare chi ha accesso fisico alla tastiera è una "
+"considerazione da fare quando si sta proteggendo un sistema FreeBSD."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5675
@@ -7475,6 +7621,8 @@ msgid ""
 "The settings which control single user mode are found in this section of "
 "<filename>/etc/ttys</filename>:"
 msgstr ""
+"Le impostazioni che controllano la modalità utente singolo si trovano in "
+"questa sezione del file <filename>/etc/ttys</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5678
@@ -7487,6 +7635,12 @@ msgid ""
 "# when going to single-user mode.\n"
 "console none                            unknown  off  secure"
 msgstr ""
+"# name  getty                           type  status  comments\n"
+"#\n"
+"# If console is marked \"insecure\", then init will ask for the root "
+"password\n"
+"# when going to single-user mode.\n"
+"console none                            unknown  off  secure"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5684
@@ -7500,6 +7654,14 @@ msgid ""
 "<systemitem class=\"username\">root</systemitem> password when a user "
 "selects to boot into single user mode."
 msgstr ""
+"Di default, lo stato è impostato come <literal>secure</literal>. Questo "
+"implica che chi ha accesso fisico alla tastiera è irrilevante o soggetto a "
+"controlli di sicurezza fisici. Se questa impostazione viene cambiata in "
+"<literal>insecure</literal>, l'implicazione è che l'ambiente stesso è "
+"insicuro poiché chiunque ha accesso alla tastiera. Quando questa riga viene "
+"cambiata in <literal>insecure</literal>, FreeBSD richiederà la password di "
+"<systemitem class=\"username\">root</systemitem> quando un utente seleziona "
+"l'avvio in modalità singolo utente."
 
 #. (itstool) path: note/para
 #: book.translate.xml:5696
@@ -7510,11 +7672,16 @@ msgid ""
 "may be difficult for someone who is not familiar with the FreeBSD booting "
 "process."
 msgstr ""
+"<emphasis>Pensaci due volte prima di cambiare questa impostazione in "
+"<literal>insecure</literal></emphasis>! Se scordi la password di <systemitem "
+"class=\"username\">root</systemitem>, avviare in modalità singolo utente è "
+"sempre possibile, ma può risultare difficile per qualcuno che non ha "
+"familiarità con il processo di avvio di FreeBSD"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5706
 msgid "Changing Console Video Modes"
-msgstr ""
+msgstr "Modifica delle Modalità Video della Console"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5708
@@ -7523,12 +7690,16 @@ msgid ""
 "1280x1024, or any other size supported by the graphics chip and monitor. To "
 "use a different video mode load the <literal>VESA</literal> module:"
 msgstr ""
+"La modalità video di default della console di FreeBSD può essere impostata a "
+"1024x768, 1280x1024, o ad un altra risoluzione supportata dalla scheda "
+"grafica e dal monitor. Per usare una modalità video diversa carica il modulo "
+"<literal>VESA</literal>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5713
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload vesa</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5715
@@ -7538,12 +7709,16 @@ msgid ""
 "manvolnum></citerefentry>. To get a list of supported video modes issue the "
 "following:"
 msgstr ""
+"Per determinare quali modalità video sono supportate dal tuo hardware, usa "
+"<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. Per ottenere una lista delle modalità video "
+"supportate esegui:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5719
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol -i mode</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol -i mode</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5721
@@ -7554,12 +7729,17 @@ msgid ""
 "manvolnum></citerefentry> as the <systemitem class=\"username\">root</"
 "systemitem> user:"
 msgstr ""
+"L;output di questo comando mostrerà le modalità video supportate dal tuo "
+"hardware. Per selezionare una nuova modalita, specificala usando "
+"<citerefentry><refentrytitle>vidcontrol</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> come <systemitem class=\"username\">root</"
+"systemitem>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:5726
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>vidcontrol MODE_279</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5728
@@ -7567,17 +7747,21 @@ msgid ""
 "If the new video mode is acceptable, it can be permanently set on boot by "
 "adding it to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"Se la nuova modalità video è accettabile, può essere impostata "
+"permanentemente all'avvio aggiungendo al file <filename>/etc/rc.conf</"
+"filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:5732
 #, no-wrap
 msgid "allscreens_flags=\"MODE_279\""
-msgstr ""
+msgstr "allscreens_flags=\"MODE_279\""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:5749
+#, fuzzy
 msgid "Users and Basic Account Management"
-msgstr ""
+msgstr "Utenti e Gestione di Base degli Account"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5751
@@ -7587,21 +7771,26 @@ msgid ""
 "time, any number of users can log in to the system through the network. To "
 "use the system, each user should have their own user account."
 msgstr ""
+"FreeBSD permette a più utenti di usare il computer allo stesso tempo. "
+"Nonostante un solo utente possa sedere davanti allo schermo e usare la "
+"tastiera in un dato momento, altri utenti possono registrarsi nel sistema "
+"attraverso la rete. Per usare il sistema, ogni utente dovrebbe avere un "
+"proprio account."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:5757
 msgid "This chapter describes:"
-msgstr ""
+msgstr "Questo capitolo descrive:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5761
 msgid "The different types of user accounts on a FreeBSD system."
-msgstr ""
+msgstr "I diversi tipi di account utente su un sistema FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5766
 msgid "How to add, remove, and modify user accounts."
-msgstr ""
+msgstr "Come aggiungere, rimuovere e modificare gli account utente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5770
@@ -7609,16 +7798,18 @@ msgid ""
 "How to set limits to control the resources that users and groups are allowed "
 "to access."
 msgstr ""
+"Come impostare limiti per controllare le risorse a cui utenti e gruppi "
+"possono accedere."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5776
 msgid "How to create groups and add users as members of a group."
-msgstr ""
+msgstr "Come creare gruppi e aggiungere utenti come membri di un gruppo."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:5782
 msgid "Account Types"
-msgstr ""
+msgstr "Tipi di Account"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5784
@@ -7626,6 +7817,9 @@ msgid ""
 "Since all access to the FreeBSD system is achieved using accounts and all "
 "processes are run by users, user and account management is important."
 msgstr ""
+"Poiché ogni accesso al sistema FreeBSD viene ottenuto tramite account e "
+"tutti i processi sono lanciati da utenti, la gestione degli utenti e degli "
+"account è importante."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5788
@@ -7633,16 +7827,18 @@ msgid ""
 "There are three main types of accounts: system accounts, user accounts, and "
 "the superuser account."
 msgstr ""
+"Esistono tre tipi principali di account: account di sistema, account utente, "
+"e l'account superutente."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5792
 msgid "System Accounts"
-msgstr ""
+msgstr "Account di Sistema"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5794
 msgid "<primary>accounts</primary> <secondary>system</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>sistema</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5799
@@ -7651,6 +7847,9 @@ msgid ""
 "The reason for this is security; if all services ran as the superuser, they "
 "could act without restriction."
 msgstr ""
+"Gli account di sistema sono usati per far girare servizi come il DNS, la "
+"posta e i web server. Questo per ragioni di sicurezza; Se tutti i servizi "
+"girassero come il superutente, potrebbero agire senza restrizioni."
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5804
@@ -7658,6 +7857,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class="
 "\"username\">daemon</systemitem></secondary>"
 msgstr ""
+"<primary>account</primary> <secondary><systemitem class=\"username\">daemon</"
+"systemitem></secondary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5808
@@ -7665,6 +7866,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class="
 "\"username\">operator</systemitem></secondary>"
 msgstr ""
+"<primary>account</primary> <secondary><systemitem class="
+"\"username\">operator</systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5813
@@ -7675,6 +7878,11 @@ msgid ""
 "\"username\">news</systemitem>, and <systemitem class=\"username\">www</"
 "systemitem>."
 msgstr ""
+"Sono per esempio account di sistema <systemitem class=\"username\">daemon</"
+"systemitem>, <systemitem class=\"username\">operator</systemitem>, "
+"<systemitem class=\"username\">bind</systemitem>, <systemitem class="
+"\"username\">news</systemitem>, e <systemitem class=\"username\">www</"
+"systemitem>."
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5820
@@ -7682,6 +7890,8 @@ msgid ""
 "<primary>accounts</primary> <secondary><systemitem class="
 "\"username\">nobody</systemitem></secondary>"
 msgstr ""
+"<primary>account</primary> <secondary><systemitem class=\"username\">nobody</"
+"systemitem></secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5825
@@ -7692,16 +7902,21 @@ msgid ""
 "user will become associated with, and hence the more privileged that user "
 "becomes."
 msgstr ""
+"<systemitem class=\"username\">nobody</systemitem> è l'account di sistema "
+"generico senza privilegi. Ciononostante, più servizi usano <systemitem class="
+"\"username\">nobody</systemitem>, più saranno i file e i processi con cui "
+"tale utente sarà associato, divenendo di conseguenza sempre piu privilegiato."
+""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5834
 msgid "User Accounts"
-msgstr ""
+msgstr "Account Utente"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5836
 msgid "<primary>accounts</primary> <secondary>user</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>utente</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5841
@@ -7711,6 +7926,11 @@ msgid ""
 "This allows the administrator to find out who is doing what and prevents "
 "users from clobbering the settings of other users."
 msgstr ""
+"Gli account utente vengono assegnati alle persone reali e sono usati per "
+"registrarsi e usare il sistema. Ogni persona che accede al sistema dovrebbe "
+"avere un account personale. Questo permette all'amministratore di scoprire "
+"chi sta facendo cosa e previene gli utenti dal modificare le impostazioni "
+"gli uni degli altri."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5847
@@ -7719,18 +7939,21 @@ msgid ""
 "system, by configuring their default shell, editor, key bindings, and "
 "language settings."
 msgstr ""
+"Ogni utente può impostare il proprio ambiente nel modo più consono al "
+"proprio uso del sistema, impostando la propria shell, editor, abbinamenti di "
+"tasti e impostazioni di lingua di default."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5852
 msgid ""
 "Every user account on a FreeBSD system has certain information associated "
 "with it:"
-msgstr ""
+msgstr "Ad ogni account utente in FreeBSD sono associate alcune informazioni:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5857
 msgid "User name"
-msgstr ""
+msgstr "Nome utente"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5860
@@ -7742,21 +7965,27 @@ msgid ""
 "use user names that consist of eight or fewer, all lower case characters in "
 "order to maintain backwards compatibility with applications."
 msgstr ""
+"Il nome utente viene inserito al prompt di <prompt>login:</prompt>. Ogni "
+"utente deve avere un nome utente univoco. per creare un nome utente valido "
+"bisogna seguire alcune regole che sono documentate in "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>. Si raccomanda di usare nomi utenti formati da meno di otto "
+"caratteri, tutti minuscoli, per mantenere compatibilità. con le applicazioni"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5872
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5875
 msgid "Each account has an associated password."
-msgstr ""
+msgstr "Ogni account ha una sua password."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5880
 msgid "User ID (<acronym>UID</acronym>)"
-msgstr ""
+msgstr "ID Utente (<acronym>UID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5883
@@ -7767,11 +7996,16 @@ msgid ""
 "recommended to use a UID less than 65535, since higher values may cause "
 "compatibility issues with some software."
 msgstr ""
+"L'ID Utente (<acronym>UID</acronym>) è un numero usato per identificare "
+"univocamente l'utente nel sistema FreeBSD. I comandi che accettano un nome "
+"utente come argomento prima lo convertiranno nello <acronym>UID</acronym>. "
+"Si raccomanda di utilizzare UID inferiori a 65535, poiché valori più alti "
+"potrebbero causare problemi di compatibilità con certi software."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5894
 msgid "Group ID (<acronym>GID</acronym>)"
-msgstr ""
+msgstr "ID Gruppo (<acronym>GID</acronym>)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5897
@@ -7784,11 +8018,19 @@ msgid ""
 "one group. It is recommended to use a GID of 65535 or lower as higher GIDs "
 "may break some software."
 msgstr ""
+"L'ID di gruppo (<acronym>GID</acronym>) è il numero usato per identificare "
+"univocamente ilo gruppo primario a cui l'utente appartiene. I gruppi sono un "
+"meccanismo per controllare l'accesso alle risorse basandosi sul "
+"<acronym>GID</acronym> dell'utente anziché sullo <acronym>UID</acronym>. "
+"Questo può permettere di ridurre significativamente la dimensione di certi "
+"file di configurazione e permette agli utenti di essere membri di più di un "
+"gruppo. Si raccomanda di usare GID inferiori a 65535, poiche GID superiori "
+"possono causare malfunzionamenti in alcuni software."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5911
 msgid "Login class"
-msgstr ""
+msgstr "Classe di Login"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5914
@@ -7797,11 +8039,15 @@ msgid ""
 "additional flexibility when tailoring the system to different users. Login "
 "classes are discussed further in <xref linkend=\"users-limiting\"/>."
 msgstr ""
+"Le classi di login sono una estensione al meccanismo dei gruppi che "
+"forniscono ulteriore flessibilità nell'adattare il sistema a diversi utenti. "
+"Le classi di login sono discusse ulteriormente in <xref linkend=\"users-"
+"limiting\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5923
 msgid "Password change time"
-msgstr ""
+msgstr "Scadenza password"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5926
@@ -7810,11 +8056,14 @@ msgid ""
 "enabled on a per-user basis, forcing some or all users to change their "
 "passwords after a certain amount of time has elapsed."
 msgstr ""
+"Di default le password non scadono. Una scadenza password può però essere "
+"abilitata utente per utente, obbligando alcuni o tutti gli utenti a cambiare "
+"le loro password dopo un tempo prestabilito."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5935
 msgid "Account expiration time"
-msgstr ""
+msgstr "Scadenza account"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5938
@@ -7826,11 +8075,18 @@ msgid ""
 "has elapsed, the account cannot be used to log in to the system, although "
 "the account's directories and files will remain."
 msgstr ""
+"Di default, FreeBSD non impone una scadenza agli account. Quando crei "
+"account che necessitano di una vita limitata, come gli account per gli "
+"studenti in una scuola, specifica una data di scadenza per l'account usando "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Una volta raggiunta la scadenza, l'account non potrà più "
+"essere usato per accedere al sistema, ma le directory e i file dell'account "
+"rimarranno."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5949
 msgid "User's full name"
-msgstr ""
+msgstr "Nome completo utente"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5952
@@ -7840,11 +8096,15 @@ msgid ""
 "information can contain spaces, uppercase characters, and be more than 8 "
 "characters long."
 msgstr ""
+"Il nome utente identifica univocamente l'account in FreeBSD, ma non "
+"rispecchia necessariamente il nome reale dell'utente. Come un commento, "
+"questa informazione può contenere spazi, caratteri maiuscoli, ed essere più "
+"lungo di 8 caratteri."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5961
 msgid "Home directory"
-msgstr ""
+msgstr "Home directory"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5964
@@ -7856,11 +8116,18 @@ msgid ""
 "username</replaceable></filename>. Each user stores their personal files and "
 "subdirectories in their own home directory."
 msgstr ""
+"La home directory è il percorso completo a una directory sul sistema. Questa "
+"è la directory in cui si trova l'utente una volta registrato. Una "
+"convenzione comune è di mettere le home directory di tutti gli utenti sotto "
+"<filename><replaceable>/home/nomeutente</replaceable></filename> o "
+"<filename><replaceable>/usr/home/nomeutente</replaceable></filename>. Ogni "
+"utente salva i file personali e le sua subdirectory nella propria home "
+"directory."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:5975
 msgid "User shell"
-msgstr ""
+msgstr "Shell utente"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:5978
@@ -7870,16 +8137,20 @@ msgid ""
 "have their own preferences, which can be reflected in their account settings."
 ""
 msgstr ""
+"La shell fornisce l'ambiente di default dell'utente per interagire con il "
+"sistema. Esistono molti tipi differenti di shell e gli utenti più esperti "
+"avranno le proprie preferenze, che possono essere rispecchiate nelle "
+"impostazioni dell'account."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:5989
 msgid "The Superuser Account"
-msgstr ""
+msgstr "L'account Superutente"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:5991
 msgid "<primary>accounts</primary> <secondary>superuser (root)</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>superutente (root)</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:5996
@@ -7889,6 +8160,11 @@ msgid ""
 "For this reason, it should not be used for day-to-day tasks like sending and "
 "receiving mail, general exploration of the system, or programming."
 msgstr ""
+"L'account superutente, abitualmente chiamato <systemitem class="
+"\"username\">root</systemitem>, viene usato per gestire il sistema senza "
+"limitazioni dei privilegi. Per questa ragione, non dovrebbe essere usato "
+"quotidianamente per compiti quali inviare e ricevere email, normale "
+"esplorazione del sistema, o programmare."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6003
@@ -7899,6 +8175,12 @@ msgid ""
 "recommended to login as a user account and to only become the superuser when "
 "a command requires extra privilege."
 msgstr ""
+"Il superutente, al contrario degli altri account utente, può operare senza "
+"limiti, e l'uso scorretto dell'account superutente può causare disastri "
+"spettacolari. Gli account utente non hanno la possibilità di distruggere il "
+"sistema operativo per errore, quindi si raccomanda di registrarsi con un "
+"account utente e di diventare superutente solamente quando un comando "
+"richiede privilegi superiori."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6011
@@ -7906,6 +8188,9 @@ msgid ""
 "Always double and triple-check any commands issued as the superuser, since "
 "an extra space or missing character can mean irreparable data loss."
 msgstr ""
+"Verifica sempre due o anche tre volte i comandi inviati come superutente, "
+"dato che uno spazio in più o un carattere mancante possono causare perdita "
+"di dati irreparabile."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6015
@@ -7914,6 +8199,9 @@ msgid ""
 "<systemitem class=\"username\">root</systemitem>, this is highly discouraged."
 ""
 msgstr ""
+"Ci sono diversi modi di ottenere i privilegi di superutente. Per quanto sia "
+"possibile accedere come <systemitem class=\"username\">root</systemitem>, "
+"questo è altamente sconsigliato."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6020
@@ -7926,6 +8214,14 @@ msgid ""
 "The user must also know the password for the <systemitem class="
 "\"username\">root</systemitem> user account."
 msgstr ""
+"Usa, invece, <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> per diventare superutente. Se lanciando questo "
+"comando viene specificato l'argomento <literal>-</literal>, l'utente inoltre "
+"erediterà l'ambiente dell'utente root. L'utente che avvia questo comando "
+"deve essere membro del gruppo <systemitem class=\"groupname\">wheel</"
+"systemitem> altrimenti il comando fallirà. L'utente deve inoltre conoscere "
+"la password dell'account utente <systemitem class=\"username\">root</"
+"systemitem>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6030
@@ -7935,11 +8231,16 @@ msgid ""
 "Once the command completes, the user types <command>exit</command> to leave "
 "the superuser account and return to the privilege of their user account."
 msgstr ""
+"In questo esempio, l'utente diventa superuser solo per poter eseguire il "
+"comando <command>make install</command> poiché questo passaggio richiede i "
+"privilegi di superutente. Quando il comando viene completato, l'utente "
+"digita <command>exit</command> per abbandonare l'account superutente e "
+"tornare ai privilegi del proprio utente."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6038
 msgid "Install a Program As the Superuser"
-msgstr ""
+msgstr "Installare un Programma come Superutente"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6040
