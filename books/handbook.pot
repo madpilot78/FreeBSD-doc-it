@@ -1,6 +1,21 @@
-# $FreeBSD$
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-09 18:09+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -252,7 +267,7 @@ msgid ""
 "Many of the designations used by manufacturers and sellers to distinguish "
 "their products are claimed as trademarks. Where those designations appear in "
 "this document, and the FreeBSD Project was aware of the trademark claim, the "
-"designations have been followed by the <quote></quote> or the <quote></"
+"designations have been followed by the <quote>™</quote> or the <quote>®</"
 "quote> symbol."
 msgstr ""
 
@@ -577,7 +592,7 @@ msgid ""
 "<xref linkend=\"linuxemu\"/> has been expanded to include information about "
 "installing <application><trademark class=\"registered\">Oracle</trademark></"
 "application> and <application><trademark class=\"registered\">SAP</"
-"trademark><trademark class=\"registered\">R/3</trademark></application>."
+"trademark> <trademark class=\"registered\">R/3</trademark></application>."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -629,7 +644,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:1138
 msgid ""
-"Walks a user through the entire installation process of FreeBSD9."
+"Walks a user through the entire installation process of FreeBSD 9."
 "<replaceable>x</replaceable> and later using <application>bsdinstall</"
 "application>."
 msgstr ""
@@ -984,7 +999,7 @@ msgid ""
 "Examples starting with <filename>C:\\&gt;</filename> indicate a <trademark "
 "class=\"registered\">MS-DOS</trademark> command. Unless otherwise noted, "
 "these commands may be executed from a <quote>Command Prompt</quote> window "
-"in a modern <trademark class=\"registered\">Microsoft</trademark><trademark "
+"in a modern <trademark class=\"registered\">Microsoft</trademark> <trademark "
 "class=\"registered\">Windows</trademark> environment."
 msgstr ""
 
@@ -1140,7 +1155,7 @@ msgstr ""
 #: book.translate.xml:1659
 msgid ""
 "Thank you for your interest in FreeBSD! The following chapter covers various "
-"aspects of the FreeBSDProject, such as its history, goals, development "
+"aspects of the FreeBSD Project, such as its history, goals, development "
 "model, and so on."
 msgstr ""
 
@@ -1163,12 +1178,12 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1672
-msgid "The history of the FreeBSDProject."
+msgid "The history of the FreeBSD Project."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:1676
-msgid "The goals of the FreeBSDProject."
+msgid "The goals of the FreeBSD Project."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -1312,7 +1327,7 @@ msgid ""
 "Systems Research Group (CSRG)<_:indexterm-2/> at the University of "
 "California at Berkeley, and carries on the distinguished tradition of BSD "
 "systems development. In addition to the fine work provided by CSRG, the "
-"FreeBSDProject has put in many thousands of man-hours into extending the "
+"FreeBSD Project has put in many thousands of man-hours into extending the "
 "functionality and fine-tuning the system for maximum performance and "
 "reliability in real-life load situations. FreeBSD offers performance and "
 "reliability on par with other Open Source and commercial offerings, combined "
@@ -2001,7 +2016,7 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:2321
-msgid "About the FreeBSDProject"
+msgid "About the FreeBSD Project"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -2045,7 +2060,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2339
 msgid ""
-"The FreeBSDProject had its genesis in the early part of 1993, partially as "
+"The FreeBSD Project had its genesis in the early part of 1993, partially as "
 "an outgrowth of the Unofficial 386BSDPatchkit by the patchkit's last 3 "
 "coordinators: Nate Williams, Rod Grimes and Jordan Hubbard."
 msgstr ""
@@ -2131,7 +2146,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2387
 msgid ""
-"The first CD-ROM (and general net-wide) distribution was FreeBSD1.0, "
+"The first CD-ROM (and general net-wide) distribution was FreeBSD 1.0, "
 "released in December of 1993. This was based on the 4.3BSD-Lite "
 "(<quote>Net/2</quote>) tape from U.C. Berkeley, with many components also "
 "provided by 386BSD and the Free Software Foundation. It was a fairly "
@@ -2163,7 +2178,7 @@ msgid ""
 "be strongly encouraged to switch. This included FreeBSD, and the project was "
 "given until the end of July 1994 to stop shipping its own Net/2 based "
 "product. Under the terms of that agreement, the project was allowed one last "
-"release before the deadline, that release being FreeBSD1.1.5.1."
+"release before the deadline, that release being FreeBSD 1.1.5.1."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -2175,10 +2190,10 @@ msgid ""
 "removed large chunks of code required for actually constructing a bootable "
 "running system (due to various legal requirements) and the fact that the "
 "Intel port of 4.4 was highly incomplete. It took the project until November "
-"of 1994 to make this transition, and in December it released FreeBSD2.0 to "
+"of 1994 to make this transition, and in December it released FreeBSD 2.0 to "
 "the world. Despite being still more than a little rough around the edges, "
 "the release was a significant success and was followed by the more robust "
-"and easier to install FreeBSD2.0.5 release in June of 1995."
+"and easier to install FreeBSD 2.0.5 release in June of 1995."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -2199,7 +2214,7 @@ msgstr ""
 
 #. (itstool) path: info/title
 #: book.translate.xml:2442
-msgid "FreeBSDProject Goals"
+msgid "FreeBSD Project Goals"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -2217,8 +2232,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2459
 msgid ""
-"The goals of the FreeBSDProject are to provide software that may be used for "
-"any purpose and without strings attached. Many of us have a significant "
+"The goals of the FreeBSD Project are to provide software that may be used "
+"for any purpose and without strings attached. Many of us have a significant "
 "investment in the code (and project) and would certainly not mind a little "
 "financial compensation now and then, but we are definitely not prepared to "
 "insist on it. We believe that our first and foremost <quote>mission</quote> "
@@ -2294,7 +2309,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2521
 msgid ""
-"Useful things to know about the FreeBSDProject and its development process, "
+"Useful things to know about the FreeBSD Project and its development process, "
 "whether working independently or in close cooperation:"
 msgstr ""
 
@@ -2393,7 +2408,7 @@ msgstr ""
 #: book.translate.xml:2602
 msgid ""
 "The <firstterm>FreeBSD core team</firstterm> <_:indexterm-1/> would be "
-"equivalent to the board of directors if the FreeBSDProject were a company. "
+"equivalent to the board of directors if the FreeBSD Project were a company. "
 "The primary task of the core team is to make sure the project, as a whole, "
 "is in good shape and is heading in the right directions. Inviting dedicated "
 "and responsible developers to join our group of committers is one of the "
@@ -2451,7 +2466,7 @@ msgstr ""
 msgid ""
 "Providing code is not the only way of contributing to the project; for a "
 "more complete list of things that need doing, please refer to the <link "
-"xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSDProject web site</link>."
+"xlink:href=\"@@URL_RELPREFIX@@/index.html\">FreeBSD Project web site</link>."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -2463,7 +2478,7 @@ msgid ""
 "tracking one central code base, not to keep potential contributors out! Our "
 "desire is to present a stable operating system with a large set of coherent "
 "<link linkend=\"ports\">application programs</link> that the users can "
-"easily install and use  this model works very well in accomplishing that."
+"easily install and use — this model works very well in accomplishing that."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -2485,7 +2500,7 @@ msgid ""
 "collection with thousands of commonly sought-after programs. At the time of "
 "this writing, there were over 24,000 ports! The list of ports ranges from "
 "http servers, to games, languages, editors, and almost everything in "
-"between. The entire Ports Collection requires approximately 500MB. To "
+"between. The entire Ports Collection requires approximately 500 MB. To "
 "compile a port, you simply change to the directory of the program you wish "
 "to install, type <command>make install</command>, and let the system do the "
 "rest. The full original distribution for each port you build is retrieved "
@@ -2729,11 +2744,11 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:2927
 msgid ""
-"A FreeBSD installation requires a minimum of 96MB of <acronym>RAM</acronym> "
-"and 1.5GB of free hard drive space. However, such small amounts of memory "
+"A FreeBSD installation requires a minimum of 96 MB of <acronym>RAM</acronym> "
+"and 1.5 GB of free hard drive space. However, such small amounts of memory "
 "and disk space are really only suitable for custom applications like "
 "embedded appliances. General-purpose desktop systems need more resources. "
-"2-4GB RAM and at least 8GB hard drive space is a good starting point."
+"2-4 GB RAM and at least 8 GB hard drive space is a good starting point."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -2758,11 +2773,11 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:2947
 msgid ""
-"Examples of amd64 compatible processors include: <trademark>AMDAthlon</"
-"trademark>64, <trademark>AMDOpteron</trademark>, multi-core <trademark class="
-"\"registered\">Intel</trademark><trademark>Xeon</trademark>, and <trademark "
-"class=\"registered\">Intel</trademark><trademark>Core</trademark>2 and later "
-"processors."
+"Examples of amd64 compatible processors include: <trademark>AMD Athlon</"
+"trademark>64, <trademark>AMD Opteron</trademark>, multi-core <trademark "
+"class=\"registered\">Intel</trademark> <trademark>Xeon</trademark>, and "
+"<trademark class=\"registered\">Intel</trademark> <trademark>Core</"
+"trademark> 2 and later processors."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -2788,11 +2803,11 @@ msgstr ""
 msgid ""
 "FreeBSD will take advantage of Physical Address Extensions (<acronym>PAE</"
 "acronym>) support on <acronym>CPU</acronym>s with this feature. A kernel "
-"with the <acronym>PAE</acronym> feature enabled will detect memory above 4GB "
-"and allow it to be used by the system. However, using <acronym>PAE</acronym> "
-"places constraints on device drivers and other features of FreeBSD. Refer to "
-"<citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</manvolnum></"
-"citerefentry> for details."
+"with the <acronym>PAE</acronym> feature enabled will detect memory above "
+"4 GB and allow it to be used by the system. However, using <acronym>PAE</"
+"acronym> places constraints on device drivers and other features of FreeBSD. "
+"Refer to <citerefentry><refentrytitle>pae</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> for details."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -2855,7 +2870,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:3017
-msgid "A 32-bit kernel can only use the first 2GB of <acronym>RAM</acronym>."
+msgid "A 32-bit kernel can only use the first 2 GB of <acronym>RAM</acronym>."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -2943,7 +2958,7 @@ msgstr ""
 #: book.translate.xml:3089
 msgid ""
 "Some older operating systems, like <trademark class=\"registered\">Windows</"
-"trademark>XP, are not compatible with the <acronym>GPT</acronym> partition "
+"trademark> XP, are not compatible with the <acronym>GPT</acronym> partition "
 "scheme. If FreeBSD will be sharing a disk with such an operating system, "
 "<acronym>MBR</acronym> partitioning is required."
 msgstr ""
@@ -3054,7 +3069,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:3174
 msgid ""
-"Although the FreeBSDProject strives to ensure that each release of FreeBSD "
+"Although the FreeBSD Project strives to ensure that each release of FreeBSD "
 "is as stable as possible, bugs occasionally creep into the process. On very "
 "rare occasions those bugs affect the installation process. As these problems "
 "are discovered and fixed, they are noted in the FreeBSD Errata (<link xlink:"
@@ -3229,13 +3244,13 @@ msgstr ""
 msgid ""
 "The <citerefentry><refentrytitle>dd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> command-line utility is available on BSD, <trademark class="
-"\"registered\">Linux</trademark>, and <trademark class=\"registered\">MacOS</"
-"trademark> systems. To burn the image using <command>dd</command>, insert "
-"the <acronym>USB</acronym> stick and determine its device name. Then, "
-"specify the name of the downloaded installation file and the device name for "
-"the <acronym>USB</acronym> stick. This example burns the amd64 installation "
-"image to the first <acronym>USB</acronym> device on an existing FreeBSD "
-"system."
+"\"registered\">Linux</trademark>, and <trademark class=\"registered"
+"\">Mac OS</trademark> systems. To burn the image using <command>dd</"
+"command>, insert the <acronym>USB</acronym> stick and determine its device "
+"name. Then, specify the name of the downloaded installation file and the "
+"device name for the <acronym>USB</acronym> stick. This example burns the "
+"amd64 installation image to the first <acronym>USB</acronym> device on an "
+"existing FreeBSD system."
 msgstr ""
 
 #. (itstool) path: step/screen
@@ -3299,10 +3314,10 @@ msgid ""
 "the program. Verify that the drive letter shown under "
 "<computeroutput>Device</computeroutput> is the drive with the memory stick. "
 "Click the folder icon and select the image to be written to the memory "
-"stick. Click <guibutton>[Save]</guibutton> to accept the image file name. "
+"stick. Click <guibutton>[ Save ]</guibutton> to accept the image file name. "
 "Verify that everything is correct, and that no folders on the memory stick "
 "are open in other windows. When everything is ready, click "
-"<guibutton>[Write]</guibutton> to write the image file to the memory stick."
+"<guibutton>[ Write ]</guibutton> to write the image file to the memory stick."
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -3644,14 +3659,15 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:3632
 msgid ""
-"Press <keycap>Enter</keycap> to select the default of <guibutton>[Install]</"
-"guibutton> to enter the installer. The rest of this chapter describes how to "
-"use this installer. Otherwise, use the right or left arrows or the colorized "
-"letter to select the desired menu item. The <guibutton>[Shell]</guibutton> "
-"can be used to access a FreeBSD shell in order to use command line utilities "
-"to prepare the disks before installation. The <guibutton>[Live CD]</"
-"guibutton> option can be used to try out FreeBSD before installing it. The "
-"live version is described in <xref linkend=\"using-live-cd\"/>."
+"Press <keycap>Enter</keycap> to select the default of "
+"<guibutton>[ Install ]</guibutton> to enter the installer. The rest of this "
+"chapter describes how to use this installer. Otherwise, use the right or "
+"left arrows or the colorized letter to select the desired menu item. The "
+"<guibutton>[ Shell ]</guibutton> can be used to access a FreeBSD shell in "
+"order to use command line utilities to prepare the disks before "
+"installation. The <guibutton>[ Live CD ]</guibutton> option can be used to "
+"try out FreeBSD before installing it. The live version is described in <xref "
+"linkend=\"using-live-cd\"/>."
 msgstr ""
 
 #. (itstool) path: tip/para
@@ -3713,9 +3729,9 @@ msgstr ""
 #: book.translate.xml:3685
 msgid ""
 "To configure the keyboard layout, press <keycap>Enter</keycap> with "
-"<guibutton>[YES]</guibutton> selected, which will display the menu shown in "
-"<xref linkend=\"bsdinstall-config-keymap\"/>. To instead use the default "
-"layout, use the arrow key to select <guibutton>[NO]</guibutton> and press "
+"<guibutton>[ YES ]</guibutton> selected, which will display the menu shown "
+"in <xref linkend=\"bsdinstall-config-keymap\"/>. To instead use the default "
+"layout, use the arrow key to select <guibutton>[ NO ]</guibutton> and press "
 "<keycap>Enter</keycap> to skip this menu screen."
 msgstr ""
 
@@ -3877,7 +3893,7 @@ msgstr ""
 msgid ""
 "The installation program does not check for adequate disk space. Select this "
 "option only if sufficient hard disk space is available. The FreeBSD Ports "
-"Collection takes up about 500MB of disk space."
+"Collection takes up about 500 MB of disk space."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -3887,8 +3903,8 @@ msgid ""
 "kernel and the userland. Although not required for the majority of "
 "applications, it may be required to build device drivers, kernel modules, or "
 "some applications from the Ports Collection. It is also used for developing "
-"FreeBSD itself. The full source tree requires 1GB of disk space and "
-"recompiling the entire FreeBSD system requires an additional 5GB of space."
+"FreeBSD itself. The full source tree requires 1 GB of disk space and "
+"recompiling the entire FreeBSD system requires an additional 5 GB of space."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -4175,9 +4191,9 @@ msgstr ""
 msgid ""
 "Once the disk is selected, the next menu prompts to install to either the "
 "entire disk or to create a partition using free space. If "
-"<guibutton>[EntireDisk]</guibutton> is chosen, a general partition layout "
+"<guibutton>[ Entire Disk ]</guibutton> is chosen, a general partition layout "
 "filling the whole disk is automatically created. Selecting "
-"<guibutton>[Partition]</guibutton> creates a partition layout from the "
+"<guibutton>[ Partition ]</guibutton> creates a partition layout from the "
 "unused space on the disk."
 msgstr ""
 
@@ -4200,12 +4216,12 @@ msgstr ""
 #: book.translate.xml:4044
 msgid ""
 "After the partition layout has been created, review it to ensure it meets "
-"the needs of the installation. Selecting <guibutton>[Revert]</guibutton> "
+"the needs of the installation. Selecting <guibutton>[ Revert ]</guibutton> "
 "will reset the partitions to their original values and pressing "
-"<guibutton>[Auto]</guibutton> will recreate the automatic FreeBSD "
+"<guibutton>[ Auto ]</guibutton> will recreate the automatic FreeBSD "
 "partitions. Partitions can also be manually created, modified, or deleted. "
-"When the partitioning is correct, select <guibutton>[Finish]</guibutton> to "
-"continue with the installation."
+"When the partitioning is correct, select <guibutton>[ Finish ]</guibutton> "
+"to continue with the installation."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -4253,7 +4269,7 @@ msgstr ""
 #: book.translate.xml:4080
 msgid ""
 "Highlight the installation drive (<filename>ada0</filename> in this example) "
-"and select <guibutton>[Create]</guibutton> to display a menu of available "
+"and select <guibutton>[ Create ]</guibutton> to display a menu of available "
 "partition schemes:"
 msgstr ""
 
@@ -4377,7 +4393,7 @@ msgstr ""
 #: book.translate.xml:4152
 msgid ""
 "After the partitioning scheme has been selected and created, select "
-"<guibutton>[Create]</guibutton> again to create the partitions."
+"<guibutton>[ Create ]</guibutton> again to create the partitions."
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -4623,7 +4639,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4321
 msgid ""
-"After the custom partitions have been created, select <guibutton>[Finish]</"
+"After the custom partitions have been created, select <guibutton>[ Finish ]</"
 "guibutton> to continue with the installation."
 msgstr ""
 
@@ -4644,7 +4660,7 @@ msgid ""
 "to have 4k sector disks added in the future, either as additional storage "
 "space or as replacements for failed disks. The installer can also optionally "
 "employ <acronym>GELI</acronym> disk encryption as described in <xref linkend="
-"\"disks-encrypting-geli\"/>. If encryption is enabled, a 2GB unencrypted "
+"\"disks-encrypting-geli\"/>. If encryption is enabled, a 2 GB unencrypted "
 "boot pool containing the <filename>/boot</filename> directory is created. It "
 "holds the kernel and other files necessary to boot the system. A swap "
 "partition of a user selectable size is also created, and all remaining space "
@@ -4780,7 +4796,7 @@ msgid ""
 "switch between <acronym>GPT</acronym> (recommended) and <acronym>MBR</"
 "acronym> partition table types, and select the amount of swap space. Once "
 "all options have been set to the desired values, select the <guibutton>&gt;"
-"&gt;&gt;Install</guibutton> option at the top of the menu."
+"&gt;&gt; Install</guibutton> option at the top of the menu."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -4860,9 +4876,9 @@ msgstr ""
 msgid ""
 "Once the disks are configured, the next menu provides the last chance to "
 "make changes before the selected hard drive(s) are formatted. If changes "
-"need to be made, select <guibutton>[Back]</guibutton> to return to the main "
-"partitioning menu. <guibutton>[Revert&amp;Exit]</guibutton> will exit the "
-"installer without making any changes to the hard drive."
+"need to be made, select <guibutton>[ Back ]</guibutton> to return to the "
+"main partitioning menu. <guibutton>[ Revert &amp; Exit ]</guibutton> will "
+"exit the installer without making any changes to the hard drive."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -4884,7 +4900,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:4518
 msgid ""
-"To instead start the actual installation, select <guibutton>[Commit]</"
+"To instead start the actual installation, select <guibutton>[ Commit ]</"
 "guibutton> and press <keycap>Enter</keycap>."
 msgstr ""
 
@@ -5087,10 +5103,10 @@ msgid ""
 "acronym>), a short, unique name given to each network. <acronym>SSIDs</"
 "acronym> found during the scan are listed, followed by a description of the "
 "encryption types available for that network. If the desired <acronym>SSID</"
-"acronym> does not appear in the list, select <guibutton>[Rescan]</guibutton> "
-"to scan again. If the desired network still does not appear, check for "
-"problems with antenna connections or try moving the computer closer to the "
-"access point. Rescan after each change is made."
+"acronym> does not appear in the list, select <guibutton>[ Rescan ]</"
+"guibutton> to scan again. If the desired network still does not appear, "
+"check for problems with antenna connections or try moving the computer "
+"closer to the access point. Rescan after each change is made."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -5184,7 +5200,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4717
 msgid ""
-"If a <acronym>DHCP</acronym> server is available, select <guibutton>[Yes]</"
+"If a <acronym>DHCP</acronym> server is available, select <guibutton>[ Yes ]</"
 "guibutton> in the next menu to automatically configure the network "
 "interface. The installer will appear to pause for a minute or so as it finds "
 "the <acronym>DHCP</acronym> server and obtains the addressing information "
@@ -5212,7 +5228,7 @@ msgstr ""
 #: book.translate.xml:4735
 msgid ""
 "If a <acronym>DHCP</acronym> server is not available, select "
-"<guibutton>[No]</guibutton> and input the following addressing information "
+"<guibutton>[ No ]</guibutton> and input the following addressing information "
 "in this menu:"
 msgstr ""
 
@@ -5258,7 +5274,7 @@ msgstr ""
 msgid ""
 "The next screen will ask if the interface should be configured for "
 "<acronym>IPv6</acronym>. If <acronym>IPv6</acronym> is available and "
-"desired, choose <guibutton>[Yes]</guibutton> to select it."
+"desired, choose <guibutton>[ Yes ]</guibutton> to select it."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -5292,10 +5308,10 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:4792
 msgid ""
-"If an <acronym>IPv6</acronym> router is available, select <guibutton>[Yes]</"
-"guibutton> in the next menu to automatically configure the network "
-"interface. The installer will appear to pause for a minute or so as it finds "
-"the router and obtains the addressing information for the system."
+"If an <acronym>IPv6</acronym> router is available, select "
+"<guibutton>[ Yes ]</guibutton> in the next menu to automatically configure "
+"the network interface. The installer will appear to pause for a minute or so "
+"as it finds the router and obtains the addressing information for the system."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -5319,7 +5335,7 @@ msgstr ""
 #: book.translate.xml:4808
 msgid ""
 "If an <acronym>IPv6</acronym> router is not available, select "
-"<guibutton>[No]</guibutton> and input the following addressing information "
+"<guibutton>[ No ]</guibutton> and input the following addressing information "
 "in this menu:"
 msgstr ""
 
@@ -5396,7 +5412,7 @@ msgstr ""
 #: book.translate.xml:4864
 msgid ""
 "The next menu asks if the system clock uses <acronym>UTC</acronym> or local "
-"time. When in doubt, select <guibutton>[No]</guibutton> to choose the more "
+"time. When in doubt, select <guibutton>[ No ]</guibutton> to choose the more "
 "commonly-used local time."
 msgstr ""
 
@@ -5628,7 +5644,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5024
-msgid "Select <guibutton>[Yes]</guibutton> to add new users."
+msgid "Select <guibutton>[ Yes ]</guibutton> to add new users."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -5929,9 +5945,9 @@ msgstr ""
 msgid ""
 "<application>bsdinstall</application> will prompt if there are any "
 "additional configuration that needs to be done before rebooting into the new "
-"system. Select <guibutton>[Yes]</guibutton> to exit to a shell within the "
-"new system or <guibutton>[No]</guibutton> to proceed to the last step of the "
-"installation."
+"system. Select <guibutton>[ Yes ]</guibutton> to exit to a shell within the "
+"new system or <guibutton>[ No ]</guibutton> to proceed to the last step of "
+"the installation."
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -5953,14 +5969,14 @@ msgstr ""
 #: book.translate.xml:5251
 msgid ""
 "If further configuration or special setup is needed, select "
-"<guibutton>[LiveCD]</guibutton> to boot the install media into Live "
+"<guibutton>[ Live CD ]</guibutton> to boot the install media into Live "
 "<acronym>CD</acronym> mode."
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:5256
 msgid ""
-"If the installation is complete, select <guibutton>[Reboot]</guibutton> to "
+"If the installation is complete, select <guibutton>[ Reboot ]</guibutton> to "
 "reboot the computer and start the new FreeBSD system. Do not forget to "
 "remove the FreeBSD install media or the computer may boot from it again."
 msgstr ""
@@ -6163,7 +6179,7 @@ msgstr ""
 #: book.translate.xml:5407
 msgid ""
 "The welcome menu of <application>bsdinstall</application>, shown in <xref "
-"linkend=\"bsdinstall-choose-mode\"/>, provides a <guibutton>[LiveCD]</"
+"linkend=\"bsdinstall-choose-mode\"/>, provides a <guibutton>[ Live CD ]</"
 "guibutton> option. This is useful for those who are still wondering whether "
 "FreeBSD is the right operating system for them and want to test some of the "
 "features before installing."
@@ -6172,8 +6188,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:5414
 msgid ""
-"The following points should be noted before using the <guibutton>[LiveCD]</"
-"guibutton>:"
+"The following points should be noted before using the "
+"<guibutton>[ Live CD ]</guibutton>:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -9580,8 +9596,8 @@ msgstr ""
 #: book.translate.xml:7772
 msgid ""
 "This diagram shows FreeBSD's view of the first <acronym>SATA</acronym> disk "
-"attached to the system. Assume that the disk is 250GB in size, and contains "
-"an 80GB slice and a 170GB slice (<trademark class=\"registered\">MS-DOS</"
+"attached to the system. Assume that the disk is 250 GB in size, and contains "
+"an 80 GB slice and a 170 GB slice (<trademark class=\"registered\">MS-DOS</"
 "trademark> partitions). The first slice contains a <trademark class="
 "\"registered\">Windows</trademark> <acronym>NTFS</acronym> file system, "
 "<filename>C:</filename>, and the second slice contains a FreeBSD "
@@ -12127,9 +12143,9 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:9524
 msgid ""
-"Software within the FreeBSDPorts Collection can undergo major version number "
-"changes. To address this, <application>pkg</application> has a built-in "
-"command to update package origins. This can be useful, for example, if "
+"Software within the FreeBSD Ports Collection can undergo major version "
+"number changes. To address this, <application>pkg</application> has a built-"
+"in command to update package origins. This can be useful, for example, if "
 "<package>lang/php5</package> is renamed to <package>lang/php53</package> so "
 "that <package>lang/php5</package> can now represent version <literal>5.4</"
 "literal>."
@@ -15913,7 +15929,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:12183
 msgid ""
-"Installing the <application>CompizFusion</application> package is easy, but "
+"Installing the <application>Compiz Fusion</application> package is easy, but "
 "configuring it requires a few steps that are not described in the port's "
 "documentation."
 msgstr ""
@@ -16025,7 +16041,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12243
 msgid ""
-"To enable <application>CompizFusion</application>, <filename>/etc/X11/xorg."
+"To enable <application>Compiz Fusion</application>, <filename>/etc/X11/xorg."
 "conf</filename> needs to be modified:"
 msgstr ""
 
@@ -16096,7 +16112,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:12280
 msgid ""
-"A color depth of 24bits is needed for desktop composition, change the above "
+"A color depth of 24 bits is needed for desktop composition, change the above "
 "subsection to:"
 msgstr ""
 
@@ -16146,14 +16162,14 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12308
-msgid "Installing and Configuring CompizFusion"
+msgid "Installing and Configuring Compiz Fusion"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12310
 msgid ""
-"Installing <application>CompizFusion</application> is as simple as any other "
-"package:"
+"Installing <application>Compiz Fusion</application> is as simple as any "
+"other package:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -16182,7 +16198,7 @@ msgstr ""
 msgid ""
 "Your screen will flicker for a few seconds, as your window manager (e.g. "
 "<application>Metacity</application> if you are using <application>GNOME</"
-"application>) is replaced by <application>CompizFusion</application>. "
+"application>) is replaced by <application>Compiz Fusion</application>. "
 "<application>Emerald</application> takes care of the window decorations (i."
 "e. close, minimize, maximize buttons, title bars and so on)."
 msgstr ""
@@ -16230,7 +16246,7 @@ msgstr ""
 #: book.translate.xml:12352
 msgid ""
 "To actually select all the desired effects and their settings, execute "
-"(again as a normal user) the <application>CompizConfigSettingsManager</"
+"(again as a normal user) the <application>Compiz Config Settings Manager</"
 "application>:"
 msgstr ""
 
@@ -16684,13 +16700,13 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12652
-msgid "Troubleshooting CompizFusion"
+msgid "Troubleshooting Compiz Fusion"
 msgstr ""
 
 #. (itstool) path: question/para
 #: book.translate.xml:12657
 msgid ""
-"I have installed <application>CompizFusion</application>, and after running "
+"I have installed <application>Compiz Fusion</application>, and after running "
 "the commands you mention, my windows are left without title bars and "
 "buttons. What is wrong?"
 msgstr ""
@@ -16707,8 +16723,8 @@ msgstr ""
 #. (itstool) path: question/para
 #: book.translate.xml:12676
 msgid ""
-"When I run the command to start <application>CompizFusion</application>, the "
-"X server crashes and I am back at the console. What is wrong?"
+"When I run the command to start <application>Compiz Fusion</application>, "
+"the X server crashes and I am back at the console. What is wrong?"
 msgstr ""
 
 #. (itstool) path: answer/para
@@ -17550,11 +17566,12 @@ msgid ""
 "external databases. <application>Apache OpenOffice</application> is stable "
 "and runs natively on <trademark class=\"registered\">Windows</trademark>, "
 "<trademark>Solaris</trademark>, <trademark class=\"registered\">Linux</"
-"trademark>, FreeBSD, and <trademark class=\"registered\">MacOS</trademark>X. "
-"More information about <application>Apache OpenOffice</application> can be "
-"found at <link xlink:href=\"http://openoffice.org/\">openoffice.org</link>. "
-"For FreeBSD specific information refer to <link xlink:href=\"http://porting."
-"openoffice.org/freebsd/\">porting.openoffice.org/freebsd/</link>."
+"trademark>, FreeBSD, and <trademark class=\"registered\">Mac OS</"
+"trademark> X. More information about <application>Apache OpenOffice</"
+"application> can be found at <link xlink:href=\"http://openoffice.org/"
+"\">openoffice.org</link>. For FreeBSD specific information refer to <link "
+"xlink:href=\"http://porting.openoffice.org/freebsd/\">porting.openoffice.org/"
+"freebsd/</link>."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -17653,7 +17670,7 @@ msgid ""
 "<application>Apache OpenOffice</application> and includes applications found "
 "in a complete office productivity suite: a word processor, spreadsheet, "
 "presentation manager, drawing program, database management program, and a "
-"tool for creating and editing mathematical formul. It is available in a "
+"tool for creating and editing mathematical formulæ. It is available in a "
 "number of different languages and internationalization has been extended to "
 "interfaces, spell checkers, and dictionaries."
 msgstr ""
@@ -17667,7 +17684,7 @@ msgid ""
 "databases. <application>LibreOffice</application> is stable and runs "
 "natively on <trademark class=\"registered\">Windows</trademark>, <trademark "
 "class=\"registered\">Linux</trademark>, FreeBSD, and <trademark class="
-"\"registered\">MacOS</trademark>X. More information about "
+"\"registered\">Mac OS</trademark> X. More information about "
 "<application>LibreOffice</application> can be found at <link xlink:href="
 "\"http://www.libreoffice.org/\">libreoffice.org</link>."
 msgstr ""
@@ -19078,7 +19095,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:14327
 msgid ""
-"The specified 128kbits is a standard <acronym>MP3</acronym> bitrate while "
+"The specified 128 kbits is a standard <acronym>MP3</acronym> bitrate while "
 "the 160 and 192 bitrates provide higher quality. The higher the bitrate, the "
 "larger the size of the resulting <acronym>MP3</acronym>. The <option>-h</"
 "option> turns on the <quote>higher quality but a little slower</quote> mode. "
@@ -20312,8 +20329,8 @@ msgstr ""
 #: book.translate.xml:15149
 msgid ""
 "In this example, an <trademark class=\"registered\">EPSON Perfection</"
-"trademark>1650 <acronym>USB</acronym> scanner was detected on <filename>/dev/"
-"ugen0.2</filename>."
+"trademark> 1650 <acronym>USB</acronym> scanner was detected on <filename>/"
+"dev/ugen0.2</filename>."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -20528,7 +20545,7 @@ msgid ""
 "If this happens, edit the backend configuration file in <filename>/usr/local/"
 "etc/sane.d/</filename> and define the scanner device used. For example, if "
 "the undetected scanner model is an <trademark class=\"registered\">EPSON "
-"Perfection</trademark>1650 and it uses the <literal>epson2</literal> "
+"Perfection</trademark> 1650 and it uses the <literal>epson2</literal> "
 "backend, edit <filename>/usr/local/etc/sane.d/epson2.conf</filename>. When "
 "editing, add a line specifying the interface and the device node used. In "
 "this case, add the following line:"
@@ -20843,7 +20860,7 @@ msgstr ""
 #: book.translate.xml:15528
 msgid ""
 "Some versions of <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> have a "
+"trademark> <trademark class=\"registered\">Windows</trademark> have a "
 "<application>System</application> icon which can be used to access "
 "<application>Device Manager</application>."
 msgstr ""
@@ -23102,7 +23119,7 @@ msgstr ""
 #: book.translate.xml:17885
 msgid ""
 "Support for 64-bit binary compatibility with <trademark class=\"registered"
-"\">Linux</trademark> was added in FreeBSD10.3."
+"\">Linux</trademark> was added in FreeBSD 10.3."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -24667,7 +24684,7 @@ msgstr ""
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:19806
 msgid ""
-"<primary><trademark class=\"registered\">Microsoft</trademark><trademark "
+"<primary><trademark class=\"registered\">Microsoft</trademark> <trademark "
 "class=\"registered\">Windows</trademark></primary> <secondary>device "
 "drivers</secondary>"
 msgstr ""
@@ -24686,7 +24703,7 @@ msgid ""
 "other operating systems are left with two choices: develop the drivers by a "
 "long and pain-staking process of reverse engineering or using the existing "
 "driver binaries available for <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> platforms."
+"trademark> <trademark class=\"registered\">Windows</trademark> platforms."
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -24696,10 +24713,10 @@ msgid ""
 "Interface Specification (<acronym>NDIS</acronym>). It includes "
 "<citerefentry><refentrytitle>ndisgen</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> which can be used to convert a <trademark class="
-"\"registered\">Windows</trademark>XP driver into a format that can be used "
+"\"registered\">Windows</trademark> XP driver into a format that can be used "
 "on FreeBSD. Because the <citerefentry><refentrytitle>ndis</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> driver uses a "
-"<trademark class=\"registered\">Windows</trademark>XP binary, it only runs "
+"<trademark class=\"registered\">Windows</trademark> XP binary, it only runs "
 "on <trademark>i386</trademark> and amd64 systems. <acronym>PCI</acronym>, "
 "CardBus, <acronym>PCMCIA</acronym>, and <acronym>USB</acronym> devices are "
 "supported."
@@ -24720,15 +24737,15 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:19845
 msgid ""
-"A <trademark class=\"registered\">Windows</trademark>XP driver binary with a "
-"<filename>.SYS</filename> extension."
+"A <trademark class=\"registered\">Windows</trademark> XP driver binary with "
+"a <filename>.SYS</filename> extension."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19850
 msgid ""
-"A <trademark class=\"registered\">Windows</trademark>XP driver configuration "
-"file with a <filename>.INF</filename> extension."
+"A <trademark class=\"registered\">Windows</trademark> XP driver "
+"configuration file with a <filename>.INF</filename> extension."
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -26635,20 +26652,20 @@ msgid ""
 "citerefentry> variable may be set to either <literal>0</literal> (off) or "
 "<literal>1</literal> (on). It is set to <literal>1</literal> by default. "
 "This variable controls how directories are cached by the system. Most "
-"directories are small, using just a single fragment (typically 1K) in the "
-"file system and typically 512bytes in the buffer cache. With this variable "
+"directories are small, using just a single fragment (typically 1 K) in the "
+"file system and typically 512 bytes in the buffer cache. With this variable "
 "turned off, the buffer cache will only cache a fixed number of directories, "
 "even if the system has a huge amount of memory. When turned on, this "
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> allows the buffer cache to use the <acronym>VM</acronym> page "
 "cache to cache the directories, making all the memory available for caching "
 "directories. However, the minimum in-core memory used to cache a directory "
-"is the physical page size (typically 4K) rather than 512 bytes. Keeping this "
-"option enabled is recommended if the system is running any services which "
-"manipulate large numbers of files. Such services can include web caches, "
-"large mail systems, and news systems. Keeping this option on will generally "
-"not reduce performance, even with the wasted memory, but one should "
-"experiment to find out."
+"is the physical page size (typically 4 K) rather than 512  bytes. Keeping "
+"this option enabled is recommended if the system is running any services "
+"which manipulate large numbers of files. Such services can include web "
+"caches, large mail systems, and news systems. Keeping this option on will "
+"generally not reduce performance, even with the wasted memory, but one "
+"should experiment to find out."
 msgstr ""
 
 #. (itstool) path: sect3/title
@@ -27161,14 +27178,14 @@ msgid ""
 "The <literal>NMBCLUSTERS</literal> kernel configuration option dictates the "
 "amount of network Mbufs available to the system. A heavily-trafficked server "
 "with a low number of Mbufs will hinder performance. Each cluster represents "
-"approximately 2K of memory, so a value of <literal>1024</literal> represents "
-"<literal>2</literal> megabytes of kernel memory reserved for network "
-"buffers. A simple calculation can be done to figure out how many are needed. "
-"A web server which maxes out at <literal>1000</literal> simultaneous "
-"connections where each connection uses a 6K receive and 16K send buffer, "
-"requires approximately 32MB worth of network buffers to cover the web "
+"approximately 2 K of memory, so a value of <literal>1024</literal> "
+"represents <literal>2</literal> megabytes of kernel memory reserved for "
+"network buffers. A simple calculation can be done to figure out how many are "
+"needed. A web server which maxes out at <literal>1000</literal> simultaneous "
+"connections where each connection uses a 6 K receive and 16 K send buffer, "
+"requires approximately 32 MB worth of network buffers to cover the web "
 "server. A good rule of thumb is to multiply by <literal>2</literal>, so "
-"2x32MB/2KB= 64MB/2kB= <literal>32768</literal>. Values between "
+"2x32 MB / 2 KB = 64 MB / 2 kB = <literal>32768</literal>. Values between "
 "<literal>4096</literal> and <literal>32768</literal> are recommended for "
 "machines with greater amounts of memory. Never specify an arbitrarily high "
 "value for this parameter as it could lead to a boot time crash. To observe "
@@ -27480,7 +27497,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:21863
 msgid ""
-"Creating a Swap File on FreeBSD10.<replaceable>X</replaceable> and Later"
+"Creating a Swap File on FreeBSD 10.<replaceable>X</replaceable> and Later"
 msgstr ""
 
 #. (itstool) path: step/para
@@ -27543,7 +27560,7 @@ msgstr ""
 #. (itstool) path: example/title
 #: book.translate.xml:21900
 msgid ""
-"Creating a Swap File on FreeBSD9.<replaceable>X</replaceable> and Earlier"
+"Creating a Swap File on FreeBSD 9.<replaceable>X</replaceable> and Earlier"
 msgstr ""
 
 #. (itstool) path: step/para
@@ -28919,7 +28936,7 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:22963
-msgid "include <replaceable>filename</replaceable> "
+msgid "include <replaceable>filename</replaceable> …"
 msgstr ""
 
 #. (itstool) path: row/entry
@@ -30809,9 +30826,9 @@ msgid ""
 "<citerefentry><refentrytitle>opiekey</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>. There are versions of this command for <trademark "
 "class=\"registered\">Windows</trademark>, <trademark class=\"registered"
-"\">MacOS</trademark> and FreeBSD. This command needs the iteration count and "
-"the seed as command line options. Use cut-and-paste from the login prompt on "
-"the machine being logged in to."
+"\">Mac OS</trademark> and FreeBSD. This command needs the iteration count "
+"and the seed as command line options. Use cut-and-paste from the login "
+"prompt on the machine being logged in to."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -30998,7 +31015,7 @@ msgid ""
 "action</literal>, where <literal>daemon</literal> is the daemon which "
 "<application>inetd</application> started, <literal>address</literal> is a "
 "valid hostname, <acronym>IP</acronym> address, or an IPv6 address enclosed "
-"in brackets ([]), and <literal>action</literal> is either <literal>allow</"
+"in brackets ([ ]), and <literal>action</literal> is either <literal>allow</"
 "literal> or <literal>deny</literal>. <application>TCP Wrapper</application> "
 "uses a first rule match semantic, meaning that the configuration file is "
 "scanned from the beginning for a matching rule. When a match is found, the "
@@ -31214,7 +31231,7 @@ msgstr ""
 #: book.translate.xml:24611
 msgid ""
 "The current version of the protocol is version 5, described in <acronym>RFC</"
-"acronym>4120. Several free implementations of this protocol are available, "
+"acronym> 4120. Several free implementations of this protocol are available, "
 "covering a wide range of operating systems. <acronym>MIT</acronym> continues "
 "to develop their <application>Kerberos</application> package. It is commonly "
 "used in the <acronym>US</acronym> as a cryptography product, and has "
@@ -31536,7 +31553,7 @@ msgstr ""
 #: book.translate.xml:24832
 msgid ""
 "Next, create <filename>/etc/krb5.keytab</filename> on the server. This is "
-"the main part of <quote>Kerberizing</quote> a service  it corresponds to "
+"the main part of <quote>Kerberizing</quote> a service — it corresponds to "
 "generating a secret shared between the service and the <acronym>KDC</"
 "acronym>. The secret is a cryptographic key, stored in a <quote>keytab</"
 "quote>. The keytab contains the server's host key, which allows it and the "
@@ -32488,7 +32505,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:25594
 msgid ""
-"<acronym>IPsec</acronym> support is enabled by default on FreeBSD11 and "
+"<acronym>IPsec</acronym> support is enabled by default on FreeBSD 11 and "
 "later. For previous versions of FreeBSD, add these options to a custom "
 "kernel configuration file and rebuild the kernel using the instructions in "
 "<xref linkend=\"kernelconfig\"/>:"
@@ -35279,9 +35296,9 @@ msgid ""
 "developed to make life easier for the administrator. These tools often "
 "enhance the way systems are installed, configured, and maintained. One of "
 "the tools which can be used to enhance the security of a FreeBSD system is "
-"<firstterm>jails</firstterm>. Jails have been available since FreeBSD4.X and "
-"continue to be enhanced in their usefulness, performance, reliability, and "
-"security."
+"<firstterm>jails</firstterm>. Jails have been available since FreeBSD 4.X "
+"and continue to be enhanced in their usefulness, performance, reliability, "
+"and security."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -36701,7 +36718,7 @@ msgstr ""
 msgid ""
 "For a basejail based on the FreeBSD RELEASE matching that of the host "
 "computer, use <command>install</command>. For example, on a host computer "
-"running FreeBSD10-STABLE, the latest RELEASE version of FreeBSD-10 will be "
+"running FreeBSD 10-STABLE, the latest RELEASE version of FreeBSD -10 will be "
 "installed in the jail):"
 msgstr ""
 
@@ -36731,7 +36748,7 @@ msgstr ""
 #. (itstool) path: step/para
 #: book.translate.xml:28672
 msgid ""
-"In this example, FreeBSD10-STABLE has been built from source. The jail "
+"In this example, FreeBSD 10-STABLE has been built from source. The jail "
 "directories are created. Then <_:buildtarget-1/> is executed, installing the "
 "host's <filename>/usr/obj</filename> into the basejail."
 msgstr ""
@@ -40076,7 +40093,7 @@ msgid ""
 "analysis. FreeBSD implements <trademark>Sun</trademark>'s published Basic "
 "Security Module (<acronym>BSM</acronym>) Application Programming Interface "
 "(<acronym>API</acronym>) and file format, and is interoperable with the "
-"<trademark>Solaris</trademark> and <trademark class=\"registered\">MacOS</"
+"<trademark>Solaris</trademark> and <trademark class=\"registered\">Mac OS</"
 "trademark> X audit implementations."
 msgstr ""
 
@@ -42273,7 +42290,7 @@ msgstr ""
 #, no-wrap
 msgid ""
 "<prompt>#</prompt> <userinput>cdrecord -scanbus</userinput>\n"
-"ProDVD-ProBD-Clone 3.00 (amd64-unknown-freebsd10.0) Copyright (C) 1995-2010 Jrg Schilling\n"
+"ProDVD-ProBD-Clone 3.00 (amd64-unknown-freebsd10.0) Copyright (C) 1995-2010 Jörg Schilling\n"
 "Using libscg version 'schily-0.9'\n"
 "scsibus0:\n"
 "        0,0,0     0) 'SEAGATE ' 'ST39236LW       ' '0004' Disk\n"
@@ -42405,7 +42422,7 @@ msgid ""
 "which is the path to a boot image from the top of the tree being written to "
 "the <acronym>CD</acronym>. By default, <command>mkisofs</command> creates an "
 "<acronym>ISO</acronym> image in <quote>floppy disk emulation</quote> mode, "
-"and thus expects the boot image to be exactly 1200, 1440 or 2880KB in size. "
+"and thus expects the boot image to be exactly 1200, 1440 or 2880 KB in size. "
 "Some boot loaders, like the one used by the FreeBSD distribution media, do "
 "not use emulation mode. In this case, <option>-no-emul-boot</option> should "
 "be used. So, if <filename>/tmp/myboot</filename> holds a bootable FreeBSD "
@@ -42753,8 +42770,8 @@ msgstr ""
 #: book.translate.xml:32803
 msgid ""
 "A single layer recordable <acronym>DVD</acronym> can hold up to "
-"4,700,000,000bytes which is actually 4.38GB or 4485MB as 1 kilobyte is 1024 "
-"bytes."
+"4,700,000,000 bytes which is actually 4.38 GB or 4485 MB as 1 kilobyte is "
+"1024 bytes."
 msgstr ""
 
 #. (itstool) path: note/para
@@ -44011,7 +44028,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:33620
 msgid ""
-"The installation media for FreeBSD/i38610.4-RELEASE does not include a "
+"The installation media for FreeBSD/i386 10.4-RELEASE does not include a "
 "rescue shell. For this version, instead download and burn a Livefs "
 "<acronym>CD</acronym> image from <uri xlink:href=\"ftp://ftp.FreeBSD.org/pub/"
 "FreeBSD/releases/i386/ISO-IMAGES/10.4/FreeBSD-10.4-RELEASE-i386-livefs.iso"
@@ -45751,7 +45768,7 @@ msgid ""
 "acronym>) framework allows transparent storage of the same data across "
 "several physically separated machines connected by a <acronym>TCP/IP</"
 "acronym> network. <acronym>HAST</acronym> can be understood as a network-"
-"based RAID1 (mirror), and is similar to the DRBD storage system used in the "
+"based RAID1 (mirror), and is similar to the DRBD® storage system used in the "
 "GNU/<trademark class=\"registered\">Linux</trademark> platform. In "
 "combination with other high-availability features of FreeBSD like "
 "<acronym>CARP</acronym>, <acronym>HAST</acronym> makes it possible to build "
@@ -46242,7 +46259,7 @@ msgstr ""
 #. (itstool) path: note/para
 #: book.translate.xml:35163
 msgid ""
-"If the systems are running FreeBSD10 or higher, replace <filename>carp0</"
+"If the systems are running FreeBSD 10 or higher, replace <filename>carp0</"
 "filename> with the name of the <acronym>CARP</acronym>-configured interface."
 msgstr ""
 
@@ -47197,8 +47214,8 @@ msgstr ""
 #: book.translate.xml:35876
 msgid ""
 "After creating <filename>gm0</filename>, view the partition table on "
-"<filename>ada0</filename>. This output is from a 1TB drive. If there is some "
-"unallocated space at the end of the drive, the contents may be copied "
+"<filename>ada0</filename>. This output is from a 1 TB drive. If there is "
+"some unallocated space at the end of the drive, the contents may be copied "
 "directly from <filename>ada0</filename> to the new mirror."
 msgstr ""
 
@@ -47246,7 +47263,7 @@ msgstr ""
 #: book.translate.xml:35902
 msgid ""
 "These commands create two files, <filename>table.ada0</filename> and "
-"<filename>table.ada0s1</filename>. This example is from a 1TB drive:"
+"<filename>table.ada0s1</filename>. This example is from a 1 TB drive:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -47964,7 +47981,7 @@ msgid ""
 "<citerefentry><refentrytitle>graid</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> requires the <filename>geom_raid.ko</filename> kernel module, "
 "which is included in the <filename>GENERIC</filename> kernel starting with "
-"FreeBSD9.1. If needed, it can be loaded manually with <command>graid load</"
+"FreeBSD 9.1. If needed, it can be loaded manually with <command>graid load</"
 "command>."
 msgstr ""
 
@@ -48070,9 +48087,9 @@ msgid ""
 "<emphasis>volume</emphasis> on an array. Volumes work like partitions, "
 "allowing space on the physical drives to be split and used in different "
 "ways. For example, Intel software <acronym>RAID</acronym> devices support "
-"two volumes. This example creates a 40G mirror for safely storing the "
-"operating system, followed by a 20G <acronym>RAID0</acronym> (stripe) volume "
-"for fast temporary storage:"
+"two volumes. This example creates a 40 G mirror for safely storing the "
+"operating system, followed by a 20 G <acronym>RAID0</acronym> (stripe) "
+"volume for fast temporary storage:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -48130,7 +48147,7 @@ msgid ""
 "There must be enough unpartitioned and unused space at the end of the drive "
 "to hold the <citerefentry><refentrytitle>graid</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> metadata. This metadata varies in size, but the "
-"largest occupies 64M, so at least that much free space is recommended."
+"largest occupies 64 M, so at least that much free space is recommended."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -50679,11 +50696,11 @@ msgid ""
 "larger device. After completing a <link linkend=\"zfs-zpool-replace"
 "\">replace</link> or <link linkend=\"zfs-term-resilver\">resilver</link> "
 "operation, the pool can grow to use the capacity of the new device. For "
-"example, consider a mirror of a 1TB drive and a 2TB drive. The usable space "
-"is 1TB. When the 1TB drive is replaced with another 2TB drive, the "
+"example, consider a mirror of a 1 TB drive and a 2 TB drive. The usable "
+"space is 1 TB. When the 1 TB drive is replaced with another 2 TB drive, the "
 "resilvering process copies the existing data onto the new drive. Because "
-"both of the devices now have 2TB capacity, the mirror's available space can "
-"be grown to 2TB."
+"both of the devices now have 2 TB capacity, the mirror's available space can "
+"be grown to 2 TB."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -51283,7 +51300,7 @@ msgid ""
 "system to store raw data. To the user, a volume appears to be a regular "
 "disk. Putting ordinary file systems on these <emphasis>zvols</emphasis> "
 "provides features that ordinary disks or file systems do not normally have. "
-"For example, using the compression property on a 250MB volume allows "
+"For example, using the compression property on a 250 MB volume allows "
 "creation of a compressed <acronym>FAT</acronym> file system."
 msgstr ""
 
@@ -52546,7 +52563,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39745
 msgid ""
-"To enforce a dataset quota of 10GB for <filename>storage/home/bob</filename>:"
+"To enforce a dataset quota of 10 GB for <filename>storage/home/bob</"
+"filename>:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -52558,7 +52576,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39750
 msgid ""
-"To enforce a reference quota of 10GB for <filename>storage/home/bob</"
+"To enforce a reference quota of 10 GB for <filename>storage/home/bob</"
 "filename>:"
 msgstr ""
 
@@ -52570,7 +52588,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:39755
-msgid "To remove a quota of 10GB for <filename>storage/home/bob</filename>:"
+msgid "To remove a quota of 10 GB for <filename>storage/home/bob</filename>:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -52617,7 +52635,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39788
 msgid ""
-"For example, to enforce a user quota of 50GB for the user named "
+"For example, to enforce a user quota of 50 GB for the user named "
 "<replaceable>joe</replaceable>:"
 msgstr ""
 
@@ -52660,7 +52678,7 @@ msgstr ""
 #: book.translate.xml:39809
 msgid ""
 "To set the quota for the group <replaceable>firstgroup</replaceable> to "
-"50GB, use:"
+"50 GB, use:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -52737,7 +52755,7 @@ msgstr ""
 msgid ""
 "The general format of the <literal>reservation</literal> property is "
 "<literal>reservation=<replaceable>size</replaceable></literal>, so to set a "
-"reservation of 10GB on <filename>storage/home/bob</filename>, use:"
+"reservation of 10 GB on <filename>storage/home/bob</filename>, use:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -52839,8 +52857,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:39917
 msgid ""
-"The dataset is currently using 449GB of space (the used property). Without "
-"compression, it would have taken 496GB of space (the <literal>logicalused</"
+"The dataset is currently using 449 GB of space (the used property). Without "
+"compression, it would have taken 496 GB of space (the <literal>logicalused</"
 "literal> property). This results in the 1.11:1 compression ratio."
 msgstr ""
 
@@ -52851,7 +52869,7 @@ msgid ""
 "linkend=\"zfs-term-userquota\">User Quotas</link>. User quotas restrict how "
 "much space a user can consume on a dataset, but the measurements are based "
 "on how much space is used <emphasis>after compression</emphasis>. So if a "
-"user has a quota of 10GB, and writes 10GB of compressible data, they will "
+"user has a quota of 10 GB, and writes 10 GB of compressible data, they will "
 "still be able to store additional data. If they later update a file, say a "
 "database, with more or less compressible data, the amount of space available "
 "to them will change. This can result in the odd situation where a user did "
@@ -53106,10 +53124,10 @@ msgstr ""
 msgid ""
 "<emphasis><varname>vfs.zfs.arc_max</varname></emphasis> - Maximum size of "
 "the <link linkend=\"zfs-term-arc\"><acronym>ARC</acronym></link>. The "
-"default is all <acronym>RAM</acronym> less 1GB, or one half of <acronym>RAM</"
-"acronym>, whichever is more. However, a lower value should be used if the "
-"system will be running any other daemons or processes that may require "
-"memory. This value can be adjusted at runtime with "
+"default is all <acronym>RAM</acronym> less 1 GB, or one half of "
+"<acronym>RAM</acronym>, whichever is more. However, a lower value should be "
+"used if the system will be running any other daemons or processes that may "
+"require memory. This value can be adjusted at runtime with "
 "<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> and can be set in <filename>/boot/loader.conf</filename> or "
 "<filename>/etc/sysctl.conf</filename>."
@@ -53174,23 +53192,23 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:40183
 msgid ""
-"Many drives have 4KB sectors. Using the default <varname>ashift</varname> of "
-"<literal>9</literal> with these drives results in write amplification on "
-"these devices. Data that could be contained in a single 4KB write must "
+"Many drives have 4 KB sectors. Using the default <varname>ashift</varname> "
+"of <literal>9</literal> with these drives results in write amplification on "
+"these devices. Data that could be contained in a single 4 KB write must "
 "instead be written in eight 512-byte writes. <acronym>ZFS</acronym> tries to "
 "read the native sector size from all devices when creating a pool, but many "
-"drives with 4KB sectors report that their sectors are 512 bytes for "
+"drives with 4 KB sectors report that their sectors are 512 bytes for "
 "compatibility. Setting <varname>vfs.zfs.min_auto_ashift</varname> to "
 "<literal>12</literal> (<literal>2^12 = 4096</literal>) before creating a "
-"pool forces <acronym>ZFS</acronym> to use 4KB blocks for best performance on "
-"these drives."
+"pool forces <acronym>ZFS</acronym> to use 4 KB blocks for best performance "
+"on these drives."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40198
 msgid ""
-"Forcing 4KB blocks is also useful on pools where disk upgrades are planned. "
-"Future disks are likely to use 4KB sectors, and <varname>ashift</varname> "
+"Forcing 4 KB blocks is also useful on pools where disk upgrades are planned. "
+"Future disks are likely to use 4 KB sectors, and <varname>ashift</varname> "
 "values cannot be changed after a pool is created."
 msgstr ""
 
@@ -53211,7 +53229,7 @@ msgid ""
 "<emphasis><varname>vfs.zfs.prefetch_disable</varname></emphasis> - Disable "
 "prefetch. A value of <literal>0</literal> is enabled and <literal>1</"
 "literal> is disabled. The default is <literal>0</literal>, unless the system "
-"has less than 4GB of <acronym>RAM</acronym>. Prefetch works by reading "
+"has less than 4 GB of <acronym>RAM</acronym>. Prefetch works by reading "
 "larger blocks than were requested into the <link linkend=\"zfs-term-arc"
 "\"><acronym>ARC</acronym></link> in hopes that the data will be needed soon. "
 "If the workload has a large number of random reads, disabling prefetch may "
@@ -53304,9 +53322,9 @@ msgid ""
 "<varname>kern.hz</varname> which defaults to 1000 ticks per second. This "
 "setting may be changed, resulting in a different effective <acronym>IOPS</"
 "acronym> limit. The default value is <literal>4</literal>, resulting in a "
-"limit of: 1000ticks/sec / 4 = 250<acronym>IOPS</acronym>. Using a value of "
-"<replaceable>20</replaceable> would give a limit of: 1000ticks/sec / 20 = "
-"50<acronym>IOPS</acronym>. The speed of <command>scrub</command> is only "
+"limit of: 1000 ticks/sec / 4 = 250 <acronym>IOPS</acronym>. Using a value of "
+"<replaceable>20</replaceable> would give a limit of: 1000 ticks/sec / 20 = "
+"50 <acronym>IOPS</acronym>. The speed of <command>scrub</command> is only "
 "limited when there has been recent activity on the pool, as determined by "
 "<link linkend=\"zfs-advanced-tuning-scan_idle\"><varname>vfs.zfs.scan_idle</"
 "varname></link>. This value can be adjusted at any time with "
@@ -53327,14 +53345,14 @@ msgid ""
 "the resilver. The granularity of the setting is determined by the value of "
 "<varname>kern.hz</varname> which defaults to 1000 ticks per second. This "
 "setting may be changed, resulting in a different effective <acronym>IOPS</"
-"acronym> limit. The default value is 2, resulting in a limit of: 1000ticks/"
-"sec / 2 = 500<acronym>IOPS</acronym>. Returning the pool to an <link linkend="
-"\"zfs-term-online\">Online</link> state may be more important if another "
-"device failing could <link linkend=\"zfs-term-faulted\">Fault</link> the "
-"pool, causing data loss. A value of 0 will give the resilver operation the "
-"same priority as other operations, speeding the healing process. The speed "
-"of resilver is only limited when there has been other recent activity on the "
-"pool, as determined by <link linkend=\"zfs-advanced-tuning-scan_idle"
+"acronym> limit. The default value is 2, resulting in a limit of: 1000 ticks/"
+"sec / 2 = 500 <acronym>IOPS</acronym>. Returning the pool to an <link "
+"linkend=\"zfs-term-online\">Online</link> state may be more important if "
+"another device failing could <link linkend=\"zfs-term-faulted\">Fault</link> "
+"the pool, causing data loss. A value of 0 will give the resilver operation "
+"the same priority as other operations, speeding the healing process. The "
+"speed of resilver is only limited when there has been other recent activity "
+"on the pool, as determined by <link linkend=\"zfs-advanced-tuning-scan_idle"
 "\"><varname>vfs.zfs.scan_idle</varname></link>. This value can be adjusted "
 "at any time with <citerefentry><refentrytitle>sysctl</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
@@ -53393,8 +53411,8 @@ msgid ""
 "As a bare minimum, the total system memory should be at least one gigabyte. "
 "The amount of recommended <acronym>RAM</acronym> depends upon the size of "
 "the pool and which <acronym>ZFS</acronym> features are used. A general rule "
-"of thumb is 1GB of RAM for every 1TB of storage. If the deduplication "
-"feature is used, a general rule of thumb is 5GB of RAM per TB of storage to "
+"of thumb is 1 GB of RAM for every 1 TB of storage. If the deduplication "
+"feature is used, a general rule of thumb is 5 GB of RAM per TB of storage to "
 "be deduplicated. While some users successfully use <acronym>ZFS</acronym> "
 "with less <acronym>RAM</acronym>, systems under heavy load may panic due to "
 "memory exhaustion. Further tuning may be required for systems with less than "
@@ -53425,10 +53443,10 @@ msgstr ""
 #: book.translate.xml:40420
 msgid ""
 "This expands the kernel address space, allowing the <varname>vm.kvm_size</"
-"varname> tunable to be pushed beyond the currently imposed limit of 1GB, or "
-"the limit of 2GB for <acronym>PAE</acronym>. To find the most suitable value "
-"for this option, divide the desired address space in megabytes by four. In "
-"this example, it is <literal>512</literal> for 2GB."
+"varname> tunable to be pushed beyond the currently imposed limit of 1 GB, or "
+"the limit of 2 GB for <acronym>PAE</acronym>. To find the most suitable "
+"value for this option, divide the desired address space in megabytes by "
+"four. In this example, it is <literal>512</literal> for 2 GB."
 msgstr ""
 
 #. (itstool) path: sect3/title
@@ -53440,7 +53458,7 @@ msgstr ""
 #: book.translate.xml:40432
 msgid ""
 "The <filename>kmem</filename> address space can be increased on all FreeBSD "
-"architectures. On a test system with 1GB of physical memory, success was "
+"architectures. On a test system with 1 GB of physical memory, success was "
 "achieved with these options added to <filename>/boot/loader.conf</filename>, "
 "and the system restarted:"
 msgstr ""
@@ -53550,7 +53568,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #. (itstool) id: book.translate.xml#zfs-term-vdev
 #: book.translate.xml:40526
-msgid "vdevTypes"
+msgid "vdev Types"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -53573,7 +53591,7 @@ msgid ""
 "<emphasis>File</emphasis> - In addition to disks, <acronym>ZFS</acronym> "
 "pools can be backed by regular files, this is especially useful for testing "
 "and experimentation. Use the full path to the file as the device path in "
-"<command>zpool create</command>. All vdevs must be at least 128MB in size."
+"<command>zpool create</command>. All vdevs must be at least 128 MB in size."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -53615,17 +53633,18 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:40599
 msgid ""
-"In a <acronym>RAID-Z1</acronym> configuration with four disks, each 1TB, "
-"usable storage is 3TB and the pool will still be able to operate in degraded "
-"mode with one faulted disk. If an additional disk goes offline before the "
-"faulted disk is replaced and resilvered, all data in the pool can be lost."
+"In a <acronym>RAID-Z1</acronym> configuration with four disks, each 1 TB, "
+"usable storage is 3 TB and the pool will still be able to operate in "
+"degraded mode with one faulted disk. If an additional disk goes offline "
+"before the faulted disk is replaced and resilvered, all data in the pool can "
+"be lost."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:40607
 msgid ""
-"In a <acronym>RAID-Z3</acronym> configuration with eight disks of 1TB, the "
-"volume will provide 5TB of usable space and still be able to operate with "
+"In a <acronym>RAID-Z3</acronym> configuration with eight disks of 1 TB, the "
+"volume will provide 5 TB of usable space and still be able to operate with "
 "three faulted disks. <trademark>Sun</trademark> recommends no more than nine "
 "disks in a single vdev. If the configuration has more disks, it is "
 "recommended to divide them into separate vdevs and the pool data will be "
@@ -53639,9 +53658,9 @@ msgid ""
 "disks each would create something similar to a <acronym>RAID-60</acronym> "
 "array. A <acronym>RAID-Z</acronym> group's storage capacity is approximately "
 "the size of the smallest disk multiplied by the number of non-parity disks. "
-"Four 1TB disks in <acronym>RAID-Z1</acronym> has an effective size of "
-"approximately 3TB, and an array of eight 1TB disks in <acronym>RAID-Z3</"
-"acronym> will yield 5TB of usable space."
+"Four 1 TB disks in <acronym>RAID-Z1</acronym> has an effective size of "
+"approximately 3 TB, and an array of eight 1 TB disks in <acronym>RAID-Z3</"
+"acronym> will yield 5 TB of usable space."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -54018,8 +54037,8 @@ msgid ""
 "compressible data, and is over three times faster when operating on "
 "uncompressible data. <acronym>LZ4</acronym> also decompresses approximately "
 "80% faster than <acronym>LZJB</acronym>. On modern <acronym>CPU</acronym>s, "
-"<acronym>LZ4</acronym> can often compress at over 500MB/s, and decompress at "
-"over 1.5GB/s (per single CPU core)."
+"<acronym>LZ4</acronym> can often compress at over 500 MB/s, and decompress "
+"at over 1.5 GB/s (per single CPU core)."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -54104,10 +54123,10 @@ msgid ""
 "identical, the hash collision will be noted and the two blocks will be "
 "stored separately. Because <acronym>DDT</acronym> must store the hash of "
 "each unique block, it consumes a very large amount of memory. A general rule "
-"of thumb is 5-6GB of ram per 1TB of deduplicated data). In situations where "
-"it is not practical to have enough <acronym>RAM</acronym> to keep the entire "
-"<acronym>DDT</acronym> in memory, performance will suffer greatly as the "
-"<acronym>DDT</acronym> must be read from disk before each new block is "
+"of thumb is 5-6 GB of ram per 1 TB of deduplicated data). In situations "
+"where it is not practical to have enough <acronym>RAM</acronym> to keep the "
+"entire <acronym>DDT</acronym> in memory, performance will suffer greatly as "
+"the <acronym>DDT</acronym> must be read from disk before each new block is "
 "written. Deduplication can use <acronym>L2ARC</acronym> to store the "
 "<acronym>DDT</acronym>, providing a middle ground between fast system memory "
 "and slower disks. Consider using compression instead, which often provides "
@@ -54242,8 +54261,8 @@ msgstr ""
 msgid ""
 "The <literal>reservation</literal> property makes it possible to guarantee a "
 "minimum amount of space for a specific dataset and its descendants. If a "
-"10GB reservation is set on <filename>storage/home/bob</filename>, and "
-"another dataset tries to use all of the free space, at least 10GB of space "
+"10 GB reservation is set on <filename>storage/home/bob</filename>, and "
+"another dataset tries to use all of the free space, at least 10 GB of space "
 "is reserved for this dataset. If a snapshot is taken of <filename>storage/"
 "home/bob</filename>, the space used by that snapshot is counted against the "
 "reservation. The <link linkend=\"zfs-term-refreservation"
@@ -54262,9 +54281,9 @@ msgstr ""
 msgid ""
 "The <literal>refreservation</literal> property makes it possible to "
 "guarantee a minimum amount of space for the use of a specific dataset "
-"<emphasis>excluding</emphasis> its descendants. This means that if a 10GB "
+"<emphasis>excluding</emphasis> its descendants. This means that if a 10 GB "
 "reservation is set on <filename>storage/home/bob</filename>, and another "
-"dataset tries to use all of the free space, at least 10GB of space is "
+"dataset tries to use all of the free space, at least 10 GB of space is "
 "reserved for this dataset. In contrast to a regular <link linkend=\"zfs-term-"
 "reservation\">reservation</link>, space used by snapshots and descendant "
 "datasets is not counted against the reservation. For example, if a snapshot "
@@ -54380,7 +54399,7 @@ msgid ""
 "useful. Different operating systems differ in their native file system. "
 "Traditionally, the native FreeBSD file system has been the Unix File System "
 "<acronym>UFS</acronym> which has been modernized as <acronym>UFS2</acronym>. "
-"Since FreeBSD7.0, the Z File System (<acronym>ZFS</acronym>) is also "
+"Since FreeBSD 7.0, the Z File System (<acronym>ZFS</acronym>) is also "
 "available as a native file system. See <xref linkend=\"zfs\"/> for more "
 "information."
 msgstr ""
@@ -54471,9 +54490,9 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:41414
 msgid ""
-"Kernel support for ext2 file systems has been available since FreeBSD2.2. In "
-"FreeBSD8.x and earlier, the code is licensed under the <acronym>GPL</"
-"acronym>. Since FreeBSD9.0, the code has been rewritten and is now "
+"Kernel support for ext2 file systems has been available since FreeBSD 2.2. "
+"In FreeBSD 8.x and earlier, the code is licensed under the <acronym>GPL</"
+"acronym>. Since FreeBSD 9.0, the code has been rewritten and is now "
 "<acronym>BSD</acronym> licensed."
 msgstr ""
 
@@ -54607,7 +54626,7 @@ msgstr ""
 #: book.translate.xml:41568
 msgid ""
 "How to install FreeBSD on <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> with "
+"trademark> <trademark class=\"registered\">Windows</trademark> with "
 "<application>Virtual PC</application>."
 msgstr ""
 
@@ -54651,7 +54670,7 @@ msgstr ""
 #: book.translate.xml:41610
 msgid ""
 "FreeBSD as a Guest on <application>Parallels</application> for <trademark "
-"class=\"registered\">MacOS</trademark> X"
+"class=\"registered\">Mac OS</trademark> X"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -54661,17 +54680,18 @@ msgid ""
 "\"registered\">Mac</trademark> is a commercial software product available "
 "for <trademark class=\"registered\">Intel</trademark> based <trademark class="
 "\"registered\">Apple</trademark> <trademark class=\"registered\">Mac</"
-"trademark> computers running <trademark class=\"registered\">MacOS</"
+"trademark> computers running <trademark class=\"registered\">Mac OS</"
 "trademark> 10.4.6 or higher. FreeBSD is a fully supported guest operating "
 "system. Once <application>Parallels</application> has been installed on "
-"<trademark class=\"registered\">MacOS</trademark> X, the user must configure "
-"a virtual machine and then install the desired guest operating system."
+"<trademark class=\"registered\">Mac OS</trademark> X, the user must "
+"configure a virtual machine and then install the desired guest operating "
+"system."
 msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:41622
 msgid ""
-"Installing FreeBSD on Parallels/<trademark class=\"registered\">MacOS</"
+"Installing FreeBSD on Parallels/<trademark class=\"registered\">Mac OS</"
 "trademark> X"
 msgstr ""
 
@@ -54884,7 +54904,7 @@ msgstr ""
 #: book.translate.xml:41753
 msgid ""
 "After FreeBSD has been successfully installed on <trademark class="
-"\"registered\">MacOS</trademark> X with <application>Parallels</"
+"\"registered\">Mac OS</trademark> X with <application>Parallels</"
 "application>, there are a number of configuration steps that can be taken to "
 "optimize the system for virtualized operation."
 msgstr ""
@@ -54968,9 +54988,9 @@ msgid ""
 "for the <link xlink:href=\"http://www.microsoft.com/windows/downloads/"
 "virtualpc/sysreq.mspx\">system requirements</link>. Once "
 "<application>Virtual PC</application> has been installed on <trademark class="
-"\"registered\">Microsoft</trademark><trademark class=\"registered\">Windows</"
-"trademark>, the user can configure a virtual machine and then install the "
-"desired guest operating system."
+"\"registered\">Microsoft</trademark> <trademark class=\"registered"
+"\">Windows</trademark>, the user can configure a virtual machine and then "
+"install the desired guest operating system."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -55191,10 +55211,10 @@ msgstr ""
 #: book.translate.xml:41957
 msgid ""
 "After FreeBSD has been successfully installed on <trademark class="
-"\"registered\">Microsoft</trademark><trademark class=\"registered\">Windows</"
-"trademark> with <application>Virtual PC</application>, there are a number of "
-"configuration steps that can be taken to optimize the system for virtualized "
-"operation."
+"\"registered\">Microsoft</trademark> <trademark class=\"registered"
+"\">Windows</trademark> with <application>Virtual PC</application>, there are "
+"a number of configuration steps that can be taken to optimize the system for "
+"virtualized operation."
 msgstr ""
 
 #. (itstool) path: step/para
@@ -55233,7 +55253,7 @@ msgstr ""
 msgid ""
 "The most basic networking setup uses DHCP to connect the virtual machine to "
 "the same local area network as the <trademark class=\"registered"
-"\">Microsoft</trademark><trademark class=\"registered\">Windows</trademark> "
+"\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> "
 "host. This can be accomplished by adding <literal>ifconfig_de0=\"DHCP\"</"
 "literal> to <filename>/etc/rc.conf</filename>. More advanced networking "
 "setups are described in <xref linkend=\"advanced-networking\"/>."
@@ -55243,7 +55263,7 @@ msgstr ""
 #: book.translate.xml:42010
 msgid ""
 "FreeBSD as a Guest on <application>VMware Fusion</application> for "
-"<trademark class=\"registered\">MacOS</trademark>"
+"<trademark class=\"registered\">Mac OS</trademark>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -55253,10 +55273,10 @@ msgid ""
 "\">Mac</trademark> is a commercial software product available for <trademark "
 "class=\"registered\">Intel</trademark> based <trademark class=\"registered"
 "\">Apple</trademark> <trademark class=\"registered\">Mac</trademark> "
-"computers running <trademark class=\"registered\">MacOS</trademark> 10.4.9 "
+"computers running <trademark class=\"registered\">Mac OS</trademark> 10.4.9 "
 "or higher. FreeBSD is a fully supported guest operating system. Once "
 "<application>VMware Fusion</application> has been installed on <trademark "
-"class=\"registered\">MacOS</trademark> X, the user can configure a virtual "
+"class=\"registered\">Mac OS</trademark> X, the user can configure a virtual "
 "machine and then install the desired guest operating system."
 msgstr ""
 
@@ -55495,7 +55515,7 @@ msgstr ""
 #: book.translate.xml:42162
 msgid ""
 "After FreeBSD has been successfully installed on <trademark class="
-"\"registered\">MacOS</trademark> X with <application>VMware Fusion</"
+"\"registered\">Mac OS</trademark> X with <application>VMware Fusion</"
 "application>, there are a number of configuration steps that can be taken to "
 "optimize the system for virtualized operation."
 msgstr ""
@@ -55726,7 +55746,7 @@ msgid ""
 "<application><trademark>VirtualBox</trademark></application> is an actively "
 "developed, complete virtualization package, that is available for most "
 "operating systems including <trademark class=\"registered\">Windows</"
-"trademark>, <trademark class=\"registered\">MacOS</trademark>, <trademark "
+"trademark>, <trademark class=\"registered\">Mac OS</trademark>, <trademark "
 "class=\"registered\">Linux</trademark> and FreeBSD. It is equally capable of "
 "running <trademark class=\"registered\">Windows</trademark> or <trademark "
 "class=\"registered\">UNIX</trademark>-like guests. It is released as open "
@@ -56023,15 +56043,15 @@ msgid ""
 "\">Linux</trademark> guests or FreeBSD guests with more than one "
 "<acronym>vCPU</acronym> requires <acronym>VMX</acronym> unrestricted mode "
 "support (<acronym>UG</acronym>). Most newer processors, specifically the "
-"<trademark class=\"registered\">Intel</trademark><trademark>Core</trademark> "
-"i3/i5/i7 and <trademark class=\"registered\">Intel</"
-"trademark><trademark>Xeon</trademark> E3/E5/E7, support these features. "
+"<trademark class=\"registered\">Intel</trademark> <trademark>Core</"
+"trademark> i3/i5/i7 and <trademark class=\"registered\">Intel</"
+"trademark> <trademark>Xeon</trademark> E3/E5/E7, support these features. "
 "<acronym>UG</acronym> support was introduced with Intel's Westmere micro-"
 "architecture. For a complete list of <trademark class=\"registered\">Intel</"
 "trademark> processors that support <acronym>EPT</acronym>, refer to <link "
 "xlink:href=\"http://ark.intel.com/search/advanced?s=t&amp;"
 "ExtendedPageTables=true\"/>. <acronym>RVI</acronym> is found on the third "
-"generation and later of the <trademark>AMDOpteron</trademark> (Barcelona) "
+"generation and later of the <trademark>AMD Opteron</trademark> (Barcelona) "
 "processors. The easiest way to tell if a processor supports "
 "<application>bhyve</application> is to run <command>dmesg</command> or look "
 "in <filename>/var/run/dmesg.boot</filename> for the <literal>POPCNT</"
@@ -56598,13 +56618,13 @@ msgid ""
 "hypervisor</link> for <trademark class=\"registered\">Intel</trademark> and "
 "<trademark class=\"registered\">ARM</trademark> architectures. FreeBSD has "
 "included <trademark>i386</trademark> and <trademark class=\"registered"
-"\">AMD</trademark>64-Bit <link xlink:href=\"https://wiki.xenproject.org/wiki/"
-"DomU\">DomU</link> and <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"\">AMD</trademark> 64-Bit <link xlink:href=\"https://wiki.xenproject.org/"
+"wiki/DomU\">DomU</link> and <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "Amazon_Elastic_Compute_Cloud\">Amazon EC2</link> unprivileged domain "
-"(virtual machine) support since FreeBSD8.0 and includes Dom0 control domain "
-"(host) support in FreeBSD11.0. Support for para-virtualized (PV) domains has "
-"been removed from FreeBSD11 in favor of hardware virtualized (HVM) domains, "
-"which provides better performance."
+"(virtual machine) support since FreeBSD 8.0 and includes Dom0 control domain "
+"(host) support in FreeBSD 11.0. Support for para-virtualized (PV) domains "
+"has been removed from FreeBSD 11 in favor of hardware virtualized (HVM) "
+"domains, which provides better performance."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -56663,7 +56683,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:42923
 msgid ""
-"Users of FreeBSD11 should install the <package>emulators/xen-kernel47</"
+"Users of FreeBSD 11 should install the <package>emulators/xen-kernel47</"
 "package> and <package>sysutils/xen-tools47</package> packages that are based "
 "on Xen version 4.7. Systems running on FreeBSD-CURRENT with at least "
 "revision r336475 or higher, can use Xen 4.11 provided by <package>emulators/"
@@ -56727,9 +56747,9 @@ msgid ""
 "conf</filename> activates the Dom0. <trademark>Xen</trademark> also requires "
 "resources like CPU and memory from the host machine for itself and other "
 "DomU domains. How much CPU and memory depends on the individual requirements "
-"and hardware capabilities. In this example, 8GB of memory and 4 virtual CPUs "
-"are made available for the Dom0. The serial console is also activated and "
-"logging options are defined."
+"and hardware capabilities. In this example, 8 GB of memory and 4 virtual "
+"CPUs are made available for the Dom0. The serial console is also activated "
+"and logging options are defined."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -56874,11 +56894,12 @@ msgid ""
 "hard disks. Virtual disk storage for the DomU can be files created by "
 "<citerefentry><refentrytitle>truncate</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> or ZFS volumes as described in <xref linkend=\"zfs-"
-"zfs-volume\"/>. In this example, a 20GB volume is used. A VM is created with "
-"the ZFS volume, a FreeBSD ISO image, 1GB of RAM and two virtual CPUs. The "
-"ISO installation file is retrieved with <citerefentry><refentrytitle>fetch</"
-"refentrytitle><manvolnum>1</manvolnum></citerefentry> and saved locally in a "
-"file called <filename>freebsd.iso</filename>."
+"zfs-volume\"/>. In this example, a 20 GB volume is used. A VM is created "
+"with the ZFS volume, a FreeBSD ISO image, 1 GB of RAM and two virtual CPUs. "
+"The ISO installation file is retrieved with "
+"<citerefentry><refentrytitle>fetch</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> and saved locally in a file called <filename>freebsd.iso</"
+"filename>."
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -56890,7 +56911,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:43051
 msgid ""
-"A ZFS volume of 20GB called <filename>xendisk0</filename> is created to "
+"A ZFS volume of 20 GB called <filename>xendisk0</filename> is created to "
 "serve as the disk space for the VM."
 msgstr ""
 
@@ -58926,12 +58947,12 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44568
 msgid ""
-"Upgrades from one minor version of FreeBSD to another, like from FreeBSD9.0 "
-"to FreeBSD9.1, are called <firstterm>minor version</firstterm> upgrades. "
+"Upgrades from one minor version of FreeBSD to another, like from FreeBSD 9.0 "
+"to FreeBSD 9.1, are called <firstterm>minor version</firstterm> upgrades. "
 "<firstterm>Major version</firstterm> upgrades occur when FreeBSD is upgraded "
-"from one major version to another, like from FreeBSD9.X to FreeBSD10.X. Both "
-"types of upgrades can be performed by providing <command>freebsd-update</"
-"command> with a release version target."
+"from one major version to another, like from FreeBSD 9.X to FreeBSD 10.X. "
+"Both types of upgrades can be performed by providing <command>freebsd-"
+"update</command> with a release version target."
 msgstr ""
 
 #. (itstool) path: note/para
@@ -58947,8 +58968,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:44586
 msgid ""
-"The following command, when run on a FreeBSD9.0 system, will upgrade it to "
-"FreeBSD9.1:"
+"The following command, when run on a FreeBSD 9.0 system, will upgrade it to "
+"FreeBSD 9.1:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -59122,7 +59143,7 @@ msgstr ""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:44703
-msgid "Custom Kernels with FreeBSD9.X and Later"
+msgid "Custom Kernels with FreeBSD 9.X and Later"
 msgstr ""
 
 #. (itstool) path: sect3/para
@@ -59593,7 +59614,7 @@ msgid ""
 "This method of updating the FreeBSD documentation is supported by a set of "
 "documentation ports and packages which are updated by the Documentation "
 "Engineering Team <email>doceng@FreeBSD.org</email> on a monthly basis. These "
-"are listed in the FreeBSD PortsCollection, under the docs category (<link "
+"are listed in the FreeBSD Ports Collection, under the docs category (<link "
 "xlink:href=\"http://www.freshports.org/docs/\">http://www.freshports.org/"
 "docs/</link>)."
 msgstr ""
@@ -61572,7 +61593,7 @@ msgstr ""
 msgid ""
 "The <citerefentry><refentrytitle>cfumass</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> driver is a <acronym>USB</acronym> device mode "
-"driver first available in FreeBSD12.0."
+"driver first available in FreeBSD 12.0."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -62451,7 +62472,7 @@ msgstr ""
 msgid ""
 "To prevent certain settings from being changed by an application, make "
 "adjustments to the locking device. For example, to lock the speed of "
-"<filename>ttyu5</filename> to 57600bps, type:"
+"<filename>ttyu5</filename> to 57600 bps, type:"
 msgstr ""
 
 #. (itstool) path: sect2/screen
@@ -62464,7 +62485,7 @@ msgstr ""
 #: book.translate.xml:47279
 msgid ""
 "Now, any application that opens <filename>ttyu5</filename> and tries to "
-"change the speed of the port will be stuck with 57600bps."
+"change the speed of the port will be stuck with 57600 bps."
 msgstr ""
 
 #. (itstool) path: info/title
@@ -62738,7 +62759,7 @@ msgstr ""
 msgid ""
 "When setting the getty type, make sure to match the communications settings "
 "used by the terminal. For this example, the Wyse-50 uses no parity and "
-"connects at 38400bps. The computer uses no parity and connects at 19200bps."
+"connects at 38400 bps. The computer uses no parity and connects at 19200 bps."
 msgstr ""
 
 #. (itstool) path: callout/para
@@ -62967,7 +62988,7 @@ msgstr ""
 #: book.translate.xml:47658
 msgid ""
 "FreeBSD needs the <acronym>RTS</acronym> and <acronym>CTS</acronym> signals "
-"for flow control at speeds above 2400bps, the <acronym>CD</acronym> signal "
+"for flow control at speeds above 2400 bps, the <acronym>CD</acronym> signal "
 "to detect when a call has been answered or the line has been hung up, and "
 "the <acronym>DTR</acronym> signal to reset the modem after a session is "
 "complete. Some cables are wired without all of the needed signals, so if a "
@@ -63081,10 +63102,10 @@ msgid ""
 "changes to <filename>/etc/gettytab</filename> should be needed. However, for "
 "a matching-speed configuration, additional entries may be required in order "
 "to define the speeds to use for the modem. This example configures a "
-"14.4Kbps modem with a top interface speed of 19.2Kbps using 8-bit, no parity "
-"connections. It configures <command>getty</command> to start the "
-"communications rate for a V.32bis connection at 19.2Kbps, then cycles "
-"through 9600bps, 2400bps, 1200bps, 300bps, and back to 19.2Kbps. "
+"14.4 Kbps modem with a top interface speed of 19.2 Kbps using 8-bit, no "
+"parity connections. It configures <command>getty</command> to start the "
+"communications rate for a V.32bis connection at 19.2 Kbps, then cycles "
+"through 9600 bps, 2400 bps, 1200 bps, 300 bps, and back to 19.2 Kbps. "
 "Communications rate cycling is implemented with the <literal>nx=</literal> "
 "(next table) capability. Each line uses a <literal>tc=</literal> (table "
 "continuation) entry to pick up the rest of the settings for a particular "
@@ -63113,7 +63134,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:47779
 msgid ""
-"For a 28.8Kbps modem, or to take advantage of compression on a 14.4Kbps "
+"For a 28.8 Kbps modem, or to take advantage of compression on a 14.4 Kbps "
 "modem, use a higher communications rate, as seen in this example:"
 msgstr ""
 
@@ -63142,7 +63163,7 @@ msgstr ""
 msgid ""
 "For a slow <acronym>CPU</acronym> or a heavily loaded system without 16550A-"
 "based serial ports, this configuration may produce <errorname>sio</"
-"errorname> <quote>silo</quote> errors at 57.6Kbps."
+"errorname> <quote>silo</quote> errors at 57.6 Kbps."
 msgstr ""
 
 #. (itstool) path: sect2/indexterm
@@ -63179,7 +63200,7 @@ msgstr ""
 msgid ""
 "For a locked-speed configuration, specify the speed with a valid type listed "
 "in <filename>/etc/gettytab</filename>. This example is for a modem whose "
-"port speed is locked at 19.2Kbps:"
+"port speed is locked at 19.2 Kbps:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
@@ -63194,7 +63215,7 @@ msgid ""
 "In a matching-speed configuration, the entry needs to reference the "
 "appropriate beginning <quote>auto-baud</quote> entry in <filename>/etc/"
 "gettytab</filename>. To continue the example for a matching-speed modem that "
-"starts at 19.2Kbps, use this entry:"
+"starts at 19.2 Kbps, use this entry:"
 msgstr ""
 
 #. (itstool) path: sect2/programlisting
@@ -63542,8 +63563,8 @@ msgid ""
 "Put in an entry for <literal>tip1200</literal> or <literal>cu1200</literal>, "
 "but go ahead and use whatever <acronym>bps</acronym> rate is appropriate "
 "with the <literal>br</literal> capability. <command>tip</command> thinks a "
-"good default is 1200bps which is why it looks for a <literal>tip1200</"
-"literal> entry. 1200bps does not have to be used, though."
+"good default is 1200 bps which is why it looks for a <literal>tip1200</"
+"literal> entry. 1200 bps does not have to be used, though."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -70138,7 +70159,7 @@ msgstr ""
 msgid ""
 "The <citerefentry><refentrytitle>autofs</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> automount facility is supported starting with "
-"FreeBSD10.1-RELEASE. To use the automounter functionality in older versions "
+"FreeBSD 10.1-RELEASE. To use the automounter functionality in older versions "
 "of FreeBSD, use <citerefentry><refentrytitle>amd</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> instead. This chapter "
 "only describes the <citerefentry><refentrytitle>autofs</"
@@ -73299,7 +73320,7 @@ msgid ""
 "This section summarizes how to configure and start version 2.<replaceable>x</"
 "replaceable> of the <application>Apache HTTP Server</application> on "
 "FreeBSD. For more detailed information about <application>Apache</"
-"application>2.X and its configuration directives, refer to <link xlink:href="
+"application> 2.X and its configuration directives, refer to <link xlink:href="
 "\"http://httpd.apache.org/\">httpd.apache.org</link>."
 msgstr ""
 
@@ -73994,7 +74015,8 @@ msgstr ""
 #: book.translate.xml:56162
 msgid ""
 "File and Print Services for <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> Clients (Samba)"
+"trademark> <trademark class=\"registered\">Windows</trademark> Clients "
+"(Samba)"
 msgstr ""
 
 #. (itstool) path: sect1/indexterm
@@ -74023,9 +74045,9 @@ msgid ""
 "<application>Samba</application> is a popular open source software package "
 "that provides file and print services using the <acronym>SMB/CIFS</acronym> "
 "protocol. This protocol is built into <trademark class=\"registered"
-"\">Microsoft</trademark><trademark class=\"registered\">Windows</trademark> "
+"\">Microsoft</trademark> <trademark class=\"registered\">Windows</trademark> "
 "systems. It can be added to non-<trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> systems by "
+"trademark> <trademark class=\"registered\">Windows</trademark> systems by "
 "installing the <application>Samba</application> client libraries. The "
 "protocol allows clients to access shared data and printers. These shares can "
 "be mapped as a local disk drive and shared printers can be used as if they "
@@ -74039,7 +74061,7 @@ msgid ""
 "installed using the <package>net/samba-smbclient</package> port or package. "
 "The client provides the ability for a FreeBSD system to access <acronym>SMB/"
 "CIFS</acronym> shares in a <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> network."
+"trademark> <trademark class=\"registered\">Windows</trademark> network."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -74050,7 +74072,7 @@ msgid ""
 "package. This allows the administrator to create <acronym>SMB</acronym>/"
 "<acronym>CIFS</acronym> shares on the FreeBSD system which can be accessed "
 "by clients running <trademark class=\"registered\">Microsoft</"
-"trademark><trademark class=\"registered\">Windows</trademark> or the "
+"trademark> <trademark class=\"registered\">Windows</trademark> or the "
 "<application>Samba</application> client libraries."
 msgstr ""
 
@@ -74322,10 +74344,10 @@ msgstr ""
 msgid ""
 "<application>Samba</application> is a complex software suite with "
 "functionality that allows broad integration with <trademark class="
-"\"registered\">Microsoft</trademark><trademark class=\"registered\">Windows</"
-"trademark> networks. For more information about functionality beyond the "
-"basic configuration described here, refer to <uri xlink:href=\"http://www."
-"samba.org\">http://www.samba.org</uri>."
+"\"registered\">Microsoft</trademark> <trademark class=\"registered"
+"\">Windows</trademark> networks. For more information about functionality "
+"beyond the basic configuration described here, refer to <uri xlink:href="
+"\"http://www.samba.org\">http://www.samba.org</uri>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -75366,7 +75388,7 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: book.translate.xml:57191
 msgid ""
-"Since FreeBSD5.3, a ported version of OpenBSD's <application>PF</"
+"Since FreeBSD 5.3, a ported version of OpenBSD's <application>PF</"
 "application> firewall has been included as an integrated part of the base "
 "system. <application>PF</application> is a complete, full-featured firewall "
 "that has optional support for <application>ALTQ</application> (Alternate "
@@ -75388,7 +75410,7 @@ msgstr ""
 msgid ""
 "When reading the <link xlink:href=\"http://www.openbsd.org/faq/pf/\">PF FAQ</"
 "link>, keep in mind that FreeBSD uses the same version of <application>PF</"
-"application> as OpenBSD4.5."
+"application> as OpenBSD 4.5."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -81088,7 +81110,7 @@ msgstr ""
 
 #. (itstool) path: step/para
 #: book.translate.xml:61352
-msgid "On FreeBSD11 or higher, use this command instead:"
+msgid "On FreeBSD 11 or higher, use this command instead:"
 msgstr ""
 
 #. (itstool) path: step/screen
@@ -85288,8 +85310,8 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:64353
 msgid ""
-"<personname> <firstname>Jean-Franois</firstname> <surname>Docks</surname> </"
-"personname> <contrib>Updated by </contrib>"
+"<personname> <firstname>Jean-François</firstname> <surname>Dockès</surname> "
+"</personname> <contrib>Updated by </contrib>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -86567,7 +86589,7 @@ msgid ""
 "High availability using <acronym>CARP</acronym> is built into FreeBSD, "
 "though the steps to configure it vary slightly depending upon the FreeBSD "
 "version. This section provides the same example configuration for versions "
-"before and equal to or after FreeBSD10."
+"before and equal to or after FreeBSD 10."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -86598,7 +86620,7 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
-msgid "Using <acronym>CARP</acronym> on FreeBSD10 and Later"
+msgid "Using <acronym>CARP</acronym> on FreeBSD 10 and Later"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -86751,7 +86773,7 @@ msgstr ""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:65535
-msgid "Using <acronym>CARP</acronym> on FreeBSD9 and Earlier"
+msgid "Using <acronym>CARP</acronym> on FreeBSD 9 and Earlier"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -87056,7 +87078,7 @@ msgstr ""
 msgid ""
 "Getlinux\n"
 "\t  <street>78 Rue de la Croix Rochopt</street>\n"
-"\t  <city>pinay-sous-Snart</city>\n"
+"\t  <city>Épinay-sous-Sénart</city>\n"
 "\t  <postcode>91860</postcode>\n"
 "\t  <country>France</country>\n"
 "\t  Email: <email>contact@getlinux.fr</email>\n"
@@ -87070,7 +87092,7 @@ msgstr ""
 msgid ""
 "Dr. Hinner EDV\n"
 "\t  <street>Kochelseestr. 11</street>\n"
-"\t  <postcode>D-81371</postcode> <city>Mnchen</city>\n"
+"\t  <postcode>D-81371</postcode> <city>München</city>\n"
 "\t  <country>Germany</country>\n"
 "\t  Phone: <phone>(0177) 428 419 0</phone>\n"
 "\t  Email: <email>infow@hinner.de</email>\n"
@@ -89453,7 +89475,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid ""
-"Don Libes, Sandy Ressler <emphasis>Life with UNIX</emphasis>  special "
+"Don Libes, Sandy Ressler <emphasis>Life with UNIX</emphasis> — special "
 "edition. Prentice-Hall, Inc., 1989. ISBN 0-13-536657-7"
 msgstr ""
 
@@ -89506,7 +89528,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid ""
-"<link xlink:href=\"http://www.bsdnow.tv/\">BSD Now  Video Podcast</link>, "
+"<link xlink:href=\"http://www.bsdnow.tv/\">BSD Now — Video Podcast</link>, "
 "published by Jupiter Broadcasting LLC"
 msgstr ""
 
@@ -91015,8 +91037,8 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:65535
 msgid ""
-"Discussion of the FreeBSD port to <trademark>Xen</trademark>  implementation "
-"and usage"
+"Discussion of the FreeBSD port to <trademark>Xen</trademark> — "
+"implementation and usage"
 msgstr ""
 
 #. (itstool) path: row/entry
@@ -91029,7 +91051,7 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:65535
-msgid "<application>XFCE</application> for FreeBSD  porting and maintaining"
+msgid "<application>XFCE</application> for FreeBSD — porting and maintaining"
 msgstr ""
 
 #. (itstool) path: row/entry
@@ -91042,7 +91064,7 @@ msgstr ""
 
 #. (itstool) path: row/entry
 #: book.translate.xml:65535
-msgid "<application>Zope</application> for FreeBSD  porting and maintaining"
+msgid "<application>Zope</application> for FreeBSD — porting and maintaining"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -91323,7 +91345,7 @@ msgstr ""
 #: book.translate.xml:65535
 msgid ""
 "All changes to the <filename>releng</filename> branches of the src "
-"Subversion repository (the security/ release engineering branches)"
+"Subversion repository (the security / release engineering branches)"
 msgstr ""
 
 #. (itstool) path: row/entry
@@ -92152,7 +92174,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid ""
-"Email should use open formats only  preferably plain text, but basic "
+"Email should use open formats only — preferably plain text, but basic "
 "Portable Document Format (<acronym>PDF</acronym>), HTML, and a few others "
 "are acceptable to many readers. Closed formats such as <trademark class="
 "\"registered\">Microsoft</trademark> Word (<filename>.doc</filename>) will "
@@ -92395,7 +92417,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid ""
-"<emphasis>Important news and instructions about the FreeBSD<quote>Ports "
+"<emphasis>Important news and instructions about the FreeBSD <quote>Ports "
 "Collection</quote></emphasis>"
 msgstr ""
 
@@ -92769,7 +92791,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:65535
 msgid ""
-"<emphasis>Discussion of the FreeBSD port to <trademark>Xen</trademark>  "
+"<emphasis>Discussion of the FreeBSD port to <trademark>Xen</trademark> — "
 "implementation and usage</emphasis>"
 msgstr ""
 
@@ -94138,13 +94160,13 @@ msgstr ""
 
 #. (itstool) path: glossentry/glossterm
 #: book.translate.xml:65535
-msgid "Intels <acronym>ASL</acronym> compiler"
+msgid "Intel’s <acronym>ASL</acronym> compiler"
 msgstr ""
 
 #. (itstool) path: glossdef/para
 #: book.translate.xml:65535
 msgid ""
-"Intels compiler for converting <acronym>ASL</acronym> into <acronym>AML</"
+"Intel’s compiler for converting <acronym>ASL</acronym> into <acronym>AML</"
 "acronym>."
 msgstr ""
 
@@ -94569,8 +94591,8 @@ msgstr ""
 msgid ""
 "A filesystem developed by Microsoft and available in its <quote>New "
 "Technology</quote> operating systems, such as <trademark class=\"registered"
-"\">Windows</trademark>2000, <trademark class=\"registered\">WindowsNT</"
-"trademark> and <trademark class=\"registered\">Windows</trademark>XP."
+"\">Windows</trademark> 2000, <trademark class=\"registered\">Windows NT</"
+"trademark> and <trademark class=\"registered\">Windows</trademark> XP."
 msgstr ""
 
 #. (itstool) path: glossentry/glossterm
@@ -94895,7 +94917,7 @@ msgid ""
 "Paul, who named it referring to how awful it is (from a philosophical "
 "standpoint) to need to have something like this in the first place. The "
 "<acronym>NDISulator</acronym> is a special compatibility module to allow "
-"Microsoft Windows NDIS miniport network drivers to be used with FreeBSD/"
+"Microsoft Windows™ NDIS miniport network drivers to be used with FreeBSD/"
 "i386. This is usually the only way to use cards where the driver is closed-"
 "source. See <filename>src/sys/compat/ndis/subr_ndis.c</filename>."
 msgstr ""
