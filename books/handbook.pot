@@ -2060,7 +2060,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: book.translate.xml:2339
 msgid ""
-"The FreeBSD Project had its genesis in the early part of 1993, partially as "
+"The FreeBSD Project had its genesis in the early part of 1993, partially as "
 "an outgrowth of the Unofficial 386BSDPatchkit by the patchkit's last 3 "
 "coordinators: Nate Williams, Rod Grimes and Jordan Hubbard."
 msgstr ""
