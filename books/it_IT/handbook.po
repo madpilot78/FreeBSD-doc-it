@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-09 05:10+0000\n"
+"PO-Revision-Date: 2018-09-18 02:27+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -8439,6 +8439,14 @@ msgid ""
 "filename>, and can optionally mail the new user a welcome message. This "
 "utility must be run as the superuser."
 msgstr ""
+"Il programma raccomandato per aggiungere utenti è "
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Quando viene aggiunto un nuovo utente, il "
+"programma aggiorna automaticamente i file <filename>/etc/passwd</filename> e "
+"<filename>/etc/group</filename>. Crea anche la home directory dell'utente, "
+"copia i file di configurazione di default da <filename>/usr/share/skel</"
+"filename>, e può facoltativamente anche inviare un messaggio di benvenuto "
+"all'utente. Questa utilità deve essere eseguita dal superuser."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6147
@@ -8454,11 +8462,21 @@ msgid ""
 "manvolnum></citerefentry>. When finished, the utility will prompt to either "
 "create another user or to exit."
 msgstr ""
+"L'Utilità <citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> è interattiva e guida l'utilizzatore attraverso i "
+"passaggi per creare un nuovo account utente. Come visto in <xref linkend="
+"\"users-modifying-adduser\"/>, basta inserire le informazioni richieste o "
+"premere <keycap>Invio</keycap> per accettare il valore di default mostrato "
+"tra parentesi quadre. In questo esempio l'utente è stato invitato nel gruppo "
+"<systemitem class=\"groupname\">wheel</systemitem>, permettendogli di "
+"diventare il superutente con <citerefentry><refentrytitle>su</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Una volta completato, "
+"l'utilità chiede se si desidera creare un altro utente o uscire."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6159
 msgid "Adding a User on FreeBSD"
-msgstr ""
+msgstr "Aggiungere un utente su FreeBSD"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6161
@@ -8496,6 +8514,37 @@ msgid ""
 "Goodbye!\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>adduser</userinput>\n"
+"Username: <userinput>jru</userinput>\n"
+"Full name: <userinput>J. Random User</userinput>\n"
+"Uid (Leave empty for default):\n"
+"Login group [jru]:\n"
+"Login group is jru. Invite jru into other groups? []: <userinput>wheel</"
+"userinput>\n"
+"Login class [default]:\n"
+"Shell (sh csh tcsh zsh nologin) [sh]: <userinput>zsh</userinput>\n"
+"Home directory [/home/jru]:\n"
+"Home directory permissions (Leave empty for default):\n"
+"Use password-based authentication? [yes]:\n"
+"Use an empty password? (yes/no) [no]:\n"
+"Use a random password? (yes/no) [no]:\n"
+"Enter password:\n"
+"Enter password again:\n"
+"Lock out the account after creation? [no]:\n"
+"Username   : jru\n"
+"Password   : ****\n"
+"Full Name  : J. Random User\n"
+"Uid        : 1001\n"
+"Class      :\n"
+"Groups     : jru wheel\n"
+"Home       : /home/jru\n"
+"Shell      : /usr/local/bin/zsh\n"
+"Locked     : no\n"
+"OK? (yes/no): <userinput>yes</userinput>\n"
+"adduser: INFO: Successfully added (jru) to the user database.\n"
+"Add another user? (yes/no): <userinput>no</userinput>\n"
+"Goodbye!\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6194
@@ -8503,21 +8552,24 @@ msgid ""
 "Since the password is not echoed when typed, be careful to not mistype the "
 "password when creating the user account."
 msgstr ""
+"Poiché la password non viene visualizzata sullo schermo quando viene "
+"digitata, sii attento a non fare errori di battitura nell'inserirla quando "
+"crei un account utente."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6201
 msgid "<command>rmuser</command>"
-msgstr ""
+msgstr "<command>rmuser</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6203
 msgid "<primary><command>rmuser</command></primary>"
-msgstr ""
+msgstr "<primary><command>rmuser</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6206
 msgid "<primary>accounts</primary> <secondary>removing</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>rimozione</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6211
@@ -8526,6 +8578,10 @@ msgid ""
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> as the superuser. This command performs the following steps:"
 msgstr ""
+"Per rimuovere completamente un utente dal sistema, lancia "
+"<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> come superutente. Questo comando effettua le seguenti "
+"operazioni:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:6217
@@ -8533,6 +8589,8 @@ msgid ""
 "Removes the user's <citerefentry><refentrytitle>crontab</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> entry, if one exists."
 msgstr ""
+"Rimuove il <citerefentry><refentrytitle>crontab</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> dell'utente, se esiste."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6222
@@ -8540,22 +8598,26 @@ msgid ""
 "Removes any <citerefentry><refentrytitle>at</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> jobs belonging to the user."
 msgstr ""
+"Rimuove qualsiasi job <citerefentry><refentrytitle>at</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> dell'utente."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6227
 msgid "Kills all processes owned by the user."
-msgstr ""
+msgstr "Uccide tutti i processi posseduti dall'utente."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6231
 msgid "Removes the user from the system's local password file."
-msgstr ""
+msgstr "Rimuove l'utente dal file password locale del sistema."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6236
 msgid ""
 "Optionally removes the user's home directory, if it is owned by the user."
 msgstr ""
+"Facoltativamente rimuove la home directory dell'utente, se posseduta "
+"dall'utente stesso."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6241
@@ -8563,6 +8625,8 @@ msgid ""
 "Removes the incoming mail files belonging to the user from <filename>/var/"
 "mail</filename>."
 msgstr ""
+"Rimuove i file della posta in ingresso dell'utente da <filename>/var/mail</"
+"filename>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6246
@@ -8570,6 +8634,8 @@ msgid ""
 "Removes all files owned by the user from temporary file storage areas such "
 "as <filename>/tmp</filename>."
 msgstr ""
+"Rimuove tutti i file posseduti dall'utente dalle aree di archiviazione "
+"temporanea dei file, come <filename>/tmp</filename>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:6252
@@ -8580,6 +8646,12 @@ msgid ""
 "user unique groups created by <citerefentry><refentrytitle>adduser</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"Infine, rimuove l'utente da tutti i gruppi a cui appartiene in <filename>/"
+"etc/group</filename>. Se un gruppo diviene privo di utenti e il nome del "
+"gruppo è uguale al nome utente, il gruppo viene rimosso. Questo fa da "
+"complemento ai gruppi individuali per utente creati da "
+"<citerefentry><refentrytitle>adduser</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6261
@@ -8588,17 +8660,23 @@ msgid ""
 "citerefentry> cannot be used to remove superuser accounts since that is "
 "almost always an indication of massive destruction."
 msgstr ""
+"<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> non può essere usato per rimuovere gli account superuser "
+"poiché questo è quasi sempre sintomo di una operazione di distruzione "
+"massiva."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6265
 msgid ""
 "By default, an interactive mode is used, as shown in the following example."
 msgstr ""
+"Di default , viene usata una interfaccia interattiva, come mostrato nel "
+"seguente esempio."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6269
 msgid "<command>rmuser</command> Interactive Account Removal"
-msgstr ""
+msgstr "<command>rmuser</command> Rimozione Interattiva di un Account"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6272
@@ -8612,16 +8690,23 @@ msgid ""
 "Removing user (jru): mailspool home passwd.\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>rmuser jru</userinput>\n"
+"Matching password entry:\n"
+"jru:*:1001:1001::0:0:J. Random User:/home/jru:/usr/local/bin/zsh\n"
+"Is this the entry you wish to remove? <userinput>y</userinput>\n"
+"Remove user's home directory (/home/jru)? <userinput>y</userinput>\n"
+"Removing user (jru): mailspool home passwd.\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6283
 msgid "<command>chpass</command>"
-msgstr ""
+msgstr "<command>chpass</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6285
 msgid "<primary><command>chpass</command></primary>"
-msgstr ""
+msgstr "<primary><command>chpass</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6289
@@ -8632,6 +8717,11 @@ msgid ""
 "The superuser can use this utility to change additional account information "
 "for any user."
 msgstr ""
+"Gli utenti possono usare <citerefentry><refentrytitle>chpass</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> per cambiare la loro "
+"shell di default e le informazioni personali associate con il loro account "
+"utente. Il superutente può usare questa utilità per modificare ulteriori "
+"informazioni nell'account di ogni utente."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6294
@@ -8642,6 +8732,11 @@ msgid ""
 "exits from the editor, the user database is updated with the new information."
 ""
 msgstr ""
+"Quando non gli vengono fornite opzioni, a parte il nome utente facoltativo, "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> mostra un editor contenente le informazioni dell'utente. "
+"Quando l'utente esce dall'editor, il database utenti viene aggiornato con le "
+"nuove informazioni."
 
 #. (itstool) path: note/para
 #: book.translate.xml:6300
@@ -8649,6 +8744,8 @@ msgid ""
 "This utility will prompt for the user's password when exiting the editor, "
 "unless the utility is run as the superuser."
 msgstr ""
+"L'Utilità richiederà la password dell'utente quando esce dall'editor, a meno "
+"che non sia stata lanciata dal superutente."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6305
@@ -8660,11 +8757,17 @@ msgid ""
 "available for editing. This is shown in <xref linkend=\"users-modifying-"
 "chpass-ru\"/>."
 msgstr ""
+"In <xref linkend=\"users-modifying-chpass-su\"/>, il superutente ha digitato "
+"<command>chpass jru</command> e ora sta visualizzando i campi che possono "
+"essere modificati per questo utente. Se invece <systemitem class="
+"\"username\">jru</systemitem> lancia questo comando, solo gli ultimi sei "
+"campi saranno mostrati e disponibili per la modifica. Questo viene mostrato "
+"in <xref linkend=\"users-modifying-chpass-ru\"/>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6314
 msgid "Using <command>chpass</command> as Superuser"
-msgstr ""
+msgstr "Uso di <command>chpass</command> come Superutente"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6317
@@ -8686,11 +8789,26 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Changing user database information for jru.\n"
+"Login: jru\n"
+"Password: *\n"
+"Uid [#]: 1001\n"
+"Gid [# or name]: 1001\n"
+"Change [month day year]:\n"
+"Expire [month day year]:\n"
+"Class:\n"
+"Home directory: /home/jru\n"
+"Shell: /usr/local/bin/zsh\n"
+"Full Name: J. Random User\n"
+"Office Location:\n"
+"Office Phone:\n"
+"Home Phone:\n"
+"Other information:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6335
 msgid "Using <command>chpass</command> as Regular User"
-msgstr ""
+msgstr "Uso di <command>chpass</command> come Utente normale"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6338
@@ -8704,6 +8822,13 @@ msgid ""
 "Home Phone:\n"
 "Other information:"
 msgstr ""
+"#Changing user database information for jru.\n"
+"Shell: /usr/local/bin/zsh\n"
+"Full Name: J. Random User\n"
+"Office Location:\n"
+"Office Phone:\n"
+"Home Phone:\n"
+"Other information:"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6348
@@ -8721,21 +8846,33 @@ msgid ""
 "the command is not necessary. How to configure NIS is covered in <xref "
 "linkend=\"network-servers\"/>."
 msgstr ""
+"I comandi  <citerefentry><refentrytitle>chfn</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> e <citerefentry><refentrytitle>chsh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> sono link a "
+"<citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, così come <citerefentry><refentrytitle>ypchpass</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>ypchfn</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, e <citerefentry><refentrytitle>ypchsh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Poiché il supporto "
+"per <acronym>NIS</acronym> è automatico, non è necessario specificare "
+"l'<literal>yp</literal> prima del comando. Come configurare NIS viene "
+"descritto in <xref linkend=\"network-servers\"/>."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6358
 msgid "<command>passwd</command>"
-msgstr ""
+msgstr "<command>passwd</command>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6360
 msgid "<primary><command>passwd</command></primary>"
-msgstr ""
+msgstr "<primary><command>passwd</command></primary>"
 
 #. (itstool) path: sect3/indexterm
 #: book.translate.xml:6363
 msgid "<primary>accounts</primary> <secondary>changing password</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>cambiare password</secondary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6368
@@ -8746,11 +8883,14 @@ msgid ""
 "will prompt for the user's original password before a new password can be "
 "set:"
 msgstr ""
+"Ogni utente può cambiare la propria password facilmente usando "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6374
 msgid "Changing Your Password"
-msgstr ""
+msgstr "Cambiare la Tua Password"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6376
@@ -8764,6 +8904,13 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>%</prompt> <userinput>passwd</userinput>\n"
+"Changing local password for jru.\n"
+"Old password:\n"
+"New password:\n"
+"Retype new password:\n"
+"passwd: updating the database...\n"
+"passwd: done"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6385
@@ -8774,11 +8921,17 @@ msgid ""
 "will not prompt for the user's current password. This allows the password to "
 "be changed when a user cannot remember the original password."
 msgstr ""
+"Il superutente può cambiare la password di qualsiasi utente specificando il "
+"nome utente quando lancia <citerefentry><refentrytitle>passwd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Quando questo "
+"strumento viene fatto girare come superutente, non chiede la password "
+"corrente dell'utente.questo permette di cambiare la password quando un "
+"utente non ricorda la password originale."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6393
 msgid "Changing Another User's Password as the Superuser"
-msgstr ""
+msgstr "Cambiare la Password di un Altro Utente come Superuser"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6396
@@ -8791,6 +8944,12 @@ msgid ""
 "passwd: updating the database...\n"
 "passwd: done"
 msgstr ""
+"<prompt>#</prompt> <userinput>passwd jru</userinput>\n"
+"Changing local password for jru.\n"
+"New password:\n"
+"Retype new password:\n"
+"passwd: updating the database...\n"
+"passwd: done"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6405
@@ -8801,17 +8960,23 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>, so <acronym>NIS</acronym> works with either command."
 msgstr ""
+"Come per <citerefentry><refentrytitle>chpass</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>,  <citerefentry><refentrytitle>yppasswd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> è un link a "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, quindi <acronym>NIS</acronym> funziona con entrambi i comandi."
+""
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:6412
 msgid "<command>pw</command>"
-msgstr ""
+msgstr "<command>pw</command>"
 
 #. (itstool) path: sect3/indexterm
 #. (itstool) path: sect4/indexterm
 #: book.translate.xml:6414 book.translate.xml:43523
 msgid "<primary><command>pw</command></primary>"
-msgstr ""
+msgstr "<primary><command>pw</command></primary>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:6418
@@ -8824,26 +8989,34 @@ msgid ""
 "suitable for use in shell scripts, but new users may find it more "
 "complicated than the other commands presented in this section."
 msgstr ""
+"L'Utilità <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> puo creare, rimuovere, modificare, e mostrare "
+"utenti e gruppi. Funziona come una interfaccia ai file user e group di "
+"sistema. <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> è dotato di una serie di potenti opzioni da riga "
+"di comando che lo rendono adatto all'utilizzo negli script shell, ma i nuovi "
+"utenti possono trovarlo più complicato degli altri comandi presentati in "
+"questa sezione."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:6429
 msgid "Managing Groups"
-msgstr ""
+msgstr "Gestire i Gruppi"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6431
 msgid "<primary>groups</primary>"
-msgstr ""
+msgstr "<primary>gruppi</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6434
 msgid "<primary><filename>/etc/groups</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/etc/groups</filename></primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6437
 msgid "<primary>accounts</primary> <secondary>groups</secondary>"
-msgstr ""
+msgstr "<primary>account</primary> <secondary>gruppi</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6442
@@ -8854,6 +9027,11 @@ msgid ""
 "what the process is allowed to do. Most of the time, the <acronym>GID</"
 "acronym> of a user or process usually means the first group in the list."
 msgstr ""
+"Un gruppo è una lista di utenti. Un gruppo viene definito dal suo nome e dal "
+"<acronym>GID</acronym>. In FreeBSD, il kernel usa lo <acronym>UID</acronym> "
+"di un processo, e la lista dei gruppi a cui appartiene, per determinare cosa "
+"gli è permesso fare. La maggior parte delle volte, il <acronym>GID</acronym> "
+"di un utente o di un processo rappresenta il primo gruppo della lista."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6449
@@ -8866,6 +9044,14 @@ msgid ""
 "<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Le mappature dal nome del gruppo al <acronym>GID</acronym> sono elencate in "
+"<filename>/etc/group</filename>. Questo è un file di testo semplice con "
+"quattro campi delimitati da due punti. Il primo campo è il nome del gruppo, "
+"il secondo è la password cifrata, il terzo è il <acronym>GID</acronym>, e il "
+"quarto è una lista separata da virgole dei membri. per una descrizione più "
+"completa della sintassi, fare riferimento a "
+"<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6457
@@ -8876,6 +9062,12 @@ msgid ""
 "to add a group called <systemitem class=\"groupname\">teamtwo</systemitem> "
 "and then confirm that it exists:"
 msgstr ""
+"Il superutente può modificare il file <filename>/etc/group</filename> usando "
+"un editor di testi. In alternativa, il comando "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> può essere usato per aggiungere e modificare i gruppi. Per "
+"esmepio, per aggiungere un gruppo con nome <systemitem class="
+"\"groupname\">teamtwo</systemitem> e poi verificare che esista:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:6464
@@ -8883,6 +9075,8 @@ msgid ""
 "Adding a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Aggiungere un gruppo usando <citerefentry><refentrytitle>pw</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6466
@@ -8892,6 +9086,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupadd teamtwo</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6471
@@ -8902,6 +9099,11 @@ msgid ""
 "add <systemitem class=\"username\">jru</systemitem> as a member of "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"In questo esempio, <literal>1100</literal> è  il <acronym>GID</acronym> di "
+"<systemitem class=\"groupname\">teamtwo</systemitem>. Attualmente, "
+"<systemitem class=\"groupname\">teamtwo</systemitem>. non ha membri. Il "
+"seguente comando aggiungerà <systemitem class=\"username\">jru</systemitem> "
+"come membro di <systemitem class=\"groupname\">teamtwo</systemitem>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6480
@@ -8909,6 +9111,9 @@ msgid ""
 "Adding User Accounts to a New Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 msgstr ""
+"Aggiungere Account Utente a un Nuovo Gruppo Usando "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6483
@@ -8918,6 +9123,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -M jru</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6488
@@ -8935,13 +9143,27 @@ msgid ""
 "to a group, it only manipulates <filename>/etc/group</filename> and does not "
 "attempt to read additional data from <filename>/etc/passwd</filename>."
 msgstr ""
+"L'argomento che segue <option>-M</option> è una lista separata da virgole di "
+"utenti da aggiungere al nuovo gruppo (vuoto) o che devono rimpiazzare i "
+"membri di un gruppo esistente. Per l'utente, questa appartenenza a un gruppo "
+"differisce (e si aggiunge) al gruppo primario dell'utente elencato nel file "
+"password. Questo significa che l'utente non apparirà come membro quando si "
+"usa <option>groupshow</option> in <citerefentry><refentrytitle>pw</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, ma sarà incluso "
+"quando l'informazione viene richiesta tramite "
+"<citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o altri strumenti simili. Quando si usa "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> per aggiunger e un utente a un gruppo, il comando manipola "
+"<filename>/etc/group</filename> senza tentare di leggere ulteriori "
+"informazioni da <filename>/etc/passwd</filename>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6502
 msgid ""
 "Adding a New Member to a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr ""
+msgstr "Aggiungere un Nuovo Membro a un Gruppo Usando"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6504
@@ -8951,6 +9173,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
 "teamtwo:*:1100:jru,db"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod teamtwo -m db</userinput>\n"
+"<prompt>#</prompt> <userinput>pw groupshow teamtwo</userinput>\n"
+"teamtwo:*:1100:jru,db"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6509
@@ -8960,6 +9185,10 @@ msgid ""
 "these users are appended to the group and do not replace existing users in "
 "the group."
 msgstr ""
+"In questo esempio, l'argomento che segue <option>-m</option> è una lista "
+"separata da virgole di utenti da aggiungere al gruppo. Diversamente "
+"dall'esempio precedente, Questi utenti sono aggiunti al gruppo e non "
+"rimpiazzano gli utenti già presenti nel gruppo."
 
 #. (itstool) path: example/title
 #: book.translate.xml:6516
@@ -8967,6 +9196,8 @@ msgid ""
 "Using <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry> to Determine Group Membership"
 msgstr ""
+"Uso di <citerefentry><refentrytitle>id</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> per Determinare l'Appartenenza a un Gruppo"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6518
@@ -8975,6 +9206,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>id jru</userinput>\n"
 "uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 msgstr ""
+"<prompt>%</prompt> <userinput>id jru</userinput>\n"
+"uid=1001(jru) gid=1001(jru) groups=1001(jru), 1100(teamtwo)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6522
@@ -8983,6 +9216,9 @@ msgid ""
 "of the groups <systemitem class=\"groupname\">jru</systemitem> and "
 "<systemitem class=\"groupname\">teamtwo</systemitem>."
 msgstr ""
+"In questo esempio, <systemitem class=\"username\">jru</systemitem> è un "
+"membro dei gruppi <systemitem class=\"groupname\">jru</systemitem> e "
+"<systemitem class=\"groupname\">teamtwo</systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6527
@@ -8993,11 +9229,16 @@ msgid ""
 "<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Per maggiori informazioni su questo comando e il formato di <filename>/etc/"
+"group</filename>, consultare  <citerefentry><refentrytitle>pw</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> e "
+"<citerefentry><refentrytitle>group</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:6534
 msgid "Permissions"
-msgstr ""
+msgstr "Permessi"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6536
@@ -9014,6 +9255,12 @@ msgid ""
 "improperly access the files used by the operating system or owned by other "
 "users."
 msgstr ""
+"In FreeBSD, ogni file e directory ha un set di permessi associati e sono "
+"disponibili una serie di utilità per visualizzare e modificare questi "
+"permessi. Comprendere come funzionano questi permessi è necessario per "
+"accertarsi che gli utenti possano accedere ai file di cui hanno bisogno e "
+"non possano accedere inappropriatamente ai file usati dal sistema operativo "
+"o di proprietà di altri utenti."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6548
@@ -9022,9 +9269,13 @@ msgid ""
 "trademark> permissions used in FreeBSD. For finer grained file system access "
 "control, refer to <xref linkend=\"fs-acl\"/>."
 msgstr ""
+"Questa sezione tratta i permessi UNIX tradizionali usati in FreeBSD. Per "
+"metodi di controllo dell'accesso più granulari, fare riferimento a <xref "
+"linkend=\"fs-acl\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6552
+#, fuzzy
 msgid ""
 "In <trademark class=\"registered\">UNIX</trademark>, basic permissions are "
 "assigned using three types of access: read, write, and execute. These access "
@@ -9038,6 +9289,19 @@ msgid ""
 "literal> has an on value of <literal>2</literal> and <literal>x</literal> "
 "has an on value of <literal>1</literal>."
 msgstr ""
+"In <trademark class=\"registered\">UNIX</trademark>, i permessi di base "
+"vengono assegnati usando tre tipi di accesso: lettura(read), "
+"scrittura(write) ed esecuzione(execute). Questi tipi di accesso sono usato "
+"per determinare i permessi di accesso ai file in base al properitario "
+"(owner), gruppo (group), e altri(others). I permessi in lettura, scrittura "
+"ed esecuzione possono essere rappresentati dalle lettere <literal>r</"
+"literal>, <literal>w</literal>, e <literal>x</literal>. Possono essere anche "
+"rappresentati come numeri binari a seconda se ogni permesso è attivo o "
+"meno(<literal>0</literal>). Quando vengono rappresentati come numero, lo "
+"sono sempre nell'ordine <literal>rwx</literal>, dove <literal>r</literal> ha "
+"il valore <literal>4</literal> se attivo, <literal>w</literal> ha il valore "
+"<literal>2</literal> e <literal>x</literal> ha il valore <literal>1</"
+"literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6567
@@ -9046,101 +9310,108 @@ msgid ""
 "reading the <quote>Directory Listing</quote> column, a <literal>-</literal> "
 "is used to represent a permission that is set to off."
 msgstr ""
+"La Tabella 4.1 riassume il possibili valori numerici e alfabetici. Nella "
+"colonna <quote>Directory Listing</quote>, viene usato un <literal>-</"
+"literal> per rappresentare un permesso disattivato."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6572
 msgid "<primary>permissions</primary>"
-msgstr ""
+msgstr "<primary>permessi</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6575
 msgid "<primary>file permissions</primary>"
-msgstr ""
+msgstr "<primary>permessi sui file</primary>"
 
 #. (itstool) path: table/title
 #: book.translate.xml:6580
 msgid "<trademark class=\"registered\">UNIX</trademark> Permissions"
-msgstr ""
+msgstr "Permessi <trademark class=\"registered\">UNIX</trademark>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6585
 msgid "Value"
-msgstr ""
+msgstr "Valore"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6586
 msgid "Permission"
-msgstr ""
+msgstr "Permesso"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6587
 msgid "Directory Listing"
-msgstr ""
+msgstr "Directory Listing"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6593
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6594
+#, fuzzy
 msgid "No read, no write, no execute"
-msgstr ""
+msgstr "Niente lettura, niente scrittura, niente esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6595
 msgid "<literal>---</literal>"
-msgstr ""
+msgstr "<literal>---</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6599 book.translate.xml:46998 book.translate.xml:47020
 #: book.translate.xml:47110
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6600
+#, fuzzy
 msgid "No read, no write, execute"
-msgstr ""
+msgstr "Niente lettura, niente scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6601
 msgid "<literal>--x</literal>"
-msgstr ""
+msgstr "<literal>--x</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6605 book.translate.xml:46890 book.translate.xml:46900
 #: book.translate.xml:46972 book.translate.xml:46982 book.translate.xml:47062
 #: book.translate.xml:47064
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6606
+#, fuzzy
 msgid "No read, write, no execute"
-msgstr ""
+msgstr "Niente lettura, scrittura, niente esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6607
 msgid "<literal>-w-</literal>"
-msgstr ""
+msgstr "<literal>-w-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6611 book.translate.xml:46892 book.translate.xml:46898
 #: book.translate.xml:46974 book.translate.xml:46980 book.translate.xml:47070
 #: book.translate.xml:47072
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6612
+#, fuzzy
 msgid "No read, write, execute"
-msgstr ""
+msgstr "Niente lettura, scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6613
 msgid "<literal>-wx</literal>"
-msgstr ""
+msgstr "<literal>-wx</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6617 book.translate.xml:46906 book.translate.xml:46916
@@ -9148,68 +9419,72 @@ msgstr ""
 #: book.translate.xml:47022 book.translate.xml:47078 book.translate.xml:47086
 #: book.translate.xml:47128
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6618
+#, fuzzy
 msgid "Read, no write, no execute"
-msgstr ""
+msgstr "Lettura, niente scrittura, niente esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6619
 msgid "<literal>r--</literal>"
-msgstr ""
+msgstr "<literal>r--</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6623 book.translate.xml:46908 book.translate.xml:46914
 #: book.translate.xml:47004 book.translate.xml:47006 book.translate.xml:47094
 #: book.translate.xml:47120
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6624
+#, fuzzy
 msgid "Read, no write, execute"
-msgstr ""
+msgstr "Lettura, niente scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6625
 msgid "<literal>r-x</literal>"
-msgstr ""
+msgstr "<literal>r-x</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6629 book.translate.xml:46924 book.translate.xml:46938
 #: book.translate.xml:46990 book.translate.xml:47012 book.translate.xml:47080
 #: book.translate.xml:47102
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6630
+#, fuzzy
 msgid "Read, write, no execute"
-msgstr ""
+msgstr "Lettura, scrittura, niente esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6631
 msgid "<literal>rw-</literal>"
-msgstr ""
+msgstr "<literal>rw-</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6635 book.translate.xml:46882 book.translate.xml:46884
 #: book.translate.xml:47028 book.translate.xml:47038 book.translate.xml:47096
 #: book.translate.xml:47118
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6636
+#, fuzzy
 msgid "Read, write, execute"
-msgstr ""
+msgstr "Lettura, scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6637
 msgid "<literal>rwx</literal>"
-msgstr ""
+msgstr "<literal>rwx</literal>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6643
@@ -9217,6 +9492,8 @@ msgid ""
 "<primary><citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry></primary>"
 msgstr ""
+"<primary><citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry></primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6646
