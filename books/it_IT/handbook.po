@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-18 02:27+0000\n"
+"PO-Revision-Date: 2018-09-18 02:40+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -8661,7 +8661,7 @@ msgid ""
 "almost always an indication of massive destruction."
 msgstr ""
 "<citerefentry><refentrytitle>rmuser</refentrytitle><manvolnum>8</manvolnum></"
-"citerefentry> non può essere usato per rimuovere gli account superuser "
+"citerefentry> non può essere usato per rimuovere gli account superutente "
 "poiché questo è quasi sempre sintomo di una operazione di distruzione "
 "massiva."
 
@@ -9163,7 +9163,10 @@ msgstr ""
 msgid ""
 "Adding a New Member to a Group Using <citerefentry><refentrytitle>pw</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>"
-msgstr "Aggiungere un Nuovo Membro a un Gruppo Usando"
+msgstr ""
+"Aggiungere un Nuovo Membro a un Gruppo Usando "
+"<citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>"
 
 #. (itstool) path: example/screen
 #: book.translate.xml:6504
@@ -9243,7 +9246,7 @@ msgstr "Permessi"
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6536
 msgid "<primary>UNIX</primary>"
-msgstr ""
+msgstr "<primary>UNIX</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6540
@@ -9269,13 +9272,12 @@ msgid ""
 "trademark> permissions used in FreeBSD. For finer grained file system access "
 "control, refer to <xref linkend=\"fs-acl\"/>."
 msgstr ""
-"Questa sezione tratta i permessi UNIX tradizionali usati in FreeBSD. Per "
-"metodi di controllo dell'accesso più granulari, fare riferimento a <xref "
-"linkend=\"fs-acl\"/>."
+"Questa sezione tratta i permessi <trademark class=\"registered\">UNIX</"
+"trademark> tradizionali usati in FreeBSD. Per metodi di controllo "
+"dell'accesso più granulari, fare riferimento a <xref linkend=\"fs-acl\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6552
-#, fuzzy
 msgid ""
 "In <trademark class=\"registered\">UNIX</trademark>, basic permissions are "
 "assigned using three types of access: read, write, and execute. These access "
@@ -9292,16 +9294,16 @@ msgstr ""
 "In <trademark class=\"registered\">UNIX</trademark>, i permessi di base "
 "vengono assegnati usando tre tipi di accesso: lettura(read), "
 "scrittura(write) ed esecuzione(execute). Questi tipi di accesso sono usato "
-"per determinare i permessi di accesso ai file in base al properitario "
+"per determinare i permessi di accesso ai file in base al proprietario "
 "(owner), gruppo (group), e altri(others). I permessi in lettura, scrittura "
 "ed esecuzione possono essere rappresentati dalle lettere <literal>r</"
 "literal>, <literal>w</literal>, e <literal>x</literal>. Possono essere anche "
-"rappresentati come numeri binari a seconda se ogni permesso è attivo o "
-"meno(<literal>0</literal>). Quando vengono rappresentati come numero, lo "
-"sono sempre nell'ordine <literal>rwx</literal>, dove <literal>r</literal> ha "
-"il valore <literal>4</literal> se attivo, <literal>w</literal> ha il valore "
-"<literal>2</literal> e <literal>x</literal> ha il valore <literal>1</"
-"literal>."
+"rappresentati come numeri binari a seconda di quali permessi sono attivi o "
+"se sono tutti disattivati(<literal>0</literal>). Quando vengono "
+"rappresentati come numero, vengono sempre letti nel'ordine <literal>rwx</"
+"literal>, dove <literal>r</literal> ha il valore <literal>4</literal> se "
+"attivo, <literal>w</literal> ha il valore <literal>2</literal> e <literal>x</"
+"literal> ha il valore <literal>1</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6567
