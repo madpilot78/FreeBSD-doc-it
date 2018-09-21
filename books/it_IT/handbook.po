@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-18 02:40+0000\n"
+"PO-Revision-Date: 2018-09-21 02:26+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -9353,9 +9353,8 @@ msgstr "0"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6594
-#, fuzzy
 msgid "No read, no write, no execute"
-msgstr "Niente lettura, niente scrittura, niente esecuzione"
+msgstr "No lettura, no scrittura, no esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6595
@@ -9370,9 +9369,8 @@ msgstr "1"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6600
-#, fuzzy
 msgid "No read, no write, execute"
-msgstr "Niente lettura, niente scrittura, esecuzione"
+msgstr "No lettura, no scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6601
@@ -9388,9 +9386,8 @@ msgstr "2"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6606
-#, fuzzy
 msgid "No read, write, no execute"
-msgstr "Niente lettura, scrittura, niente esecuzione"
+msgstr "No lettura, scrittura, no esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6607
@@ -9406,9 +9403,8 @@ msgstr "3"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6612
-#, fuzzy
 msgid "No read, write, execute"
-msgstr "Niente lettura, scrittura, esecuzione"
+msgstr "No lettura, scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6613
@@ -9425,9 +9421,8 @@ msgstr "4"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6618
-#, fuzzy
 msgid "Read, no write, no execute"
-msgstr "Lettura, niente scrittura, niente esecuzione"
+msgstr "Lettura, no scrittura, no esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6619
@@ -9443,9 +9438,8 @@ msgstr "5"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6624
-#, fuzzy
 msgid "Read, no write, execute"
-msgstr "Lettura, niente scrittura, esecuzione"
+msgstr "Lettura, no scrittura, esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6625
@@ -9461,9 +9455,8 @@ msgstr "6"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6630
-#, fuzzy
 msgid "Read, write, no execute"
-msgstr "Lettura, scrittura, niente esecuzione"
+msgstr "Lettura, scrittura, no esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6631
@@ -9479,7 +9472,6 @@ msgstr "7"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6636
-#, fuzzy
 msgid "Read, write, execute"
 msgstr "Lettura, scrittura, esecuzione"
 
@@ -9500,7 +9492,7 @@ msgstr ""
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:6646
 msgid "<primary>directories</primary>"
-msgstr ""
+msgstr "<primary>directory</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6650
@@ -9511,6 +9503,12 @@ msgid ""
 "permissions for the owner, group, and everyone else. For example, a "
 "<command>ls -l</command> in an arbitrary directory may show:"
 msgstr ""
+"Puoi passare l'argomento <option>-l</option> a "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per visualizzare un elenco della directory completo che "
+"include una colonna di informazioni sui permessi dei file per proprietario, "
+"gruppo e altri. Per esempio, un <command>ls -l</command> in una directory "
+"qualsiasi potrebbe mostrare:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:6656
@@ -9522,6 +9520,11 @@ msgid ""
 "-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n"
 "-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt"
 msgstr ""
+"<prompt>%</prompt> <userinput>ls -l</userinput>\n"
+"total 530\n"
+"-rw-r--r--  1 root  wheel     512 Sep  5 12:31 myfile\n"
+"-rw-r--r--  1 root  wheel     512 Sep  5 12:31 otherfile\n"
+"-rw-r--r--  1 root  wheel    7680 Sep  5 12:31 email.txt"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6662
@@ -9540,6 +9543,21 @@ msgid ""
 "above, the permissions for this file would be <literal>644</literal>, where "
 "each digit represents the three parts of the file's permission."
 msgstr ""
+"Il primo carattere (partendo da sinistra) indica se il file in questione è "
+"un file regolare, una directory, un file speciale per dispositivi a "
+"caratteri, una socket, o un file speciale per altri dispositivi. Nel primo "
+"esempio, il <literal>-</literal> indica un file regolare.  I tre caratteri "
+"successivi, che in questo esempio sono <literal>rw-</literal>, indicano i "
+"permessi per il proprietario del file. Seguono altri tre caratteri, "
+"<literal>r--</literal>, che indicano i permessi del gruppo al quale il file "
+"appartiene. Gli ultimi tre caratteri, <literal>r--</literal>, indicano i "
+"permessi per il resto del mondo. Un trattino significa che il permesso non "
+"viene concesso. In questo esempio, i permessi sono impostati affinché il "
+"proprietario possa leggere e scrivere il file, il gruppo possa leggere il "
+"file, e il resto del mondo possa solamente leggere il file. In accordo con "
+"la precedente tabella, i permessi per questo file sarebbero <literal>644</"
+"literal>, dove ogni cifra rappresenta una delle tre parti che costituiscono "
+"i permessi del file."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6679
@@ -9548,6 +9566,10 @@ msgid ""
 "hardware devices as a file that programs can open, read, and write data to. "
 "These special device files are stored in <filename>/dev/</filename>."
 msgstr ""
+"Come gestisce il sistema i permessi sui dispositivi? FreeBSD tratta la "
+"maggior parte dei dispositivi hardware come un file che i programmi possono "
+"aprire, leggere, e scriverci dati. Questi file speciali per i dispositivi si "
+"trovano in <filename>/dev/</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6684
@@ -9560,6 +9582,15 @@ msgid ""
 "citerefentry>. This also means that it is possible to access the files "
 "within that directory, subject to the permissions on the files themselves."
 msgstr ""
+"Anche le Directory sono trattate come file. Hanno permessi di lettura, "
+"scrittura e di esecuzione.  Il bit riferito al permesso di esecuzione per "
+"una directory ha un significato leggermente differente rispetto a quello dei "
+"file.  Quando una directory ha il permesso di esecuzione abilitato, "
+"significa che si ha accesso alla directory, ossia è possibile eseguire il "
+"comando <citerefentry><refentrytitle>cd</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> per entrarci. Inoltre questo significa che "
+"all'interno della directory è possibile accedere ai file contenuti nella "
+"directory, a condiziona dei permessi sui file stessi."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6693
@@ -9569,6 +9600,10 @@ msgid ""
 "necessary to have write <emphasis>and</emphasis> execute permissions to the "
 "directory containing the file."
 msgstr ""
+"Per poter elencare il contenuto di una directory, deve essere abilitato il "
+"permesso di lettura sulla stessa. Per poter cancellare un file di cui si "
+"conosce il nome, è necessario possedere i permessi in scrittura <emphasis>e</"
+"emphasis> esecuzione sulla directory che lo contiene."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:6699
@@ -9579,11 +9614,16 @@ msgid ""
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Ci sono altri bit per i permessi, ma sono usati principalmente in "
+"circostanze speciali come per i binari setuid e le directory sticky. Per "
+"avere maggiori informazioni sui permessi dei file e come impostarli, fare "
+"riferimento a <citerefentry><refentrytitle>chmod</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:6706
 msgid "Symbolic Permissions"
-msgstr ""
+msgstr "Permessi Simbolici"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:6709 book.translate.xml:6844 book.translate.xml:6895
@@ -9594,11 +9634,13 @@ msgid ""
 "<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
+"personname> <contrib>Contribuito da </contrib>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:6719
 msgid "<primary>permissions</primary> <secondary>symbolic</secondary>"
-msgstr ""
+msgstr "<primary>permessi</primary> <secondary>simbolici</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6724
@@ -9607,158 +9649,161 @@ msgid ""
 "permissions to files or directories. Symbolic permissions use the syntax of "
 "(who) (action) (permissions), where the following values are available:"
 msgstr ""
+"I permessi simbolici utilizzano caratteri anziché  valori ottali per "
+"assegnare i permessi a file o directory. I permessi simbolici usano la "
+"sintassi (chi) (azione) (permessi), con i seguenti valori:"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6734 book.translate.xml:23093
 msgid "Option"
-msgstr ""
+msgstr "Opzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6735
 msgid "Letter"
-msgstr ""
+msgstr "Lettera"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6736
 msgid "Represents"
-msgstr ""
+msgstr "Rappresenta"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6742 book.translate.xml:6748 book.translate.xml:6754
 #: book.translate.xml:6760
 msgid "(who)"
-msgstr ""
+msgstr "(chi)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6743
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6744
 msgid "User"
-msgstr ""
+msgstr "Utente"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6749
 msgid "g"
-msgstr ""
+msgstr "g"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6750
 msgid "Group owner"
-msgstr ""
+msgstr "Gruppo di appartenenza"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6755
 msgid "o"
-msgstr ""
+msgstr "o"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6756
 msgid "Other"
-msgstr ""
+msgstr "Altri"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6761
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6762
 msgid "All (<quote>world</quote>)"
-msgstr ""
+msgstr "Tutti (Tutto il <quote>mondo</quote>)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6766 book.translate.xml:6772 book.translate.xml:6778
 msgid "(action)"
-msgstr ""
+msgstr "(azione)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6767 book.translate.xml:31355 book.translate.xml:39129
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6768
 msgid "Adding permissions"
-msgstr ""
+msgstr "Aggiunge i permessi"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6773 book.translate.xml:31360 book.translate.xml:39134
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6774
 msgid "Removing permissions"
-msgstr ""
+msgstr "Rimuove i permessi"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6779
 msgid "="
-msgstr ""
+msgstr "="
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6780
 msgid "Explicitly set permissions"
-msgstr ""
+msgstr "Imposta esplicitamente i permessi"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6784 book.translate.xml:6790 book.translate.xml:6796
 #: book.translate.xml:6802 book.translate.xml:6808
 msgid "(permissions)"
-msgstr ""
+msgstr "(permessi)"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6785
 msgid "r"
-msgstr ""
+msgstr "r"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6786
 msgid "Read"
-msgstr ""
+msgstr "Lettura"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6791
 msgid "w"
-msgstr ""
+msgstr "w"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6792
 msgid "Write"
-msgstr ""
+msgstr "Scrittura"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6797
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6798
 msgid "Execute"
-msgstr ""
+msgstr "Esecuzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6803
 msgid "t"
-msgstr ""
+msgstr "t"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6804
 msgid "Sticky bit"
-msgstr ""
+msgstr "Bit sticky"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6809
 msgid "s"
-msgstr ""
+msgstr "s"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:6810
 msgid "Set UID or GID"
-msgstr ""
+msgstr "Imposta UID o GID"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6816
@@ -9768,12 +9813,16 @@ msgid ""
 "instead of numbers. For example, the following command would block other "
 "users from accessing <replaceable>FILE</replaceable>:"
 msgstr ""
+"Questi valori sono usati con <citerefentry><refentrytitle>chmod</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, con lettere al posto "
+"dei numeri. Per esempio, il seguente comando bloccherebbe l'accesso a "
+"<replaceable>FILE</replaceable> per tutti gli altri utenti:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6821
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>chmod go= FILE</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>chmod go= FILE</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6823
@@ -9783,6 +9832,10 @@ msgid ""
 "and <quote>world</quote> write permission on <replaceable>FILE</"
 "replaceable>, and adds the execute permissions for everyone:"
 msgstr ""
+"Se si desidera effettuare più di una modifica a un file si può passare una "
+"lista separata da virgole. Per esempio, il seguente comando rimuove i "
+"permessi in scrittura su <replaceable>FILE</replaceable> per il gruppo e per "
+"il <quote>world</quote> e aggiunge i permessi in esecuzione per chiunque:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6830
@@ -9791,11 +9844,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>chmod go-w,a+x <replaceable>FILE</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>chmod go-w,a+x <replaceable>FILE</"
+"replaceable></userinput>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:6841
 msgid "FreeBSD File Flags"
-msgstr ""
+msgstr "Flag dei File in FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6854
@@ -9806,6 +9861,11 @@ msgid ""
 "\"username\">root</systemitem> can be prevented from removing or altering "
 "files."
 msgstr ""
+"In aggiunta ai permessi sui file, FreeBSD supporta l'uso dei <quote>flag dei "
+"file</quote>. Essi aggiungono un livello aggiuntivo di sicurezza e controllo "
+"sui file, ma non sulle directory. Usando i flag dei file si può impedire "
+"anche a <systemitem class=\"username\">root</systemitem> di rimuovere o "
+"alterare i file."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6861
@@ -9815,12 +9875,16 @@ msgid ""
 "enable the system undeletable flag on the file <filename>file1</filename>, "
 "issue the following command:"
 msgstr ""
+"I flag dei file si modificano usando <citerefentry><refentrytitle>chflags</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Per esempio, Per "
+"attivare il flag di sistema di non-cancellabilità su <filename>file1</"
+"filename>, esegui il seguente comando:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6866
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>chflags sunlink file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chflags sunlink file1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6868
@@ -9828,12 +9892,14 @@ msgid ""
 "To disable the system undeletable flag, put a <quote>no</quote> in front of "
 "the <option>sunlink</option>:"
 msgstr ""
+"Per disabilitare il flag di sistema di non-cancellabilità, digita un "
+"<quote>no</quote> davanti al <option>sunlink</option>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6872
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>chflags nosunlink file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chflags nosunlink file1</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6874
@@ -9842,18 +9908,21 @@ msgid ""
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Per visualizzare i flag di un file, usa <option>-lo</option> con "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6877
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ls -lo file1</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ls -lo file1</userinput>"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6879
 #, no-wrap
 msgid "-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1"
-msgstr ""
+msgstr "-rw-r--r--  1 trhodes  trhodes  sunlnk 0 Mar  1 05:54 file1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6881
@@ -9865,6 +9934,12 @@ msgid ""
 "<citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>2</"
 "manvolnum></citerefentry> for more information."
 msgstr ""
+"Diversi flag possono essere aggiunti o rimossi solo dall'utente <systemitem "
+"class=\"username\">root</systemitem>. In altri casi, il proprietario del "
+"file può impostare i suoi flag. Per ulteriori informazioni consultare "
+"<citerefentry><refentrytitle>chflags</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> and <citerefentry><refentrytitle>chflags</"
+"refentrytitle><manvolnum>2</manvolnum></citerefentry>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:6890
