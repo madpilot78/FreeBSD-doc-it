@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-21 02:26+0000\n"
+"PO-Revision-Date: 2018-09-24 04:51+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -9947,6 +9947,8 @@ msgid ""
 "The <literal>setuid</literal>, <literal>setgid</literal>, and "
 "<literal>sticky</literal> Permissions"
 msgstr ""
+"I Permessi <literal>setuid</literal>, <literal>setgid</literal>, e "
+"<literal>sticky</literal>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6905
@@ -9956,6 +9958,10 @@ msgid ""
 "<literal>setuid</literal>, <literal>setgid</literal>, and <literal>sticky</"
 "literal> permissions."
 msgstr ""
+"Oltre ai permessi sopra discussi, ci sono altre tre impostazioni specifiche "
+"di cui tutti gli amministratori devono essere a conoscenza. Sono i pemessi "
+"<literal>setuid</literal>, <literal>setgid</literal>, e <literal>sticky</"
+"literal>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6911
@@ -9965,6 +9971,10 @@ msgid ""
 "normal users. To understand them, the difference between the real user ID "
 "and effective user ID must be noted."
 msgstr ""
+"Queste impostazioni sono importanti per alcune operazioni in <trademark "
+"class=\"registered\">UNIX</trademark> in quanto forniscono funzionalità "
+"normalmente non disponibili ai normali utenti. Per comprenderle, bisogna "
+"imparare la differenza tra ID utente reale e ID utente effettivo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6916
@@ -9978,6 +9988,15 @@ msgid ""
 "class=\"username\">root</systemitem> user. This allows users to change their "
 "passwords without seeing a <errorname>Permission Denied</errorname> error."
 msgstr ""
+"Lo user ID reale è lo <acronym>UID</acronym> che possiede o avvia il "
+"processo. Lo <acronym>UID</acronym> effettivo è l'ID utente sotto cui il "
+"processo gira. Per esempio, <citerefentry><refentrytitle>passwd</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> gira con l'ID utente "
+"reale quando un utente cambia la propria password. Però, per poter "
+"aggiornare il database delle password, il comando gira con l'ID effettivo "
+"dell'utente <systemitem class=\"username\">root</systemitem>. Questo "
+"permette agli utenti di cambiare la propria password senza vedere un errore "
+"<errorname>Permission Denied</errorname>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6926
@@ -9985,12 +10004,14 @@ msgid ""
 "The setuid permission may be set by prefixing a permission set with the "
 "number four (4) as shown in the following example:"
 msgstr ""
+"Il permesso setuid può essere impostato preponendo la stringa dei permessi "
+"con il numero quattro (4) come mostrato nel seguente esempio:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6930
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 4755 suidexample.sh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 4755 suidexample.sh</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6932
@@ -9998,12 +10019,14 @@ msgid ""
 "The permissions on <filename><replaceable>suidexample.sh</replaceable></"
 "filename> now look like the following:"
 msgstr ""
+"I pemessi su <filename><replaceable>suidexample.sh</replaceable></filename> "
+"ora dovrebbero essere:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:6936
 #, no-wrap
 msgid "-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh"
-msgstr ""
+msgstr "-rwsr-xr-x   1 trhodes  trhodes    63 Aug 29 06:36 suidexample.sh"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6938
@@ -10014,6 +10037,11 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Nota come una <literal>s</literal> adesso fa parte del blocco permessi per "
+"il proprietario del file, rimpiazzando il bit eseguibile. Questo permette di "
+"dare permessi elevati alle applicazioni che ne hanno bisogno, come "
+"<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:6944
@@ -10024,6 +10052,11 @@ msgid ""
 "completely reliable as a <literal>nosuid</literal> wrapper may be able to "
 "circumvent it."
 msgstr ""
+"l'opzione <literal>nosuid</literal> di <citerefentry><refentrytitle>mount</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> fa si che binari con "
+"tale flag falliscano silenziosamente senza informare l'utente. Tale opzione "
+"non è totalmente affidabile in quanto un wrapper <literal>nosuid</literal> "
+"può riuscire a raggirarla."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6951
@@ -10034,29 +10067,35 @@ msgid ""
 "<citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Per verificare questo in tempo reale, apri due terminali. Su uno digita "
+"<command>passwd</command> come normale utente. Mentre attende la nuova "
+"password, verifica la tabella dei processi e guarda le informazioni utente "
+"per <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6957
 msgid "In terminal A:"
-msgstr ""
+msgstr "Nel terminale A:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6959
 #, no-wrap
 msgid "Changing local password for trhodes\n"
 "Old Password:"
-msgstr ""
+msgstr "Changing local password for trhodes\n"
+"Old Password:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6962
 msgid "In terminal B:"
-msgstr ""
+msgstr "Nel terminale B:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6964
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ps aux | grep passwd</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ps aux | grep passwd</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6966
@@ -10065,6 +10104,8 @@ msgid ""
 "trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd\n"
 "root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd"
 msgstr ""
+"trhodes  5232  0.0  0.2  3420  1608   0  R+    2:10AM   0:00.00 grep passwd\n"
+"root     5211  0.0  0.2  3620  1724   2  I+    2:09AM   0:00.01 passwd"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6969
@@ -10073,6 +10114,10 @@ msgid ""
 "manvolnum></citerefentry> is run as a normal user, it is using the effective "
 "<acronym>UID</acronym> of <systemitem class=\"username\">root</systemitem>."
 msgstr ""
+"Anche se <citerefentry><refentrytitle>passwd</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> è stato lanciato come utente normale, sta usando "
+"uno <acronym>UID</acronym> effettivo di <systemitem class=\"username\">root</"
+"systemitem>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6973
@@ -10083,6 +10128,11 @@ msgid ""
 "be granted the permissions based on the group that owns the file, not the "
 "user who started the process."
 msgstr ""
+"Il permesso <literal>setgid</literal> svolge la stessa funzione del permesso "
+"<literal>setuid</literal>; eccetto che altera l'impostazione del gruppo. "
+"Quando una applicazione o utilità viene eseguita con questa impostazione, le "
+"saranno assegnati permessi basati sul gruppo che possiede il file, non "
+"dell'utente che ha avviato il processo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6980
@@ -10091,12 +10141,15 @@ msgid ""
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> with a leading two (2):"
 msgstr ""
+"Per impostare il permesso <literal>setgid</literal> su un file, passa a "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> un due (2) come prefisso:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6983
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 2755 sgidexample.sh</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6985
@@ -10104,12 +10157,14 @@ msgid ""
 "In the following listing, notice that the <literal>s</literal> is now in the "
 "field designated for the group permission settings:"
 msgstr ""
+"Nel seguente output, nota come la <literal>s</literal> adesso si trovi nel "
+"campo per i permessi del gruppo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:6989
 #, no-wrap
 msgid "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
-msgstr ""
+msgstr "-rwxr-sr-x   1 trhodes  trhodes    44 Aug 31 01:49 sgidexample.sh"
 
 #. (itstool) path: note/para
 #: book.translate.xml:6992
@@ -10120,6 +10175,11 @@ msgid ""
 "<citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> system calls."
 msgstr ""
+"In questi esempi, anche se lo script shell in questione è un eseguibile, non "
+"girerà con un <acronym>EUID</acronym> o ID utente effettivo diverso. Questo "
+"poiché gli script shell non possono accedere la chiamata di sistema "
+"<citerefentry><refentrytitle>setuid</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:6999
@@ -10129,6 +10189,10 @@ msgid ""
 "special permission, the <literal>sticky bit</literal>, can strengthen the "
 "security of a system."
 msgstr ""
+"I permessi <literal>setuid</literal> e <literal>setgid</literal> possono "
+"ridurre la sicurezza del sistema, concedendo permessi elevati. Il terzo "
+"permesso speciale, lo <literal>sticky bit</literal>, può incrementare la "
+"sicurezza di un sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7005
@@ -10139,12 +10203,18 @@ msgid ""
 "own the file. To utilize this permission, prefix the permission set with a "
 "one (1):"
 msgstr ""
+"Quando lo <literal>sticky bit</literal> viene impostato su unaa directory, "
+"permette la rimozione di file solo da parte del proprietario. Questo è utile "
+"per impedire la cancellazione di file in directory pubbliche, come "
+"<filename>/tmp</filename>, da parte di utenti che non possiedono quel file. "
+"Per utilizzare questo permesso, precedere il blocco delle autorizzazioni con "
+"un uno (1):"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7012
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>chmod 1777 /tmp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7014
@@ -10152,28 +10222,30 @@ msgid ""
 "The <literal>sticky bit</literal> permission will display as a <literal>t</"
 "literal> at the very end of the permission set:"
 msgstr ""
+"Il permesso <literal>sticky bit</literal> sarà visualizzato come una "
+"<literal>t</literal> in testa all'intero gruppo di permessi:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7018
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>ls -al / | grep tmp</userinput>"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:7020
 #, no-wrap
 msgid "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
-msgstr ""
+msgstr "drwxrwxrwt  10 root  wheel         512 Aug 31 01:49 tmp"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7026
 msgid "Directory Structure"
-msgstr ""
+msgstr "Struttura delle directory"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7028
 msgid "<primary>directory hierarchy</primary>"
-msgstr ""
+msgstr "<primary>gerarchia delle directory</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7032
@@ -10186,6 +10258,13 @@ msgid ""
 "other file systems that are mounted during the transition to multi-user "
 "operation."
 msgstr ""
+"La gerarchia delle directory di FreeBSD è fondamentale per ottenere una "
+"comprensione globale del sistema. La directory piu importnate è la root "
+"(radice) o, <quote>/</quote>. Questa directory è la prima ad essere montata "
+"all'avvio e contiene gli elementi fondamentali del sistema necessari per "
+"predisporre il sistema operativo al funzionamento multi-utente. Inoltre la "
+"directory root contiene i punti di mount per gli altri file system che sono "
+"montati durante la transizione per il funzionamento multi-utente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7041
@@ -10203,6 +10282,19 @@ msgid ""
 "citerefentry> unless their entry includes <option>noauto</option>. Details "
 "can be found in <xref linkend=\"disks-fstab\"/>."
 msgstr ""
+"Un punto di mount è una directory dove dei file system aggiuntivi possono "
+"essere innestati sul file system padre (abitualmente il file system root). "
+"Questo è ulteriormente descritto in <xref linkend=\"disk-organization\"/>. "
+"Alcuni punti di mount standard sono<filename>/usr/</filename>, <filename>/"
+"var/</filename>, <filename>/tmp/</filename>, <filename>/mnt/</filename>, e "
+"<filename>/cdrom/</filename>. Queste directory sono in genere specificate in "
+"<filename>/etc/fstab</filename>. Questo file è una tabella di file system e "
+"punti di mount che viene consultata dal sistema. La maggior parte dei file "
+"system riferiti in <filename>/etc/fstab</filename> vengono montati "
+"automaticamente all'avvio tramite lo script <citerefentry><refentrytitle>rc</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> a meno che essi siano "
+"stati dichiarati con l'opzione <option>noauto</option>. Maggiori dettagli "
+"possono essere trovati in <xref linkend=\"disks-fstab\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7056
@@ -10212,44 +10304,52 @@ msgid ""
 "citerefentry>. The following table provides a brief overview of the most "
 "common directories."
 msgstr ""
+"Una descrizione completa della gerarchia del file system è disponibile nella "
+"pagina man <citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry>. La seguente tabella fornisce una breve panoramica "
+"delle directory più comuni"
 
 #. (itstool) path: row/entry
 #. (itstool) path: sect3/title
 #: book.translate.xml:7065 book.translate.xml:10922
 msgid "Directory"
-msgstr ""
+msgstr "Directory"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7072
 msgid "Root directory of the file system."
-msgstr ""
+msgstr "Radice del file system."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7076
 msgid "<filename>/bin/</filename>"
-msgstr ""
+msgstr "<filename>/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7077
 msgid ""
 "User utilities fundamental to both single-user and multi-user environments."
 msgstr ""
+"Utilità fondamentali per l'utente sia in ambiente mono-utente sia in "
+"ambiente multi-utente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7082
 msgid "<filename>/boot/</filename>"
-msgstr ""
+msgstr "<filename>/boot/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7083
 msgid ""
 "Programs and configuration files used during operating system bootstrap."
 msgstr ""
+"Programmi e file di configurazione utilizzati durante la fase di avvio del "
+"sistema operativo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7088
 msgid "<filename>/boot/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/boot/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7089
@@ -10258,11 +10358,14 @@ msgid ""
 "<citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"File di configurazione di avvio di default; consultare "
+"<citerefentry><refentrytitle>loader.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7094
 msgid "<filename>/dev/</filename>"
-msgstr ""
+msgstr "<filename>/dev/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7095
@@ -10270,21 +10373,23 @@ msgid ""
 "Device nodes. Refer to <citerefentry><refentrytitle>intro</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for details."
 msgstr ""
+"Nodi di dispositivo; consultare <citerefentry><refentrytitle>intro</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7100
 msgid "<filename>/etc/</filename>"
-msgstr ""
+msgstr "<filename>/etc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7101
 msgid "System configuration files and scripts."
-msgstr ""
+msgstr "File e script di configurazione del sistema."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7105
 msgid "<filename>/etc/defaults/</filename>"
-msgstr ""
+msgstr "<filename>/etc/defaults/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7106
@@ -10293,11 +10398,14 @@ msgid ""
 "<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> for details."
 msgstr ""
+"File di configurazione di default del sistema; "
+"consultare<citerefentry><refentrytitle>rc</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7111
 msgid "<filename>/etc/mail/</filename>"
-msgstr ""
+msgstr "<filename>/etc/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7112
@@ -10306,11 +10414,14 @@ msgid ""
 "<citerefentry><refentrytitle>sendmail</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>."
 msgstr ""
+"File di configurazione per gli agenti di trasferimento della posta "
+"elettronica (MTA) come <citerefentry><refentrytitle>sendmail</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7117
 msgid "<filename>/etc/periodic/</filename>"
-msgstr ""
+msgstr "<filename>/etc/periodic/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7118
@@ -10320,11 +10431,16 @@ msgid ""
 "citerefentry>. Refer to <citerefentry><refentrytitle>periodic</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"Script che sono eseguiti giornalmente, settimanalmente, e mensilmente "
+"tramite <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. consultare <citerefentry><refentrytitle>periodic</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>periodic(8) per i "
+"dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7124
 msgid "<filename>/etc/ppp/</filename>"
-msgstr ""
+msgstr "<filename>/etc/ppp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7125
@@ -10332,11 +10448,13 @@ msgid ""
 "<citerefentry><refentrytitle>ppp</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> configuration files."
 msgstr ""
+"File di configurazione per <citerefentry><refentrytitle>ppp</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7129
 msgid "<filename>/mnt/</filename>"
-msgstr ""
+msgstr "<filename>/mnt/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7130
@@ -10344,11 +10462,13 @@ msgid ""
 "Empty directory commonly used by system administrators as a temporary mount "
 "point."
 msgstr ""
+"Directory vuota usata comunemente dagli amministratori di sistema come punto "
+"di mount temporaneo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7135
 msgid "<filename>/proc/</filename>"
-msgstr ""
+msgstr "<filename>/proc/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7136
@@ -10358,11 +10478,15 @@ msgid ""
 "<citerefentry><refentrytitle>mount_procfs</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"File system dedicato ai processi. consultare "
+"<citerefentry><refentrytitle>procfs</refentrytitle><manvolnum>5</manvolnum></"
+"citerefentry> e <citerefentry><refentrytitle>mount_procfs</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7141
 msgid "<filename>/rescue/</filename>"
-msgstr ""
+msgstr "<filename>/rescue/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7142
@@ -10371,11 +10495,14 @@ msgid ""
 "<citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Programmi linkati staticamente per le situazioni di emergenza come descritto "
+"in <citerefentry><refentrytitle>rescue</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7147
 msgid "<filename>/root/</filename>"
-msgstr ""
+msgstr "<filename>/root/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7148
@@ -10383,11 +10510,13 @@ msgid ""
 "Home directory for the <systemitem class=\"username\">root</systemitem> "
 "account."
 msgstr ""
+"Directory home per l'account <systemitem class=\"username\">root</"
+"systemitem>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7154
 msgid "<filename>/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7155
@@ -10395,11 +10524,13 @@ msgid ""
 "System programs and administration utilities fundamental to both single-user "
 "and multi-user environments."
 msgstr ""
+"Programmi di sistema e utilità di amministrazione fondamentali sia in "
+"ambiente mono-utente sia in ambiente multi-utente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7161
 msgid "<filename>/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7162
@@ -10412,71 +10543,79 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"File temporaneo generalmente <emphasis>non</emphasis> preservati dopo il "
+"riavvio del sistema. Spesso su <filename>/tmp</filename> viene montato un "
+"filesystem basato in RAM. Questo può essere automatizzato usando le "
+"variabili per tmpmfs di <citerefentry><refentrytitle>rc.conf</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry> o con una direttiva in "
+"<filename>/etc/fstab</filename>; consultare "
+"<citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7172
 msgid "<filename>/usr/</filename>"
-msgstr ""
+msgstr "<filename>/usr/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7173
 msgid "The majority of user utilities and applications."
-msgstr ""
+msgstr "La maggior parte delle applicazioni e delle utilità degli utenti."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7178
 msgid "<filename>/usr/bin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/bin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7179
 msgid "Common utilities, programming tools, and applications."
-msgstr ""
+msgstr "Utilità, strumenti di programmazione, e applicazioni."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7184
 msgid "<filename>/usr/include/</filename>"
-msgstr ""
+msgstr "<filename>/usr/include/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7185
 msgid "Standard C include files."
-msgstr ""
+msgstr "File include standard del C."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7189
 msgid "<filename>/usr/lib/</filename>"
-msgstr ""
+msgstr "<filename>/usr/lib/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7190
 msgid "Archive libraries."
-msgstr ""
+msgstr "Archivio di librerie."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7195
 msgid "<filename>/usr/libdata/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libdata/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7196
 msgid "Miscellaneous utility data files."
-msgstr ""
+msgstr "Archivio di dati per utilità varie."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7200
 msgid "<filename>/usr/libexec/</filename>"
-msgstr ""
+msgstr "<filename>/usr/libexec/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7201
 msgid "System daemons and system utilities executed by other programs."
-msgstr ""
+msgstr "Demoni di sistema e utilità di sistema eseguite da altri programmi."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7206
 msgid "<filename>/usr/local/</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7207
@@ -10490,6 +10629,14 @@ msgid ""
 "usr/local/share</filename>, and the ports documentation is in "
 "<filename>share/doc/<replaceable>port</replaceable></filename>."
 msgstr ""
+"Eseguibili locali e librerie. Usata anche come destinazione di default dalla "
+"struttura dei port di FreeBSD. All'interno di <filename>/usr/local</"
+"filename>, dovrebbe essere usata la stessa struttura generale descritta in "
+"<citerefentry><refentrytitle>hier</refentrytitle><manvolnum>7</manvolnum></"
+"citerefentry> per <filename>/usr</filename>. Fanno eccezine la directory dei "
+"man, che si trova direttamente sotto <filename>/usr/local</filename> anziché "
+"in <filename>/usr/local/share</filename>, e la documentazione dei port che "
+"va in <filename>share/doc/<replaceable>port</replaceable></filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7220
