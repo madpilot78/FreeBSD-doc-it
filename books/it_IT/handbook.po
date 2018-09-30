@@ -4,6 +4,7 @@
 # #-#-#-#-#  handbook.po  #-#-#-#-#
 # Guido Falsi <madpilot@FreeBSD.org>, 2018. #zanata
 # Luca Pizzamiglio <pizzamig@FreeBSD.org>, 2018. #zanata
+# Vanja Cvelbar <vanja@cvelbar.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-24 05:08+0000\n"
+"PO-Revision-Date: 2018-09-30 09:59+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -228,7 +229,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:780
 msgid "Linux is a registered trademark of Linus Torvalds."
-msgstr "Linux è un marchio registrato di Linux Torvalds."
+msgstr "Linux è un marchio registrato di Linus Torvalds."
 
 #. (itstool) path: legalnotice/para
 #: book.translate.xml:782
@@ -10642,7 +10643,7 @@ msgstr ""
 #. (itstool) path: row/entry
 #: book.translate.xml:7220
 msgid "<filename>/usr/obj/</filename>"
-msgstr ""
+msgstr "<filename>/usr/obj/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7221
@@ -10650,51 +10651,53 @@ msgid ""
 "Architecture-specific target tree produced by building the <filename>/usr/"
 "src</filename> tree."
 msgstr ""
+"Albero degli elementi dipendenti dall'architettura del sistema prodotti "
+"dalla compilazione dell'albero <filename>/usr/src</filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7227
 msgid "<filename>/usr/ports/</filename>"
-msgstr ""
+msgstr "<filename>/usr/ports/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7228
 msgid "The FreeBSD Ports Collection (optional)."
-msgstr ""
+msgstr "Collezione dei Port di FreeBSD (facoltativa)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7232
 msgid "<filename>/usr/sbin/</filename>"
-msgstr ""
+msgstr "<filename>/usr/sbin/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7233
 msgid "System daemons and system utilities executed by users."
-msgstr ""
+msgstr "Demoni e utilità di sistema eseguite dagli utenti."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7238
 msgid "<filename>/usr/share/</filename>"
-msgstr ""
+msgstr "<filename>/usr/share/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7239
 msgid "Architecture-independent files."
-msgstr ""
+msgstr "File indipendenti dall'architettura del sistema."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7243
 msgid "<filename>/usr/src/</filename>"
-msgstr ""
+msgstr "<filename>/usr/src/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7244
 msgid "BSD and/or local source files."
-msgstr ""
+msgstr "Sorgenti BSD e/o proprietari."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7248
 msgid "<filename>/var/</filename>"
-msgstr ""
+msgstr "<filename>/var/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7249
@@ -10707,41 +10710,49 @@ msgid ""
 "filename>; refer to <citerefentry><refentrytitle>mdmfs</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> for details."
 msgstr ""
+"File vari di log, temporanei, transitorie e di spool. A volte in <filename>/"
+"var</filename> viene montato un file system basato in memoria. Questo può "
+"essere automatizzato usando le variabili relative a varmfs in "
+"<citerefentry><refentrytitle>rc.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> o con una riga in <filename>/etc/fstab</filename>; "
+"consultare  <citerefentry><refentrytitle>mdmfs</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7260
 msgid "<filename>/var/log/</filename>"
-msgstr ""
+msgstr "<filename>/var/log/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7261
 msgid "Miscellaneous system log files."
-msgstr ""
+msgstr "File di log del sistema di vario genere."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7265
 msgid "<filename>/var/mail/</filename>"
-msgstr ""
+msgstr "<filename>/var/mail/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7266
 msgid "User mailbox files."
-msgstr ""
+msgstr "File delle caselle di posta degli utenti."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7270
 msgid "<filename>/var/spool/</filename>"
-msgstr ""
+msgstr "<filename>/var/spool/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7271
 msgid "Miscellaneous printer and mail system spooling directories."
 msgstr ""
+"Directory di spool per stampanti e per il sistema di posta elettronica."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7276
 msgid "<filename>/var/tmp/</filename>"
-msgstr ""
+msgstr "<filename>/var/tmp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7277
@@ -10749,21 +10760,24 @@ msgid ""
 "Temporary files which are usually preserved across a system reboot, unless "
 "<filename>/var</filename> is a memory-based file system."
 msgstr ""
+"File temporanei che vengono in genere preservati dopo un riavvio del "
+"sistema, salvo quando <filename>/var</filename> risiede su un file system "
+"basato in memoria."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7284
 msgid "<filename>/var/yp/</filename>"
-msgstr ""
+msgstr "<filename>/var/yp/</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7285
 msgid "NIS maps."
-msgstr ""
+msgstr "Mappe NIS."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7293
 msgid "Disk Organization"
-msgstr ""
+msgstr "Organizzazione del Disco"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7295
@@ -10774,6 +10788,11 @@ msgid ""
 "FreeBSD does not use the extension of a file to determine whether the file "
 "is a program, document, or some other form of data."
 msgstr ""
+"La più piccola unità di organizzazione che FreeBSD usa per ricercare file è "
+"il nome del file. I nomi dei file sono case-sensitive, ciò significa che "
+"<filename>readme.txt</filename> e <filename>README.TXT</filename> sono due "
+"file distinti. FreeBSD non usa l'estensione di un file per determinare se il "
+"file è un programma, un documento, o qualche altra forma di dati."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7302
@@ -10783,6 +10802,10 @@ msgid ""
 "directories, allowing a hierarchy of directories within one another in order "
 "to organize data."
 msgstr ""
+"I file vengono archiviati nelle directory. Una directory può contenere "
+"centinaia di file o non contenerne affatto. Una directory puo anche "
+"contenere altre directory, consentendo di costruire una gerarchia di "
+"directory all'interno di un'altra per poter organizzare i dati."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7308
@@ -10799,6 +10822,17 @@ msgid ""
 "other drive names in the path. For example, one would not type <filename>c:"
 "\\foo\\bar\\readme.txt</filename> on FreeBSD."
 msgstr ""
+"Ci si riferisce a file e directory attraverso il nome del file o della "
+"directory, seguito da uno slash in avanti, <literal>/</literal>, seguito da "
+"altri nomi di directory necessari. Per esempio, se la directory "
+"<filename>foo</filename> contiene una directory <filename>bar</filename> che "
+"contiene il file <filename>readme.txt</filename>, il nome completo, o "
+"<firstterm>path</firstterm> (percorso), del file è <filename>foo/bar/readme."
+"txt</filename>. Da notare che questo differisce da <trademark class="
+"\"registered\">Windows</trademark> che utilizza <literal>\\</literal> per "
+"separare i nomi di file e directory. FreeBSD non usa le lettere dei drive, o "
+"altri nomi di drive nel path. Per esempio, non scriverai mai <filename>c:"
+"\\foo\\bar\\readme.txt</filename> in FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7323
@@ -10812,6 +10846,14 @@ msgid ""
 "many disks are on the FreeBSD system, every directory appears to be part of "
 "the same disk."
 msgstr ""
+"Le directory e i file sono memorizzati in un file system.  Ogni file system "
+"contiene esattamente una directory al livello più alto, chiamata la "
+"<firstterm>root directory</firstterm> di quel file system. Questa direcory "
+"root può contenere altre directory. Un file system è designato come "
+"<firstterm>file system root</firstterm> o <literal>/</literal>. Tutti gli "
+"altri file system sono <firstterm>montati</firstterm> sotto il file system "
+"root. A prescindere da quanti dischi siano presenti su un sistema FreeBSD, "
+"ogni directory sembrerà far parte di un unico disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7334
@@ -10822,6 +10864,11 @@ msgid ""
 "<literal>A2</literal> (and likewise <literal>B1</literal>, <literal>B2</"
 "literal> and <literal>C1</literal>, <literal>C2</literal>)."
 msgstr ""
+"Supponiamo di avere tre file system, chiamati <literal>A</literal>, "
+"<literal>B</literal>, e <literal>C</literal>. Ogni file system ha una "
+"directory di root, che contiene due altre directory, chiamate <literal>A1</"
+"literal>, <literal>A2</literal> (e similmente <literal>B1</literal>, "
+"<literal>B2</literal> e <literal>C1</literal>, <literal>C2</literal>)."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7341
@@ -10832,6 +10879,11 @@ msgid ""
 "two subdirectories, <literal>A1</literal> and <literal>A2</literal>. The "
 "directory tree looks like this:"
 msgstr ""
+"Sia <literal>A</literal> è il file system root. Se usi il comando "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per visualizzare il contenuto di questa directory, mostrerà "
+"due subdirectory, <literal>A1</literal> e <literal>A2</literal>. L'albero "
+"delle directory assomiglia a questo:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10841,7 +10893,7 @@ msgstr ""
 #: book.translate.xml:7349
 msgctxt "_"
 msgid "external ref='basics/example-dir1' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir1' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7353
@@ -10851,7 +10903,11 @@ msgid " /\n"
 " +--- A1\n"
 " |\n"
 " `--- A2"
-msgstr ""
+msgstr " /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7361
@@ -10861,6 +10917,11 @@ msgid ""
 "literal>, the root directory of <literal>B</literal> replaces <literal>A1</"
 "literal>, and the directories in <literal>B</literal> appear accordingly:"
 msgstr ""
+"Un file system deve essere montato su una directory di un altro file system. "
+"Quando monti il file system <literal>B</literal> sulla directory "
+"<literal>A1</literal>, la directory root di <literal>B</literal> rimpiazza "
+"<literal>A1</literal>, e di conseguenza appariranno le directory in "
+"<literal>B</literal>:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10870,7 +10931,7 @@ msgstr ""
 #: book.translate.xml:7370
 msgctxt "_"
 msgid "external ref='basics/example-dir2' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir2' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7374
@@ -10886,6 +10947,15 @@ msgid ""
 " |\n"
 " `--- A2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- B1\n"
+" |     |\n"
+" |     `--- B2\n"
+" |\n"
+" `--- A2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7386
@@ -10897,6 +10967,12 @@ msgid ""
 "<literal>B</literal> is <firstterm>unmounted</firstterm> from <literal>A</"
 "literal>."
 msgstr ""
+"I file contenuti nelle directory <literal>B1</literal> o <literal>B2</"
+"literal> possono essere raggiunti con il path <filename>/A1/B1</filename> o "
+"<filename>/A1/B2</filename> rispettivamente. Eventuali file che erano in "
+"<filename>/A1</filename> sono temporaneamente nascosti. Questi riappariranno "
+"se <literal>B</literal> viene <firstterm>smontato</firstterm> da <literal>A</"
+"literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7395
@@ -10904,6 +10980,8 @@ msgid ""
 "If <literal>B</literal> had been mounted on <literal>A2</literal> then the "
 "diagram would look like this:"
 msgstr ""
+"Se <literal>B</literal> fosse stato montato su <literal>A2</literal> il "
+"diagramma sarebbe simile a:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10913,7 +10991,7 @@ msgstr ""
 #: book.translate.xml:7401
 msgctxt "_"
 msgid "external ref='basics/example-dir3' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir3' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7405
@@ -10929,6 +11007,15 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7417
@@ -10936,6 +11023,8 @@ msgid ""
 "and the paths would be <filename>/A2/B1</filename> and <filename>/A2/B2</"
 "filename> respectively."
 msgstr ""
+"E i path sarebbero <filename>/A2/B1</filename> e <filename>/A2/B2</filename> "
+"rispettivamente."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7422
@@ -10945,6 +11034,10 @@ msgid ""
 "<literal>B1</literal> directory in the <literal>B</literal> file system, "
 "leading to this arrangement:"
 msgstr ""
+"I file system possono essere montati uno sopra l'altro. Continuando con "
+"l'ultimo esempio, il file system <literal>C</literal> puo essere montato "
+"sopra la directory <literal>B1</literal> nel file system <literal>B</"
+"literal>, arrivando a questa condizione:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10954,7 +11047,7 @@ msgstr ""
 #: book.translate.xml:7430
 msgctxt "_"
 msgid "external ref='basics/example-dir4' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir4' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7434
@@ -10974,6 +11067,19 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |     |\n"
+"       |     +--- C1\n"
+"       |     |\n"
+"       |     `--- C2\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7450
@@ -10981,6 +11087,8 @@ msgid ""
 "Or <literal>C</literal> could be mounted directly on to the <literal>A</"
 "literal> file system, under the <literal>A1</literal> directory:"
 msgstr ""
+"Oppure <literal>C</literal> potrebbe essere montato direttamente sul file "
+"system <literal>A</literal>, sotto la directory <literal>A1</literal>:"
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -10990,7 +11098,7 @@ msgstr ""
 #: book.translate.xml:7456
 msgctxt "_"
 msgid "external ref='basics/example-dir5' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/example-dir5' md5='__failed__'"
 
 #. (itstool) path: textobject/literallayout
 #: book.translate.xml:7460
@@ -11010,6 +11118,19 @@ msgid ""
 "       |\n"
 "       `--- B2"
 msgstr ""
+" /\n"
+" |\n"
+" +--- A1\n"
+" |     |\n"
+" |     +--- C1\n"
+" |     |\n"
+" |     `--- C2\n"
+" |\n"
+" `--- A2\n"
+"       |\n"
+"       +--- B1\n"
+"       |\n"
+"       `--- B2"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7476
@@ -11018,11 +11139,14 @@ msgid ""
 "create any others. There are some drawbacks to this approach, and one "
 "advantage."
 msgstr ""
+"È assolutamente possibile avere un file system root spazioso, e non avere "
+"bisogno di crearne altri. Ci sono alcuni svantaggi usando questo approccio, "
+"e un vantaggio."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7481
 msgid "Benefits of Multiple File Systems"
-msgstr ""
+msgstr "Vantaggi dei File System Multipli"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7484
@@ -11036,6 +11160,15 @@ msgid ""
 "firstterm>/<firstterm>guid</firstterm> bits on executables stored on the "
 "file system from taking effect, possibly improving security."
 msgstr ""
+"File system distinti possono avere <firstterm>opzioni di mount</firstterm> "
+"diverse. Per esempio, il file system root puo essere montato in sola "
+"lettura, rendendo impossibile la cancellazione o modifica involontari da "
+"parte degli utenti di un file critico. La separazione di file system "
+"scrivibili dagli utenti, come <filename>/home</filename>, dagli altri file "
+"system permette di montarli con l'opzione <firstterm>nosuid</firstterm>. "
+"Questa opzione impedisce ai flag <firstterm>suid</firstterm> e "
+"<firstterm>sgid</firstterm> di avere effetto per i file presenti sul file "
+"system, migliorandone la sicurezza."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7498
@@ -11046,6 +11179,12 @@ msgid ""
 "optimization to one that contains fewer, larger files. By having one big "
 "file system this optimization breaks down."
 msgstr ""
+"FreeBSD ottimizza in automaticamente la disposizione dei file sul file "
+"system, a seconda di come viene usato il file system. Quindi un file system "
+"che contiene molti file piccoli che sono scritti di frequente avrà "
+"un'ottimizzazione diversa rispetto ad un file system che contiene pochi file "
+"di grandi dimensioni. Utilizzando un solo grande file system questa "
+"ottimizzazione viene a mancare."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7507
@@ -11055,11 +11194,16 @@ msgid ""
 "splitting data over multiple file systems it is more likely that the system "
 "will still come up, making it easier to restore from backup as necessary."
 msgstr ""
+"I file system di FreeBSD reagiscono bene ad una violenta perdita di energia "
+"elettrica. Tuttavia, una perdita di energia in un punto critico potrebbe "
+"sempre danneggiare la struttura del file system. suddividendo i tuoi dati su "
+"più file system sarà più probabile che il sistema riparta, rendendo più "
+"semplice il ripristino da un backup se necessario."
 
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:7517
 msgid "Benefit of a Single File System"
-msgstr ""
+msgstr "Vantaggi di un File System Singolo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7520
@@ -11070,6 +11214,12 @@ msgid ""
 "up, recreating the file system with the new size, and then restoring the "
 "backed up data."
 msgstr ""
+"I file system hanno una dimensione fissa. Se crei un solo file system quando "
+"installi FreeBSD e gli assegni una data dimensione, in futuro potresti "
+"scoprire che hai bisogno di creare una partizione più grande. Questo non è "
+"facilmente realizzabile se non effettuando un backup dei dati, ricreando il "
+"file system con la nuova dimensione, e quindi ripristinando il backup dei "
+"dati."
 
 #. (itstool) path: important/para
 #: book.translate.xml:7528
@@ -11079,6 +11229,9 @@ msgid ""
 "it possible to increase the size of file system on the fly, removing this "
 "limitation."
 msgstr ""
+"FreeBSD ha il comando <citerefentry><refentrytitle>growfs</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, con il quale è "
+"possibile ingrandire un file system al volo, rimuovendo questa limitazione."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7535
@@ -11092,6 +11245,15 @@ msgid ""
 "file systems are often described by either their typical mount point in the "
 "file system hierarchy, or the letter of the partition they are contained in."
 msgstr ""
+"I file system sono contenuti nelle partizioni. Qui il significato del "
+"termine partizione si discosta dall'uso comune di questo termine(per "
+"esempio, le partizioni <trademark class=\"registered\">MS-DOS</trademark>), "
+"a causa dell'eredità <trademark class=\"registered\">UNIX</trademark> di "
+"FreeBSD. Ogni partizione viene identificata trammite una lettera dalla "
+"<literal>a</literal> alla <literal>h</literal>. ogni partizione può "
+"contenere un solo file system, il che significa che i file system sono "
+"spesso identificati sia dal loro punto di mount nella gerarchia del file "
+"system, sia dalla lettera della partizione nella quale sono contenuti."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7545
@@ -11103,46 +11265,52 @@ msgid ""
 "used to the swap space, and moves it back in (moving something else out) "
 "when it needs it."
 msgstr ""
+"Inoltre FreeBSD usa parte dello spazio disco per lo <firstterm>swap</"
+"firstterm> allo scopo di fornire <firstterm>memoria virtuale</firstterm>. "
+"Questo permette al tuo computer di comportarsi come se avesse molta più "
+"memoria di quella che ha effettivamente. Quando FreeBSD esaurisce la "
+"memoria, sposta alcuni dati che non sta utilizzando nello swap, e li riporta "
+"in memoria (spostando qualcos'altro al di fuori) quando necessari."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7554
 msgid "Some partitions have certain conventions associated with them."
-msgstr ""
+msgstr "Alcune partiziono seguono delle convenzioni."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7564
 msgid "Partition"
-msgstr ""
+msgstr "Partizione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7565
 msgid "Convention"
-msgstr ""
+msgstr "Convenzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7571
 msgid "<literal>a</literal>"
-msgstr ""
+msgstr "<literal>a</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7572
 msgid "Normally contains the root file system."
-msgstr ""
+msgstr "In genere contiene il file system root."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7576
 msgid "<literal>b</literal>"
-msgstr ""
+msgstr "<literal>b</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7577
 msgid "Normally contains swap space."
-msgstr ""
+msgstr "In genere contiene la partizione di swap."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7581
 msgid "<literal>c</literal>"
-msgstr ""
+msgstr "<literal>c</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7582
@@ -11152,11 +11320,16 @@ msgid ""
 "the <literal>c</literal> partition. A file system would not normally be "
 "created on this partition."
 msgstr ""
+"Di solito rappresenta l'intera dimensione della slice che la contiene. "
+"Questo permette alle utility che necessitano di lavorare sull'intera slice, "
+"come uno scanner di blocchi difettosi, di lavorare sulla partizione "
+"<literal>c</literal>. Di norma non viene creato alcun file system su questa "
+"partizione."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7590
 msgid "<literal>d</literal>"
-msgstr ""
+msgstr "<literal>d</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7591
@@ -11165,6 +11338,9 @@ msgid ""
 "with it, although that is now gone and <literal>d</literal> may work as any "
 "normal partition."
 msgstr ""
+"In passato la partizione <literal>d</literal> aveva un significato speciale, "
+"ma è caduto in disuso e <literal>d</literal> puo essere usata come una "
+"partizione normale."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7600
@@ -11174,21 +11350,25 @@ msgid ""
 "to 4. These are then divided into partitions, which contain file systems, "
 "and are labeled using letters."
 msgstr ""
+"I dischi in FreeBSD sono divisi in slice, corrispondono a quelle che "
+"<trademark class=\"registered\">Windows</trademark> chiama partizioni, e "
+"sono numerate da 1 a 4. Queste vengono poi suddivise in partizioni che "
+"contengono i file system, e vengono indicate da lettere."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7605
 msgid "<primary>slices</primary>"
-msgstr ""
+msgstr "<primary>slices</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7608 book.translate.xml:31825 book.translate.xml:31921
 msgid "<primary>partitions</primary>"
-msgstr ""
+msgstr "<primary>partizioni</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7611
 msgid "<primary>dangerously dedicated</primary>"
-msgstr ""
+msgstr "<primary>pericolosamente dedicata</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7615
@@ -11202,6 +11382,14 @@ msgid ""
 "the first SATA disk. These devices are used by file systems that expect to "
 "occupy a slice."
 msgstr ""
+"I numeri delle slice si trovano dopo il nome del device, con una <literal>s</"
+"literal> come prefisso, iniziando da 1. Quindi <quote>da0<emphasis>s1</"
+"emphasis></quote> è il primo slice sul primo disco SCSI. Ci possono essere "
+"solo quattro slice fisiche su un disco, Ma ci possono essere slice logiche "
+"all'interno delle slice fisiche di tipo appropriato. Queste slice estese "
+"sono numerate partendo da 5, quindi <quote>ada0<emphasis>s5</emphasis></"
+"quote> è la prima slice estesa sul primo disco SATA. Questi dispositivi sono "
+"usati dai file system che prevedono di occupare una slice."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7625
@@ -11215,6 +11403,14 @@ msgid ""
 "emphasis></quote> is the fifth partition in the third slice of the second "
 "SATA disk drive."
 msgstr ""
+"Le slice, i dispositivi fisici <quote>pericolosamente dedicati</quote>, e "
+"altri dischi contendono <firstterm>partitions</firstterm>, che sono "
+"rappresentate da lettere dalla <literal>a</literal> alla <literal>h</"
+"literal>. Questa lettera viene concatenata al come del dispositivo, quindi "
+"<quote>da0<emphasis>a</emphasis></quote> è la partizione <literal>a</"
+"literal> sul primo disco <literal>da</literal>, che è <quote>pericolosamente "
+"dedicata</quote>. <quote>ada1s3<emphasis>e</emphasis></quote> è la quinta "
+"partizione nel terzo slice del secondo disco SATA."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7638
@@ -11224,6 +11420,11 @@ msgid ""
 "disk it is. Unlike slices, disk numbering starts at 0. Common codes are "
 "listed in <xref linkend=\"disks-naming\"/>."
 msgstr ""
+"Infine, ogni disco sul sistema ha una identificazione. Un nome di un disco "
+"inizia con un codice che indica il tipo di disco, seguito da un numero, che "
+"indica quale disco è. Diversamente dalle slice, i numeri dei dischi iniziano "
+"da 0. I codici generici sono elencati nella <xref linkend=\"disks-naming\"/>."
+""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7644
@@ -11232,6 +11433,10 @@ msgid ""
 "the slice number, and then the partition letter. Examples are shown in <xref "
 "linkend=\"basics-disk-slice-part\"/>."
 msgstr ""
+"Quando fai riferimento a una partizione, includi il nome del disco, la "
+"lettera <literal>s</literal>, il numero di slice, e infine la lettera della "
+"partizione. Alcuni esempi sono mostrati nell'<xref linkend=\"basics-disk-"
+"slice-part\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7649
@@ -11239,6 +11444,8 @@ msgid ""
 "<xref linkend=\"basics-concept-disk-model\"/> shows a conceptual model of a "
 "disk layout."
 msgstr ""
+"<xref linkend=\"basics-concept-disk-model\"/> mostra un modello concettuale "
+"di struttura di un disco."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7652
@@ -11247,31 +11454,34 @@ msgid ""
 "the slice to be used for FreeBSD, create a file system or swap space in each "
 "partition, and decide where each file system will be mounted."
 msgstr ""
+"Quando installi FreeBSD, configura le slice, crea le partizioni nelle slice "
+"per essere usate da FreeBSD, crea un file system o una swap in ogni "
+"partizioni, e decidi dove ogni file system verrà montato."
 
 #. (itstool) path: table/title
 #: book.translate.xml:7658
 msgid "Disk Device Names"
-msgstr ""
+msgstr "Nomi dei Dispositivi Disco"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7666
 msgid "Drive Type"
-msgstr ""
+msgstr "Tipo Disco"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7667
 msgid "Drive Device Name"
-msgstr ""
+msgstr "Nome Dispositivo Disco"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7673
 msgid "<acronym>SATA</acronym> and <acronym>IDE</acronym> hard drives"
-msgstr ""
+msgstr "Dischi rigidi <acronym>SATA</acronym> e <acronym>IDE</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7675
 msgid "<literal>ada</literal> or <literal>ad</literal>"
-msgstr ""
+msgstr "<literal>ada</literal> o <literal>ad</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7680
@@ -11279,11 +11489,13 @@ msgid ""
 "<acronym>SCSI</acronym> hard drives and <acronym>USB</acronym> storage "
 "devices"
 msgstr ""
+"Dischi rigidi <acronym>SCSI</acronym> e dispositivi di archiviazione "
+"<acronym>USB</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7682
 msgid "<literal>da</literal>"
-msgstr ""
+msgstr "<literal>da</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7686
@@ -11291,36 +11503,38 @@ msgid ""
 "<acronym>SATA</acronym> and <acronym>IDE</acronym> <acronym>CD-ROM</acronym> "
 "drives"
 msgstr ""
+"Dispositivi <acronym>CD-ROM</acronym> <acronym>SATA</acronym> e "
+"<acronym>IDE</acronym> <acronym>CD-ROM</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7688
 msgid "<literal>cd</literal> or <literal>acd</literal>"
-msgstr ""
+msgstr "<literal>cd</literal> o <literal>acd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7693
 msgid "<acronym>SCSI</acronym> <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "Dispositivi <acronym>CD-ROM</acronym> <acronym>SCSI</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7695
 msgid "<literal>cd</literal>"
-msgstr ""
+msgstr "<literal>cd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7699
 msgid "Floppy drives"
-msgstr ""
+msgstr "Dispositivi floppy"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7700
 msgid "<literal>fd</literal>"
-msgstr ""
+msgstr "<literal>fd</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7704
 msgid "Assorted non-standard <acronym>CD-ROM</acronym> drives"
-msgstr ""
+msgstr "Vari dispositivi <acronym>CD-ROM</acronym> non standard"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7706
@@ -11328,31 +11542,33 @@ msgid ""
 "<literal>mcd</literal> for Mitsumi <acronym>CD-ROM</acronym> and "
 "<literal>scd</literal> for Sony <acronym>CD-ROM</acronym> devices"
 msgstr ""
+"<literal>mcd</literal> per <acronym>CD-ROM</acronym> Mitsumi e <literal>scd</"
+"literal> per <acronym>CD-ROM</acronym> Sony"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7712
 msgid "<acronym>SCSI</acronym> tape drives"
-msgstr ""
+msgstr "Dispositivi a nastro <acronym>SCSI</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7713
 msgid "<literal>sa</literal>"
-msgstr ""
+msgstr "<literal>sa</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7717
 msgid "<acronym>IDE</acronym> tape drives"
-msgstr ""
+msgstr "Dispositivi a nastro <acronym>IDE</acronym>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7718
 msgid "<literal>ast</literal>"
-msgstr ""
+msgstr "<literal>ast</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7722
 msgid "RAID drives"
-msgstr ""
+msgstr "Dispositivi RAID"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7723
@@ -11365,26 +11581,33 @@ msgid ""
 "Smart RAID, <literal>twed</literal> for <trademark class="
 "\"registered\">3ware</trademark> RAID."
 msgstr ""
+"A titolo esemplificativo, <literal>aacd</literal> per <trademark class="
+"\"registered\">Adaptec</trademark> AdvancedRAID, <literal>mlxd</literal> e "
+"<literal>mlyd</literal> per <trademark class=\"registered\">Mylex</"
+"trademark>, <literal>amrd</literal> per AMI <trademark class="
+"\"registered\">MegaRAID</trademark>, <literal>idad</literal> per Compaq "
+"Smart RAID, <literal>twed</literal> per <trademark class="
+"\"registered\">3ware</trademark> RAID."
 
 #. (itstool) path: example/title
 #: book.translate.xml:7735
 msgid "Sample Disk, Slice, and Partition Names"
-msgstr ""
+msgstr "Esempi di Nomi di Dischi, di Slice, e di Partizioni"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7744
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7745 book.translate.xml:61549
 msgid "Meaning"
-msgstr ""
+msgstr "Significato"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7751
 msgid "<literal>ada0s1a</literal>"
-msgstr ""
+msgstr "<literal>ada0s1a</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7752
@@ -11393,11 +11616,13 @@ msgid ""
 "literal>) on the first <acronym>SATA</acronym> disk (<literal>ada0</"
 "literal>)."
 msgstr ""
+"La prima partizione (<literal>a</literal>) del primo slice (<literal>s1</"
+"literal>) sul primo disco <acronym>SATA</acronym> (<literal>ada0</literal>)."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7759
 msgid "<literal>da1s2e</literal>"
-msgstr ""
+msgstr "<literal>da1s2e</literal>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:7760
@@ -11405,11 +11630,13 @@ msgid ""
 "The fifth partition (<literal>e</literal>) on the second slice (<literal>s2</"
 "literal>) on the second SCSI disk (<literal>da1</literal>)."
 msgstr ""
+"La quinta partizione (<literal>e</literal>) della seconda slice "
+"(<literal>s2</literal>) sul secondo disco SCSI (<literal>da1</literal>)."
 
 #. (itstool) path: example/title
 #: book.translate.xml:7770
 msgid "Conceptual Model of a Disk"
-msgstr ""
+msgstr "Modello Concettuale di un Disco"
 
 #. (itstool) path: example/para
 #: book.translate.xml:7772
@@ -11423,6 +11650,14 @@ msgid ""
 "installation. This example FreeBSD installation has four data partitions and "
 "a swap partition."
 msgstr ""
+"Questo diagramma mostra come FreeBSD vede il primo disco <acronym>SATA</"
+"acronym> collegato al sistema. Si assuma che il disco sia di 250 GB, e "
+"contenga una slice di 80 GB e una di 170 GB (<trademark class="
+"\"registered\">MS-DOS</trademark> partitions). La prima slice contiene un "
+"file system <trademark class=\"registered\">Windows</trademark> "
+"<acronym>NTFS</acronym>, <filename>C:</filename>, e la seconda slice "
+"contiene una installazione di FreeBSD. Questa installazione di FreeBSD di "
+"esempio ha quattro partizioni di dati e una partizione di swap."
 
 #. (itstool) path: example/para
 #: book.translate.xml:7782
@@ -11434,6 +11669,12 @@ msgid ""
 "<literal>c</literal> refers to the entire slice, and so is not used for "
 "ordinary partitions."
 msgstr ""
+"Le quattro partizioni contengono ognuna un file system. La partizione "
+"<literal>a</literal> è usata per il file system root, <literal>d</literal> "
+"per <filename>/var/</filename>, <literal>e</literal> per <filename>/tmp/</"
+"filename>, e <literal>f</literal> per <filename>/usr/</filename>. La lettera "
+"di partizione <literal>c</literal> fa riferimento all'intera slice, e quindi "
+"non viene usata per le partizioni ordinarie."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -11443,12 +11684,12 @@ msgstr ""
 #: book.translate.xml:7792
 msgctxt "_"
 msgid "external ref='basics/disk-layout' md5='__failed__'"
-msgstr ""
+msgstr "external ref='basics/disk-layout' md5='__failed__'"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:7799
 msgid "Mounting and Unmounting File Systems"
-msgstr ""
+msgstr "Montaggio e Smontaggio dei File system"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7801
@@ -11459,11 +11700,15 @@ msgid ""
 "which may have their own branches, such as <filename>/usr/local</filename>, "
 "and so on."
 msgstr ""
+"Il file system si può correttamente immaginare come un albero, radicato alla "
+"<filename>/</filename>. <filename>/dev</filename>, <filename>/usr</"
+"filename>, e le altre directory nella root sono rami, che possono avere "
+"altri rami, come <filename>/usr/local</filename>, e così via."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:7810
 msgid "<primary>root file system</primary>"
-msgstr ""
+msgstr "<primary>file system root</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7814
@@ -11475,6 +11720,12 @@ msgid ""
 "system is not a good idea, so splitting <filename>/var</filename> from "
 "<filename>/</filename> is often favorable."
 msgstr ""
+"Esistono varie ragioni per mantenere alcune di queste directory su file "
+"system separati. <filename>/var</filename> coontiene le directory "
+"<filename>log/</filename>, <filename>spool/</filename>, e vari tipi di file "
+"temporanei, E come tale, può riempirsi. Riempire il file system root non è "
+"una buona idea, quindi separare <filename>/var</filename> from <filename>/</"
+"filename> è in genere vantaggioso."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:7825
@@ -11484,6 +11735,10 @@ msgid ""
 "separate virtual disks, such as Network File System mounts, described in "
 "<xref linkend=\"network-nfs\"/>, or CDROM drives."
 msgstr ""
+"Un'altra ragione per mantenere certi alberi di directory su file system "
+"separati è quando sono alloggiati su dischi fisici separati, o su dischi "
+"virtuali spearati, come dischi NFS, descritti nella <xref linkend=\"network-"
+"nfs\"/>, o dispositivi CDROM."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7832
@@ -12976,17 +13231,17 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:8840
 msgid "Installing Applications: Packages and Ports"
-msgstr ""
+msgstr "Installazione delle applicazioni: pacchetti e port"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8845
 msgid "<primary>ports</primary>"
-msgstr ""
+msgstr "<primary>port</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8846
 msgid "<primary>packages</primary>"
-msgstr ""
+msgstr "<primary>pacchetti</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8847
@@ -13002,7 +13257,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:8859
 msgid "The difference between binary packages and ports."
-msgstr ""
+msgstr "La differenza tra i pacchetti binari e i port"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8863
@@ -13016,9 +13271,10 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8873
+#, fuzzy
 msgid ""
 "How to build third-party software from source using the Ports Collection."
-msgstr ""
+msgstr "Come compilare software di terze parti usando la Collezione dei port"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8878
@@ -13030,7 +13286,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: book.translate.xml:8883
 msgid "What to do if a software installation fails."
-msgstr ""
+msgstr "Cosa fare se l'installazione del software fallisce"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8889
@@ -13043,6 +13299,8 @@ msgid ""
 "The typical steps for installing third-party software on a <trademark class="
 "\"registered\">UNIX</trademark> system include:"
 msgstr ""
+"I passaggi tipici per installare software di terze parti su un sistema  "
+"<trademark class=\"registered\">UNIX</trademark> includono:"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8896
@@ -13050,6 +13308,8 @@ msgid ""
 "Find and download the software, which might be distributed in source code "
 "format or as a binary."
 msgstr ""
+"Trovare e scaricare il software, che può essere distribuito in formato "
+"sorgente o  binario."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8901
@@ -13063,27 +13323,43 @@ msgid ""
 "citerefentry> or <citerefentry><refentrytitle>xz</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Scompattare il software dal suo formato di distribuzione. Tipicamente un  "
+"tarball compresso con un programma come "
+"<citerefentry><refentrytitle>compress</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, <citerefentry><refentrytitle>gzip</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, "
+"<citerefentry><refentrytitle>bzip2</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o <citerefentry><refentrytitle>xz</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8907
+#, fuzzy
 msgid ""
 "Locate the documentation in <filename>INSTALL</filename>, <filename>README</"
 "filename> or some file in a <filename>doc/</filename> subdirectory and read "
 "up on how to install the software."
 msgstr ""
+"Individuare la documentazione in <filename>INSTALL</filename>, "
+"<filename>README</filename> o qualche file nella sottodirectory "
+"<filename>doc/</filename> e leggere come installare il software."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8914
+#, fuzzy
 msgid ""
 "If the software was distributed in source format, compile it. This may "
 "involve editing a <filename>Makefile</filename> or running a "
 "<command>configure</command> script."
 msgstr ""
+"Se il software viene distribuito in formato sorgente bisogna compilarlo. "
+"Questo può richiedere la modifica di un <filename>Makefile</filename> o far "
+"partire uno script  <command>configure</command> ."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8921
 msgid "Test and install the software."
-msgstr ""
+msgstr "Testare e installare il software"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8925
@@ -13145,7 +13421,7 @@ msgstr ""
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:8963
 msgid "Package Benefits"
-msgstr ""
+msgstr "Benefici dei pacchetti"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8966
@@ -13172,7 +13448,7 @@ msgstr ""
 #. (itstool) path: itemizedlist/title
 #: book.translate.xml:8986
 msgid "Port Benefits"
-msgstr ""
+msgstr "Benefici dei port"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8989
