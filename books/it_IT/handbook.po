@@ -13,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-09-30 09:59+0000\n"
+"PO-Revision-Date: 2018-10-24 04:15+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -11743,13 +11743,14 @@ msgstr ""
 #. (itstool) path: sect2/title
 #: book.translate.xml:7832
 msgid "The <filename>fstab</filename> File"
-msgstr ""
+msgstr "Il File <filename>fstab</filename>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:7834
 msgid ""
 "<primary>file systems</primary> <secondary>mounted with fstab</secondary>"
 msgstr ""
+"<primary>file system</primary> <secondary>montati trammite fstab</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7839
@@ -11759,6 +11760,10 @@ msgid ""
 "entries containing <option>noauto</option>. This file contains entries in "
 "the following format:"
 msgstr ""
+"Durante la fase di avvio (<xref linkend=\"boot\"/>), i file system elencati "
+"in <filename>/etc/fstab</filename> vengono montati automaticamente salvo le "
+"voci con l'opzione <option>noauto</option>. Il file contiene righe con il "
+"seguente formato:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:7845
@@ -11769,32 +11774,38 @@ msgid ""
 "replaceable>      <replaceable>dumpfreq</replaceable>     "
 "<replaceable>passno</replaceable>"
 msgstr ""
+"<replaceable>device</replaceable>       <replaceable>/mount-point</"
+"replaceable> <replaceable>fstype</replaceable>     <replaceable>options</"
+"replaceable>      <replaceable>dumpfreq</replaceable>     "
+"<replaceable>passno</replaceable>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7849
 msgid "<literal>device</literal>"
-msgstr ""
+msgstr "<literal>device</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7851
 msgid ""
 "An existing device name as explained in <xref linkend=\"disks-naming\"/>."
 msgstr ""
+"Il nome di un dispositivo esistente come spiegato nella <xref linkend="
+"\"disks-naming\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7857
 msgid "<literal>mount-point</literal>"
-msgstr ""
+msgstr "<literal>mount-point</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7860
 msgid "An existing directory on which to mount the file system."
-msgstr ""
+msgstr "Una directory esistente in cui montare il file system."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7866
 msgid "<literal>fstype</literal>"
-msgstr ""
+msgstr "<literal>fstype</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7869
@@ -11803,11 +11814,14 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. The default FreeBSD "
 "file system is <literal>ufs</literal>."
 msgstr ""
+"Il tipo di file system da passare a <citerefentry><refentrytitle>mount</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Il file system di "
+"default di FreeBSD è<literal>ufs</literal>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7876
 msgid "<literal>options</literal>"
-msgstr ""
+msgstr "<literal>options</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7879
@@ -11819,11 +11833,17 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>."
 msgstr ""
+"<option>rw</option> per i file system in lettura/scrittura, o <option>ro</"
+"option> per i file system in sola lettura, seguita da altre opzioni che "
+"possono essere necessarie. Una opzione comunemente usata è <option>noauto</"
+"option> per il file system che normalmente non vengono montati all'avvio. "
+"Altre opzioni sono elencate in <citerefentry><refentrytitle>mount</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7890
 msgid "<literal>dumpfreq</literal>"
-msgstr ""
+msgstr "<literal>dumpfreq</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7893
@@ -11832,11 +11852,14 @@ msgid ""
 "manvolnum></citerefentry> to determine which file systems require dumping. "
 "If the field is missing, a value of zero is assumed."
 msgstr ""
+"Usato da <citerefentry><refentrytitle>dump</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> per determinare quali file system richiedono un "
+"dump. Se il campo è mancante, viene assunto il valore zero."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7900
 msgid "<literal>passno</literal>"
-msgstr ""
+msgstr "<literal>passno</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7903
@@ -11850,6 +11873,15 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> will attempt to check "
 "file systems in parallel if possible."
 msgstr ""
+"Determina l'ordine secondo il quale i file system vengono controllati. I "
+"file system che devono essere saltati dal controllo devono impostare "
+"<literal>passno</literal> a zero.Il file system root deve essere controllato "
+"prima di tutti gli altri e dovrebbe avere il valore <literal>passno</"
+"literal> impostato a uno. Gli altri file system dovrebbero avere valori "
+"superiori a uno. Se piu di un file system hanno lo stesso valore "
+"<literal>passno</literal>, <citerefentry><refentrytitle>fsck</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> tenterà di controllare "
+"i file system in parallelo se possibile."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7917
@@ -11858,6 +11890,9 @@ msgid ""
 "manvolnum></citerefentry> for more information on the format of <filename>/"
 "etc/fstab</filename> and its options."
 msgstr ""
+"Consultare <citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> per maggiori informazioni sul formato di "
+"<filename>/etc/fstab</filename> e le sue opzioni."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:7922
@@ -11865,11 +11900,13 @@ msgid ""
 "Using <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Uso di <citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:7924
 msgid "<primary>file systems</primary> <secondary>mounting</secondary>"
-msgstr ""
+msgstr "<primary>file system</primary> <secondary>montare</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7929
@@ -11878,6 +11915,9 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>. The most basic syntax "
 "is as follows:"
 msgstr ""
+"I file system vengono montato usando <citerefentry><refentrytitle>mount</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. La sua forma di "
+"utilizzo elementare è:"
 
 #. (itstool) path: informalexample/screen
 #: book.translate.xml:7933
@@ -11886,6 +11926,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>mount <replaceable>device</replaceable> "
 "<replaceable>mountpoint</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mount <replaceable>device</replaceable> "
+"<replaceable>mountpoint</replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:7936
@@ -11894,17 +11936,20 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>, The most commonly used options include:"
 msgstr ""
+"Questo comando accetta molte opzioni come descritto in "
+"<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, le più comunemente usate sono:"
 
 #. (itstool) path: variablelist/title
 #: book.translate.xml:7940
 msgid "Mount Options"
-msgstr ""
+msgstr "Opzioni di Mount"
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:7943 book.translate.xml:23100
 msgid "<option>-a</option>"
-msgstr ""
+msgstr "<option>-a</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7946
@@ -11913,6 +11958,9 @@ msgid ""
 "those marked as <quote>noauto</quote>, excluded by the <option>-t</option> "
 "flag, or those that are already mounted."
 msgstr ""
+"Monta tutti i file system elencati in <filename>/etc/fstab</filename>, "
+"eccetto quelli marcati come <quote>noauto</quote>, quelli eesclusi dal flag "
+"<option>-t</option>, o quelli già montati."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7955
@@ -11927,11 +11975,16 @@ msgid ""
 "<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is actually trying to do."
 msgstr ""
+"Esegue tutte le operazioni eccetto l'effettiva chiamata di sistema a moount. "
+"Questa opzione è utile in congiunzione con il flag <option>-v</option> per "
+"determinare cosa sta effettivamente tentando di fare "
+"<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7967 book.translate.xml:26221
 msgid "<option>-f</option>"
-msgstr ""
+msgstr "<option>-f</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7970
@@ -11940,11 +11993,14 @@ msgid ""
 "write access when downgrading a file system's mount status from read-write "
 "to read-only."
 msgstr ""
+"Forza il mount di un file system non correttamente smontato (pericoloso), o "
+"la revoca di accesso in scrittura quando si declassa lo stato di mount di un "
+"file system da lettura-scrittura a sola lettura."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7978
 msgid "<option>-r</option>"
-msgstr ""
+msgstr "<option>-r</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7981
@@ -11952,11 +12008,13 @@ msgid ""
 "Mount the file system read-only. This is identical to using <option>-o ro</"
 "option>."
 msgstr ""
+"Monta il file system in sola lettura. Equivale a usare l'argomento <option>-"
+"o ro</option>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7987
 msgid "<option>-t</option> <replaceable>fstype</replaceable>"
-msgstr ""
+msgstr "<option>-t</option> <replaceable>fstype</replaceable>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:7991
@@ -11965,37 +12023,40 @@ msgid ""
 "type, if <option>-a</option> is included. <quote>ufs</quote> is the default "
 "file system type."
 msgstr ""
+"Monta il tipo di file system specificato o monta solo file system del tipo "
+"dato, se affiancato dall'opzione <option>-a</option>. Il tipo di file system "
+"di default è <quote>ufs</quote>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:7999
 msgid "<option>-u</option>"
-msgstr ""
+msgstr "<option>-u</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8002
 msgid "Update mount options on the file system."
-msgstr ""
+msgstr "Aggiorna le opzioni di mount sul file system."
 
 #. (itstool) path: varlistentry/term
 #. (itstool) path: row/entry
 #: book.translate.xml:8007 book.translate.xml:23117
 msgid "<option>-v</option>"
-msgstr ""
+msgstr "<option>-v</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8010
 msgid "Be verbose."
-msgstr ""
+msgstr "Modalità verbosa."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8015
 msgid "<option>-w</option>"
-msgstr ""
+msgstr "<option>-w</option>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8018
 msgid "Mount the file system read-write."
-msgstr ""
+msgstr "Monta il file system in modalità lettura-scrittura."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8023
@@ -12003,11 +12064,13 @@ msgid ""
 "The following options can be passed to <option>-o</option> as a comma-"
 "separated list:"
 msgstr ""
+"Le seguenti opzioni possono essere passate a <option>-o</option> come una "
+"lista di valori separati da virgola:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:8028
 msgid "nosuid"
-msgstr ""
+msgstr "nosuid"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8031
@@ -12015,6 +12078,8 @@ msgid ""
 "Do not interpret setuid or setgid flags on the file system. This is also a "
 "useful security option."
 msgstr ""
+"Non permette l'interpretazione delle flag setuid o setgid sul file system. È "
+"una opzione utile per la sicurezza."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8040
@@ -12022,11 +12087,13 @@ msgid ""
 "Using <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Usare <citerefentry><refentrytitle>umount</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:8042
 msgid "<primary>file systems</primary> <secondary>unmounting</secondary>"
-msgstr ""
+msgstr "<primary>file system</primary> <secondary>smontare</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8047
@@ -12036,6 +12103,10 @@ msgid ""
 "one parameter which can be a mountpoint, device name, <option>-a</option> or "
 "<option>-A</option>."
 msgstr ""
+"Per smontare un file system usa <citerefentry><refentrytitle>umount</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>. Questo comando "
+"accetta un argomento che può essere un punto si mount, un nome di "
+"dispositivo, <option>-a</option> o <option>-A</option>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8051
@@ -12044,6 +12115,10 @@ msgid ""
 "option> for verbosity. Be warned that <option>-f</option> is not generally a "
 "good idea as it might crash the computer or damage data on the file system."
 msgstr ""
+"Tutte queste forme del comando accettano <option>-f</option> per forzare lo "
+"smontaggio, e <option>-v</option> per la modalità verbosa. Attenzione che "
+"l'uso dell'opzione <option>-f</option> non è in genere una buona idea poiché "
+"può causare un crash del computer o danneggiare i dati sul file system."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8056
@@ -12053,11 +12128,14 @@ msgid ""
 "Note that <option>-A</option> does not attempt to unmount the root file "
 "system."
 msgstr ""
+"Per smontare tutti i file system, o solo i file system dei tipi elencati "
+"dopo <option>-t</option>, usa <option>-a</option> or <option>-A</option>. "
+"L'opzione <option>-A</option> non tenterà di smontare il file system root."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8065
 msgid "Processes and Daemons"
-msgstr ""
+msgstr "Processi e Demoni"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8067
@@ -12067,6 +12145,10 @@ msgid ""
 "starts at least one new process and there are a number of system processes "
 "that are run by FreeBSD."
 msgstr ""
+"FreeBSD è un sistema operativo multi-tasking. Ogni programma che sta girando "
+"in un dato momento viene chiamato <firstterm>processo</firstterm>. Ogni "
+"comando che gira lancia almeno un nuovo processo e ci sono una serie di "
+"processi di sistema che vengono lanciati da FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8073
@@ -12082,6 +12164,17 @@ msgid ""
 "citerefentry> which is always the first process to start at boot time and "
 "which always has a <acronym>PID</acronym> of <literal>1</literal>."
 msgstr ""
+"Ogni processo è identificato in modo univoco da un numero chiamato "
+"<firstterm>process ID</firstterm> (<acronym>PID</acronym>). Come per i file, "
+"ogni processo ha un proprietario e un gruppo e i permessi del proprietario e "
+"del gruppo vengono usati per determinare quali file e device può aprire il "
+"processo. La maggior parte dei processi hanno anche un processo padre che li "
+"ha avviati. Per esempio, la shell è un processo, e ogni comando avviato in "
+"essa è un processo che ha la shell stessa come suon processo padre. Fa "
+"eccezione il processo speciale chiamato <citerefentry><refentrytitle>init</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> che è sempre il primo "
+"processo lanciato all'avvio del sistema e che ha sempre <acronym>PID</"
+"acronym> <literal>1</literal>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8085
@@ -12095,6 +12188,16 @@ msgid ""
 "invisibly performs useful tasks. This is why the BSD mascot is the cheerful-"
 "looking daemon with sneakers and a pitchfork."
 msgstr ""
+"Alcuni programmi non sono progettati per girare accettando continuo input "
+"dall'utente e si scollegano dal terminale appena possibile. Per esempio, un "
+"server web risponde alle richieste web, anziché all'input utente. I server "
+"di posta sono un altro esempio di questo tipo di applicazione. Programmi di "
+"questo tipo sono conosciuti come <firstterm>demoni</firstterm>. Il termine "
+"va inteso come derivante dai dáimon della mitologia greca rappresentanti "
+"entità sovrannaturali che non sono intrinsecamente buone o cattive, e che "
+"svolgono in modo invisibile compiti utili. Per questo motivo la mascotte di "
+"FreeBSD è un demone dall'aspetto sorridente con scarpe da ginnastica e un "
+"forcone."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8096
@@ -12108,11 +12211,20 @@ msgid ""
 "main mail daemon for the <application>Sendmail</application> application is "
 "<command>sendmail</command>, and not <literal>maild</literal>."
 msgstr ""
+"È convenzione comune dare ai programmi che normalmente girano come demoni "
+"nomi che terminano con una <quote>d</quote>. Per esempio <application>BIND</"
+"application> sta per Berkeley Internet Name Domain, ma il programma che "
+"viene effettivamente eseguito è <command>named</command>. il server web "
+"<application>Apache</application> è <command>httpd</command> e lo demone "
+"dello spool di stampa è <command>lpd</command>. Questa è solo una "
+"convenzione. Per esempio, Il demone di posta principale per l'applicazione "
+"<application>Sendmail</application> è <command>sendmail</command>, e non "
+"<literal>maild</literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8110
 msgid "Viewing Processes"
-msgstr ""
+msgstr "Visualizzare i Processi"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8112
@@ -12129,6 +12241,17 @@ msgid ""
 "use <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Per vedere i processi che girano sul sistema, usa "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o <citerefentry><refentrytitle>top</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Per mostrare una "
+"lista statica dei processi correntemente in esecuzione, i loro <acronym>PID</"
+"acronym>, quanta memoria stanno usando, e il comando con cui sono stati "
+"avviati, usa <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. Per mostrare tutti processi che stanno girando e "
+"aggiornare ogni pochi secondi la lista per poter vedere interattivamente "
+"cosa sta facendo il computer, usa <citerefentry><refentrytitle>top</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8120
@@ -12137,6 +12260,9 @@ msgid ""
 "manvolnum></citerefentry> only shows the commands that are running and owned "
 "by the user. For example:"
 msgstr ""
+"Di default, <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> mostra solo i tuoi comandi che sono in quel "
+"momento in esecuzione. Per esempio:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8123
@@ -12147,6 +12273,10 @@ msgid ""
 "8203  0  Ss   0:00.59 /bin/csh\n"
 "8895  0  R+   0:00.00 ps"
 msgstr ""
+"<prompt>%</prompt> <userinput>ps</userinput>\n"
+" PID TT  STAT    TIME COMMAND\n"
+"8203  0  Ss   0:00.59 /bin/csh\n"
+"8895  0  R+   0:00.00 ps"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8128
@@ -12164,6 +12294,19 @@ msgid ""
 "before they need to spend time on the CPU. Finally, <literal>COMMAND</"
 "literal> is the command that was used to start the program."
 msgstr ""
+"L'output di <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> è organizzato in una serie di colonne. La colonna "
+"<literal>PID</literal> contiene il process ID. I <acronym>PID</acronym> sono "
+"assegnati iniziando da 1, fino a 99999, e vengono riassegnati dall'inizio "
+"una volta esauriti. Comunque, un <acronym>PID</acronym> non viene "
+"riassegnato se è già in uso. La colonna <literal>TT</literal> mostra la tty "
+"in cui il programma sta girando e <literal>STAT</literal> contiene lo stato "
+"del programma. <literal>TIME</literal> indica quanto tempo il programma è "
+"stato in esecuzione sulla CPU. Questo in genere non corrisponde al tempo "
+"trascorso da quando il programma è stato avviato, poiché molti programmi "
+"passano un sacco di tempo in attesa che qualcosa accada prima di avere "
+"bisogno di girare sulla CPU. Infine, <literal>COMMAND</literal> è il comando "
+"che è stato usato per avviare il programma."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8143
@@ -12178,6 +12321,15 @@ msgid ""
 "command line for each process, rather than truncating it once it gets too "
 "long to fit on the screen."
 msgstr ""
+"Sono disponibili una serie di opzioni per cambiare le informazioni che "
+"vengono mostrate. Una delle combinazioni più utili è <literal>auxww</"
+"literal>, dove <option>a</option> mostra informazioni su tutti i processi in "
+"esecuzione di tutti gli utenti, <option>u</option> mostra il nome utente e "
+"l'uso di memoria del proprietario del processo, <option>x</option> mostra "
+"informazioni riguardo i processi demone, e <option>ww</option> fa si che "
+"<citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> mostri per intero la riga di comando per ogni processo, "
+"anziché troncarla quando è troppo lunga per entrare nello scherzo."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8154
@@ -12185,6 +12337,8 @@ msgid ""
 "The output from <citerefentry><refentrytitle>top</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is similar:"
 msgstr ""
+"L'output di <citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> assomiglia a questo:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8156
@@ -12217,6 +12371,32 @@ msgid ""
 " 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% "
 "kdeinit4"
 msgstr ""
+"<prompt>%</prompt> <userinput>top</userinput>\n"
+"last pid:  9609;  load averages:  0.56,  0.45,  0.36              up 0+00:20:"
+"03  10:21:46\n"
+"107 processes: 2 running, 104 sleeping, 1 zombie\n"
+"CPU:  6.2% user,  0.1% nice,  8.2% system,  0.4% interrupt, 85.1% idle\n"
+"Mem: 541M Active, 450M Inact, 1333M Wired, 4064K Cache, 1498M Free\n"
+"ARC: 992M Total, 377M MFU, 589M MRU, 250K Anon, 5280K Header, 21M Other\n"
+"Swap: 2048M Total, 2048M Free\n"
+"\n"
+"  PID USERNAME    THR PRI NICE   SIZE    RES STATE   C   TIME   WCPU COMMAND\n"
+"  557 root          1 -21  r31   136M 42296K select  0   2:20  9.96% Xorg\n"
+" 8198 dru           2  52    0   449M 82736K select  3   0:08  5.96% "
+"kdeinit4\n"
+" 8311 dru          27  30    0  1150M   187M uwait   1   1:37  0.98% firefox\n"
+"  431 root          1  20    0 14268K  1728K select  0   0:06  0.98% moused\n"
+" 9551 dru           1  21    0 16600K  2660K CPU3    3   0:01  0.98% top\n"
+" 2357 dru           4  37    0   718M   141M select  0   0:21  0.00% "
+"kdeinit4\n"
+" 8705 dru           4  35    0   480M    98M select  2   0:20  0.00% "
+"kdeinit4\n"
+" 8076 dru           6  20    0   552M   113M uwait   0   0:12  0.00% soffice."
+"bin\n"
+" 2623 root          1  30   10 12088K  1636K select  3   0:09  0.00% powerd\n"
+" 2338 dru           1  20    0   440M 84532K select  1   0:06  0.00% kwin\n"
+" 1427 dru           5  22    0   605M 86412K select  1   0:05  0.00% "
+"kdeinit4"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8177
@@ -12231,6 +12411,16 @@ msgid ""
 "module has been loaded, an <literal>ARC</literal> line indicates how much "
 "data was read from the memory cache instead of from disk."
 msgstr ""
+"L'output è diviso in due sezioni. L'intestazione (le prime cinque o sei "
+"linee) mostrano il <acronym>PID</acronym> dell'ultimo processo eseguito, le "
+"medie di carico del sistema (che sono una misura di quanto sia occupato il "
+"sistema), il tempo di vita del sistema (il tempo passato dall'ultimo reboot) "
+"e l'ora corrente. I restanti numeri nella parte superiore riportano quanti "
+"processi sono in esecuzione, quanta memoria di sistema e quanta memoria di "
+"swap è stata utilizzata, e quanto tempo il sistema sta trascorrendo nei vari "
+"stati di CPU. Se il modulo di sistema del file system <acronym>ZFS</acronym> "
+"è stato caricato, una riga <literal>ARC</literal> indica quanti dati sono "
+"stati letti dalla memoria cache anziché dal disco."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8189
@@ -12245,6 +12435,17 @@ msgid ""
 " Total size is how much memory the application has needed and the resident "
 "size is how much it is actually using now."
 msgstr ""
+"Sotto l'intestazione ci sono varie colonne che contengono informazioni "
+"simili all'output di <citerefentry><refentrytitle>ps</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, come il <acronym>PID</"
+"acronym>, nome utente, quanto tempo di CPU è stato utilizzato, e il comando "
+"che ha lanciato il processo. Inoltre <citerefentry><refentrytitle>top</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> di default mostra "
+"quanta memoria sta occupando il processo. Questo viene diviso in due colonne:"
+" una per la dimensione totale e una per la dimensione residente. La "
+"dimensione totale è la quantità di memoria che l'applicazione ha richiesto e "
+"la dimensione attuale è la quantità di memoria che sta utilizzando in quel "
+"momento."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8199
@@ -12253,11 +12454,14 @@ msgid ""
 "citerefentry> automatically updates the display every two seconds. A "
 "different interval can be specified with <option>-s</option>."
 msgstr ""
+"<citerefentry><refentrytitle>top</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> aggiorna automaticamente le informazioni ogni due secondi. Un "
+"intervallo diverso può essere specificato con l'opzione <option>-s</option>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8205
 msgid "Killing Processes"
-msgstr ""
+msgstr "Uccidere i Processi"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8207
@@ -12272,6 +12476,15 @@ msgid ""
 "\"username\">root</systemitem> user, who can send signals to anyone's "
 "processes."
 msgstr ""
+"Puoi comunicare con qualsiasi processo o demone in esecuzione inviandogli un "
+"<firstterm>signal</firstterm> usando <citerefentry><refentrytitle>kill</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Ci sono vari segnali "
+"distinti; Alcuni hanno un significato specifico mentre altri sono descritti "
+"nella documentazione dell'applicazione. Un utente può inviare segnali "
+"solamente ai processi di cui è proprietario tentando di inviare un segnale a "
+"un processo di qualcun altro si otterrà un errore di autorizzazione negata. "
+"l'utente <systemitem class=\"username\">root</systemitem> fa eccezione e può "
+"inviare segnali ai processi di chiunque."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8217
@@ -12285,6 +12498,14 @@ msgid ""
 "has elapsed, it will be sent the <quote>Alarm</quote> signal "
 "(<literal>SIGALRM</literal>)."
 msgstr ""
+"Anche il sistema operativo può inviare un segnale a un processo. Se una "
+"applicazione è mal programmata e tenta di accedere a della memoria a cui non "
+"dovrebbe accedere, FreeBSD le invierà un segnale di <quote>Segmentation "
+"Violation</quote> (<literal>SIGSEGV</literal>). Se una applicazione è stata "
+"programmata per usare la chiamata di sistema "
+"<citerefentry><refentrytitle>alarm</refentrytitle><manvolnum>3</manvolnum></"
+"citerefentry> per essere avvisata dopo che è trascorso un certo tempo, Le "
+"verrà inviato il segnale <quote>Alarm</quote> (<literal>SIGALRM</literal>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8227
@@ -12296,6 +12517,13 @@ msgid ""
 "In some cases, a process may ignore <literal>SIGTERM</literal> if it is in "
 "the middle of some task that cannot be interrupted."
 msgstr ""
+"Due segnali possono essere usati per arrestare un processo: "
+"<literal>SIGTERM</literal> e <literal>SIGKILL</literal>. <literal>SIGTERM</"
+"literal> è il metodo gentile per uccidere un processo poiché il processo può "
+"leggere il segnale, chiudere eventuali log file che può avere aperto, e "
+"tentare di concludere le operazioni in corso prima di fermarsi. In alcuni "
+"casi, un processo può ignorare <literal>SIGTERM</literal> se sta eseguendo "
+"una operazione che non può interrompere."
 
 #. (itstool) path: footnote/para
 #: book.translate.xml:8239
@@ -12307,6 +12535,12 @@ msgid ""
 "typically after two minutes. As soon as this time out occurs the process "
 "will be killed."
 msgstr ""
+"Ci sono alcune operazioni che non possono essere interrotte. Per esempio, Se "
+"il processo sta tentando di leggere da un file che si trova su un altro "
+"computer in rete, e l'altro computer non è disponibile, si dice che il "
+"processo sia <quote>non interrompibile</quote>. A un certo punto scadrà il "
+"timeout per il processo, tipicamente dopo due minuti. Appena raggiunta "
+"questa scadenza il processo sarà ucciso."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8236
@@ -12315,6 +12549,9 @@ msgid ""
 "<literal>SIGKILL</literal> to a process will usually stop that process there "
 "and then. <_:footnote-1/>."
 msgstr ""
+"<literal>SIGKILL</literal> non puo essere ignorato da un processo. Inviando "
+"<literal>SIGKILL</literal> a un processo in genere ne causerà l'arresto "
+"immediato. <_:footnote-1/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8248
@@ -12323,6 +12560,10 @@ msgid ""
 "literal>, and <literal>SIGUSR2</literal>. Since these are general purpose "
 "signals, different applications will respond differently."
 msgstr ""
+"Altri segnali comunemente usati sono <literal>SIGHUP</literal>, "
+"<literal>SIGUSR1</literal>, e <literal>SIGUSR2</literal>. Poiche questi sono "
+"segnali con scopo generico, applicazioni diverse possono reagire in modi "
+"diversi."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8253
@@ -12335,11 +12576,18 @@ msgid ""
 "documentation for the daemon to determine if <literal>SIGHUP</literal> will "
 "achieve the desired results."
 msgstr ""
+"Per esempio, dopo avere modificato la configurazione di un server web, "
+"Bisogna comunicare al server web di rileggere la configurazione. Riavviare "
+"<command>httpd</command> causerebbe una breve interruzione nel servizio. "
+"Invece, invia al demone il segnale <literal>SIGHUP</literal>. Tieni conto "
+"che demoni diversi avranno comportamenti diversi, consulta sempre la "
+"documentazione del demone per verificare se il segnale <literal>SIGHUP</"
+"literal> avrà l'effetto desiderato."
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:8264
 msgid "Sending a Signal to a Process"
-msgstr ""
+msgstr "Inviare un Segnale a un Processo"
 
 #. (itstool) path: procedure/para
 #: book.translate.xml:8266
@@ -12353,6 +12601,14 @@ msgid ""
 "citerefentry> will re-read this configuration file when it is sent a "
 "<literal>SIGHUP</literal>."
 msgstr ""
+"Questo esempio mostra come inviare un segnale a "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. il file di configurazione di "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> è <filename>/etc/inetd.conf</filename>, e "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> rileggerà questa configurazione quando gli viene inviato un "
+"<literal>SIGHUP</literal>."
 
 #. (itstool) path: step/para
 #: book.translate.xml:8273
@@ -12363,6 +12619,11 @@ msgid ""
 "<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is 198:"
 msgstr ""
+"Puoi trovare il <acronym>PID</acronym> del processo a cui inviare il segnale "
+"usando <citerefentry><refentrytitle>pgrep</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. In questo esempio, il <acronym>PID</acronym> di "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> è 198:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8277
@@ -12371,6 +12632,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>pgrep -l inetd</userinput>\n"
 "198  inetd -wW"
 msgstr ""
+"<prompt>%</prompt> <userinput>pgrep -l inetd</userinput>\n"
+"198  inetd -wW"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8283
@@ -12383,6 +12646,13 @@ msgid ""
 "citerefentry> to become <systemitem class=\"username\">root</systemitem> "
 "first."
 msgstr ""
+"Usa  <citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> per inviare il segnale. Poiché  il proprietario di "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> è <systemitem class=\"username\">root</systemitem>, usa "
+"<citerefentry><refentrytitle>su</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per diventare <systemitem class=\"username\">root</systemitem> "
+"prima."
 
 #. (itstool) path: step/screen
 #: book.translate.xml:8290
@@ -12392,6 +12662,9 @@ msgid ""
 "<prompt>Password:</prompt>\n"
 "<prompt>#</prompt> <userinput>/bin/kill -s HUP 198</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>su</userinput>\n"
+"<prompt>Password:</prompt>\n"
+"<prompt>#</prompt> <userinput>/bin/kill -s HUP 198</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:8294
@@ -12407,11 +12680,22 @@ msgid ""
 "in the error <errorname>kill: <replaceable>PID</replaceable>: No such "
 "process</errorname>."
 msgstr ""
+"Come molti comandi <trademark class=\"registered\">UNIX</trademark>, "
+"<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> non mostrerà alcun output se eseguito con successo. Se il "
+"segnale fosse staato inviato a un processo non di proprietà dell'utente, "
+"sarebbe stato mostrato il messaggio <errorname>kill: <replaceable>PID</"
+"replaceable>: Operation not permitted</errorname>. Un errore di battitura "
+"nel <acronym>PID</acronym> può far si che il segnale venga inviato al "
+"processo sbagliato, che potrebbe avere conseguenze negative, o far si che il "
+"segnale venga inviato a un <acronym>PID</acronym> attualmente non in uso, "
+"dando l'output <errorname>kill: <replaceable>PID</replaceable>: No such "
+"process</errorname>."
 
 #. (itstool) path: note/title
 #: book.translate.xml:8307
 msgid "Why Use <command>/bin/kill</command>?"
-msgstr ""
+msgstr "Perché Usare <command>/bin/kill</command>?"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8309
@@ -12422,6 +12706,12 @@ msgid ""
 "for specifying the name of the signal to send. Rather than try to learn all "
 "of them, it can be simpler to specify <command>/bin/kill</command>."
 msgstr ""
+"Molte shell forniscono <command>kill</command> come comando interno, Il che "
+"significa che la shell invia il segnale direttamente, anziché lanciando "
+"<filename>/bin/kill</filename>. Tieni conto che shell diverse usano sintassi "
+"diverse per specificare il nome del segnale da inviare. Anziché tentare di "
+"imparare tutte queste variazioni, può essere più semplice specificare "
+"<command>/bin/kill</command>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8321
@@ -12429,6 +12719,8 @@ msgid ""
 "When sending other signals, substitute <literal>TERM</literal> or "
 "<literal>KILL</literal> with the name of the signal."
 msgstr ""
+"Quando vuoi inviare altri segnali, sostituisci <literal>TERM</literal> o "
+"<literal>KILL</literal> con il nome del segnale."
 
 #. (itstool) path: important/para
 #: book.translate.xml:8326
@@ -12441,6 +12733,14 @@ msgid ""
 "<citerefentry><refentrytitle>kill</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> <emphasis>before</emphasis> pressing <keycap>Return</keycap>."
 msgstr ""
+"Uccidere un processo a caso sul sistema è una cattiva idea. In particolare "
+"<citerefentry><refentrytitle>init</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, <acronym>PID</acronym> 1, richiede considerazione speciale. "
+"Lanciare <command>/bin/kill -s KILL 1</command> è un metodo rapido, e non "
+"raccomandato, di arrestare il sistema. controllare <emphasis>sempre</"
+"emphasis> due volte gli argomenti di <citerefentry><refentrytitle>kill</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> <emphasis>prima</"
+"emphasis> di premere <keycap>Invio</keycap>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8338
@@ -13261,13 +13561,15 @@ msgstr "La differenza tra i pacchetti binari e i port"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8863
+#, fuzzy
 msgid "How to find third-party software that has been ported to FreeBSD."
-msgstr ""
+msgstr "Come trovare software di terze parti che è stato portato su FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8868
 msgid "How to manage binary packages using <application>pkg</application>."
 msgstr ""
+"Come gestire i pacchetti binari utilizzando <application>pkg</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8873
@@ -13526,7 +13828,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:9046
 msgid "Finding Software"
-msgstr ""
+msgstr "Trovare il software"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9048
@@ -13547,7 +13849,7 @@ msgstr ""
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9061
 msgid "<primary>FreshPorts</primary>"
-msgstr ""
+msgstr "<primary>FreshPorts</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9063
@@ -13562,7 +13864,7 @@ msgstr ""
 #. (itstool) path: listitem/indexterm
 #: book.translate.xml:9072
 msgid "<primary>SourceForge</primary>"
-msgstr ""
+msgstr "<primary>SourceForge</primary>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9074
@@ -13665,6 +13967,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>whereis lsof</userinput>\n"
 "lsof: /usr/ports/sysutils/lsof"
 msgstr ""
+"<prompt>#</prompt> <userinput>whereis lsof</userinput>\n"
+"lsof: /usr/ports/sysutils/lsof"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9149
@@ -13680,6 +13984,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>echo /usr/ports/*/*lsof*</userinput>\n"
 "/usr/ports/sysutils/lsof"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo /usr/ports/*/*lsof*</userinput>\n"
+"/usr/ports/sysutils/lsof"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9155
@@ -13712,6 +14018,15 @@ msgid ""
 "B-deps:\n"
 "R-deps: "
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>make search name=lsof</userinput>\n"
+"Port:   lsof-4.88.d,8\n"
+"Path:   /usr/ports/sysutils/lsof\n"
+"Info:   Lists information about open files (similar to fstat(1))\n"
+"Maint:  ler@lerctr.org\n"
+"Index:  sysutils\n"
+"B-deps:\n"
+"R-deps: "
 
 #. (itstool) path: tip/para
 #: book.translate.xml:9181
@@ -13744,6 +14059,11 @@ msgid ""
 "Path:   /usr/ports/sysutils/lsof\n"
 "Info:   Lists information about open files (similar to fstat(1))"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports</userinput>\n"
+"<prompt>#</prompt> <userinput>make quicksearch name=lsof</userinput>\n"
+"Port:   lsof-4.88.d,8\n"
+"Path:   /usr/ports/sysutils/lsof\n"
+"Info:   Lists information about open files (similar to fstat(1))"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:9202
@@ -13844,7 +14164,7 @@ msgstr ""
 #: book.translate.xml:9270
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>/usr/sbin/pkg</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9272
@@ -13866,6 +14186,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>make</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/pkg</userinput>\n"
+"<prompt>#</prompt> <userinput>make</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9281
@@ -13881,7 +14204,7 @@ msgstr ""
 #: book.translate.xml:9289
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg2ng</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg2ng</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9291
@@ -13921,7 +14244,7 @@ msgstr ""
 #: book.translate.xml:9317
 #, no-wrap
 msgid "WITH_PKGNG=\tyes"
-msgstr ""
+msgstr "WITH_PKGNG=\tyes"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9319
@@ -14147,7 +14470,7 @@ msgstr ""
 #: book.translate.xml:9448 book.translate.xml:26651
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg audit -F</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg audit -F</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9452
@@ -14175,6 +14498,14 @@ msgid ""
 "Proceed with autoremoval of packages [y/N]: <userinput>y</userinput>\n"
 "Deinstalling ca_root_nss-3.15.1_1... done"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg autoremove</userinput>\n"
+"Packages to be autoremoved:\n"
+"\tca_root_nss-3.15.1_1\n"
+"\n"
+"The autoremoval will free 723 kB\n"
+"\n"
+"Proceed with autoremoval of packages [y/N]: <userinput>y</userinput>\n"
+"Deinstalling ca_root_nss-3.15.1_1... done"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9470
@@ -14213,6 +14544,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>pkg backup -r <replaceable>/path/to/pkg.sql</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg backup -r <replaceable>/path/to/pkg.sql</"
+"replaceable></userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9492
@@ -14236,6 +14569,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>pkg backup -d <replaceable>/path/to/pkg.sql</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg backup -d <replaceable>/path/to/pkg.sql</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9505
@@ -14257,7 +14592,7 @@ msgstr ""
 #: book.translate.xml:9514
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg clean</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9516
@@ -14268,7 +14603,7 @@ msgstr ""
 #: book.translate.xml:9518
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg clean -a</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg clean -a</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:9522
@@ -14297,6 +14632,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>pkg set -o lang/php5:lang/php53</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg set -o lang/php5:lang/php53</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9538
@@ -14311,6 +14647,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>pkg set -o lang/ruby18:lang/ruby19</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg set -o lang/ruby18:lang/ruby19</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9544
@@ -14327,6 +14664,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>pkg set -o graphics/libglut:graphics/freeglut</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg set -o graphics/libglut:graphics/freeglut</"
+"userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9552
@@ -14343,6 +14682,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>pkg install -Rf <replaceable>graphics/"
 "freeglut</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pkg install -Rf <replaceable>graphics/"
+"freeglut</replaceable></userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:9563
@@ -14399,7 +14740,7 @@ msgstr ""
 #: book.translate.xml:9595
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap fetch</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap fetch</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9599
@@ -14412,7 +14753,7 @@ msgstr ""
 #: book.translate.xml:9603
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap extract</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap extract</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9607
@@ -14429,6 +14770,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>portsnap fetch</userinput>\n"
 "<prompt>#</prompt> <userinput>portsnap update</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>portsnap fetch</userinput>\n"
+"<prompt>#</prompt> <userinput>portsnap update</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9615
@@ -14441,7 +14784,7 @@ msgstr ""
 #: book.translate.xml:9619
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsnap fetch update</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsnap fetch update</userinput>"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:9624
@@ -14475,6 +14818,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/devel/subversion</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9642
@@ -14489,7 +14834,7 @@ msgstr ""
 #: book.translate.xml:9647 book.translate.xml:65535
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install subversion</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9652
@@ -14504,6 +14849,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/"
 "head /usr/ports</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>svn checkout https://svn.FreeBSD.org/ports/"
+"head /usr/ports</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:9658
@@ -14517,7 +14864,7 @@ msgstr ""
 #: book.translate.xml:9662 book.translate.xml:65535
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>svn update /usr/ports</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>svn update /usr/ports</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:9666
@@ -14712,6 +15059,9 @@ msgid ""
 "===&gt;  Cleaning for lsof-88.d,8\n"
 "<prompt>#</prompt>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make clean</userinput>\n"
+"===&gt;  Cleaning for lsof-88.d,8\n"
+"<prompt>#</prompt>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:9813
@@ -14834,6 +15184,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make WRKDIRPREFIX=/usr/home/example/ports "
 "install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make WRKDIRPREFIX=/usr/home/example/ports "
+"install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9895
@@ -14849,6 +15201,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make PREFIX=/usr/home/example/local install</"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make PREFIX=/usr/home/example/local install</"
+"userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9901
@@ -14864,6 +15218,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make WRKDIRPREFIX=../ports PREFIX=../local "
 "install</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make WRKDIRPREFIX=../ports PREFIX=../local "
+"install</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:9907
@@ -14918,6 +15274,16 @@ msgid ""
 "The deinstallation will free 229 kB\n"
 "[1/1] Deleting lsof-4.88.d,8... done"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/sysutils/lsof</userinput>\n"
+"<userinput>make deinstall</userinput>\n"
+"===&gt;  Deinstalling for sysutils/lsof\n"
+"===&gt;   Deinstalling\n"
+"Deinstallation has been requested for the following 1 packages:\n"
+"\n"
+"\tlsof-4.88.d,8\n"
+"\n"
+"The deinstallation will free 229 kB\n"
+"[1/1] Deleting lsof-4.88.d,8... done"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9941
@@ -14962,7 +15328,7 @@ msgstr ""
 #: book.translate.xml:9971
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg version -l \"&lt;\"</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg version -l \"&lt;\"</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:9973
@@ -14975,7 +15341,7 @@ msgstr ""
 #: book.translate.xml:9977
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg_version -l \"&lt;\"</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg_version -l \"&lt;\"</userinput>"
 
 #. (itstool) path: important/para
 #: book.translate.xml:9980
@@ -15050,6 +15416,9 @@ msgid ""
 "userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/ports-mgmt/portmaster</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10038
@@ -15109,6 +15478,27 @@ msgid ""
 "===&gt;&gt;&gt; 137 total installed ports\n"
 "        ===&gt;&gt;&gt; 83 have new versions available"
 msgstr ""
+"<prompt>#</prompt> <userinput>portmaster -L</userinput>\n"
+"===&gt;&gt;&gt; Root ports (No dependencies, not depended on)\n"
+"===&gt;&gt;&gt; ispell-3.2.06_18\n"
+"===&gt;&gt;&gt; screen-4.0.3\n"
+"        ===&gt;&gt;&gt; New version available: screen-4.0.3_1\n"
+"===&gt;&gt;&gt; tcpflow-0.21_1\n"
+"===&gt;&gt;&gt; 7 root ports\n"
+"...\n"
+"===&gt;&gt;&gt; Branch ports (Have dependencies, are depended on)\n"
+"===&gt;&gt;&gt; apache22-2.2.3\n"
+"        ===&gt;&gt;&gt; New version available: apache22-2.2.8\n"
+"...\n"
+"===&gt;&gt;&gt; Leaf ports (Have dependencies, not depended on)\n"
+"===&gt;&gt;&gt; automake-1.9.6_2\n"
+"===&gt;&gt;&gt; bash-3.1.17\n"
+"        ===&gt;&gt;&gt; New version available: bash-3.2.33\n"
+"...\n"
+"===&gt;&gt;&gt; 32 leaf ports\n"
+"\n"
+"===&gt;&gt;&gt; 137 total installed ports\n"
+"        ===&gt;&gt;&gt; 83 have new versions available"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10087
@@ -15119,7 +15509,7 @@ msgstr ""
 #: book.translate.xml:10090
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portmaster -a</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portmaster -a</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:10093
@@ -15147,7 +15537,7 @@ msgstr ""
 #: book.translate.xml:10111 book.translate.xml:44771
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portmaster -af</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portmaster -af</userinput>"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10113
@@ -15299,7 +15689,7 @@ msgstr ""
 #: book.translate.xml:10207
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsclean -C</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsclean -C</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10209
@@ -15314,7 +15704,7 @@ msgstr ""
 #: book.translate.xml:10215
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsclean -D</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsclean -D</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10217
@@ -15327,7 +15717,7 @@ msgstr ""
 #: book.translate.xml:10221
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portsclean -DD</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>portsclean -DD</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10223
@@ -15339,6 +15729,7 @@ msgstr ""
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>portmaster --clean-distfiles</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>portmaster --clean-distfiles</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10228
@@ -15606,7 +15997,9 @@ msgstr ""
 msgid "FreeBSD: {\n"
 "\tenabled: no\n"
 "}"
-msgstr ""
+msgstr "FreeBSD: {\n"
+"\tenabled: no\n"
+"}"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10409
@@ -15635,6 +16028,10 @@ msgid ""
 "\tenabled: yes,\n"
 "}"
 msgstr ""
+"custom: {\n"
+"\turl: \"<replaceable>http://pkg.example.com/10amd64</replaceable>\",\n"
+"\tenabled: yes,\n"
+"}"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10430
