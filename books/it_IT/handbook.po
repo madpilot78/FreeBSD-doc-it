@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-21 10:26+0000\n"
-"Last-Translator: Guido Falsi <mad@madpilot.net>\n"
+"PO-Revision-Date: 2018-11-21 10:39+0000\n"
+"Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -12780,7 +12780,7 @@ msgstr ""
 "d'ambiente. FreeBSD viene fornito con diverse shell, incluse la shell "
 "Bourne(<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>) e la shell C estesa "
-"((<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
+"(<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>). Altre shell sono disponibili tramite la Collezione dei Port "
 "di FreeBSD, come <command>zsh</command> e <command>bash</command>."
 
@@ -12816,7 +12816,7 @@ msgid ""
 msgstr ""
 "Una caratteristica comune nelle shell è il completamento dei nomi dei file. "
 "Dopo aver digitato i primi caratteri di un comando o di un nome di file e "
-"avere premuto il tasto<keycap>Tab</keycap>, la shell completa il resto del "
+"avere premuto il tasto <keycap>Tab</keycap>, la shell completa il resto del "
 "comando o del nome del file. Per esempio, supponiamo di avere due file "
 "chiamati <filename>foobar</filename> e <filename>football</filename>. Per "
 "cancellare <filename>foobar</filename>, potresti digitare <command>rm foo</"
@@ -12895,7 +12895,7 @@ msgstr "<envar>PATH</envar>"
 #: book.translate.xml:8416
 msgid "Colon-separated list of directories to search for binaries."
 msgstr ""
-"Lista di directory separate da due punti incui vengono cercato i binari"
+"Lista di directory separate da due punti incui vengono cercato i binari."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8421
@@ -12919,7 +12919,7 @@ msgstr "<envar>SHELL</envar>"
 #. (itstool) path: row/entry
 #: book.translate.xml:8429
 msgid "The current shell."
-msgstr "\tLa shell attuale."
+msgstr "La shell attuale."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8433
@@ -13154,7 +13154,7 @@ msgid ""
 "this file. If it is missing, add it using this command, replacing the path "
 "with the path of the shell:"
 msgstr ""
-"La nuova shell <emphasis>must</emphasis> essere presente in <filename>/etc/"
+"La nuova shell <emphasis>deve</emphasis> essere presente in <filename>/etc/"
 "shells</filename>. Se la shell in questione è stata installata dalla "
 "Collezione dei Port di FreeBSD come descritto in <xref linkend=\"ports\"/>, "
 "dovrebbe essere stata aggiunta automaticamente a questo file. Se non è "
@@ -13206,11 +13206,11 @@ msgid ""
 "functionality is mixed with built in commands, the user is provided with an "
 "environment that can maximize efficiency."
 msgstr ""
-"La shell di <trademark class=\"registered\">UNIX</trademark> non è colo un "
-"interprete di comando, svolge un compito come potente strumento che permette "
+"La shell di <trademark class=\"registered\">UNIX</trademark> non è solo un "
+"interprete di comandi, svolge un compito come potente strumento che permette "
 "agli utenti di eseguire comandi, ridirigerne l'output, ridirigerne l'input e "
 "concatenare più comandi insieme per migliorarne l'output finale. Quando "
-"questa funzionalità viene usata insieme ai comandi integrati, viene fornito "
+"questa funzionalità è usata insieme ai comandi integrati, viene fornito "
 "all'utente un ambiente che può massimizzarne l'efficienza."
 
 #. (itstool) path: sect2/para
@@ -13222,9 +13222,9 @@ msgid ""
 "citerefentry> command, for example, into a file, redirect the output:"
 msgstr ""
 "La ridirezione nella shell consiste nell'inviare l'output o l'input di un "
-"comando a un altro comando i in un file. per catturare l'output del comando "
+"comandi a un altro comando o in un file. per catturare l'output del comando "
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
-"citerefentry>, per esempio, in un file, ridirigi l'output:"
+"citerefentry> in un file, per esempio, ridirigi l'output:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8577
@@ -13471,7 +13471,7 @@ msgstr ""
 "Molte applicazioni che modificano file o richiedono che dell'input venga "
 "digitato apriranno automaticamente un editor di testo. Per cambiare l'editor "
 "di default, imposta la variabile d'ambiente <envar>EDITOR</envar> come "
-"descritto in <xref linkend=\"shell\"/>."
+"descritto in <xref linkend=\"shells\"/>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8690
