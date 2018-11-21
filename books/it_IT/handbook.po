@@ -13,8 +13,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-24 04:15+0000\n"
-"Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
+"PO-Revision-Date: 2018-11-21 10:26+0000\n"
+"Last-Translator: Guido Falsi <mad@madpilot.net>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -12745,17 +12745,17 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8338
 msgid "Shells"
-msgstr ""
+msgstr "Le Shell"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8340
 msgid "<primary>shells</primary>"
-msgstr ""
+msgstr "<primary>shell</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8343
 msgid "<primary>command line</primary>"
-msgstr ""
+msgstr "<primary>riga di comando</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8347
@@ -12772,6 +12772,17 @@ msgid ""
 "Ports Collection, such as <command>zsh</command> and <command>bash</command>."
 ""
 msgstr ""
+"Una <firstterm>shell</firstterm> fornisce l'interfaccia a riga di comando "
+"per interagire con il sistema operativo. Una shell riceve comandi tramite il "
+"suo canale in input e li esegue. Molte shell forniscono funzione integrate "
+"per aiutare con le operazioni quotidiane come la gestione dei file, file "
+"globbing, mofica dei file dalla riga di comando, macro, e variabili "
+"d'ambiente. FreeBSD viene fornito con diverse shell, incluse la shell "
+"Bourne(<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>) e la shell C estesa "
+"((<citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>). Altre shell sono disponibili tramite la Collezione dei Port "
+"di FreeBSD, come <command>zsh</command> e <command>bash</command>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8358
@@ -12784,6 +12795,14 @@ msgid ""
 "may or may not work with a user's preferred working environment, which is "
 "why there is a choice of which shell to use."
 msgstr ""
+"La scelta della shell che si usa è una questione di gusti personali. Un "
+"programmatore C potrebbe trovarsi più a suo agio con una shell con una "
+"sintassi simile al linguaggio C come <citerefentry><refentrytitle>tcsh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. un utente <trademark "
+"class=\"registered\">Linux</trademark> potrebbe preferire la <command>bash</"
+"command>. Ogni shell ha delle proprietà uniche che possono o meno adattarsi "
+"all'ambiente di lavoro preferito da ogni utente, questo è il motivo per cui "
+"è possibile scegliere quale shell usare."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8365
@@ -12795,6 +12814,13 @@ msgid ""
 "delete <filename>foobar</filename>, the user might type <command>rm foo</"
 "command> and press <keycap>Tab</keycap> to complete the filename."
 msgstr ""
+"Una caratteristica comune nelle shell è il completamento dei nomi dei file. "
+"Dopo aver digitato i primi caratteri di un comando o di un nome di file e "
+"avere premuto il tasto<keycap>Tab</keycap>, la shell completa il resto del "
+"comando o del nome del file. Per esempio, supponiamo di avere due file "
+"chiamati <filename>foobar</filename> e <filename>football</filename>. Per "
+"cancellare <filename>foobar</filename>, potresti digitare <command>rm foo</"
+"command> e premere <keycap>Tab</keycap> per completare il nome del file."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8374
@@ -12807,11 +12833,19 @@ msgid ""
 "<literal>t</literal> and pressing <keycap>Tab</keycap> again is enough to "
 "let the shell determine which filename is desired and fill in the rest."
 msgstr ""
+"Ma la shell mostrerebbe solo <command>rm foo</command>. Non può completare "
+"il nome del file poiché entrambi i file  <filename>foobar</filename> e "
+"<filename>football</filename> iniziano per <literal>foo</literal>. Alcune "
+"shell producono un bip o mostrano tutte le opzioni disponibili se più di un "
+"nome file corrisponde. Dovrai, quindi, digitare ulteriori caratteri per "
+"identificare il nome file desiderato. Digitando una <literal>t</literal> e "
+"premendo <keycap>Tab</keycap> nuovamente è sufficiente per permettere alla "
+"shell di determinare quale sia il file desiderato e completare il nome."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8384
 msgid "<primary>environment variables</primary>"
-msgstr ""
+msgstr "<primary>variabili di ambiente</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8388
@@ -12824,41 +12858,49 @@ msgid ""
 "their meanings. Note that the names of environment variables are always in "
 "uppercase."
 msgstr ""
+"Un altro aspetto di una shell è l'uso delle variabili d'ambiente. Le "
+"variabili d'ambiente sono coppie di valori/chiavi salvate nell'ambiente "
+"della shell. Tale ambiente può essere letto da ogni programma invocato "
+"tramite la shell, e quindi contiene molti valori di configurazione dei "
+"programmi. <xref linkend=\"shell-env-vars\"/> contiene una lista di alcune "
+"variabili d'ambiente comunemente usate del loro significato. I nomi delle "
+"variabili d'ambiente sono sempre maiuscoli."
 
 #. (itstool) path: table/title
 #: book.translate.xml:8398
 msgid "Common Environment Variables"
-msgstr ""
+msgstr "Varibili  d'Ambiente Comunemente Usate"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8403 book.translate.xml:22914
 msgid "Variable"
-msgstr ""
+msgstr "Variabile"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8410
 msgid "<envar>USER</envar>"
-msgstr ""
+msgstr "<envar>USER</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8411
 msgid "Current logged in user's name."
-msgstr ""
+msgstr "Il nome dell'utente attualmente registrato."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8415
 msgid "<envar>PATH</envar>"
-msgstr ""
+msgstr "<envar>PATH</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8416
 msgid "Colon-separated list of directories to search for binaries."
 msgstr ""
+"Lista di directory separate da due punti incui vengono cercato i binari"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8421
 msgid "<envar>DISPLAY</envar>"
-msgstr ""
+msgstr "<envar>DISPLAY</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8422
@@ -12866,21 +12908,23 @@ msgid ""
 "Network name of the <application>Xorg</application> display to connect to, "
 "if available."
 msgstr ""
+"Nome di rete del display <application>Xorg</application> a cui connettersi, "
+"se disponibile."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8428
 msgid "<envar>SHELL</envar>"
-msgstr ""
+msgstr "<envar>SHELL</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8429
 msgid "The current shell."
-msgstr ""
+msgstr "\tLa shell attuale."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8433
 msgid "<envar>TERM</envar>"
-msgstr ""
+msgstr "<envar>TERM</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8435
@@ -12888,11 +12932,13 @@ msgid ""
 "The name of the user's type of terminal. Used to determine the capabilities "
 "of the terminal."
 msgstr ""
+"Il nome del tipo di terminale dell'utente. Usato per determinare le capacità "
+"del terminale."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8440
 msgid "<envar>TERMCAP</envar>"
-msgstr ""
+msgstr "<envar>TERMCAP</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8442
@@ -12900,61 +12946,67 @@ msgid ""
 "Database entry of the terminal escape codes to perform various terminal "
 "functions."
 msgstr ""
+"Voce nel database delle sequenze di comando per il terminale usato per "
+"realizzare varie funzionalità del terminale."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8447
 msgid "<envar>OSTYPE</envar>"
-msgstr ""
+msgstr "<envar>OSTYPE</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8448
 msgid "Type of operating system."
-msgstr ""
+msgstr "Il tipo del sistema operativo."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8452
 msgid "<envar>MACHTYPE</envar>"
-msgstr ""
+msgstr "<envar>MACHTYPE</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8453
 msgid "The system's CPU architecture."
-msgstr ""
+msgstr "L'architettura della CPU del sistema."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8457
 msgid "<envar>EDITOR</envar>"
-msgstr ""
+msgstr "<envar>EDITOR</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8458
 msgid "The user's preferred text editor."
-msgstr ""
+msgstr "L'editor di testo preferito dall'utente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8462
 msgid "<envar>PAGER</envar>"
-msgstr ""
+msgstr "<envar>PAGER</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8463
 msgid "The user's preferred utility for viewing text one page at a time."
 msgstr ""
+"L'Utilità per visualizzare i file di testo una pagina alla volta preferita "
+"dall'utente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8468
 msgid "<envar>MANPATH</envar>"
-msgstr ""
+msgstr "<envar>MANPATH</envar>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:8469
 msgid "Colon-separated list of directories to search for manual pages."
 msgstr ""
+"Lista separata da due punti delle directory in cui vengono cercate le pagine "
+"man."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8476
 msgid "<primary>Bourne shells</primary>"
-msgstr ""
+msgstr "<primary>shell Bourne</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8480
@@ -12970,6 +13022,17 @@ msgid ""
 "usr/local/bin/emacs</filename> for the <citerefentry><refentrytitle>tcsh</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> shell:"
 msgstr ""
+"Il metodo per impostare le variabili d'ambiente cambia a econda della shell "
+"in uso. In <citerefentry><refentrytitle>tcsh</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> e <citerefentry><refentrytitle>csh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, puoi usare "
+"<command>setenv</command> per impostare le variabili d'ambiente. In "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> e <command>bash</command>, usi <command>export</command> per "
+"impostare le variabili d'ambienete da utilizzare. Il seguente esempio "
+"imposta l'<envar>EDITOR</envar> di default a <filename>/usr/local/bin/emacs</"
+"filename> nella shell <citerefentry><refentrytitle>tcsh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8489
@@ -12977,11 +13040,12 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>setenv EDITOR /usr/local/bin/emacs</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>setenv EDITOR /usr/local/bin/emacs</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8491
 msgid "The equivalent command for <command>bash</command> would be:"
-msgstr ""
+msgstr "Il comando equivalente per <command>bash</command> sarebbe:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8494
@@ -12990,6 +13054,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>export EDITOR=\"/usr/local/bin/emacs\"</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>export EDITOR=\"/usr/local/bin/emacs\"</"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8496
@@ -12999,6 +13065,10 @@ msgid ""
 "For example, <command>echo $TERM</command> displays the current "
 "<envar>$TERM</envar> setting."
 msgstr ""
+"Per espandere una variabile d'ambiente in modo da vederne il contenuto "
+"attuale, digita un carattere <literal>$</literal> davanti al suo nome sulla "
+"riga di comando. Per esempio, <command>echo $TERM</command> mostra il valore "
+"attuale dell'impostazione <envar>$TERM</envar>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8502
@@ -13011,6 +13081,14 @@ msgid ""
 "shell takes all the files that match <literal>*</literal> and <command>echo</"
 "command> lists them on the command line."
 msgstr ""
+"Le shell trattano i caratteri speciali, chiamati meta-caratteri, come "
+"rappresentazioni speciali di dati. Il meta-carattere più comune è il simbolo "
+"<literal>*</literal>, che rappresenta un numero variabile di caratteri "
+"qualsiasi in un nome file. I meta-caratteri possono essere usati per la "
+"sostituzione nei nomi dei file. Per esempio, <command>echo *</command> "
+"equivale al comando <command>ls</command> poiché la shell prende tutti i "
+"file che corrispondono a <literal>*</literal> e <command>echo</command> li "
+"elenca sulla riga di comando."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8512
@@ -13021,11 +13099,16 @@ msgid ""
 "<command>echo \\$TERM</command> literally prints the string <literal>$TERM</"
 "literal>."
 msgstr ""
+"Per evitare che la shell interpreti un carattere speciale, questo puo essere "
+"escluso preponendogli un backslash (<literal>\\</literal>). Per esempio, "
+"<command>echo $TERM</command> Stampa l'impostazione del terminale mentre "
+"<command>echo \\$TERM</command> stampa la stringa letterale <literal>$TERM</"
+"literal>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8520
 msgid "Changing the Shell"
-msgstr ""
+msgstr "Cambiare la Shell"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8522
@@ -13037,6 +13120,13 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>. Change the "
 "<literal>Shell:</literal> line to the full path of the new shell."
 msgstr ""
+"Il metodo piu semplice di cambiare permanentemente la shell di default è di "
+"usare <command>chsh</command>. Avviando questo comando aprirà l'editor di "
+"testi impostato nella variabile d'ambiente <envar>EDITOR</envar>, che di "
+"default è impostata per usare <citerefentry><refentrytitle>vi</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>. Modifica la linea "
+"<literal>Shell:</literal> per indicare il percorso completo della nuova "
+"shell."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8529
@@ -13045,12 +13135,15 @@ msgid ""
 "shell without opening an editor. For example, to change the shell to "
 "<command>bash</command>:"
 msgstr ""
+"In alternativa, puoi usare <command>chsh -s</command> che imposterà la shell "
+"specificata senza aprire un editor. Per esempio, per cambiare la shell a "
+"<command>bash</command>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8533
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>chsh -s /usr/local/bin/bash</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>chsh -s /usr/local/bin/bash</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8536
@@ -13061,6 +13154,12 @@ msgid ""
 "this file. If it is missing, add it using this command, replacing the path "
 "with the path of the shell:"
 msgstr ""
+"La nuova shell <emphasis>must</emphasis> essere presente in <filename>/etc/"
+"shells</filename>. Se la shell in questione è stata installata dalla "
+"Collezione dei Port di FreeBSD come descritto in <xref linkend=\"ports\"/>, "
+"dovrebbe essere stata aggiunta automaticamente a questo file. Se non è "
+"presente, aggiungila usando questo comando, rimpiazzando il percorso con il "
+"percorso della shell:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:8543
@@ -13069,6 +13168,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>echo <replaceable>/usr/local/bin/bash</"
 "replaceable> &gt;&gt; /etc/shells</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>echo <replaceable>/usr/local/bin/bash</"
+"replaceable> &gt;&gt; /etc/shells</userinput>"
 
 #. (itstool) path: note/para
 #: book.translate.xml:8545
@@ -13076,11 +13177,13 @@ msgid ""
 "Then, rerun <citerefentry><refentrytitle>chsh</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Poi, esegui nuovamente <citerefentry><refentrytitle>chsh</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:8551
 msgid "Advanced Shell Techniques"
-msgstr ""
+msgstr "Tecniche Avanzate per la Shell"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:8554 book.translate.xml:30970 book.translate.xml:35375
@@ -13090,6 +13193,8 @@ msgid ""
 "<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
 "personname> <contrib>Written by </contrib>"
 msgstr ""
+"<personname> <firstname>Tom</firstname> <surname>Rhodes</surname> </"
+"personname> <contrib>Scritto da </contrib>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8564
@@ -13101,6 +13206,12 @@ msgid ""
 "functionality is mixed with built in commands, the user is provided with an "
 "environment that can maximize efficiency."
 msgstr ""
+"La shell di <trademark class=\"registered\">UNIX</trademark> non è colo un "
+"interprete di comando, svolge un compito come potente strumento che permette "
+"agli utenti di eseguire comandi, ridirigerne l'output, ridirigerne l'input e "
+"concatenare più comandi insieme per migliorarne l'output finale. Quando "
+"questa funzionalità viene usata insieme ai comandi integrati, viene fornito "
+"all'utente un ambiente che può massimizzarne l'efficienza."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8572
@@ -13110,6 +13221,10 @@ msgid ""
 "<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> command, for example, into a file, redirect the output:"
 msgstr ""
+"La ridirezione nella shell consiste nell'inviare l'output o l'input di un "
+"comando a un altro comando i in un file. per catturare l'output del comando "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, per esempio, in un file, ridirigi l'output:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8577
@@ -13117,6 +13232,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>ls &gt; directory_listing.txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>ls &gt; directory_listing.txt</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8579
@@ -13126,6 +13242,11 @@ msgid ""
 "<citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>. To sort this listing, redirect the input:"
 msgstr ""
+"Il contenuto della directory sarà elencato in <filename>directory_listing."
+"txt</filename>. Alcuni comandi possono essere usati per leggere l'input, "
+"come <citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. Per ordinare alfabeticamente l'elenco, ridirigi "
+"l'output:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8584
@@ -13133,6 +13254,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>sort &lt; directory_listing.txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>sort &lt; directory_listing.txt</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8586
@@ -13142,6 +13264,10 @@ msgid ""
 "<citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> by mixing the direction:"
 msgstr ""
+"L'input sarà ordinato e scritto sullo schermo. Per ridirigere questo input "
+"in un altro file, puoi ridirigere l'output di "
+"<citerefentry><refentrytitle>sort</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> utilizzando più ridirezioni:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8590
@@ -13150,6 +13276,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>sort &lt; directory_listing.txt &gt; sorted."
 "txt</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>sort &lt; directory_listing.txt &gt; sorted."
+"txt</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8592
@@ -13164,6 +13292,16 @@ msgid ""
 "are considered <acronym>I/O</acronym> based file descriptors and sometimes "
 "considered streams."
 msgstr ""
+"In tutti gli esempi precedenti, i comando stanno effettuando ridirezioni "
+"usando i file descriptor. Tutti i sistemi <trademark class="
+"\"registered\">UNIX</trademark> hanno i file discriptor, che includono  "
+"standard input (stdin), standard output (stdout), e standard error (stderr). "
+"Ognuno di essi ha uno scopo preciso, dove l'input può essere una tastiera o "
+"un mouse, qualcosa che fornisce input. L'output può essere uno schermo o la "
+"carta in una stampante. E l'error sarebbe qualsiasi cosa che viene usata per "
+"la diagnostica o per messaggi di errore. Tutti e tre sono considerati file "
+"descriptor basati sull'<acronym>I/O</acronym> e a volte considerati stream "
+"(flussi)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8603
@@ -13172,6 +13310,9 @@ msgid ""
 "be passed around through various commands and redirected to or from a file. "
 "Another method of redirection is the pipe operator."
 msgstr ""
+"Tramite l'uso di questi descriptor, la shell permette che l'output e l'input "
+"vengano passati attraverso vari comandi e ridiretti de e verso file. Un "
+"altro metodo di ridirezione è l'operatore pipe (letteralmente \"tubo\")."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8608
@@ -13181,6 +13322,11 @@ msgid ""
 "directed to another program. Basically, a pipe allows the standard output of "
 "a command to be passed as standard input to another command, for example:"
 msgstr ""
+"l'Operatore di <trademark class=\"registered\">UNIX</trademark> pipe, "
+"<quote>|</quote> permette di passare l'output di un comando direttamente a "
+"un altro programma. Fondamentalmente, un pipe permette di passare lo "
+"standard output di un comando come lo standard input di un altro, per "
+"esempio:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8614
@@ -13189,6 +13335,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cat directory_listing.txt | sort | less</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cat directory_listing.txt | sort | less</"
+"userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8616
@@ -13199,21 +13347,27 @@ msgid ""
 "to scroll through the output at their own pace and prevent it from scrolling "
 "off the screen."
 msgstr ""
+"In questo esempio, il contenuto di <filename>directory_listing.txt</"
+"filename> sarà ordinato e l'output passato a "
+"<citerefentry><refentrytitle>less</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. Questo permette all'utente di scorrere lungo l'output alla "
+"velocità desiderata senza che questo scorra immediatamente fuori dallo "
+"schermo."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8625
 msgid "Text Editors"
-msgstr ""
+msgstr "Editor di Testo"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8627
 msgid "<primary>text editors</primary>"
-msgstr ""
+msgstr "<primary>edito di testo</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8630 book.translate.xml:8666
 msgid "<primary>editors</primary>"
-msgstr ""
+msgstr "<primary>editor</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8634
@@ -13223,11 +13377,15 @@ msgid ""
 "a few as part of the base system, and many more are available in the Ports "
 "Collection."
 msgstr ""
+"La maggior parte del lavoro di configurazione in FreeBSD viene fatto "
+"modificando di file di testo. Per questo, è una buona idea familiarizzare "
+"con un editor di testo. FreeBSD ne include alcuni come parte del sistema "
+"base, e ne sono disponibili molti altri nella Collezione dei Port."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8639
 msgid "<primary><command>ee</command></primary>"
-msgstr ""
+msgstr "<primary><command>ee</command></primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8642
@@ -13235,6 +13393,8 @@ msgid ""
 "<primary>editors</primary> <secondary><citerefentry><refentrytitle>ee</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry></secondary>"
 msgstr ""
+"<primary>editor</primary> <secondary><citerefentry><refentrytitle>ee</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry></secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8647
@@ -13253,16 +13413,30 @@ msgid ""
 "editor</quote> option from the main menu. The editor will prompt to save any "
 "changes if the file has been modified."
 msgstr ""
+"Un edito semplice da imparare è <citerefentry><refentrytitle>ee</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, che sta per easy "
+"editor. Per avviarlo, digita <command>ee <replaceable>filename</"
+"replaceable></command> dove <replaceable>filename</replaceable> è il nome "
+"del file da modificare. Una volta nell'editor, tutti i comandi per azionare "
+"le funzioni dell'editor sono elencate nella parte superiore del video. Il "
+"simbolo <literal>^</literal> rappresenta il tasto <keycap>Ctrl</keycap>, "
+"quindi <literal>^e</literal> si riferisce alla combinazione di tasti "
+"<keycombo action=\"simul\"> <keycap>Ctrl</keycap> <keycap>e</keycap> </"
+"keycombo>. Per uscire da <citerefentry><refentrytitle>ee</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>, premi <keycap>Esc</"
+"keycap>, poi seleziona la voce <quote>leave editor</quote> dal menù "
+"principale. Se il file ha subito delle modifiche ti verrà chiesto se le vuoi "
+"salvare."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8663
 msgid "<primary><command>vi</command></primary>"
-msgstr ""
+msgstr "<primary><command>vi</command></primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8669
 msgid "<primary><command>emacs</command></primary>"
-msgstr ""
+msgstr "<primary><command>emacs</command></primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8673
@@ -13276,6 +13450,15 @@ msgid ""
 "editor such as <application>vim</application> or <application>Emacs</"
 "application> can save more time in the long run."
 msgstr ""
+"FreeBSD viene fornito anche con editor di testo più potenti, come "
+"<citerefentry><refentrytitle>vi</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, inclusi nel sistema base. Altri editor, come <package>editors/"
+"emacs</package> and <package>editors/vim</package>, sono compresi nella "
+"Collezione dei Port di FreeBSD. Questi editor offrono maggiori funzionalità "
+"al costo di una maggiore difficoltà di apprendimento. Imparare a usare un "
+"editor più potente come <application>vim</application> or "
+"<application>Emacs</application> può portare un maggior risparmio di tempo "
+"nel lungo termine."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8683
@@ -13285,6 +13468,10 @@ msgid ""
 "<envar>EDITOR</envar> environment variable as described in <xref linkend="
 "\"shells\"/>."
 msgstr ""
+"Molte applicazioni che modificano file o richiedono che dell'input venga "
+"digitato apriranno automaticamente un editor di testo. Per cambiare l'editor "
+"di default, imposta la variabile d'ambiente <envar>EDITOR</envar> come "
+"descritto in <xref linkend=\"shell\"/>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8690
