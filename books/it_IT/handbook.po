@@ -5,6 +5,7 @@
 # Guido Falsi <madpilot@FreeBSD.org>, 2018. #zanata
 # Luca Pizzamiglio <pizzamig@FreeBSD.org>, 2018. #zanata
 # Vanja Cvelbar <vanja@cvelbar.com>, 2018. #zanata
+# Guido Falsi <madpilot@FreeBSD.org>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,7 +14,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-21 10:39+0000\n"
+"PO-Revision-Date: 2019-01-08 10:43+0000\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -13476,7 +13477,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:8690
 msgid "Devices and Device Nodes"
-msgstr ""
+msgstr "Dispositivi e Nodi di Dispositivo"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8692
@@ -13487,6 +13488,12 @@ msgid ""
 "copy of the boot messages are saved to <filename>/var/run/dmesg.boot</"
 "filename>."
 msgstr ""
+"Il termine dispositivo viene usato prevalentemente nelle attività "
+"riguardanti l'hardware nel sistema, inclusi dischi, stampanti, schede "
+"grafiche, e tastiere. Durante la fase di avvio di FreeBSD, la maggior parte "
+"dei messaggi che vengono mostrati si riferiscono alla rilevazione di "
+"dispositivi hardware. Una copia di questi messaggi di avvio viene salvata "
+"nel file <filename>/var/run/dmesg.boot</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8699
@@ -13495,6 +13502,9 @@ msgid ""
 "filename> is the first SATA hard drive, while <filename>kbd0</filename> "
 "represents the keyboard."
 msgstr ""
+"Ogni dispositivo ha un nome e un numero. Per esempio, <filename>ada0</"
+"filename> è il primo disco rigido SATA, mentre <filename>kbd0</filename> "
+"rappresenta la tastiera."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8704
@@ -13502,16 +13512,19 @@ msgid ""
 "Most devices in FreeBSD must be accessed through special files called device "
 "nodes, which are located in <filename>/dev</filename>."
 msgstr ""
+"La maggior parte dei dispositivi in FreeBSD sono accessibili tramite alcuni "
+"file speciali chiamati nodi di dispositivo, che si trovano in <filename>/"
+"dev</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:8710
 msgid "Manual Pages"
-msgstr ""
+msgstr "Pagine del manuale"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:8712
 msgid "<primary>manual pages</primary>"
-msgstr ""
+msgstr "<primary>pagine del manuale</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8716
@@ -13521,6 +13534,10 @@ msgid ""
 "manual explaining the basic operation and available arguments. These manuals "
 "can be viewed using <command>man</command>:"
 msgstr ""
+"La più completa documentazione su FreeBSD è nella forma di pagine di manuale."
+" Quasi tutti i programmi del sistema sono corredati da un breve manuale che "
+"ne spiega il funzionamento di basse e gli argomenti disponibili. Questi "
+"manuali possono essere visualizzati usando <command>man</command>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8722
@@ -13529,6 +13546,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>man <replaceable>command</replaceable></"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>man <replaceable>comando</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8724
@@ -13537,12 +13556,16 @@ msgid ""
 "about. For example, to learn more about <citerefentry><refentrytitle>ls</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>, type:"
 msgstr ""
+"Dove  <replaceable>comando</replaceable> è il nome del comando di cui si "
+"vuole imparare. Per esempio, per imparare di più riguardo "
+"<citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>, digita:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8728
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>man ls</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>man ls</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8730
@@ -13550,51 +13573,53 @@ msgid ""
 "Manual pages are divided into sections which represent the type of topic. In "
 "FreeBSD, the following sections are available:"
 msgstr ""
+"Le pagine del manuale sono divise in sezioni che indicano il tipo di "
+"argomento. In FreeBSD sono disponibili le seguenti sezioni:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8736
 msgid "User commands."
-msgstr ""
+msgstr "Comandi utente."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8740
 msgid "System calls and error numbers."
-msgstr ""
+msgstr "Chiamate di sistema e numeri di errore."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8744
 msgid "Functions in the C libraries."
-msgstr ""
+msgstr "Funzioni nella libreria C."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8748
 msgid "Device drivers."
-msgstr ""
+msgstr "Driver di dispositivo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8752
 msgid "File formats."
-msgstr ""
+msgstr "Formati dei file"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8756
 msgid "Games and other diversions."
-msgstr ""
+msgstr "Giochi e altre distrazioni."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8760
 msgid "Miscellaneous information."
-msgstr ""
+msgstr "Informazioni varie."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8764
 msgid "System maintenance and operation commands."
-msgstr ""
+msgstr "Manutenzione del sistema e comandi operativi."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8768
 msgid "System kernel interfaces."
-msgstr ""
+msgstr "Interfacce del kernel di sistema."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8772
@@ -13605,12 +13630,18 @@ msgid ""
 "<citerefentry><refentrytitle>man</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> which section to display, specify the section number:"
 msgstr ""
+"In alcuni casi, lo stesso argomento puo apparire in piu di una sezione del "
+"manuale in linea. Per esempio, esistono sia un comando utente "
+"<command>chmod</command> che una chiamata di sistema <function>chmod()</"
+"function>. Per indicare a <citerefentry><refentrytitle>man</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> quale sezione "
+"mostrare, specifica il numero di sezione:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8778
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>man 1 chmod</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>man 1 chmod</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8780
@@ -13624,6 +13655,14 @@ msgid ""
 "<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></"
 "citerefentry> refers to the system call."
 msgstr ""
+"Questo mostrerà la pagina del manuale per il comando utente "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>. I riferimenti a una specifica sezione del manuale in linea "
+"sono per tradizione messi tra parentesi nella documentazione scritta, quindi "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> fa riferimento al comando utente mentre  "
+"<citerefentry><refentrytitle>chmod</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> ssi riferisce alla chiamata di sistema."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8786
@@ -13631,6 +13670,9 @@ msgid ""
 "If the name of the manual page is unknown, use <command>man -k</command> to "
 "search for keywords in the manual page descriptions:"
 msgstr ""
+"Se non conosci il nome della pagina del manuale, usa <command>man -k</"
+"command> per effettuare una ricerca per parola chiave nelle descrizioni "
+"delle pagine del manuale:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8790
@@ -13639,6 +13681,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>man -k <replaceable>mail</replaceable></"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>man -k <replaceable>mail</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8792
@@ -13648,6 +13692,10 @@ msgid ""
 "<citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>."
 msgstr ""
+"Questo comando mostra un elenco di comandi che hanno la parola chiave "
+"<quote>mail</quote> nella loro descrizione. Questo equivale ad usare "
+"<citerefentry><refentrytitle>apropos</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:8796
@@ -13655,6 +13703,8 @@ msgid ""
 "To read the descriptions for all of the commands in <filename>/usr/bin</"
 "filename>, type:"
 msgstr ""
+"per leggere le descrizioni di tutti i comandi in <filename>/usr/bin</"
+"filename>, digita:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8799
@@ -13663,12 +13713,14 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/bin</userinput>\n"
 "<prompt>%</prompt> <userinput>man -f * | more</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /usr/bin</userinput>\n"
+"<prompt>%</prompt> <userinput>man -f * | more</userinput>"
 
 #. (itstool) path: sect1/para
 #. (itstool) path: listitem/para
 #: book.translate.xml:8802 book.translate.xml:49615
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:8804
@@ -13677,11 +13729,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>cd /usr/bin</userinput>\n"
 "<prompt>%</prompt> <userinput>whatis * |more</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cd /usr/bin</userinput>\n"
+"<prompt>%</prompt> <userinput>whatis * |more</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:8808
 msgid "GNU Info Files"
-msgstr ""
+msgstr "File GNU Info"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8814
@@ -13694,6 +13748,13 @@ msgid ""
 "<package>editors/emacs</package> is installed, the info mode of "
 "<application>emacs</application>."
 msgstr ""
+"FreeBSD include varie applicazioni e utilità prodotte dalla Free Software "
+"Foundation (FSF). In aggiunta alle pagine del manuale, questi programmi "
+"possono includere dei documenti ipertestuali chiamati file <literal>info</"
+"literal>. Questi possono essere visualizzati usando "
+"<citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> o, se <package>editors/emacs</package> è installato, la "
+"modalità info di <application>emacs</application>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8822
@@ -13701,12 +13762,14 @@ msgid ""
 "To use <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>, type:"
 msgstr ""
+"Per usare <citerefentry><refentrytitle>info</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>, digita:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:8824
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>info</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>info</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:8826
@@ -13714,6 +13777,8 @@ msgid ""
 "For a brief introduction, type <literal>h</literal>. For a quick command "
 "reference, type <literal>?</literal>."
 msgstr ""
+"Per una breve introduzione, digita <literal>h</literal>. Per una rapida "
+"guida ai comandi, digita <literal>?</literal>."
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:8840
@@ -13740,6 +13805,12 @@ msgid ""
 " Either method may be used to install software from local media or from the "
 "network."
 msgstr ""
+"FreeBSD è distribuito con una ricca collezione di strumenti di sistema come "
+"parte del sistema base. In aggiunta, FreeBSD fornisce due tecnologie "
+"complementari per installare software di terze parti: la FreeBSD Ports "
+"Collection, per installare dai sorgenti, ed i package, per installare da "
+"binari pre-compilati. Entrambi i metodi possono essere usati per installare "
+"software da dischi locali o dalla rete."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:8859
@@ -16364,7 +16435,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:10573
 msgid "The X Window System"
-msgstr ""
+msgstr "L'X Window System"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10578
@@ -16376,6 +16447,12 @@ msgid ""
 "then describes how to find and install a desktop environment or window "
 "manager."
 msgstr ""
+"Una installazione di FreeBSD effettuata usando <application>bsdinstall</"
+"application> non installa automaticamente alcune interfaccia utente grafica. "
+"Questo capitolo descrive come installare e configurare <application>Xorg</"
+"application>, che rende disponibile come open source l'X Window System usato "
+"per fornire un ambiente grafico. In seguito descrive come trovare e "
+"installare un ambiente desktop o un window manager."
 
 #. (itstool) path: note/para
 #: book.translate.xml:10587
@@ -16385,6 +16462,10 @@ msgid ""
 "during installation should refer to the <link xlink:href=\"http://www.trueos."
 "org/\"/> website."
 msgstr ""
+"Gli utenti che preferiscono un metodo di installazione che configura "
+"automaticamente <application>Xorg</application> e fornisce una scelta di "
+"window manager durante l'installazione dovrebbero consultare il sito <link "
+"xlink:href=\"http://www.trueos.org/\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10594
@@ -16393,24 +16474,27 @@ msgid ""
 "application> supports, refer to the <link xlink:href=\"http://www.x.org/\">x."
 "org</link> website."
 msgstr ""
+"Per maggiori informazioni sull'hardware video supportato da "
+"<application>Xorg</application>, consultare il sito <link xlink:href=\"http:/"
+"/www.x.org/\">x.org</link>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10601
 msgid ""
 "The various components of the X Window System, and how they interoperate."
-msgstr ""
+msgstr "I vari componenti dell'X Window System, e come si integrano."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10606
 msgid "How to install and configure <application>Xorg</application>."
-msgstr ""
+msgstr "Come installare e configurare <application>Xorg</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10611
 msgid ""
 "How to install and configure several window managers and desktop "
 "environments."
-msgstr ""
+msgstr "Come installare e configurare vari window manager e ambienti desktop."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10616
@@ -16418,6 +16502,8 @@ msgid ""
 "How to use <trademark class=\"registered\">TrueType</trademark> fonts in "
 "<application>Xorg</application>."
 msgstr ""
+"Come usare font <trademark class=\"registered\">TrueType</trademark> in "
+"<application>Xorg</application>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10621
@@ -16425,6 +16511,8 @@ msgid ""
 "How to set up your system for graphical logins (<application>XDM</"
 "application>)."
 msgstr ""
+"Come impostare il tuo sistema per i login grafici (<application>XDM</"
+"application>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10630
@@ -16432,11 +16520,13 @@ msgid ""
 "Know how to install additional third-party software as described in <xref "
 "linkend=\"ports\"/>."
 msgstr ""
+"Sapere come installare software aggiuntivo di terze parti come descritto in "
+"<xref linkend=\"ports\"/>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10637
 msgid "Terminology"
-msgstr ""
+msgstr "Terminologia"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10639
@@ -16445,11 +16535,14 @@ msgid ""
 "components in the X Window System and how they interact, some basic "
 "knowledge of these components can be useful."
 msgstr ""
+"Per quanto non sia necessario comprendere tutti i dettagli dei vari "
+"componenti dell'X Window System e come interagiscono, una conoscenza di base "
+"di questi componenti può essere utile."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10646
 msgid "X server"
-msgstr ""
+msgstr "X server"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10649
@@ -16465,11 +16558,21 @@ msgid ""
 "machine down the hall, and the <quote>X client</quote> to be the machine on "
 "their desk."
 msgstr ""
+"X è stato progettato fin dall'inizio per essere incentrato sulla rete e "
+"adotta un modello <quote>client-server</quote>. In questo modello, "
+"l'<quote>X server</quote> gira sul computer che ha la tastiera, il monitor, "
+"e il mouse collegati. Il compito del server include la gestione del display, "
+"dell'input da tastiera e mouse, e dell'input o output da altre periferiche "
+"come tavolette grafiche o videoproiettori. Questo può confondere alcune "
+"persone, poiché la terminologia di X è esattamente al contrario di quel che "
+"si aspettano. Ci si aspetta che l'<quote>X server</quote> sia una macchina "
+"molto potente in una sala server, e che l'<quote>X client</quote> sia la "
+"macchina sulla scrivania."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10666
 msgid "X client"
-msgstr ""
+msgstr "X client"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10669
@@ -16480,6 +16583,11 @@ msgid ""
 "coordinates</quote>, and the server sends back messages such as <quote>The "
 "user just clicked on the OK button</quote>."
 msgstr ""
+"Ogni applicazione X, come <application>XTerm</application> o "
+"<application>Firefox</application>, è un <quote>client</quote>. Un client "
+"invia messaggi al server come <quote>Prego disegna una finestra a queste "
+"coordinate</quote>, e il server rimanda indietro messaggi come "
+"<quote>L'utente ha cliccato sul bottone OK</quote>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10678
@@ -16490,11 +16598,16 @@ msgid ""
 "system. In this scenario, the communication between the X client and server "
 "takes place over the network."
 msgstr ""
+"In una installazione casalinga o di un piccolo ufficio, l'X server e gli X "
+"client girano in genere sullo stesso computer. È anche possibile far girare "
+"l'X server su una macchina poco potente e far girare le applicazione X su un "
+"sistema più potente. In questo scenario la comunicazione tra l'X client e il "
+"server si svolge sulla rete."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10688
 msgid "window manager"
-msgstr ""
+msgstr "window manager"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10691
@@ -16512,6 +16625,19 @@ msgid ""
 "are available in the <filename>x11-wm</filename> category of the Ports "
 "Collection."
 msgstr ""
+"X non definisce l'aspetto che dovrebbero avere le finestre sullo schermo, "
+"come spostarle con il mouse, quali combinazioni di tasti dovrebbero essere "
+"usate per spostarsi tra le finestre, l'aspetto delle barre in testa a ogni "
+"finestra, se esse hanno dei bottoni per chiuderle, e così via. Invece, X "
+"delega queste responsabilità a una applicazione distinta chiamata window "
+"manager(gestore di finestre). Esistono <link xlink:href=\"http://www.xwinman."
+"org/\">dozzine di window manager</link>.  Ciascuno di questi window manager "
+"fornisce un diverso aspetto ed ambiente: alcuni supportano desktop virtuali, "
+"alcuni consentono di avere delle combinazioni di tasti predefinite per "
+"gestire il desktop, alcuni hanno un bottone <quote>Start</quote>, altri "
+"supportano dei temi, permettendo un cambio completo di aspetto e "
+"funzionalità. I window manager sono disponibili nella categoria "
+"<filename>x11-wm</filename> della collezione dei Port."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10707
@@ -16520,11 +16646,14 @@ msgid ""
 "configuration file written by hand while others provide graphical tools for "
 "most configuration tasks."
 msgstr ""
+"Ogni window manager usa un diverso meccanismo di configurazione. Alcuni "
+"prevedono un file di configurazione scritto a mano mentre altri forniscono "
+"strumenti grafici per la maggior parte delle operazioni di configurazione."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10715
 msgid "desktop environment"
-msgstr ""
+msgstr "desktop environment"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10718
@@ -16534,11 +16663,15 @@ msgid ""
 "applications for performing common desktop tasks. These may include office "
 "suites, web browsers, and games."
 msgstr ""
+"<application>KDE</application> e <application>GNOME</application> sono "
+"considerati desktop environment (ambienti desktop) poiché includono l'intera "
+"suite di applicazioni per effettuare le più comuni operazioni desktop. "
+"Queste possono comprendere suite da ufficio, browser web, e giochi."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10727
 msgid "focus policy"
-msgstr ""
+msgstr "focus policy"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10730
@@ -16548,6 +16681,10 @@ msgid ""
 "keystrokes and it should also visibly indicate which window is currently "
 "active."
 msgstr ""
+"Il window manager è responsabile per la gestione della focus policy. Questa "
+"gestione fornisce uno strumento per scegliere quale finestra riceve l'input "
+"da tastiera e dovrebbe essere inoltre visivamente distinta per indicare "
+"quale e' la finestra attualmente attiva."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10736
@@ -16565,6 +16702,20 @@ msgid ""
 "in front of all other windows. All keystrokes will now be directed to this "
 "window, even if the cursor is moved to another window."
 msgstr ""
+"Un possibile metodo di gestione viene chiamato <quote>click-to-focus</quote>."
+" in questa modalità una finestra diviene attiva quando riceve un click. "
+"nella modalità <quote>focus-follows-mouse</quote> (focus-segue-mouse), la "
+"finestra sotto il puntatore del mouse riceve il focus, e il focus viene "
+"cambiato spostandosi su un'altra finestra. Se il mouse si trova sulla "
+"finestra root, allora questa riceve il focus. Nella modalità <quote>sloppy-"
+"focus</quote>, se il mouse viene spostato sopra la finestra root, la "
+"finestra più recentemente usata mantiene il focus. In modalità sloppy-focus, "
+"il focus viene cambiato quando il cursore entra in una nuova finestra, non "
+"quando esce dalla finestra corrente. In modalità <quote>click-to-focus</"
+"quote>, la finestra attiva viene selezionata tramite click del mouse. La "
+"finestra selezionata può poi essere sollevata e apparire davanti alle altre "
+"finestre. Tutto l'input da tastiera verrà diretto a questa finestra, anche "
+"se il cursore si sposta su un'altra finestra."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10754
@@ -16574,11 +16725,15 @@ msgid ""
 " Consult the documentation for the window manager to determine which focus "
 "models are available."
 msgstr ""
+"Window manager diversi supportano diversi gestioni del focus. Tutti "
+"supportano click-to-focus, e la maggior parte supportano anche le altre "
+"opzioni. Consulta la documentazione del tuo window manager per conoscere le "
+"modalità supportate."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10763
 msgid "widgets"
-msgstr ""
+msgstr "widget"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10766
@@ -16592,6 +16747,14 @@ msgid ""
 "different look and feel, depending upon which widget toolkit was used to "
 "create the application."
 msgstr ""
+"Widget è un termine usato per tutte quelle parti nell'interfaccia utente che "
+"possono essere cliccate o manipolate in un certo modo. Questi includono "
+"bottoni, check box, radio buttons, icone e liste. Un widget toolkit è una "
+"raccolta di widget usata per creare applicazioni grafiche.Esistono diversi "
+"widget toolkit popolari, inclusi Qt, usato da <application>KDE</"
+"application>, e GTK+, usato da <application>GNOME</application>. Di "
+"conseguenza, le applicazioni avranno un diverso aspetto e funzionalità, a "
+"seconda di quale widget toolkit è stato usato per realizzarle."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10783
