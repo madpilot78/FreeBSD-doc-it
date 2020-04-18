@@ -5,7 +5,10 @@
 # Guido Falsi <madpilot@FreeBSD.org>, 2018. #zanata
 # Luca Pizzamiglio <pizzamig@FreeBSD.org>, 2018. #zanata
 # Vanja Cvelbar <vanja@cvelbar.com>, 2018. #zanata
+# Alfonso Siciliano <alfsiciliano@gmail.com>, 2019. #zanata
 # Guido Falsi <madpilot@FreeBSD.org>, 2019. #zanata
+# Paolo Savini <paolo.savini@embecosm.com>, 2019. #zanata
+# Guido Falsi <madpilot@FreeBSD.org>, 2020. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -14,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-01-08 10:43+0000\n"
+"PO-Revision-Date: 2020-04-18 11:53-0400\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -16759,7 +16762,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:10783
 msgid "Installing <application>Xorg</application>"
-msgstr ""
+msgstr "Installazione di <application>Xorg</application>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10785
@@ -16767,6 +16770,8 @@ msgid ""
 "On FreeBSD, <application>Xorg</application> can be installed as a package or "
 "port."
 msgstr ""
+"In FreeBSD, <application>Xorg</application> può essere installato come "
+"package o port."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10788
@@ -16774,17 +16779,19 @@ msgid ""
 "The binary package can be installed quickly but with fewer options for "
 "customization:"
 msgstr ""
+"Il pacchetto binario permette una installazione rapida ma con meno "
+"possibilità di personalizzazione:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:10791
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install xorg</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install xorg</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10793
 msgid "To build and install from the Ports Collection:"
-msgstr ""
+msgstr "Per compilare ed installare dalla Ports Collection:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:10795
@@ -16793,6 +16800,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11/xorg</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10798
@@ -16801,6 +16810,9 @@ msgid ""
 "application> system being installed. Binary packages are the best option for "
 "most users."
 msgstr ""
+"Entrambe queste forme di installazione risultano in una installazione "
+"completa del sistema <application>Xorg</application>. I pacchetti binari "
+"sono l'opzione migliore per la maggior parte degli utenti."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10802
@@ -16810,11 +16822,15 @@ msgid ""
 "libraries, and applications will not be installed. Some applications require "
 "these additional components to function."
 msgstr ""
+"Una versione ridotta del sistema X adatta ad utenti esperti è disponibile "
+"nel pacchetto <package>x11/xorg-minimal</package>. La maggior parte della "
+"documentazione, librerie e applicazioni non saranno installate. Alcune "
+"applicazioni richiedono questi componenti aggiuntivi per funzionare."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:10810
 msgid "<application>Xorg</application> Configuration"
-msgstr ""
+msgstr "Configurazione di <application>Xorg</application>"
 
 #. (itstool) path: info/author
 #: book.translate.xml:10813
@@ -16822,23 +16838,26 @@ msgid ""
 "<personname> <firstname>Warren</firstname> <surname>Block</surname> </"
 "personname> <contrib>Originally contributed by</contrib>"
 msgstr ""
+"<personname> <firstname>Warren</firstname> <surname>Block</surname> </"
+"personname> <contrib>Grazie al contributo di</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:10822
 msgid "<primary>Xorg</primary>"
-msgstr ""
+msgstr "<primary>Xorg</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:10823
 msgid "<primary><application>Xorg</application></primary>"
-msgstr ""
+msgstr "<primary><application>Xorg</application></primary>"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:10826 book.translate.xml:16717 book.translate.xml:45363
 #: book.translate.xml:61329
+#, fuzzy
 msgid "Quick Start"
-msgstr ""
+msgstr "Avvio rapido"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10828
@@ -16846,6 +16865,8 @@ msgid ""
 "<application>Xorg</application> supports most common video cards, keyboards, "
 "and pointing devices."
 msgstr ""
+"<application>Xorg</application> supporta le più comuni schede video, "
+"tastiere e dispositivi di puntamento."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:10832
@@ -16855,6 +16876,10 @@ msgid ""
 "filename> or run a <option>-configure</option> step unless automatic "
 "configuration fails."
 msgstr ""
+"Le schede video, i monitor e i dispositivi di input vengono rilevati "
+"automaticamente e non richiedono alcuna configurazione manuale. Non creare "
+"un file <filename>xorg.conf</filename> o avviare <option>-configure</option> "
+"a meno che la configurazione automatica non fallisca."
 
 #. (itstool) path: step/para
 #: book.translate.xml:10841
@@ -16862,6 +16887,8 @@ msgid ""
 "If <application>Xorg</application> has been used on this computer before, "
 "move or remove any existing configuration files:"
 msgstr ""
+"Se hai già usato <application>Xorg</application> su questo computer in "
+"passato, sposta o rimuovi i seguenti file di configurazione se presenti:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:10845
@@ -16872,6 +16899,10 @@ msgid ""
 "<prompt>#</prompt> <userinput>mv /usr/local/etc/X11/xorg.conf ~/xorg.conf."
 "localetc</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mv /etc/X11/xorg.conf ~/xorg.conf.etc</"
+"userinput>\n"
+"<prompt>#</prompt> <userinput>mv /usr/local/etc/X11/xorg.conf ~/xorg.conf."
+"localetc</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10850
@@ -16881,6 +16912,10 @@ msgid ""
 "acceleration when available. To add user <replaceable>jru</replaceable> to "
 "whichever group is available:"
 msgstr ""
+"Per abilitare l'accelerazione 3D se disponibile aggiungi l'utente che "
+"eseguirà <application>Xorg</application> al gruppo <literal>video</literal> "
+"o <literal>wheel</literal>. Per aggiungere l'utente <replaceable>jru</"
+"replaceable> A primo di questi grupppi disponibile:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:10858
@@ -16890,6 +16925,9 @@ msgid ""
 "replaceable> || pw groupmod wheel -m <replaceable>jru</replaceable></"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod video -m <replaceable>jru</"
+"replaceable> || pw groupmod wheel -m <replaceable>jru</replaceable></"
+"userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10862
@@ -16897,12 +16935,14 @@ msgid ""
 "The <acronym>TWM</acronym> window manager is included by default. It is "
 "started when <application>Xorg</application> starts:"
 msgstr ""
+"Il window manager <acronym>TWM</acronym> viene incluso di default. Viene "
+"avviato quando si avvia <application>Xorg</application>:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:10866
 #, no-wrap
 msgid "<prompt>%</prompt> <userinput>startx</userinput>"
-msgstr ""
+msgstr "<prompt>%</prompt> <userinput>startx</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:10870
@@ -16912,11 +16952,15 @@ msgid ""
 "citerefentry> before switching back to the text console will work properly. "
 "See <xref linkend=\"x-config-kms\"/>."
 msgstr ""
+"In alcune versioni più datate di FreeBSD, la console di sistema deve essere "
+"impostata a <citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> prima che il cambio alla console testuale funzioni "
+"correttamente. vedi anche <xref linkend=\"x-config-kms\"/>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10879
 msgid "User Group for Accelerated Video"
-msgstr ""
+msgstr "Gruppo Utente per l'Accelerazione Video"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10881
@@ -16930,6 +16974,14 @@ msgid ""
 "<literal>wheel</literal> group if there is no <literal>video</literal> group:"
 ""
 msgstr ""
+"Per permettere l'accelerazione 3D sulle schede video è richiesto l'accesso a "
+"<filename>/dev/dri</filename>. In genere il metodo più semplice è aggiungere "
+"l'utente che userà X al gruppo <literal>video</literal> o <literal>wheel</"
+"literal>. Qui,  <citerefentry><refentrytitle>pw</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry> viene usato per aggiungere l'utente "
+"<replaceable>slurms</replaceable> al gruppo <literal>video</literal>, o al "
+"gruppo <literal>wheel</literal> se non c'è un gruppo <literal>video</"
+"literal>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:10891
@@ -16939,11 +16991,14 @@ msgid ""
 "replaceable> || pw groupmod wheel -m <replaceable>slurms</replaceable></"
 "userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>pw groupmod video -m <replaceable>slurms</"
+"replaceable> || pw groupmod wheel -m <replaceable>slurms</replaceable></"
+"userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10895
 msgid "Kernel Mode Setting (<acronym>KMS</acronym>)"
-msgstr ""
+msgstr "Kernel Mode Setting (<acronym>KMS</acronym>)"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10897
@@ -16959,6 +17014,17 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> console avoids this "
 "problem."
 msgstr ""
+"Quando il computer cambia da mostrare la console a una risoluzione più alta "
+"per X, deve impostare la modalità video (video <emphasis>mode</emphasis>). "
+"Le versioni più recenti di <acronym>Xorg</acronym> usano un sistema "
+"all'interno del kernel per effettuare questi cambiamenti di modalità  in "
+"modo più efficiente. Vecchie versioni di FreeBSD usano "
+"<citerefentry><refentrytitle>sc</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>, che non presenta supporto per il sistema <acronym>KMS</"
+"acronym>. Il risultato di questo è che dopo la chiusura di X, la console di "
+"sistema rimane vuota, anche se sta ancora funzionando. la nuova console "
+"<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> evita questo problema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10908
@@ -16967,18 +17033,21 @@ msgid ""
 "<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry>:"
 msgstr ""
+"Aggiungi questa riga a <filename>/boot/loader.conf</filename> per abilitare "
+"<citerefentry><refentrytitle>vt</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:10911
 #, no-wrap
 msgid "kern.vty=vt"
-msgstr ""
+msgstr "kern.vty=vt"
 
 #. (itstool) path: sect2/title
 #. (itstool) path: sect1/title
 #: book.translate.xml:10915 book.translate.xml:20849 book.translate.xml:31395
 msgid "Configuration Files"
-msgstr ""
+msgstr "File di Configurazione"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:10917
@@ -16986,6 +17055,9 @@ msgid ""
 "Manual configuration is usually not necessary. Please do not manually create "
 "configuration files unless autoconfiguration does not work."
 msgstr ""
+"In genere non è necessaria configurazione manuale. Ti consigliamo di non "
+"creare manualmente alcun file di configurazione a meno che la configurazione "
+"automatica non funzioni."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10924
@@ -16995,6 +17067,11 @@ msgid ""
 "recommended directory for these files on FreeBSD. Using this directory helps "
 "keep application files separate from operating system files."
 msgstr ""
+"<application>Xorg</application> cerca per i suoi file di configurazione in "
+"diverse directory. La directory consigliata per questi file in FreeBSD è "
+"<filename>/usr/local/etc/X11/</filename>. Utilizzare questa directory aiuta "
+"a mantenere separati i file delle applicazioni da quelli del sistema "
+"operativo."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10931
@@ -17003,11 +17080,14 @@ msgid ""
 "still works. However, this mixes application files with the base FreeBSD "
 "files and is not recommended."
 msgstr ""
+"Tenere i file di configurazione nella vecchia directory <filename>/etc/X11/</"
+"filename> funziona ancora. Ciononostante, questo mescola i file delle "
+"applicazioni con i file del sistema base FreeBSD e non è raccomandato."
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:10938
 msgid "Single or Multiple Files"
-msgstr ""
+msgstr "File Singolo o Multipli"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10940
@@ -17018,11 +17098,17 @@ msgid ""
 "configuration file directory. The full path is typically <filename>/usr/"
 "local/etc/X11/xorg.conf.d/</filename>."
 msgstr ""
+"È piu semplice usare file di configurazione multipli ognuno che configura "
+"una impostazione specifica anziché il tradizionale file unico <filename>xorg."
+"conf</filename>. Questi file sono conservati nella subdirectory "
+"<filename>xorg.conf.d/</filename> della directory di configurazione "
+"principale. Il percorso completo tipico è <filename>/usr/local/etc/X11/xorg."
+"conf.d/</filename>."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10948
 msgid "Examples of these files are shown later in this section."
-msgstr ""
+msgstr "Più avanti in questa sezione si trovano alcuni esempi di questi file."
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:10951
@@ -17031,16 +17117,19 @@ msgid ""
 "neither as clear nor as flexible as multiple files in the <filename>xorg."
 "conf.d/</filename> subdirectory."
 msgstr ""
+"Il file singolo tradizionale <filename>xorg.conf</filename> funziona ancora, "
+"ma non è né chiaro né flessibile come i file multipli nella directory "
+"<filename>xorg.conf.d/</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:10959
 msgid "Video Cards"
-msgstr ""
+msgstr "Schede Video"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10963
 msgid "<trademark class=\"registered\">Intel</trademark>"
-msgstr ""
+msgstr "<trademark class=\"registered\">Intel</trademark>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10966
@@ -17049,11 +17138,15 @@ msgid ""
 "trademark> graphics up to Ivy Bridge (HD Graphics 2500, 4000, and P4000), "
 "including Iron Lake (HD Graphics) and Sandy Bridge (HD Graphics 2000)."
 msgstr ""
+"L'accelerazione 3D è supportata sulla maggior parte delle schede video "
+"<trademark class=\"registered\">Intel</trademark> fino alla Ivy Bridge (HD "
+"Graphics 2500, 4000, e P4000), Inclusi Iron Lake (HD Graphics) e Sandy "
+"Bridge (HD Graphics 2000)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10971
 msgid "Driver name: <literal>intel</literal>"
-msgstr ""
+msgstr "Nome driver: <literal>intel</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10973
@@ -17061,11 +17154,13 @@ msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_Intel_graphics_processing_units\"/>."
 msgstr ""
+"Per documentazione, vedere <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_Intel_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10978
 msgid "<trademark class=\"registered\">AMD</trademark> Radeon"
-msgstr ""
+msgstr "<trademark class=\"registered\">AMD</trademark> Radeon"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10981
@@ -17073,11 +17168,13 @@ msgid ""
 "2D and 3D acceleration is supported on Radeon cards up to and including the "
 "HD6000 series."
 msgstr ""
+"L'accelerazione 2D e 3D è supportata sulle schede Radeon fino alla serie "
+"HD6000 inclusa."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10984
 msgid "Driver name: <literal>radeon</literal>"
-msgstr ""
+msgstr "Nome driver: <literal>radeon</literal>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10986
@@ -17085,11 +17182,13 @@ msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_AMD_graphics_processing_units\"/>."
 msgstr ""
+"Per documentazione, vedere <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_AMD_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:10991
 msgid "NVIDIA"
-msgstr ""
+msgstr "NVIDIA"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10994
@@ -17098,6 +17197,8 @@ msgid ""
 "category of the Ports Collection. Install the driver that matches the video "
 "card."
 msgstr ""
+"Sono disponibili vari driver originali NVIDIAnella categoria <filename>x11</"
+"filename>  dei port. Installa il driver corrispondente alla tua scheda."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10999
@@ -17105,11 +17206,13 @@ msgid ""
 "For reference, see <link xlink:href=\"https://en.wikipedia.org/wiki/"
 "List_of_Nvidia_graphics_processing_units\"/>."
 msgstr ""
+"Per documentazione, vedere <link xlink:href=\"https://en.wikipedia.org/wiki/"
+"List_of_Nvidia_graphics_processing_units\"/>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11004
 msgid "Hybrid Combination Graphics"
-msgstr ""
+msgstr "Schede Grafiche Ibride"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11007
@@ -17123,6 +17226,14 @@ msgid ""
 "an <trademark class=\"registered\">AMD</trademark> Radeon <acronym>GPU</"
 "acronym>."
 msgstr ""
+"Alcuni computer portatili aggiungono ulteriori unità di elaborazione grafica "
+"a quelle integrate nel chipset o nel processore. <emphasis>Optimus</"
+"emphasis> combina hardware <trademark class=\"registered\">Intel</trademark> "
+"e NVIDIA. <emphasis>Switchable Graphics</emphasis> o <emphasis>Hybrid "
+"Graphics</emphasis> sono una combinazione si un processore <trademark class="
+"\"registered\">Intel</trademark> o <trademark class=\"registered\">AMD</"
+"trademark> e una <acronym>GPU</acronym> <trademark class=\"registered\">AMD</"
+"trademark> Radeon."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11016
@@ -17131,6 +17242,9 @@ msgid ""
 "<application>Xorg</application> on FreeBSD is not able to drive all versions "
 "of them."
 msgstr ""
+"Le implementazioni dii tali sistemi grafici ibridi variano, e "
+"<application>Xorg</application> su FreeBSD non è in grado di funzionare su "
+"tutte le loro versioni."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11020
@@ -17143,6 +17257,13 @@ msgid ""
 "can then be used with an <trademark class=\"registered\">Intel</trademark> "
 "driver."
 msgstr ""
+"Alcuni computer sono dotati di una opzione nel <acronym>BIOS</acronym> per "
+"disabilitare una delle schede grafiche o per selezionare una modalità "
+"<emphasis>discrete</emphasis> che possa essere usata con i driver standard "
+"per le schede video. Per esempio, a volte è possibile disabilitare la "
+"<acronym>GPU</acronym> NVIDIA di un sistema Optimus. In questo modo la "
+"scheda <trademark class=\"registered\">Intel</trademark> puo essere usata "
+"con il driver <trademark class=\"registered\">Intel</trademark>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11029
@@ -17153,11 +17274,16 @@ msgid ""
 "<literal>Device</literal> section is enough to make such a system functional."
 ""
 msgstr ""
+"Le impostazioni del <acronym>BIOS</acronym> sono diverse per ogni modello di "
+"computer. A volte è possibile solo lasciare abilitate entrambe le "
+"<acronym>GPU</acronym>, ma creare un file di configurazione che utilizza "
+"solamente la <acronym>GPU</acronym> principale nella sezione "
+"<literal>Device</literal> è sufficiente per ottenere un sistema funzionante."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11040
 msgid "Other Video Cards"
-msgstr ""
+msgstr "Altre Schede Viddeo"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11043
@@ -17165,6 +17291,8 @@ msgid ""
 "Drivers for some less-common video cards can be found in the <filename>x11-"
 "drivers</filename> directory of the Ports Collection."
 msgstr ""
+"I driver per alcune schede video meno comuni si trovano nella directory "
+"<filename>x11-drivers</filename> dei port."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11047
@@ -17176,6 +17304,13 @@ msgid ""
 "application> attempts to use this driver when a specific driver is not found "
 "for the video card."
 msgstr ""
+"Le schede per cui non è disponibile un driver specifico potrebbero comunque "
+"essere utilizzate tramite il driver <package>x11-drivers/xf86-video-vesa</"
+"package>. Questo driver viene installato da l pacchetto <package>x11/xorg</"
+"package>. Puo anche essere installato manualmente come <package>x11-drivers/"
+"xf86-video-vesa</package>. <application>Xorg</application> tenta di usare "
+"questo driver quando non viene trovato un driver specifico per la scheda "
+"video."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11057
@@ -17184,11 +17319,14 @@ msgid ""
 "video driver that works on many <acronym>UEFI</acronym> and <trademark class="
 "\"registered\">ARM</trademark> computers."
 msgstr ""
+"<package>x11-drivers/xf86-video-scfb</package> è un altro driver non "
+"specifico che funziona su molti computer <acronym>UEFI</acronym> e "
+"<trademark class=\"registered\">ARM</trademark>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11064
 msgid "Setting the Video Driver in a File"
-msgstr ""
+msgstr "Impostare il Driver Video tramite File"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11067
@@ -17196,6 +17334,8 @@ msgid ""
 "To set the <trademark class=\"registered\">Intel</trademark> driver in a "
 "configuration file:"
 msgstr ""
+"Per impostare il driver <trademark class=\"registered\">Intel</trademark> in "
+"un file di configurazione:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11071
@@ -17203,11 +17343,13 @@ msgid ""
 "Select <trademark class=\"registered\">Intel</trademark> Video Driver in a "
 "File"
 msgstr ""
+"Selezionare il driver video <trademark class=\"registered\">Intel</"
+"trademark> in un File"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11073
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-intel.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-intel.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11075
@@ -17219,6 +17361,11 @@ msgid ""
 "\t# BusID    \"PCI:1:0:0\"\n"
 "EndSection"
 msgstr ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"intel\"\n"
+"\t# BusID    \"PCI:1:0:0\"\n"
+"EndSection"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11081
@@ -17228,21 +17375,26 @@ msgid ""
 "video card bus <acronym>ID</acronym>s can be displayed with <command>pciconf "
 "-lv | grep -B3 display</command>."
 msgstr ""
+"Se è presente più di una scheda video, puoi rimuovere il commento "
+"dall'identificatore <literal>BusID</literal> e il valore impostato alla "
+"scheda desiderata. Puoi ottenere una lista degli <acronym>ID</acronym> card "
+"bus con il comando <command>pciconf -lv | grep -B3 display</command>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11089
 msgid "To set the Radeon driver in a configuration file:"
-msgstr ""
+msgstr "Per impostare il driver Radeon in un file di configurazione:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11093
 msgid "Select Radeon Video Driver in a File"
-msgstr ""
+msgstr "Selezionare il Driver Video Radeon in un File"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11095
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-radeon.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/driver-radeon.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11097
@@ -17251,22 +17403,27 @@ msgid "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"radeon\"\n"
 "EndSection"
-msgstr ""
+msgstr "Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"radeon\"\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11103
 msgid "To set the <acronym>VESA</acronym> driver in a configuration file:"
 msgstr ""
+"Per impostare il driver <acronym>VESA</acronym> in un file di configurazione:"
+""
 
 #. (itstool) path: example/title
 #: book.translate.xml:11107
 msgid "Select <acronym>VESA</acronym> Video Driver in a File"
-msgstr ""
+msgstr "Selezionare il Driver Video <acronym>VESA</acronym> in un File"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11110
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-vesa.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-vesa.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11112
@@ -17275,7 +17432,10 @@ msgid "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"vesa\"\n"
 "EndSection"
-msgstr ""
+msgstr "Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"vesa\"\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11118
@@ -17283,16 +17443,18 @@ msgid ""
 "To set the <literal>scfb</literal> driver for use with a <acronym>UEFI</"
 "acronym> or <trademark class=\"registered\">ARM</trademark> computer:"
 msgstr ""
+"Per impostare il driver <literal>scfb</literal> su un computer "
+"<acronym>UEFI</acronym> o <trademark class=\"registered\">ARM</trademark>:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11122
 msgid "Select <literal>scfb</literal> Video Driver in a File"
-msgstr ""
+msgstr "Seleezionare il Driver Video <literal>scfb</literal> in un File"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11125
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/driver-scfb.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11127
@@ -17301,12 +17463,15 @@ msgid "Section \"Device\"\n"
 "\tIdentifier \"Card0\"\n"
 "\tDriver     \"scfb\"\n"
 "EndSection"
-msgstr ""
+msgstr "Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"scfb\"\n"
+"EndSection"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11138
 msgid "Monitors"
-msgstr ""
+msgstr "Monitor"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11140
@@ -17317,6 +17482,11 @@ msgid ""
 "supported resolutions and refresh rates. Then it selects the most "
 "appropriate combination of settings to use with that monitor."
 msgstr ""
+"Quasi tutti i monitor supportano l'Extended Display Identification Data "
+"standard (<acronym>EDID</acronym>). <application>Xorg</application> usa "
+"l'<acronym>EDID</acronym> per comunicare con il monitor e rilevare le "
+"risoluzioni e refresh rate supportati. Poi seleziona la combinazione più "
+"appropriata da usare con quel monitor."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11148
@@ -17326,6 +17496,10 @@ msgid ""
 "started with <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"Altre risoluzioni supportate dal monitor possono essere scelte impostando la "
+"risoluzione desiderata nel file di configurazione, o dopo che l'X server è "
+"stato avviato con <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11155
@@ -17333,6 +17507,8 @@ msgid ""
 "Using <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>"
 msgstr ""
+"Come usare <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11158
@@ -17341,6 +17517,9 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> without any parameters "
 "to see a list of video outputs and detected monitor modes:"
 msgstr ""
+"Lanciare <citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> senza alcun parametro "
+"per vedere una lista deglli output e delle modalità video rilevate:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11161
@@ -17363,6 +17542,22 @@ msgid ""
 "DisplayPort-0 disconnected (normal left inverted right x axis y axis)\n"
 "HDMI-0 disconnected (normal left inverted right x axis y axis)"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr</userinput>\n"
+"Screen 0: minimum 320 x 200, current 3000 x 1920, maximum 8192 x 8192\n"
+"DVI-0 connected primary 1920x1200+1080+0 (normal left inverted right x axis "
+"y axis) 495mm x 310mm\n"
+"   1920x1200     59.95*+\n"
+"   1600x1200     60.00\n"
+"   1280x1024     85.02    75.02    60.02\n"
+"   1280x960      60.00\n"
+"   1152x864      75.00\n"
+"   1024x768      85.00    75.08    70.07    60.00\n"
+"   832x624       74.55\n"
+"   800x600       75.00    60.32\n"
+"   640x480       75.00    60.00\n"
+"   720x400       70.08\n"
+"DisplayPort-0 disconnected (normal left inverted right x axis y axis)\n"
+"HDMI-0 disconnected (normal left inverted right x axis y axis)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11177
@@ -17372,6 +17567,10 @@ msgid ""
 "Monitors are not attached to the <literal>DisplayPort-0</literal> and "
 "<literal>HDMI-0</literal> connectors."
 msgstr ""
+"Questo esempio mostra che l'output <literal>DVI-0</literal> è in uso con una "
+"risoluzione di 1920x1200 pixel a un refresh rate di circa 60 Hz. Non ci sono "
+"monitor collegati ai connettori <literal>DisplayPort-0</literal> e "
+"<literal>HDMI-0</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11184
@@ -17380,6 +17579,9 @@ msgid ""
 "\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>. For example, to switch to 1280x1024 at 60 Hz:"
 msgstr ""
+"Tutti le altre modalità video possono essere selezionate con <citerefentry "
+"vendor=\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>. Per esempio per passare a 1280x1024 at 60 Hz:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11188
@@ -17387,6 +17589,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>xrandr --mode 1280x1024 --rate 60</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr --mode 1280x1024 --rate 60</userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11190
@@ -17394,6 +17597,8 @@ msgid ""
 "A common task is using the external video output on a notebook computer for "
 "a video projector."
 msgstr ""
+"Un requisito comune è di utilizzare l'output video esterno su un computer "
+"notebook per un proiettore."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11193
@@ -17405,6 +17610,13 @@ msgid ""
 "\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> to list all the available outputs:"
 msgstr ""
+"Il tipo e la qualità dei connettori di output varia a seconda delle "
+"periferiche, e il nome dato ad ogni output varia da driver a driver. Ciò che "
+"in un driver viene chiamato <literal>HDMI-1</literal>, in un latro può "
+"essere chiamato <literal>HDMI1</literal>. Quindi il primo passo è lanciare "
+"<citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> per elencare tutti gli "
+"output disponibili:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11201
@@ -17430,6 +17642,25 @@ msgid ""
 "HDMI1 disconnected (normal left inverted right x axis y axis)\n"
 "DP1 disconnected (normal left inverted right x axis y axis)"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr</userinput>\n"
+"Screen 0: minimum 320 x 200, current 1366 x 768, maximum 8192 x 8192\n"
+"LVDS1 connected 1366x768+0+0 (normal left inverted right x axis y axis) "
+"344mm x 193mm\n"
+"   1366x768      60.04*+\n"
+"   1024x768      60.00\n"
+"   800x600       60.32    56.25\n"
+"   640x480       59.94\n"
+"VGA1 connected (normal left inverted right x axis y axis)\n"
+"   1280x1024     60.02 +  75.02\n"
+"   1280x960      60.00\n"
+"   1152x864      75.00\n"
+"   1024x768      75.08    70.07    60.00\n"
+"   832x624       74.55\n"
+"   800x600       72.19    75.00    60.32    56.25\n"
+"   640x480       75.00    72.81    66.67    60.00\n"
+"   720x400       70.08\n"
+"HDMI1 disconnected (normal left inverted right x axis y axis)\n"
+"DP1 disconnected (normal left inverted right x axis y axis)"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11220
@@ -17438,6 +17669,9 @@ msgid ""
 "external <literal>VGA1</literal>, <literal>HDMI1</literal>, and "
 "<literal>DP1</literal> connectors."
 msgstr ""
+"Sono stati trovati quattro output: Lo schermo integrato, <literal>LVDS1</"
+"literal> e i connettori esterni <literal>VGA1</literal>, <literal>HDMI1</"
+"literal> and <literal>DP1</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11225
@@ -17448,6 +17682,11 @@ msgid ""
 "that output to the native resolution of the projector and add the additional "
 "space to the right side of the desktop:"
 msgstr ""
+"Il proiettore è stato connesso all'output <literal>VGA1</literal>. "
+"Utilizzeremo ora il comando <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xrandr</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per impostare quell'output alla risoluzione nativa del "
+"proiettore e aggiungere lo spazio aggiuntivo al lato destro del desktop:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:11231
@@ -17456,6 +17695,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>xrandr --output VGA1 --auto --right-of LVDS1</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xrandr --output VGA1 --auto --right-of LVDS1</"
+"userinput>"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11233
@@ -17467,6 +17708,12 @@ msgid ""
 "used with a 1024x768 resolution, which is set with <literal>--mode 1024x768</"
 "literal>."
 msgstr ""
+"<literal>--auto</literal> sceglie la risoluzione e il refresh rate rilevati "
+"tramite <acronym>EDID</acronym>. Se la risoluzione non viene rilevata "
+"correttamente, puoi passare un valore fisso con l''opzione <literal>--mode</"
+"literal> al posto di <literal>--auto</literal>. Per esempio, la maggior "
+"parte dei proiettori possono essere usati a una risoluzione di 1024x768, che "
+"viene impostata con <literal>--mode 1024x768</literal>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11242
@@ -17475,27 +17722,34 @@ msgid ""
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> is often run from "
 "<filename>.xinitrc</filename> to set the appropriate mode when X starts."
 msgstr ""
+"<citerefentry vendor=\"xfree86\"><refentrytitle>xrandr</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> viene spesso lanciato "
+"tramite <filename>.xinitrc</filename> per impostare la modalità corretta "
+"quando X viene avviato."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11249
 msgid "Setting Monitor Resolution in a File"
-msgstr ""
+msgstr "Impostare la Risoluzione Video in un File"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11252
 msgid "To set a screen resolution of 1024x768 in a configuration file:"
 msgstr ""
+"Per impostare una risoluzione dello schermo di 1024x768 in un file di "
+"configurazione:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11256
 msgid "Set Screen Resolution in a File"
-msgstr ""
+msgstr "Impostare la Risoluzione dello Schermo in un File"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11258
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/screen-resolution.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/screen-resolution.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11260
@@ -17509,6 +17763,13 @@ msgid ""
 "\tEndSubSection\n"
 "EndSection"
 msgstr ""
+"Section \"Screen\"\n"
+"\tIdentifier \"Screen0\"\n"
+"\tDevice     \"Card0\"\n"
+"\tSubSection \"Display\"\n"
+"\tModes      \"1024x768\"\n"
+"\tEndSubSection\n"
+"EndSection"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11269
@@ -17517,16 +17778,20 @@ msgid ""
 "by setting <literal>HorizSync</literal> and <literal>VertRefresh</literal> "
 "to the range of frequencies supported by the monitor."
 msgstr ""
+"I pochi monitor non dotati di <acronym>EDID</acronym> possono essere "
+"configurati impostando <literal>HorizSync</literal> e <literal>VertRefresh</"
+"literal> all'interno degli estremi di frequenzze supportate dal monitor."
 
 #. (itstool) path: example/title
 #: book.translate.xml:11276
 msgid "Manually Setting Monitor Frequencies"
-msgstr ""
+msgstr "Impostare Manualmente le Frequenze del Monitor"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11278
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/monitor0-freq.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/monitor0-freq.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11280
@@ -17538,21 +17803,26 @@ msgid ""
 "\tVertRefresh  50-76   # Hz\n"
 "EndSection"
 msgstr ""
+"Section \"Monitor\"\n"
+"\tIdentifier   \"Monitor0\"\n"
+"\tHorizSync    30-83   # kHz\n"
+"\tVertRefresh  50-76   # Hz\n"
+"EndSection"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11292
 msgid "Input Devices"
-msgstr ""
+msgstr "Periferiche di Input"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11295
 msgid "Keyboards"
-msgstr ""
+msgstr "Tastiere"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11299
 msgid "Keyboard Layout"
-msgstr ""
+msgstr "Mappatura della Tastiera"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11302
@@ -17562,6 +17832,11 @@ msgid ""
 "listed in <citerefentry vendor=\"xfree86\"><refentrytitle>xkeyboard-config</"
 "refentrytitle><manvolnum>7</manvolnum></citerefentry>."
 msgstr ""
+"La disposizione convenzionale dei tasti su una tastiera viene chiamata "
+"<emphasis>mappatura (layout)</emphasis>. Le mappature e altri parametri "
+"configurabili sono elencati in <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xkeyboard-config</refentrytitle><manvolnum>7</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11307
@@ -17571,6 +17846,10 @@ msgid ""
 "in an <literal>InputClass</literal>. This will be applied to all input "
 "devices that match the class."
 msgstr ""
+"La mappatura di default è quella USA. Per selezionare una mappatura diversa, "
+"imposta le opzioni <literal>XkbLayout</literal> e <literal>XkbVariant</"
+"literal> in una <literal>InputClass</literal>. Questa impostazione verrà "
+"applicata a tutte le periferiche di input che rientrano nella classe."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11314
@@ -17578,17 +17857,20 @@ msgid ""
 "This example selects a French keyboard layout with the <literal>oss</"
 "literal> variant."
 msgstr ""
+"Questo esempio imposta una mappatura della tastiera francese con la variante "
+"<literal>oss</literal>."
 
 #. (itstool) path: example/title
 #: book.translate.xml:11318
 msgid "Setting a Keyboard Layout"
-msgstr ""
+msgstr "Impostare una Mappatura della Tastiera"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11320
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-fr-oss.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-fr-oss.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11322
@@ -17602,11 +17884,18 @@ msgid ""
 "\tOption\t\t\"XkbVariant\" \"oss\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"KeyboardDefaults\"\n"
+"\tDriver\t\t\"keyboard\"\n"
+"\tMatchIsKeyboard\t\"on\"\n"
+"\tOption\t\t\"XkbLayout\" \"fr\"\n"
+"\tOption\t\t\"XkbVariant\" \"oss\"\n"
+"EndSection"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11332
 msgid "Setting Multiple Keyboard Layouts"
-msgstr ""
+msgstr "Impostare Mappature della Tastiera Multiple"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11334
@@ -17617,12 +17906,19 @@ msgid ""
 "<package>x11/sbxkb</package> can be used for improved layout switching "
 "control and current layout indicators."
 msgstr ""
+"Impostare le mappature della tastiera USA, Spagnola e Ucraina. Puoi cambiare "
+"a rotazione tra queste mappature premendo <keycombo action=\"simul\"> "
+"<keycap>Alt</keycap> <keycap>Shift</keycap> </keycombo>. I pacchetti "
+"<package>x11/xxkb</package> o <package>x11/sbxkb</package> possono essere "
+"usati per avere migliori metodi di cambio della mappatura e avere un "
+"indicatore della mappatura corrente."
 
 #. (itstool) path: example/para
 #: book.translate.xml:11345
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/kbd-layout-multi.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/kbd-layout-multi.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11347
@@ -17634,11 +17930,16 @@ msgid ""
 "\tOption\t\t\"XkbLayout\" \"us, es, ua\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"All Keyboards\"\n"
+"\tMatchIsKeyboard\t\"yes\"\n"
+"\tOption\t\t\"XkbLayout\" \"us, es, ua\"\n"
+"EndSection"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11357
 msgid "Closing <application>Xorg</application> From the Keyboard"
-msgstr ""
+msgstr "Chiudere <application>Xorg</application> Dalla Tastiera"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11361
@@ -17648,16 +17949,20 @@ msgid ""
 " Enabling this option requires changes to the keyboard <literal>InputDevice</"
 "literal> section:"
 msgstr ""
+"X può essere chiuso con una combinazione di tasti. Di default tale "
+"combinazione non è impostata poiché coincide con dei comandi da tastiera "
+"usati da alcune applicazioni. Per attivare questa opzione è necessario "
+"cambiare alcune impostazioni nella sezione <literal>InputDevice</literal>:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11369
 msgid "Enabling Keyboard Exit from X"
-msgstr ""
+msgstr "Attivare l'Uscita da X Tramite Tastiera"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11371
 msgid "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf</filename>"
-msgstr ""
+msgstr "<filename>/usr/local/etc/X11/xorg.conf.d/keyboard-zap.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11373
@@ -17670,11 +17975,17 @@ msgid ""
 "\tOption\t\t\"XkbOptions\" \"terminate:ctrl_alt_bksp\"\n"
 "EndSection"
 msgstr ""
+"Section\t\"InputClass\"\n"
+"\tIdentifier\t\"KeyboardDefaults\"\n"
+"\tDriver\t\t\"keyboard\"\n"
+"\tMatchIsKeyboard\t\"on\"\n"
+"\tOption\t\t\"XkbOptions\" \"terminate:ctrl_alt_bksp\"\n"
+"EndSection"
 
 #. (itstool) path: sect3/title
 #: book.translate.xml:11386
 msgid "Mice and Pointing Devices"
-msgstr ""
+msgstr "Mouse e periferiche di puntamento"
 
 #. (itstool) path: sect3/para
 #: book.translate.xml:11388
@@ -17683,11 +17994,15 @@ msgid ""
 "<citerefentry vendor=\"xorg\"><refentrytitle>mousedrv</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> for a full list."
 msgstr ""
+"Molti parametri del mouse possono essere impostati con opzioni di "
+"configurazione. Leggi <citerefentry vendor=\"xorg\"><refentrytitle>mousedrv</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> per una lista completa."
+""
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:11393
 msgid "Mouse Buttons"
-msgstr ""
+msgstr "Bottoni del Mouse"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:11396
@@ -17696,17 +18011,21 @@ msgid ""
 "<literal>InputDevice</literal> section of <filename>xorg.conf</filename>. To "
 "set the number of buttons to 7:"
 msgstr ""
+"Il numero dii bottoni su un mouse puo essere impostata nella sezione "
+"<literal>InputDevice</literal> per mouse di <filename>xorg.conf</filename>. "
+"Per impostare il numero dei bottoni a 7:"
 
 #. (itstool) path: example/title
 #: book.translate.xml:11402
 msgid "Setting the Number of Mouse Buttons"
-msgstr ""
+msgstr "Impostare il Numero di Bottoni del Mouse"
 
 #. (itstool) path: example/para
 #: book.translate.xml:11404
 msgid ""
 "<filename>/usr/local/etc/X11/xorg.conf.d/mouse0-buttons.conf</filename>"
 msgstr ""
+"<filename>/usr/local/etc/X11/xorg.conf.d/mouse0-buttons.conf</filename>"
 
 #. (itstool) path: example/programlisting
 #: book.translate.xml:11406
@@ -17717,6 +18036,10 @@ msgid ""
 "\tOption      \"Buttons\" \"7\"\n"
 "EndSection"
 msgstr ""
+"Section \"InputDevice\"\n"
+"\tIdentifier  \"Mouse0\"\n"
+"\tOption      \"Buttons\" \"7\"\n"
+"EndSection"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11420
@@ -17725,6 +18048,10 @@ msgid ""
 "work with particular hardware, or a different configuration is desired. For "
 "these cases, a custom configuration file can be created."
 msgstr ""
+"In alcune circostanze, l'autoconfigurazione di <application>Xorg</"
+"application> non funziona correttamente con un particolare hardware, oppure "
+"si desidera avere una configurazione diversa. In questi casi si può creare "
+"un file di configurazione personalizzato."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:11426
@@ -17732,6 +18059,9 @@ msgid ""
 "Do not create manual configuration files unless required. Unnecessary manual "
 "configuration can prevent proper operation."
 msgstr ""
+"Non creare un file di configurazione manuale a meno che non sia "
+"indispensabile. Configurazioni manuali non necessarie possono interferire "
+"con il corretto funzionamento."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11431
@@ -17740,17 +18070,20 @@ msgid ""
 "based on the detected hardware. This file is often a useful starting point "
 "for custom configurations."
 msgstr ""
+"Un file di configurazione può essere generato da <application>Xorg</"
+"application> sulla base dell'hardware rilevato. Questo file è spesso un buon "
+"punto di partenza per configurazioni personalizzate."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11436
 msgid "Generating an <filename>xorg.conf</filename>:"
-msgstr ""
+msgstr "Generare un file <filename>xorg.conf</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11438
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>Xorg -configure</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>Xorg -configure</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11440
@@ -17758,6 +18091,8 @@ msgid ""
 "The configuration file is saved to <filename>/root/xorg.conf.new</filename>. "
 "Make any changes desired, then test that file with:"
 msgstr ""
+"Il file di configurazione viene salvato in <filename>/root/xorg.conf.new</"
+"filename>. Puoi effettuare le modifiche desiderate, puoi poi provarlo con:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11444
@@ -17765,6 +18100,7 @@ msgstr ""
 msgid ""
 "<prompt>#</prompt> <userinput>Xorg -config /root/xorg.conf.new</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>Xorg -config /root/xorg.conf.new</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11446
@@ -17773,16 +18109,19 @@ msgid ""
 "into smaller files in the normal location, <filename>/usr/local/etc/X11/xorg."
 "conf.d/</filename>."
 msgstr ""
+"Dopo che la nuova configurazione è stata corretta e provata, può essere "
+"divisa in file più piccoli alla locazione standard, <filename>/usr/local/etc/"
+"X11/xorg.conf.d/</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:11464
 msgid "Using Fonts in <application>Xorg</application>"
-msgstr ""
+msgstr "Usare i Font in <application>Xorg</application>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11467
 msgid "Type1 Fonts"
-msgstr ""
+msgstr "Font Type 1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11469
@@ -17807,6 +18146,26 @@ msgid ""
 "\"xfree86\"><refentrytitle>X</refentrytitle><manvolnum>7</manvolnum></"
 "citerefentry> manual page or <xref linkend=\"truetype\"/>."
 msgstr ""
+"I font forniti di serie con <application>Xorg</application> non sono ideali "
+"per l'uso nelle applicazioni di desktop publishing. I caratteri più grandi "
+"appaiono squadrati e non professionali, mentre i caratteri più piccoli sono "
+"quasi illeggibili. Esistono vari font Type 1  (<trademark class="
+"\"registered\">PostScript</trademark>) di alta qualità gratuiti che possono "
+"essere facilmente usati con <application>Xorg</application>. Per esempi la "
+"collezione di font URW (<package>x11-fonts/urwfonts</package>) comprende "
+"versioni ad alta qualità di font type 1 standard (<trademark class="
+"\"registered\">Times Roman</trademark>, <trademark class="
+"\"registered\">Helvetica</trademark>, <trademark class="
+"\"registered\">Palatino</trademark> e altri). La collezione Freefonts "
+"(<package>x11-fonts/freefonts</package>) molti altri font, ma la maggior "
+"parte di essi sono pensati per essere usati in applicazioni grafiche come "
+"<application>Gimp</application> e non sono abbastanza generiche per l'uso "
+"come font per lo schermo. Inoltre <application>Xorg</application> può essere "
+"configurato per usare font <trademark class=\"registered\">TrueType</"
+"trademark> con un minimo sforzo. Per ulteriori dettagli al riguardo, fare "
+"riferimento alla man page <citerefentry vendor=\"xfree86\"><refentrytitle>X</"
+"refentrytitle><manvolnum>7</manvolnum></citerefentry> o <xref linkend="
+"\"truetype\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11488
@@ -17814,12 +18173,14 @@ msgid ""
 "To install the above Type1 font collections from binary packages, run the "
 "following commands:"
 msgstr ""
+"Per installare i font Type 1 sopra elencati tramite pacchetto binario usare "
+"i seguenti comandi:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11491
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install urwfonts</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install urwfonts</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11493
@@ -17827,6 +18188,8 @@ msgid ""
 "Alternatively, to build from the Ports Collection, run the following "
 "commands:"
 msgstr ""
+"In alternativa, per installare tramite la Collezione dei Port, lanciare il "
+"seguente comando:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11496
@@ -17835,6 +18198,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11-fonts/urwfonts</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11-fonts/urwfonts</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11499
@@ -17843,17 +18208,20 @@ msgid ""
 "detect these fonts, add an appropriate line to the X server configuration "
 "file (<filename>/etc/X11/xorg.conf</filename>), which reads:"
 msgstr ""
+"E similmente con freefont e altre collezioni. Per far si che l'X server "
+"riconosca questi ffont, aggiungere le righe appropriate nel file di "
+"configurazione (<filename>/etc/X11/xorg.conf</filename>):"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11504
 #, no-wrap
 msgid "FontPath \"/usr/local/share/fonts/urwfonts/\""
-msgstr ""
+msgstr "FontPath \"/usr/local/share/fonts/urwfonts/\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11506
 msgid "Alternatively, at the command line in the X session run:"
-msgstr ""
+msgstr "Alternativamente, in una riga di comando su una sessione X lanciare:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11509
@@ -17863,6 +18231,9 @@ msgid ""
 "userinput>\n"
 "<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/urwfonts</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11512
@@ -17874,21 +18245,28 @@ msgid ""
 "application>). A third way is to use the new <filename>/usr/local/etc/fonts/"
 "local.conf</filename> as demonstrated in <xref linkend=\"antialias\"/>."
 msgstr ""
+"Questo comando funziona, ma il risultato andra perduto quando viene chiusa "
+"la sessione X, a meno che non venga aggiunto al file di avvio (<filename>~/."
+"xinitrc</filename> per una normale sessione <command>startx</command>, o "
+"<filename>~/.xsession</filename> quando si accede tramite un display manager "
+"grafico come <application>XDM</application>). Una terza opzione consiste "
+"nell'utilizzare il nuovo <filename>/usr/local/etc/fonts/local.conf</"
+"filename> come dimostrato in <xref linkend=\"antialias\"/>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11524
 msgid "<trademark class=\"registered\">TrueType</trademark> Fonts"
-msgstr ""
+msgstr "Font <trademark class=\"registered\">TrueType</trademark>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11526
 msgid "<primary>TrueType Fonts</primary>"
-msgstr ""
+msgstr "<primary>Font TrueType</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11529
 msgid "<primary>fonts</primary> <secondary>TrueType</secondary>"
-msgstr ""
+msgstr "<primary>font</primary> <secondary>TrueType</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11534
@@ -17901,12 +18279,19 @@ msgid ""
 "line to the <literal>\"Module\"</literal> section of <filename>/etc/X11/xorg."
 "conf</filename>."
 msgstr ""
+"<application>Xorg</application> ha supporto nativo per renderizzare font "
+"<trademark class=\"registered\">TrueType</trademark>. Ci sono due distinti "
+"moduli per abilitare questa funzionalità. In questo esempio useremo il "
+"modulo freefont in quanto più conforme con altri back-end di rendering per i "
+"font. Per abilitare il modulo freetype basta aggiungere la seguente riga "
+"nella sezione <literal>\"Module\"</literal> di <filename>/etc/X11/xorg.conf</"
+"filename>."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11542
 #, no-wrap
 msgid "Load  \"freetype\""
-msgstr ""
+msgstr "Load  \"freetype\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11544
@@ -17926,17 +18311,32 @@ msgid ""
 "new files have been installed. <command>mkfontdir</command> can be installed "
 "as a package:"
 msgstr ""
+"Adesso crea una directory per i font <trademark class="
+"\"registered\">TrueType</trademark> (per esempio, <filename>/usr/local/share/"
+"fonts/TrueType</filename>) e copia tutti i font <trademark class="
+"\"registered\">TrueType</trademark> in questa directory. Tieni conto che i "
+"font <trademark class=\"registered\">TrueType</trademark> non possono "
+"esssere presi direttamente da un <trademark class=\"registered\">Apple</"
+"trademark> <trademark class=\"registered\">Mac</trademark>; devono essere "
+"nel formato <trademark class=\"registered\">UNIX</trademark>/<trademark "
+"class=\"registered\">MS-DOS</trademark>/<trademark class="
+"\"registered\">Windows</trademark> per essere usati da <application>Xorg</"
+"application>. Una volta copiati i file in questa directory, usa "
+"<application>mkfontdir</application> per creare un file <filename>fonts.dir</"
+"filename>, cosicché il renderizzatore di font di X sappia che questi nuovi "
+"font sono stati installati. <command>mkfontdir</command> può essere "
+"installato da pacchetto binario:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11558
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install mkfontdir</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install mkfontdir</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11560
 msgid "Then create an index of X font files in a directory:"
-msgstr ""
+msgstr "Poi ccrea un indice dei file di font per X nella directory:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11563
@@ -17945,6 +18345,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/local/share/fonts/TrueType</userinput>\n"
 "<prompt>#</prompt> <userinput>mkfontdir</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/local/share/fonts/TrueType</userinput>\n"
+"<prompt>#</prompt> <userinput>mkfontdir</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11566
@@ -17953,6 +18355,9 @@ msgid ""
 "to the font path. This is just the same as described in <xref linkend="
 "\"type1\"/>:"
 msgstr ""
+"Ora aggiungi la directory <trademark class=\"registered\">TrueType</"
+"trademark> al path dei font. Questo passaggio è lo stesso descritto in <xref "
+"linkend=\"type1\"/>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11569
@@ -17962,12 +18367,17 @@ msgid ""
 "userinput>\n"
 "<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>xset fp+ /usr/local/share/fonts/TrueType</"
+"userinput>\n"
+"<prompt>%</prompt> <userinput>xset fp rehash</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11572
 msgid ""
 "or add a <literal>FontPath</literal> line to <filename>xorg.conf</filename>."
 msgstr ""
+"O aggiungi una riga <literal>FontPath</literal> in <filename>xorg.conf</"
+"filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11575
@@ -17979,21 +18389,27 @@ msgid ""
 "page) and extremely large fonts (within <application><trademark>StarOffice</"
 "trademark></application>) will look much better now."
 msgstr ""
+"Adesso <application>Gimp</application>, <application>Apache OpenOffice</"
+"application>, e tutte le altre applicazioni X dovrebbero riconoscere i font "
+"<trademark class=\"registered\">TrueType</trademark> installlati. Font "
+"estremamente piccoli (Come il testo sugli schermi ad alta risoluzione in una "
+"pagina web) e estremamente grandi (in <application><trademark>StarOffice</"
+"trademark></application>) appariranno decisamente meglio adesso."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11596
 msgid "Anti-Aliased Fonts"
-msgstr ""
+msgstr "Font Anti-Alias"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11598
 msgid "<primary>anti-aliased fonts</primary>"
-msgstr ""
+msgstr "<primary>font anti-alias</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11601
 msgid "<primary>fonts</primary> <secondary>anti-aliased</secondary>"
-msgstr ""
+msgstr "<primary>font</primary> <secondary>anti-alias</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11606
@@ -18005,6 +18421,12 @@ msgid ""
 "application>, <application>GNOME</application>, and <application>Firefox</"
 "application>."
 msgstr ""
+"In <application>Xorg</application> tutti i font che si trovano in <filename>/"
+"usr/local/share/fonts/</filename> e <filename>~/.fonts/</filename> sono "
+"automaticamente resi disponibili per l'anti-aliasing alle applicazioni con "
+"supporto Xft. La maggior parte delle applicazioni recenti hanno supporto "
+"Xft, inclusi <application>KDE</application>, <application>GNOME</"
+"application> e <application>Firefox</application>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11615
@@ -18017,11 +18439,18 @@ msgid ""
 "\"xorg\"><refentrytitle>fonts-conf</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Per controllare quali font rendere anti-aliased, o per configurare le "
+"proprietà dell'anti-aliasing, crea (o modifica, se già esistente) il "
+"file<filename>/usr/local/etc/fonts/local.conf</filename>. Varie funzionalità "
+"avanzate del sistema Xft possono essere impostate tramite questo file; "
+"questa sezione descrive solo alcune semplici opzioni. per ulteriori "
+"dettagli, vedere <citerefentry vendor=\"xorg\"><refentrytitle>fonts-conf</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11624
 msgid "<primary>XML</primary>"
-msgstr ""
+msgstr "<primary>XML</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11626
@@ -18031,6 +18460,10 @@ msgid ""
 "followed by a DOCTYPE definition, and then the <literal>&lt;fontconfig&gt;</"
 "literal> tag:"
 msgstr ""
+"Questo file deve essere in formato XML. Presta particolare attenzione alle "
+"maiuscole/minuscole, e accertati che tutti i tag siano abbinati al loro tag "
+"di chiusura. Il file inizia con l'abituale intestazione XML seguita da una "
+"definizione DOCTYPE, poi un tag <literal>&lt;fontconfig&gt;</literal> tag:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11632
@@ -18040,6 +18473,9 @@ msgid ""
 "      &lt;!DOCTYPE fontconfig SYSTEM \"fonts.dtd\"&gt;\n"
 "      &lt;fontconfig&gt;"
 msgstr ""
+"&lt;?xml version=\"1.0\"?&gt;\n"
+"      &lt;!DOCTYPE fontconfig SYSTEM \"fonts.dtd\"&gt;\n"
+"      &lt;fontconfig&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11636
@@ -18050,12 +18486,17 @@ msgid ""
 "these two directory trees, add a line like this to <filename>/usr/local/etc/"
 "fonts/local.conf</filename>:"
 msgstr ""
+"Come precedentemente detto, tutti i font in <filename>/usr/local/share/fonts/"
+"</filename> e <filename>~/.fonts/</filename> sono già resi disponibili alle "
+"applicazioni con supporto Xft. Per aggiiungere un'altra directory oltre a "
+"queste due, aggiungere una riga come questa a <filename>/usr/local/etc/fonts/"
+"local.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11644
 #, no-wrap
 msgid "&lt;dir&gt;/path/to/my/fonts&lt;/dir&gt;"
-msgstr ""
+msgstr "&lt;dir&gt;/path/to/my/fonts&lt;/dir&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11646
@@ -18063,12 +18504,14 @@ msgid ""
 "After adding new fonts, and especially new font directories, rebuild the "
 "font caches:"
 msgstr ""
+"Dopo avere aggiunto nuovi font, e specialmente nuove directory di font, "
+"ricostruire le cache dei font:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11650
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>fc-cache -f</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>fc-cache -f</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11652
@@ -18078,6 +18521,11 @@ msgid ""
 "cause eyestrain if applied to normal text. To exclude font sizes smaller "
 "than 14 point from anti-aliasing, include these lines:"
 msgstr ""
+"L'anti-aliasing rende i bordi dei font leggermente sfumati, il che rende il "
+"testo molto piccolo più leggibile e elimina l'effetto <quote>scalettato</"
+"quote> dal testo di grandi dimensioni, ma puo causare affaticamento della "
+"vista se applicato al testo normale. Per escludere i font di misura "
+"inferiore a 14 punti dall'anti-alias, includere queste righe:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11659
@@ -18100,11 +18548,27 @@ msgid ""
 "\t    &lt;/edit&gt;\n"
 "\t&lt;/match&gt;"
 msgstr ""
+"        &lt;match target=\"font\"&gt;\n"
+"\t    &lt;test name=\"size\" compare=\"less\"&gt;\n"
+"\t\t&lt;double&gt;14&lt;/double&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit name=\"antialias\" mode=\"assign\"&gt;\n"
+"\t\t&lt;bool&gt;false&lt;/bool&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;\n"
+"\t&lt;match target=\"font\"&gt;\n"
+"\t    &lt;test name=\"pixelsize\" compare=\"less\" qual=\"any\"&gt;\n"
+"\t\t&lt;double&gt;14&lt;/double&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit mode=\"assign\" name=\"antialias\"&gt;\n"
+"\t\t&lt;bool&gt;false&lt;/bool&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11676
 msgid "<primary>fonts</primary> <secondary>spacing</secondary>"
-msgstr ""
+msgstr "<primary>font</primary> <secondary>spaziatura</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11681
@@ -18114,6 +18578,10 @@ msgid ""
 "particular. One possible fix is to force the spacing for such fonts to be "
 "100. Add these lines:"
 msgstr ""
+"Usando l'anti-alias, anche la spaziatura può risultare inappropriata per "
+"certi font monospace. Pare che questo problema capiti in particolare con "
+"<application>KDE</application>. Una possibile soluzione consiste nel forzare "
+"la spaziatura per questi font a 100. Aggiungi queste righe:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11687
@@ -18136,6 +18604,22 @@ msgid ""
 "\t    &lt;/edit&gt;\n"
 "\t&lt;/match&gt;"
 msgstr ""
+"\t&lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t   &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t       &lt;string&gt;fixed&lt;/string&gt;\n"
+"\t   &lt;/test&gt;\n"
+"\t   &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t       &lt;string&gt;mono&lt;/string&gt;\n"
+"\t   &lt;/edit&gt;\n"
+"\t&lt;/match&gt;\n"
+"\t&lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t    &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t&lt;string&gt;console&lt;/string&gt;\n"
+"\t    &lt;/test&gt;\n"
+"\t    &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t\t&lt;string&gt;mono&lt;/string&gt;\n"
+"\t    &lt;/edit&gt;\n"
+"\t&lt;/match&gt;"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11704
@@ -18143,6 +18627,8 @@ msgid ""
 "(this aliases the other common names for fixed fonts as <literal>\"mono\"</"
 "literal>), and then add:"
 msgstr ""
+"(Questo crea un alias <literal>\"mono\"</literal> per gli altri nomi "
+"comunemente usati per i font a spaziatura fissa), e poi aggiungi:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11707
@@ -18157,6 +18643,14 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;      "
 msgstr ""
+"         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t &lt;string&gt;mono&lt;/string&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"spacing\" mode=\"assign\"&gt;\n"
+"\t\t &lt;int&gt;100&lt;/int&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;      "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11716
@@ -18166,6 +18660,11 @@ msgid ""
 "At worst, it may cause applications to crash. To avoid this, consider adding "
 "the following to <filename>local.conf</filename>:"
 msgstr ""
+"Certi font, come l'Helvetica, possono avere dei problemi quando soggette "
+"all'anti-alias. Questo si manifesta in genere come un font che sembra "
+"tagliato a metà  verticalmente. Nei casi peggiori, può far andare in crash "
+"le applicazioni. Per evitarlo, considera di aggiungere le seguenti righe in "
+"<filename>local.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11722
@@ -18180,6 +18679,14 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;        "
 msgstr ""
+"         &lt;match target=\"pattern\" name=\"family\"&gt;\n"
+"\t     &lt;test qual=\"any\" name=\"family\"&gt;\n"
+"\t\t &lt;string&gt;Helvetica&lt;/string&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"family\" mode=\"assign\"&gt;\n"
+"\t\t &lt;string&gt;sans-serif&lt;/string&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;        "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11731
@@ -18188,6 +18695,9 @@ msgid ""
 "with the <literal>&lt;/fontconfig&gt;</literal> tag. Not doing this will "
 "cause changes to be ignored."
 msgstr ""
+"Dopo avere modificato il file <filename>local.conf</filename>, accertati di "
+"completare il file con il tag <literal>&lt;/fontconfig&gt;</literal>. In "
+"caso contrario le modifiche al file verranno ignorate."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11736
@@ -18196,16 +18706,19 @@ msgid ""
 "config/fontconfig/fonts.conf</filename>. This file uses the same "
 "<acronym>XML</acronym> format described above."
 msgstr ""
+"Gli utenti possono creare impostazioni personalizzate creando un loro "
+"<filename>~/.config/fontconfig/fonts.conf</filename>. Questo file utilizza "
+"la medesima sintassi <acronym>XML</acronym> sopra descritta."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11741
 msgid "<primary>LCD screen</primary>"
-msgstr ""
+msgstr "<primary>Schermo LCD</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:11742
 msgid "<primary>Fonts</primary> <secondary>LCD screen</secondary>"
-msgstr ""
+msgstr "<primary>Font</primary> <secondary>schermoLCD</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11745
@@ -18215,6 +18728,11 @@ msgid ""
 "separately to improve the horizontal resolution; the results can be dramatic."
 " To enable this, add the line somewhere in <filename>local.conf</filename>:"
 msgstr ""
+"Una ultima cosa: Sugli schermi LCD, si può voler applicare il sub-pixel "
+"sampling. Questa tecnica considera le componenti (separate orizzontalmente) "
+"rosso, verde e blu separatamente per migliorare la risoluzione orizzontale; "
+"I risultati possono essere notevoli.  Per abilitarlo, aggiungere queste "
+"righe in <filename>local.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11752
@@ -18229,6 +18747,14 @@ msgid ""
 "\t     &lt;/edit&gt;\n"
 "\t &lt;/match&gt;"
 msgstr ""
+"\t &lt;match target=\"font\"&gt;\n"
+"\t     &lt;test qual=\"all\" name=\"rgba\"&gt;\n"
+"\t\t &lt;const&gt;unknown&lt;/const&gt;\n"
+"\t     &lt;/test&gt;\n"
+"\t     &lt;edit name=\"rgba\" mode=\"assign\"&gt;\n"
+"\t\t &lt;const&gt;rgb&lt;/const&gt;\n"
+"\t     &lt;/edit&gt;\n"
+"\t &lt;/match&gt;"
 
 #. (itstool) path: note/para
 #: book.translate.xml:11762
@@ -18237,11 +18763,14 @@ msgid ""
 "changed to <literal>bgr</literal>, <literal>vrgb</literal> or <literal>vbgr</"
 "literal>: experiment and see which works best."
 msgstr ""
+"A seconda del tipo di schermo, potresti dover modificare <literal>rgb</"
+"literal> in <literal>bgr</literal>, <literal>vrgb</literal> o <literal>vbgr</"
+"literal>: Fai un po' di prove e scegli quello che da il miglior risultato."
 
 #. (itstool) path: info/title
 #: book.translate.xml:11773
 msgid "The X Display Manager"
-msgstr ""
+msgstr "Il Display Manager di X"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:11776
@@ -18249,11 +18778,13 @@ msgid ""
 "<personname> <firstname>Seth</firstname> <surname>Kingsley</surname> </"
 "personname> <contrib>Originally contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Seth</firstname> <surname>Kingsley</surname> </"
+"personname> <contrib>Contriibuto originale di</contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:11786
 msgid "<primary>X Display Manager</primary>"
-msgstr ""
+msgstr "<primary>X Display Manager</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11787
@@ -18264,6 +18795,11 @@ msgid ""
 "for choosing which display server to connect to and for entering "
 "authorization information such as a login and password combination."
 msgstr ""
+"<application>Xorg</application> fornisce un X Display Manager, "
+"<application>XDM</application>, che può essere usato per gestire le sessioni "
+"di accesso. <application>XDM</application> fornite una interfaccia grafica "
+"per scegliere a quale server display collegarsi e per inserire i dati di "
+"autenticazione come il nome utente e la password."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11794
@@ -18274,11 +18810,16 @@ msgid ""
 "GNOME Display Manager and <xref linkend=\"x11-wm-kde\"/> for instructions on "
 "how to configure the KDE Display Manager."
 msgstr ""
+"Questa sezione mostra come configurare l'X Display Manager in FreeBSD. "
+"Alcuni ambienti desktop forniscono un proprio manager grafico per il login. "
+"Consulta <xref linkend=\"x11-wm-gnome\"/> per istruzioni su come configurare "
+"il Display Manager GNOME e <xref linkend=\"x11-wm-kde\"/> per come "
+"configurare il Display Manager KDE."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11801
 msgid "Configuring <application>XDM</application>"
-msgstr ""
+msgstr "Configurare <application>XDM</application>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11803
@@ -18288,12 +18829,16 @@ msgid ""
 "be configured to run when the machine boots up by editing this entry in "
 "<filename>/etc/ttys</filename>:"
 msgstr ""
+"Per installare <application>XDM</application>, usa il pacchetto o il port "
+"<package>x11/xdm</package>. Una volta installato, <application>XDM</"
+"application> può essere configurato per essere lanciato quando la macchina "
+"si avvia modificando questa riga in <filename>/etc/ttys</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11809
 #, no-wrap
 msgid "ttyv8   \"/usr/local/bin/xdm -nodaemon\"  xterm   off secure"
-msgstr ""
+msgstr "ttyv8   \"/usr/local/bin/xdm -nodaemon\"  xterm   off secure"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11811
@@ -18302,6 +18847,9 @@ msgid ""
 " The <literal>ttyv8</literal> in this entry indicates that <application>XDM</"
 "application> will run on the ninth virtual terminal."
 msgstr ""
+"Cambia l'<literal>off</literal> in <literal>on</literal> e salva le "
+"modifiche. la parte <literal>ttyv8</literal> indica che <application>XDM</"
+"application> girerà sul nono terminale virtuale."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11816
@@ -18316,21 +18864,30 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry>."
 msgstr ""
+"La directory di configurazione di <application>XDM</application> si trova in "
+"<filename>/usr/local/etc/X11/xdm</filename>. Questa direcctory contiene vari "
+"file usati per modificare il comportamento e l'aspetto di <application>XDM</"
+"application>, nonché alcuni script e programmi usati per impostare il "
+"desktop quando gira <application>XDM</application>. <xref linkend=\"xdm-"
+"config-files\"/> riassume la funzione di ognuno di questi file. L'esatta "
+"sintassi e uso di questi file sono descritti in <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: table/title
 #: book.translate.xml:11826
 msgid "XDM Configuration Files"
-msgstr ""
+msgstr "File di Configurazione di XDM"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11831
 msgid "File"
-msgstr ""
+msgstr "File"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11838
 msgid "<filename>Xaccess</filename>"
-msgstr ""
+msgstr "<filename>Xaccess</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11839
@@ -18341,11 +18898,16 @@ msgid ""
 "connections from remote machines. By default, this file does not allow any "
 "remote clients to connect."
 msgstr ""
+"Il protocollo per collegarsi a <application>XDM</application> si chiama X "
+"Display Manager Connection Protocol (<acronym>XDMCP</acronym>). Questo file "
+"contiene le regole per l'autenticazione dei client per controllare le "
+"connessioni <acronym>XDMCP</acronym> da macchine remote. Di default, questo "
+"file non permette as alcun client remoto di collegarsi."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11849
 msgid "<filename>Xresources</filename>"
-msgstr ""
+msgstr "<filename>Xresources</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11850
@@ -18357,11 +18919,18 @@ msgid ""
 "prompts below. The format of this file is identical to the app-defaults file "
 "described in the <application>Xorg</application> documentation."
 msgstr ""
+"Questo file controlla l'aspetto dell'applicazione di scelta del "
+"display(chooser) e schermata di accesso <application>XDM</application>. La "
+"configurazione di default prevede una finestra di accesso rettangolare che "
+"mostra il nome host della macchina in alto con un font grande e sotto di "
+"esso i prompt <quote>Login:</quote> e <quote>Password:</quote>. Il formato "
+"di questo file è identico al file app-defaults descritto nella "
+"documentazione di <application>Xorg</application>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11863
 msgid "<filename>Xservers</filename>"
-msgstr ""
+msgstr "<filename>Xservers</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11864
@@ -18369,11 +18938,13 @@ msgid ""
 "The list of local and remote displays the chooser should provide as login "
 "choices."
 msgstr ""
+"La lista di schermi locali e remoti che dovrebbero essere proposti per "
+"l'accesso dal chooser."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11869
 msgid "<filename>Xsession</filename>"
-msgstr ""
+msgstr "<filename>Xsession</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11870
@@ -18382,11 +18953,14 @@ msgid ""
 "application> after a user has logged in. This points to a customized session "
 "script in <filename>~/.xsession</filename>."
 msgstr ""
+"Script di default per la sessione che viene lanciato da <application>XDM</"
+"application> dopo che un utente si è registrato. Esso punta a uno script di "
+"sessione personalizzato in <filename>~/.xsession</filename>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11877
 msgid "<filename>Xsetup_</filename>*"
-msgstr ""
+msgstr "<filename>Xsetup_</filename>*"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11878
@@ -18397,21 +18971,26 @@ msgid ""
 "display number. Typically these scripts run one or two programs in the "
 "background such as <command>xconsole</command>."
 msgstr ""
+"Script per lanciare automaticamente le applicazioni prime di mostrare "
+"l'interfaccia del chooser o dell'accesso. È presente uno script per ogni "
+"schermo in uso, con nome <filename>Xsetup_*</filename>, dove l'<literal>*</"
+"literal> è il numero di schermo locale. In genere questi script avviano uno "
+"o due programmi in background, per esempio <command>xconsole</command>."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11889
 msgid "<filename>xdm-config</filename>"
-msgstr ""
+msgstr "<filename>xdm-config</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11890
 msgid "Global configuration for all displays running on this machine."
-msgstr ""
+msgstr "Configurazione globale per tutti gli schermi collegati alla macchina."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11895
 msgid "<filename>xdm-errors</filename>"
-msgstr ""
+msgstr "<filename>xdm-errors</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11896
@@ -18421,22 +19000,29 @@ msgid ""
 "for error messages. These messages are also written to the user's "
 "<filename>~/.xsession-errors</filename> on a per-session basis."
 msgstr ""
+"Contiene gli errori generati dal server. Se uno schermo che "
+"<application>XDM</application> sta cercando di avviare si inchioda, "
+"controlla in questo file per eventuali errori. Questi messaggi vengono anche "
+"scritti nel <filename>~/.xsession-errors</filename> dell'utente in base alla "
+"sessione."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11905
 msgid "<filename>xdm-pid</filename>"
-msgstr ""
+msgstr "<filename>xdm-pid</filename>"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:11906
 msgid ""
 "The running process <acronym>ID</acronym> of <application>XDM</application>."
 msgstr ""
+"L'<acronym>ID</acronym> di esecuzione del processo <application>XDM</"
+"application>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11915
 msgid "Configuring Remote Access"
-msgstr ""
+msgstr "Configurare l'Accesso Remoto"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11917
@@ -18445,6 +19031,10 @@ msgid ""
 "application>. To enable users on other systems to connect to the display "
 "server, edit the access control rules and enable the connection listener."
 msgstr ""
+"Di default, solo gli utenti presenti sul sistema stesso possono accedere "
+"usando <application>XDM</application>. Per permettere agli utenti su altri "
+"sistemi di collegarsi al server di visualizzazione, modifica le regole di "
+"controllo di accesso e abilita il connection listener."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11922
@@ -18454,6 +19044,10 @@ msgid ""
 "line in <filename>/usr/local/etc/X11/xdm/xdm-config</filename> by putting a "
 "<literal>!</literal> in front of it:"
 msgstr ""
+"Per configurare <application>XDM</application> in modo che ascolti per una "
+"qualsiasi connessione, commentare la riga <literal>DisplayManager."
+"requestPort</literal> in <filename>/usr/local/etc/X11/xdm/xdm-config</"
+"filename> mettendo un <literal>!</literal> all'inizio:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11928
@@ -18463,6 +19057,9 @@ msgid ""
 "! Comment out this line if you want to manage X terminals with xdm\n"
 "DisplayManager.requestPort:     0"
 msgstr ""
+"! SECURITY: do not listen for XDMCP or Chooser requests\n"
+"! Comment out this line if you want to manage X terminals with xdm\n"
+"DisplayManager.requestPort:     0"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11932
@@ -18473,18 +19070,26 @@ msgid ""
 "\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> for further information."
 msgstr ""
+"Salva le modifiche e riavvia <application>XDM</application>. Per limitare "
+"gli accessi remoti, vedi gli esempi in <filename>/usr/local/etc/X11/xdm/"
+"Xaccess</filename> e fai riferimento a <citerefentry vendor="
+"\"xfree86\"><refentrytitle>xdm</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per ulteriori informazioni."
 
 #. (itstool) path: info/title
 #: book.translate.xml:11941
 msgid "Desktop Environments"
-msgstr ""
+msgstr "Ambienti Desktop"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:11944
+#, fuzzy
 msgid ""
 "<personname> <firstname>Valentino</firstname> <surname>Vaschetto</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Valentino</firstname> <surname>Vaschetto</surname> </"
+"personname> <contrib>Fornito da </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:11955
@@ -18495,11 +19100,16 @@ msgid ""
 "environments are available in the <filename>x11-wm</filename> category of "
 "the Ports Collection."
 msgstr ""
+"Questa sezione descrive come installare tre ambienti desktop popolari su un "
+"sistema FreeBSD. Un ambiente desktop può consistere in un semplice window "
+"manager fino ad essere una completa collezione di applicazioni per il "
+"desktop. Sono disponibili oltre cento ambienti desktop nella categoria "
+"<filename>x11-wm</filename> della Collezione dei Port."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:11963
 msgid "GNOME"
-msgstr ""
+msgstr "GNOME"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11966
@@ -18514,17 +19124,26 @@ msgid ""
 "about installing, configuring, and managing <application>GNOME</application> "
 "on FreeBSD."
 msgstr ""
+"<application>GNOME</application> è un ambiente desktop di facile utilizzo. "
+"Include un pannello per avviare le applicazioni e mostrare lo stato, un "
+"desktop, una serie di strumenti e applicazioni, e una serie di convenzioni "
+"che rendono semplice alle applicazioni di cooperare ed essere coerenti l'una "
+"con l'altra. Ulteriori informazioni riguardo <application>GNOME</"
+"application> su FreeBSD possono essere trovate su <link xlink:href=\"https://"
+"www.FreeBSD.org/gnome\">https://www.FreeBSD.org/gnome</link>. Il sito "
+"contiene ulteriore documentazione sull'installazione, configurazione, e "
+"gestione di <application>GNOME</application> in FreeBSD."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11977
 msgid "This desktop environment can be installed from a package:"
-msgstr ""
+msgstr "L'ambiente desktop può essere installato via pacchetto binario:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11980
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install gnome3</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install gnome3</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11982
@@ -18533,6 +19152,10 @@ msgid ""
 "following command. <application>GNOME</application> is a large application "
 "and will take some time to compile, even on a fast computer."
 msgstr ""
+"Se vuoi compilare <application>GNOME</application> dai port, usa il seguente "
+"comando. <application>GNOME</application> è una applicazione di grandi "
+"dimensioni e richiederà diverso tempo per compilare, anche su un computer "
+"veloce."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:11988
@@ -18541,6 +19164,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11/gnome3</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11/gnome3</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11991
@@ -18549,12 +19174,15 @@ msgid ""
 "mounted. Add this line to <filename>/etc/fstab</filename> to mount this file "
 "system automatically during system startup:"
 msgstr ""
+"<application>GNOME</application> richiede che <filename>/proc</filename> sia "
+"montato. Aggiungi questa riga a <filename>/etc/fstab</filename> per montarlo "
+"automaticamente all'avvio."
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:11996 book.translate.xml:12085
 #, no-wrap
 msgid "proc           /proc       procfs  rw  0   0"
-msgstr ""
+msgstr "proc           /proc       procfs  rw  0   0"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:11998
@@ -18565,13 +19193,20 @@ msgid ""
 "<application>GNOME</application>. Enable them in <filename>/etc/rc.conf</"
 "filename> so they will be started when the system boots:"
 msgstr ""
+"<application>GNOME</application> utilizza <application>D-Bus</application> e "
+"<application>HAL</application> per il bus messaggi e l'astrazione "
+"dell'hardware. Queste applicazioni vengono installate automaticamente come "
+"dipendenze di <application>GNOME</application>. Devi abilitarle in "
+"<filename>/etc/rc.conf</filename> in modo che vengano avviate "
+"automaticamente quando il sistema si avvia:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12006 book.translate.xml:12095
 #, no-wrap
 msgid "dbus_enable=\"YES\"\n"
 "hald_enable=\"YES\""
-msgstr ""
+msgstr "dbus_enable=\"YES\"\n"
+"hald_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12009
@@ -18582,12 +19217,18 @@ msgid ""
 "installed as part of the <application>GNOME</application> package or port. "
 "It can be enabled by adding this line to <filename>/etc/rc.conf</filename>:"
 msgstr ""
+"Dopo l'installazione, configura <application>Xorg</application> per avviare "
+"<application>GNOME</application>. Il metodo più semplice per farlo è di "
+"abilitare lo GNOME Display Manager, <application>GDM</application>, che "
+"viene installato come componente del pacchetto o del port di "
+"<application>GNOME</application>. Può essere abilitato aggiungendo la "
+"seguente riga a <filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12018
 #, no-wrap
 msgid "gdm_enable=\"YES\""
-msgstr ""
+msgstr "gdm_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12020
@@ -18596,12 +19237,15 @@ msgid ""
 "services. To achieve this, add a second line to <filename>/etc/rc.conf</"
 "filename>:"
 msgstr ""
+"È in oltre desiderabile avviare anche tutti i vari servizi di "
+"<application>GNOME</application>. Per farlo, aggiungi una  ulteriore riga a "
+"<filename>/etc/rc.conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:12024
 #, no-wrap
 msgid "gnome_enable=\"YES\""
-msgstr ""
+msgstr "gnome_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12026
@@ -18609,6 +19253,8 @@ msgid ""
 "<application>GDM</application> will start automatically when the system "
 "boots."
 msgstr ""
+"<application>GDM</application> verrà lanciato automaticamente all'avvio del "
+"sistema."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12029
@@ -18620,6 +19266,12 @@ msgid ""
 "usr/local/bin/gnome-session</filename>. If this file does not exist, create "
 "it with this command:"
 msgstr ""
+"Un altro metodo di avviare <application>GNOME</application> è di digitare "
+"<command>startx</command> nella riga di comando dopo avere configurato "
+"<filename>~/.xinitrc</filename>. Se questo file esiste già, sostituire la "
+"riga che che inizia con il window manager attuale con una che inizia con "
+"<filename>/usr/local/bin/gnome-session</filename>. Se il file non esiste "
+"crearlo con questo comando:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12038
@@ -18628,6 +19280,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>echo \"exec /usr/local/bin/gnome-session\" "
 "&gt; ~/.xinitrc</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>echo \"exec /usr/local/bin/gnome-session\" "
+"&gt; ~/.xinitrc</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12040
@@ -18636,6 +19290,8 @@ msgid ""
 "manager. In this case, create an executable <filename>~/.xsession</filename>:"
 ""
 msgstr ""
+"Un terzo metodo è di usare <application>XDM</application> come display "
+"manager. In questo caso, crea l'eseguibile <filename>~/.xsession</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12044
@@ -18644,11 +19300,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>echo \"exec /usr/local/bin/gnome-session\" "
 "&gt; ~/.xsession</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>echo \"exec /usr/local/bin/gnome-session\" "
+"&gt; ~/.xsession</userinput>"
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12048
 msgid "KDE"
-msgstr ""
+msgstr "KDE"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12052
@@ -18662,17 +19320,26 @@ msgid ""
 "specific information, consult <link xlink:href=\"http://freebsd.kde.org/"
 "\">http://freebsd.kde.org</link>."
 msgstr ""
+"<application>KDE</application> è un altro ambiente desktop di facile "
+"utilizzo. Il desktop fornisce una collezione di applicazioni con un aspetto "
+"coerente, un menù, toolbar, combinazioni di tasti, schema colori, "
+"internazionalizzazione, standardizzati e una configurazione del desktop "
+"tramite finestre centralizzata. Ulteriori informazioni su <application>KDE</"
+"application> possono essere trovate su <link xlink:href=\"http://www.kde.org/"
+"\">http://www.kde.org/</link>. Per informazioni specifiche a FreeBSD, "
+"consultare <link xlink:href=\"http://freebsd.kde.org/\">http://freebsd.kde."
+"org</link>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12061
 msgid "To install the <application>KDE</application> package, type:"
-msgstr ""
+msgstr "Per installare il pacchetto <application>KDE</application>, digita:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12064
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>pkg install x11/kde4</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>pkg install x11/kde4</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12066
@@ -18682,6 +19349,11 @@ msgid ""
 "components to install. <application>KDE</application> is a large application "
 "and will take some time to compile, even on a fast computer."
 msgstr ""
+"Se invece desideri compilare <application>KDE</application> dal port, usa il "
+"seguente comando. Installando tramite port verrà fornito un menù per "
+"selezionare quali componenti installare. <application>KDE</application> è "
+"una aapplicazione di grandi dimensioni e richiederà diverso tempo per "
+"compilare, anche su un computer veloce."
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:12072
@@ -18690,11 +19362,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/ports/x11/kde4</userinput>\n"
 "<prompt>#</prompt> <userinput>make install clean</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/ports/x11/kde4</userinput>\n"
+"<prompt>#</prompt> <userinput>make install clean</userinput>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:12075
 msgid "<primary>KDE</primary> <secondary>display manager</secondary>"
-msgstr ""
+msgstr "<primary>KDE</primary> <secondary>display manager</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12080
@@ -18703,6 +19377,9 @@ msgid ""
 "mounted. Add this line to <filename>/etc/fstab</filename> to mount this file "
 "system automatically during system startup:"
 msgstr ""
+"<application>KDE</application> richiede che <filename>/proc</filename> sia "
+"montato. Aggiungi questa riga a <filename>/etc/fstab</filename> per montare "
+"questo file system automaticamente durante l'avvio:"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12087
@@ -21194,7 +21871,7 @@ msgstr ""
 #. (itstool) path: info/title
 #: book.translate.xml:13745
 msgid "Multimedia"
-msgstr ""
+msgstr "Multimedia"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:13748
@@ -21202,6 +21879,8 @@ msgid ""
 "<personname> <firstname>Ross</firstname> <surname>Lippert</surname> </"
 "personname> <contrib>Edited by </contrib>"
 msgstr ""
+"<personname> <firstname>Ross</firstname> <surname>Lippert</surname> </"
+"personname> <contrib>Modificato da </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13761
@@ -21213,6 +21892,13 @@ msgid ""
 "The FreeBSD Ports Collection contains many applications for editing recorded "
 "audio, adding sound effects, and controlling attached MIDI devices."
 msgstr ""
+"FreeBSD supporta un’ampia gamma di schede audio, permettendo agli utenti di "
+"godere di un suono ad alta fedeltà da un sistema FreeBSD. Questo include la "
+"capacità di registrare e riprodurre audio in MPEG Audio Layer 3 "
+"(<acronym>MP3</acronym>), Waveform Audio File (<acronym>WAV</acronym>), Ogg "
+"Vorbis, e altri formati. La Collezione dei Port di FreeBSD contiene molte "
+"applicazioni per fare editing di audio, aggiungere effetti sonori e "
+"controllare dispositivi MIDI connessi."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13770
@@ -21221,6 +21907,9 @@ msgid ""
 "acronym>s. The FreeBSD Ports Collection contains applications to encode, "
 "convert, and playback various video media."
 msgstr ""
+"FreeBSD supporta anche la riproduzione di file video e di <acronym>DVD</"
+"acronym>.  La Collezione dei Port di FreeBSD contiene applicazioni per "
+"codificare, convertire e riprodurre vari media video."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13775
@@ -21229,31 +21918,34 @@ msgid ""
 "tuner cards, and scanners on FreeBSD. It also describes some of the "
 "applications which are available for using these devices."
 msgstr ""
+"Questo capitolo descrive come configurare schede audio, riproduzione video, "
+"schede per la sintonizzazione della TV e scanner su FreeBSD. Descrive anche "
+"alcune delle applicazioni disponibili per usare queste periferiche."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13780
 msgid "After reading this chapter, you will know how to:"
-msgstr ""
+msgstr "Dopo aver letto questo capitolo, sarai in grado di:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13784
 msgid "Configure a sound card on FreeBSD."
-msgstr ""
+msgstr "Configurare una scheda audio su FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13788
 msgid "Troubleshoot the sound setup."
-msgstr ""
+msgstr "Risolvere problemi con le impostazioni audio."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13792
 msgid "Playback and encode MP3s and other audio."
-msgstr ""
+msgstr "Riprodurre e codificare MP3 e altri formati audio."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13796
 msgid "Prepare a FreeBSD system for video playback."
-msgstr ""
+msgstr "Preparare un sistema FreeBSD per la riproduzione di video."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13800
@@ -21261,38 +21953,44 @@ msgid ""
 "Play <acronym>DVD</acronym>s, <filename>.mpg</filename>, and <filename>.avi</"
 "filename> files."
 msgstr ""
+"Riprodurre <acronym>DVD</acronym>, file <filename>.mpg</filename>, e file "
+"<filename>.avi</filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13805
 msgid ""
 "Rip <acronym>CD</acronym> and <acronym>DVD</acronym> content into files."
 msgstr ""
+"Estrarre contenuti da <acronym>CD</acronym> e <acronym>DVD</acronym> in file."
+""
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13810
 msgid "Configure a TV card."
-msgstr ""
+msgstr "Configurare una scheda TV."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13814
 msgid "Install and setup MythTV on FreeBSD"
-msgstr ""
+msgstr "Installare e impostare MythTV su FreeBSD"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13818
 msgid "Configure an image scanner."
-msgstr ""
+msgstr "Configurare uno scanner di immagini."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:13825
 msgid ""
 "Know how to install applications as described in <xref linkend=\"ports\"/>."
 msgstr ""
+"Sapere come installare applicazioni come descritto nel <xref linkend="
+"\"ports\"/>."
 
 #. (itstool) path: info/title
 #: book.translate.xml:13832
 msgid "Setting Up the Sound Card"
-msgstr ""
+msgstr "Impostare la Scheda Audio"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:13835
@@ -21300,6 +21998,8 @@ msgid ""
 "<personname> <firstname>Moses</firstname> <surname>Moore</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Moses</firstname> <surname>Moore</surname> </"
+"personname> <contrib>Contribuito da </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:13845
@@ -21307,16 +22007,18 @@ msgid ""
 "<personname> <firstname>Marc</firstname> <surname>Fonvieille</surname> </"
 "personname> <contrib>Enhanced by </contrib>"
 msgstr ""
+"<personname> <firstname>Marc</firstname> <surname>Fonvieille</surname> </"
+"personname> <contrib>Migliorato da </contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:13855
 msgid "<primary>PCI</primary>"
-msgstr ""
+msgstr "<primary>PCI</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:13856
 msgid "<primary>sound cards</primary>"
-msgstr ""
+msgstr "<primary>schede audio</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13857
@@ -21327,11 +22029,16 @@ msgid ""
 "FreeBSD.org/releases/11.2R/hardware.html\">Hardware Notes</link> to see if "
 "the card is supported and which FreeBSD driver it uses."
 msgstr ""
+"Prima di cominciare la configurazione, determinare il modello della scheda "
+"audio e il chip che usa. FreeBSD supporta un'ampia gamma di schede audio. "
+"Consulta la lista delle periferiche audio supportate nelle <link xlink:href="
+"\"https://www.FreeBSD.org/releases/11.2R/hardware.html\">Note Hardware</"
+"link> per vedere se la scheda è supportata e quale driver FreeBSD usa."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:13864
 msgid "<primary>kernel</primary> <secondary>configuration</secondary>"
-msgstr ""
+msgstr "<primary>kernel</primary> <secondary>configurazione</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13869
@@ -21342,12 +22049,17 @@ msgid ""
 "manvolnum></citerefentry>. This example loads the driver for a built-in "
 "audio chipset based on the Intel specification:"
 msgstr ""
+"Per usare la periferica audio, il suo driver di periferica deve essere "
+"caricato. Il modo più semplice è caricare un modulo del kernel per la scheda "
+"audio con <citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. Questo esempio carica il driver per un chipset "
+"audio integrato basato sulle specifiche Intel:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:13875
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload snd_hda</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload snd_hda</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13877
@@ -21355,12 +22067,15 @@ msgid ""
 "To automate the loading of this driver at boot time, add the driver to "
 "<filename>/boot/loader.conf</filename>. The line for this driver is:"
 msgstr ""
+"Per automatizzare il caricamento di questo driver durante il boot, aggiungi "
+"il driver a <filename>/boot/loader.conf</filename>. La riga per questo "
+"driver è:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:13881
 #, no-wrap
 msgid "snd_hda_load=\"YES\""
-msgstr ""
+msgstr "snd_hda_load=\"YES\""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13883
@@ -21369,12 +22084,15 @@ msgid ""
 "conf</filename>. When unsure which driver to use, load the "
 "<filename>snd_driver</filename> module:"
 msgstr ""
+"Altri moduli audio sono elencati in <filename>/boot/defaults/loader.conf</"
+"filename>. Quando non sei sicuro di quale driver usare, carica il modulo "
+"<filename>snd_driver</filename>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:13888
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>kldload snd_driver</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>kldload snd_driver</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13890
@@ -21384,6 +22102,9 @@ msgid ""
 "possible to load all sound drivers by adding the metadriver to <filename>/"
 "boot/loader.conf</filename>."
 msgstr ""
+"Questo è un metadriver che carica tutti i driver audio più comuni e può "
+"essere usato per accelerare la ricerca del driver corretto <filename>/boot/"
+"loader.conf</filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:13896
@@ -21392,11 +22113,14 @@ msgid ""
 "<filename>snd_driver</filename> metadriver, type <command>cat /dev/sndstat</"
 "command>."
 msgstr ""
+"Per determinare quale driver è stato selezionato per la scheda audio dopo "
+"aver caricato il metadriver <filename>snd_driver</filename>, digita "
+"<command>cat /dev/sndstat</command>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13901
 msgid "Configuring a Custom Kernel with Sound Support"
-msgstr ""
+msgstr "Configurare un Kernel Personalizzato con il Supporto Audio"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13903
@@ -21405,6 +22129,10 @@ msgid ""
 "the sound card in a custom kernel. For more information about recompiling a "
 "kernel, refer to <xref linkend=\"kernelconfig\"/>."
 msgstr ""
+"Questa sezione è per utenti che preferiscono compilare staticamente il "
+"supporto per la scheda audio in un kernel personalizzato. Per maggiori "
+"informazioni riguardo a ricompilare un kernel, fare riferimento a <xref "
+"linkend=\"kernelconfig\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13907
@@ -21412,12 +22140,15 @@ msgid ""
 "When using a custom kernel to provide sound support, make sure that the "
 "audio framework driver exists in the custom kernel configuration file:"
 msgstr ""
+"Quando usi un kernel personalizzato per procurare supporto audio, assicurati "
+"che il driver del framework audio esista nel file di configurazione del "
+"kernel personalizzato:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13911
 #, no-wrap
 msgid "device sound"
-msgstr ""
+msgstr "device sound"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13913
@@ -21426,12 +22157,16 @@ msgid ""
 "in audio chipset based on the Intel specification from the previous section, "
 "use the following line in the custom kernel configuration file:"
 msgstr ""
+"Successivamente, aggiungi il supporto per la scheda audio. Continuando "
+"l'esempio del chipset audio integrato basato sulle specifiche Intel dalla "
+"sezione precedente, usa la seguente riga nel file di configurazione del "
+"kernel personalizzato:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13918
 #, no-wrap
 msgid "device snd_hda"
-msgstr ""
+msgstr "device snd_hda"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13920
@@ -21439,6 +22174,8 @@ msgid ""
 "Be sure to read the manual page of the driver for the device name to use for "
 "the driver."
 msgstr ""
+"Assicurati di leggere la pagina del manuale del driver per sapere quale nome "
+"di periferica usare per il driver."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13923
@@ -21454,13 +22191,24 @@ msgid ""
 "literal>. For this card, the following lines must be added to the kernel "
 "configuration file:"
 msgstr ""
+"Schede audio ISA non-PnP possono richiedere che si aggiungano impostazioni "
+"di IRQ e di port di I/O a <filename>/boot/device.hints</filename>. Durante "
+"il processo di boot, <citerefentry><refentrytitle>loader</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> legge questo file e "
+"passa le impostazioni al kernel. Per esempio una vecchia scheda <trademark "
+"class=\"registered\">SoundBlaster</trademark> 16 ISA non-PnP Creative userà "
+"il driver <citerefentry><refentrytitle>snd_sbc</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> in congiunzione con <literal>snd_sb16</literal>. "
+"Per questa scheda, le seguenti righe devono essere aggiunte al file di "
+"configurazione del kernel:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13933
 #, no-wrap
 msgid "device snd_sbc\n"
 "device snd_sb16"
-msgstr ""
+msgstr "device snd_sbc\n"
+"device snd_sb16"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13936
@@ -21469,6 +22217,9 @@ msgid ""
 "literal>, these lines must also be added to <filename>/boot/device.hints</"
 "filename>:"
 msgstr ""
+"Se la scheda usa il port di I/O <literal>0x220</literal> e l'IRQ <literal>5</"
+"literal>, anche queste righe vanno aggiunte a <filename>/boot/device.hints</"
+"filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:13940
@@ -21480,6 +22231,11 @@ msgid ""
 "hint.sbc.0.drq=\"1\"\n"
 "hint.sbc.0.flags=\"0x15\""
 msgstr ""
+"hint.sbc.0.at=\"isa\"\n"
+"hint.sbc.0.port=\"0x220\"\n"
+"hint.sbc.0.irq=\"5\"\n"
+"hint.sbc.0.drq=\"1\"\n"
+"hint.sbc.0.flags=\"0x15\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13946
@@ -21488,6 +22244,9 @@ msgid ""
 "<citerefentry><refentrytitle>sound</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> and the manual page for the driver of the sound card."
 msgstr ""
+"La sintassi usata in <filename>/boot/device.hints</filename> è descritta in "
+"<citerefentry><refentrytitle>sound</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> e nella pagina del manuale per il driver della scheda audio."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13950
@@ -21497,11 +22256,17 @@ msgid ""
 "<citerefentry><refentrytitle>snd_sbc</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> for more information about this card."
 msgstr ""
+"Le impostazioni mostrate qui sopra sono quelle di default. In alcuni casi "
+"può essere necessario che l'IRQ o altre impostazioni vengano cambiati per "
+"essere compatibili con la scheda. Fai riferimento a "
+"<citerefentry><refentrytitle>snd_sbc</refentrytitle><manvolnum>4</"
+"manvolnum></citerefentry> per maggiori informazioni riguardo a questa scheda."
+""
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:13957
 msgid "Testing Sound"
-msgstr ""
+msgstr "Testare l'Audio"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13959
@@ -21511,6 +22276,10 @@ msgid ""
 "command>. This example is from a system with a built-in Conexant CX20590 "
 "chipset:"
 msgstr ""
+"Dopo aver caricato il modulo necessario o aver fatto reboot nel kernel "
+"personalizzato, la scheda audio dovrebbe venire individuata. Per avere "
+"conferma, esegui <command>dmesg | grep pcm</command>. Questo esempio è preso "
+"da un sistema con un chipset Conexant CX20590 integrato:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13964
@@ -21521,11 +22290,17 @@ msgid ""
 "pcm2: &lt;Conexant CX20590 (Analog 2.0+HP/2.0)&gt; at nid 31,25 and 35,27 on "
 "hdaa1"
 msgstr ""
+"pcm0: &lt;NVIDIA (0x001c) (HDMI/DP 8ch)&gt; at nid 5 on hdaa0\n"
+"pcm1: &lt;NVIDIA (0x001c) (HDMI/DP 8ch)&gt; at nid 6 on hdaa0\n"
+"pcm2: &lt;Conexant CX20590 (Analog 2.0+HP/2.0)&gt; at nid 31,25 and 35,27 on "
+"hdaa1"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13968
 msgid "The status of the sound card may also be checked using this command:"
 msgstr ""
+"Lo stato della scheda audio può essere controllato anche usando questo "
+"comando:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13971
@@ -21538,6 +22313,12 @@ msgid ""
 "pcm1: &lt;NVIDIA (0x001c) (HDMI/DP 8ch)&gt; (play)\n"
 "pcm2: &lt;Conexant CX20590 (Analog 2.0+HP/2.0)&gt; (play/rec) default"
 msgstr ""
+"<prompt>#</prompt> <userinput>cat /dev/sndstat</userinput>\n"
+"FreeBSD Audio Driver (newpcm: 64bit 2009061500/amd64)\n"
+"Installed devices:\n"
+"pcm0: &lt;NVIDIA (0x001c) (HDMI/DP 8ch)&gt; (play)\n"
+"pcm1: &lt;NVIDIA (0x001c) (HDMI/DP 8ch)&gt; (play)\n"
+"pcm2: &lt;Conexant CX20590 (Analog 2.0+HP/2.0)&gt; (play/rec) default"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13978
@@ -21547,6 +22328,10 @@ msgid ""
 "was loaded or compiled into the kernel. The next section lists some common "
 "problems and their solutions."
 msgstr ""
+"L'output varierà a seconda della scheda audio. Se nell'elenco non compare "
+"nessuna periferica <filename>pcm</filename>, controlla che sia stato "
+"caricato o compilato nel kernel il driver di periferica giusto. La sezione "
+"successiva elenca alcuni problemi comuni e le relative soluzioni."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13984
@@ -21557,6 +22342,11 @@ msgid ""
 "drive and play it with <citerefentry><refentrytitle>cdcontrol</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 msgstr ""
+"Se tutto va bene, la scheda audio ora dovrebbe funzionare in FreeBSD. Se il "
+"lettore <acronym>CD</acronym> o <acronym>DVD</acronym> è connesso "
+"correttamente alla scheda audio, si può inserire un <acronym>CD</acronym> "
+"audio nel lettore e riprodurlo con <citerefentry><refentrytitle>cdcontrol</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:13990
@@ -21564,6 +22354,7 @@ msgstr ""
 msgid ""
 "<prompt>%</prompt> <userinput>cdcontrol -f /dev/acd0 play 1</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cdcontrol -f /dev/acd0 play 1</userinput>"
 
 #. (itstool) path: warning/para
 #: book.translate.xml:13993
@@ -21572,6 +22363,10 @@ msgid ""
 "they should not be mounted using <citerefentry><refentrytitle>mount</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>."
 msgstr ""
+"I <acronym>CD</acronym> audio hanno codifiche specializzate, il che vuol "
+"dire che non dovrebbero essere montati usando "
+"<citerefentry><refentrytitle>mount</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:13998
@@ -21580,6 +22375,9 @@ msgid ""
 "friendlier interface. The <package>audio/mpg123</package> port can be "
 "installed to listen to MP3 audio files."
 msgstr ""
+"Diverse applicazioni, come <package>audio/workman</package>, forniscono "
+"un'interfaccia più semplice. Si può installare il port <package>audio/"
+"mpg123</package> per ascoltare i file audio MP3."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14003
@@ -21587,6 +22385,8 @@ msgid ""
 "Another quick way to test the card is to send data to <filename>/dev/dsp</"
 "filename>:"
 msgstr ""
+"Un altro metodo rapido per testare la scheda è inviare dati a <filename>/dev/"
+"dsp</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14006
@@ -21595,6 +22395,8 @@ msgid ""
 "<prompt>%</prompt> <userinput>cat <replaceable>filename</replaceable> &gt; /"
 "dev/dsp</userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>cat <replaceable>filename</replaceable> &gt; /"
+"dev/dsp</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14008
@@ -21603,6 +22405,9 @@ msgid ""
 "type of file. This command should produce some noise, confirming that the "
 "sound card is working."
 msgstr ""
+"dove <filename><replaceable>filename</replaceable></filename> può essere un "
+"qualunque tipo di file. Questo comando dovrebbe produrre del rumore, "
+"confermando che la scheda audio funziona."
 
 #. (itstool) path: note/para
 #: book.translate.xml:14014
@@ -21612,31 +22417,35 @@ msgid ""
 "appear in the output of <citerefentry><refentrytitle>ls</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>."
 msgstr ""
+"I nodi di periferica <filename>/dev/dsp*</filename> verranno creati "
+"automaticamente su necessità. Quando non usati, non esistono e non compaiono "
+"nell'output di <citerefentry><refentrytitle>ls</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14022
 msgid "Troubleshooting Sound"
-msgstr ""
+msgstr "Risoluzione Problemi Audio"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14024
 msgid "<primary>device nodes</primary>"
-msgstr ""
+msgstr "<primary>nodi di periferica</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14025
 msgid "<primary>I/O port</primary>"
-msgstr ""
+msgstr "<primary>Port di I/O</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14026
 msgid "<primary>IRQ</primary>"
-msgstr ""
+msgstr "<primary>IRQ</primary>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:14027
 msgid "<primary>DSP</primary>"
-msgstr ""
+msgstr "<primary>DSP</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14029
@@ -21644,36 +22453,38 @@ msgid ""
 "<xref linkend=\"multimedia-sound-common-error-messages\"/> lists some common "
 "error messages and their solutions:"
 msgstr ""
+"<xref linkend=\"multimedia-sound-common-error-messages\"/> elenca alcuni "
+"messaggi di errore comuni e relative soluzioni:"
 
 #. (itstool) path: table/title
 #: book.translate.xml:14033
 msgid "Common Error Messages"
-msgstr ""
+msgstr "Messaggi di Errore Comuni"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14038
 msgid "Error"
-msgstr ""
+msgstr "Errore"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14039
 msgid "Solution"
-msgstr ""
+msgstr "Soluzione"
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14045
 msgid "<errorname>sb_dspwr(XX) timed out</errorname>"
-msgstr ""
+msgstr "<errorname>sb_dspwr(XX) timed out</errorname>"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:14047
 msgid "The I/O port is not set correctly."
-msgstr ""
+msgstr "Il port di I/O non è impostato correttamente."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14052
 msgid "<errorname>bad irq XX</errorname>"
-msgstr ""
+msgstr "<errorname>bad irq XX</errorname>"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:14053
@@ -21681,21 +22492,23 @@ msgid ""
 "The IRQ is set incorrectly. Make sure that the set IRQ and the sound IRQ are "
 "the same."
 msgstr ""
+"L'IRQ non è impostato correttamente. Assicurati che le impostazioni dell'IRQ "
+"e dell'IRQ audio siano le stesse."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14059
 msgid "<errorname>xxx: gus pcm not attached, out of memory</errorname>"
-msgstr ""
+msgstr "<errorname>xxx: gus pcm not attached, out of memory</errorname>"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:14061
 msgid "There is not enough available memory to use the device."
-msgstr ""
+msgstr "Non c'è abbastanza memoria disponibile per usare la periferica."
 
 #. (itstool) path: row/entry
 #: book.translate.xml:14066
 msgid "<errorname>xxx: can't open /dev/dsp!</errorname>"
-msgstr ""
+msgstr "<errorname>xxx: can't open /dev/dsp!</errorname>"
 
 #. (itstool) path: entry/para
 #: book.translate.xml:14068
@@ -21704,6 +22517,10 @@ msgid ""
 "holding the device open. Noteworthy troublemakers are <application>esound</"
 "application> and <application>KDE</application>'s sound support."
 msgstr ""
+"Digita <command>fstat | grep dsp</command> per controllare se un'altra "
+"applicazione sta tenendo aperto la periferica. Fonti di problemi degne di "
+"nota sono <application>esound</application> e il supporto audio di "
+"<application>KDE</application>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14079
@@ -21715,6 +22532,12 @@ msgid ""
 "application> and look for <literal>pcm</literal>. The output looks something "
 "like this:"
 msgstr ""
+"Le schede grafiche moderne spesso vengono fornite con un loro driver audio "
+"per essere usate con <acronym>HDMI</acronym>. Questa periferica a volte "
+"viene numerata prima della scheda audio e in tal caso la scheda audio non "
+"sarà usata come la periferica di riproduzione di default. Per controllare "
+"che sia questo il caso, esegui <application>dmesg</application> e cerca "
+"<literal>pcm</literal>. L'output assomiglia a qualcosa del genere:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14088
@@ -21742,6 +22565,27 @@ msgid ""
 "pcm7: &lt;HDA Realtek ALC889 PCM #3 Digital&gt; at cad 2 nid 1 on hdac1\n"
 "..."
 msgstr ""
+"...\n"
+"hdac0: HDA Driver Revision: 20100226_0142\n"
+"hdac1: HDA Driver Revision: 20100226_0142\n"
+"hdac0: HDA Codec #0: NVidia (Unknown)\n"
+"hdac0: HDA Codec #1: NVidia (Unknown)\n"
+"hdac0: HDA Codec #2: NVidia (Unknown)\n"
+"hdac0: HDA Codec #3: NVidia (Unknown)\n"
+"pcm0: &lt;HDA NVidia (Unknown) PCM #0 DisplayPort&gt; at cad 0 nid 1 on "
+"hdac0\n"
+"pcm1: &lt;HDA NVidia (Unknown) PCM #0 DisplayPort&gt; at cad 1 nid 1 on "
+"hdac0\n"
+"pcm2: &lt;HDA NVidia (Unknown) PCM #0 DisplayPort&gt; at cad 2 nid 1 on "
+"hdac0\n"
+"pcm3: &lt;HDA NVidia (Unknown) PCM #0 DisplayPort&gt; at cad 3 nid 1 on "
+"hdac0\n"
+"hdac1: HDA Codec #2: Realtek ALC889\n"
+"pcm4: &lt;HDA Realtek ALC889 PCM #0 Analog&gt; at cad 2 nid 1 on hdac1\n"
+"pcm5: &lt;HDA Realtek ALC889 PCM #1 Analog&gt; at cad 2 nid 1 on hdac1\n"
+"pcm6: &lt;HDA Realtek ALC889 PCM #2 Digital&gt; at cad 2 nid 1 on hdac1\n"
+"pcm7: &lt;HDA Realtek ALC889 PCM #3 Digital&gt; at cad 2 nid 1 on hdac1\n"
+"..."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14106
@@ -21751,6 +22595,11 @@ msgid ""
 "the sound card as the default playback device, change <varname>hw.snd."
 "default_unit</varname> to the unit that should be used for playback:"
 msgstr ""
+"In questo esempio, la scheda grafica (<literal>NVidia</literal>) è stata "
+"numerata prima della scheda audio (<literal>Realtek ALC889</literal>). Per "
+"usare la scheda audio come periferica di default per la riproduzione, cambia "
+"<varname>hw.snd.default_unit</varname> con l'unità che dovrebbe essere usata "
+"per la riproduzione:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14113
@@ -21759,6 +22608,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>sysctl hw.snd.default_unit=<replaceable>n</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl hw.snd.default_unit=<replaceable>n</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14115
@@ -21767,17 +22618,21 @@ msgid ""
 "example, it should be <literal>4</literal>. Make this change permanent by "
 "adding the following line to <filename>/etc/sysctl.conf</filename>:"
 msgstr ""
+"dove <literal>n</literal> è il numero della periferica audio da usare. In "
+"questo esempio, dovrebbe essere <literal>4</literal>. Rendi questo "
+"cambiamento permanente aggiungendo la seguente riga a <filename>/etc/sysctl."
+"conf</filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14121
 #, no-wrap
 msgid "hw.snd.default_unit=<replaceable>4</replaceable>"
-msgstr ""
+msgstr "hw.snd.default_unit=<replaceable>4</replaceable>"
 
 #. (itstool) path: info/title
 #: book.translate.xml:14126
 msgid "Utilizing Multiple Sound Sources"
-msgstr ""
+msgstr "Utilizzare Sorgenti Audio Multiple"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14129
@@ -21785,6 +22640,8 @@ msgid ""
 "<personname> <firstname>Munish</firstname> <surname>Chopra</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Munish</firstname> <surname>Chopra</surname> </"
+"personname> <contrib>Contribuito da </contrib>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14139
@@ -21793,6 +22650,10 @@ msgid ""
 "play simultaneously. FreeBSD uses <quote>Virtual Sound Channels</quote> to "
 "multiplex the sound card's playback by mixing sound in the kernel."
 msgstr ""
+"Spesso è preferibile avere sorgenti multiple di audio che siano in grado di "
+"riprodurre simultaneamente. FreeBSD usa <quote>Canali Audio Virtuali</quote> "
+"per fare multiplexing della riproduzione della scheda audio facendo mixing "
+"dell'audio nel kernel."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14144
@@ -21801,6 +22662,9 @@ msgid ""
 "manvolnum></citerefentry> knobs are available for configuring virtual "
 "channels:"
 msgstr ""
+"Ci sono tre parametri a disposizione in <citerefentry><refentrytitle>sysctl</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> per configurare i "
+"canali virtuali:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14147
@@ -21810,6 +22674,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>sysctl dev.pcm.0.rec.vchans=4</userinput>\n"
 "<prompt>#</prompt> <userinput>sysctl hw.snd.maxautovchans=4</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>sysctl dev.pcm.0.play.vchans=4</userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl dev.pcm.0.rec.vchans=4</userinput>\n"
+"<prompt>#</prompt> <userinput>sysctl hw.snd.maxautovchans=4</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14151
@@ -21825,6 +22692,17 @@ msgid ""
 "<citerefentry><refentrytitle>pcm</refentrytitle><manvolnum>4</manvolnum></"
 "citerefentry> for more information."
 msgstr ""
+"Questo esempio alloca quattro canali virtuali, che è un numero di canali "
+"pratico per l'uso quotidiano. Sia <varname>dev.pcm.0.play.vchans=4</varname> "
+"che <varname>dev.pcm.0.rec.vchans=4</varname> sono configurabili dopo che "
+"una periferica è stata annessa e rappresentano il numero di canali virtuali "
+"che <filename>pcm0</filename> ha per riprodurre e registrare. Dato che il "
+"modulo <filename>pcm</filename> può essere caricato indipendentemente dai "
+"driver hardware, <varname>hw.snd.maxautovchans</varname> indica quanti "
+"canali virtuali vengono assegnati ad una periferica audio quando viene "
+"annessa. Fai riferimento a <citerefentry><refentrytitle>pcm</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> per maggiori "
+"informazioni."
 
 #. (itstool) path: note/para
 #: book.translate.xml:14164
@@ -21833,6 +22711,9 @@ msgid ""
 "use. First, close any programs using the device, such as music players or "
 "sound daemons."
 msgstr ""
+"Il numero di canali virtuali di una periferica non può essere cambiato "
+"mentre è in uso. E' prima necessario chiudere tutti i programmi che usano "
+"tale periferica, come ad esempio riproduttori musicali o "
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14169
@@ -21840,11 +22721,14 @@ msgid ""
 "The correct <filename>pcm</filename> device will automatically be allocated "
 "transparently to a program that requests <filename>/dev/dsp0</filename>."
 msgstr ""
+"La periferica <filename>pcm</filename> verrà allocata automaticamente in "
+"modo trasparente ad un programma che richiede <filename>/dev/dsp0</filename>."
+""
 
 #. (itstool) path: info/title
 #: book.translate.xml:14176
 msgid "Setting Default Values for Mixer Channels"
-msgstr ""
+msgstr "Impostare Valori di Default per i Canali Mixer"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14179
@@ -21852,6 +22736,8 @@ msgid ""
 "<personname> <firstname>Josef</firstname> <surname>El-Rayes</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Josef</firstname> <surname>El-Rayes</surname> </"
+"personname> <contrib>Contribuito da </contrib>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14189
@@ -21865,12 +22751,21 @@ msgid ""
 "default mixer values at the driver level, define the appropriate values in "
 "<filename>/boot/device.hints</filename>, as seen in this example:"
 msgstr ""
+"I valori di default per i diversi canali mixer sono scritti direttamente nel "
+"codice sorgente del driver <citerefentry><refentrytitle>pcm</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry>. Mentre i livelli "
+"mixer della scheda audio possono essere cambiati usando "
+"<citerefentry><refentrytitle>mixer</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> o applicazioni e demoni di terze parti, questa non è una "
+"soluzione permanente. Per impostare invece i valori mixer di default al "
+"livello del driver, definisci i valori appropriati in <filename>/boot/device."
+"hints</filename>, Come mostrato nell'esempio:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:14198
 #, no-wrap
 msgid "hint.pcm.0.vol=\"50\""
-msgstr ""
+msgstr "hint.pcm.0.vol=\"50\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14200
@@ -21879,11 +22774,14 @@ msgid ""
 "when the <citerefentry><refentrytitle>pcm</refentrytitle><manvolnum>4</"
 "manvolnum></citerefentry> module is loaded."
 msgstr ""
+"Questo imposterà il canale del volume ad un valore di default di "
+"<literal>50</literal> quando il modulo <citerefentry><refentrytitle>pcm</"
+"refentrytitle><manvolnum>4</manvolnum></citerefentry> viene caricato."
 
 #. (itstool) path: info/title
 #: book.translate.xml:14208
 msgid "MP3 Audio"
-msgstr ""
+msgstr "MP3 Audio"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:14211 book.translate.xml:59018
@@ -21891,6 +22789,8 @@ msgid ""
 "<personname> <firstname>Chern</firstname> <surname>Lee</surname> </"
 "personname> <contrib>Contributed by </contrib>"
 msgstr ""
+"<personname> <firstname>Chern</firstname> <surname>Lee</surname> </"
+"personname> <contrib>Contribuito da </contrib>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:14221
@@ -21899,11 +22799,14 @@ msgid ""
 "FreeBSD, how to rip audio <acronym>CD</acronym> tracks, and how to encode "
 "and decode <acronym>MP3</acronym>s."
 msgstr ""
+"Questa sezione descrive alcuni riproduttori di <acronym>MP3</acronym> "
+"disponibili per FreeBSD, come fare 'ripping' di tracce di <acronym>CD</"
+"acronym> audio, e come codificare e decodificare gli <acronym>MP3</acronym>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14227
 msgid "MP3 Players"
-msgstr ""
+msgstr "Riproduttori MP3"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14229
@@ -21917,6 +22820,14 @@ msgid ""
 "<package>multimedia/audacious</package> port or package. Audacious is a "
 "descendant of XMMS."
 msgstr ""
+"Un riproduttore grafico di <acronym>MP3</acronym> popolare è "
+"<application>Audacious</application>. Supporta le skin <application>Winamp</"
+"application> e altri plugin aggiuntivi. L'interfaccia è intuitiva, con una "
+"playlist, un equalizzatore grafico, e altro. Chi ha familiarità con "
+"<application>Winamp</application> troverà <application>Audacious</"
+"application> semplice da usare. Su FreeBSD, <application>Audacious</"
+"application> può essere installato dal pacchetto o port <package>multimedia/"
+"audacious</package>. Audacious è un discendente di XMMS."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14240
@@ -21926,6 +22837,11 @@ msgid ""
 "<acronym>MP3</acronym> file to play on the command line. If the system has "
 "multiple audio devices, the sound device can also be specified:"
 msgstr ""
+"Il pacchetto o port <package>audio/mpg123</package> mette a disposizione un "
+"riproduttore <acronym>MP3</acronym> alternativo, basato su linea di comando. "
+"Una volta installato, specifica sulla linea di comando il file <acronym>MP3</"
+"acronym> da riprodurre. Se il sistema ha più periferiche audio, anche la "
+"periferica può essere specificata:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:14246
@@ -21940,6 +22856,14 @@ msgid ""
 "Playing MPEG stream from Foobar-GreatestHits.mp3 ...\n"
 "MPEG 1.0 layer III, 128 kbit/s, 44100 Hz joint-stereo"
 msgstr ""
+"<prompt>#</prompt> <userinput>mpg123 <replaceable>-a /dev/dsp1.0 Foobar-"
+"GreatestHits.mp3</replaceable></userinput>\n"
+"High Performance MPEG 1.0/2.0/2.5 Audio Player for Layers 1, 2 and 3\n"
+"        version 1.18.1; written and copyright by Michael Hipp and others\n"
+"        free software (LGPL) without any warranty but with best wishes\n"
+"\n"
+"Playing MPEG stream from Foobar-GreatestHits.mp3 ...\n"
+"MPEG 1.0 layer III, 128 kbit/s, 44100 Hz joint-stereo"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14254
@@ -21947,11 +22871,13 @@ msgid ""
 "Additional <acronym>MP3</acronym> players are available in the FreeBSD Ports "
 "Collection."
 msgstr ""
+"Riproduttori <acronym>MP3</acronym> aggiuntivi sono disponibili nella "
+"Collezione di Ports di FreeBSD."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:14259
 msgid "Ripping <acronym>CD</acronym> Audio Tracks"
-msgstr ""
+msgstr "Fare ripping <acronym>CD</acronym> di Tracce Audio"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14261
@@ -21962,6 +22888,11 @@ msgid ""
 "acronym> Digital Audio (<acronym>CDDA</acronym>) data to <acronym>WAV</"
 "acronym> files."
 msgstr ""
+"Prima di codificare un <acronym>CD</acronym> o una traccia <acronym>CD</"
+"acronym> in <acronym>MP3</acronym>, i dati audio sul <acronym>CD</acronym> "
+"devono essere estratti sul disco rigido. Questo si fa copiando i dati "
+"<acronym>CD</acronym> Digital Audio (<acronym>CDDA</acronym>) grezzi in file "
+"<acronym>WAV</acronym>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:14268
@@ -23698,13 +24629,15 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:15378
 msgid "Configuring the FreeBSD Kernel"
-msgstr ""
+msgstr "Configurazione del Kernel di FreeBSD"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:15383
 msgid ""
 "<primary>kernel</primary> <secondary>building a custom kernel</secondary>"
 msgstr ""
+"<primary>kernel</primary> <secondary>creare un kernel personalizzato</"
+"secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15388
@@ -23714,37 +24647,43 @@ msgid ""
 "and much more. While much of FreeBSD is dynamically configurable, it is "
 "still occasionally necessary to configure and compile a custom kernel."
 msgstr ""
+"Il kernel è il cuore del sistema operativo FreeBSD. È responsabile della "
+"gestione della memoria, applicare i controlli di sicurezza, gestione della "
+"rete, accesso al disco e molto altro. Anche se molte parti di FreeBSD sono "
+"configurabili dinamicamente, occasionalmete è ancora necessario configurare "
+"e compilare un kernel personalizzato."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15398
 msgid "When to build a custom kernel."
-msgstr ""
+msgstr "Quando creare un kernel personalizzato."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15402
 msgid "How to take a hardware inventory."
-msgstr ""
+msgstr "Come fare un elenco dell' hardware."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15406
 msgid "How to customize a kernel configuration file."
-msgstr ""
+msgstr "Come personalizzare un file di configurazione del kernel."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15410
 msgid ""
 "How to use the kernel configuration file to create and build a new kernel."
 msgstr ""
+"Come usare il file di configurazione del kernel per creare un nuovo kernel."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15415
 msgid "How to install the new kernel."
-msgstr ""
+msgstr "Come installare il nuovo kernel."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15419
 msgid "How to troubleshoot if things go wrong."
-msgstr ""
+msgstr "Come risolvere i problemi se le cose vanno male."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15423
@@ -23752,11 +24691,13 @@ msgid ""
 "All of the commands listed in the examples in this chapter should be "
 "executed as <systemitem class=\"username\">root</systemitem>."
 msgstr ""
+"Tutti i commandi elencati negli esempi di questo capitolo dovrebbero essere "
+"eseguiti come  <systemitem class=\"username\">root</systemitem>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15428
 msgid "Why Build a Custom Kernel?"
-msgstr ""
+msgstr "Perchè Creare un Kernel Personalizzato?"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15430
@@ -23765,6 +24706,10 @@ msgid ""
 "program, supported a fixed list of devices, and in order to change the "
 "kernel's behavior, one had to compile and then reboot into a new kernel."
 msgstr ""
+"Tradizionalmente, FreeBSD ha usato un kernel monolitico. Il kernel era un "
+"programma di grandi dimensioni, supportava un lista fissa di device e per "
+"cambiare il suo comportamento bisognava compilarne un altro e riavviare "
+"caricando il nuovo kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15435
@@ -23775,6 +24720,11 @@ msgid ""
 "hardware and for new functionality to be brought into the kernel. This is "
 "known as a modular kernel."
 msgstr ""
+"Attualmente la maggior parte delle funzionalità nel kernel sono contenute "
+"nei moduli che possono essere caricati e scaricati dal kernel secondo le "
+"necessatà in modo dinamico. Questo permette al kernel in eseguzione di "
+"adattarsi immediatamente al nuovo hardware e per le nuove funzionalià da "
+"portare nel kernel. Questo è noto come kernel modulare."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15442
@@ -23785,6 +24735,11 @@ msgid ""
 "and unloading of kernel modules and require that only needed functionality "
 "is statically compiled into the kernel."
 msgstr ""
+"Occasionalmente, è ancora necessario eseguire la configurazione statica del "
+"kernel. Qualche volta la funzionalità necessaria è così legata al kernel che "
+"non può essere caricata dinamicamente. Alcuni ambienti di sicurezza "
+"impediscono di caricare e scaricare i moduli del kernel e richiedono che "
+"solo le funzionalità necessarie siano compilate nel kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15449
@@ -23796,6 +24751,12 @@ msgid ""
 "support for that computer's hardware. This has a number of benefits, such as:"
 ""
 msgstr ""
+"Creare un kernel personalizzato è spesso un rito di passaggio per gli utenti "
+"BSD avanzati. Sebbene questo processo richiede tempo, può fornire benefici "
+"al sistema FreeBSD. A differenza del kernel <filename>GENERIC</filename>, "
+"che deve supportare una vasta gamma di hardware, un kernel personalizzato "
+"può essere ridotto per fornire supporto solo all' hardware di quel computer. "
+"Questo ha diversi benefici, ad esempio:"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15459
@@ -23803,6 +24764,8 @@ msgid ""
 "Faster boot time. Since the kernel will only probe the hardware on the "
 "system, the time it takes the system to boot can decrease."
 msgstr ""
+"Tempo di avvio più veloce. Dal momento che il kernel cercherà di riconoscere "
+"solo l' hardware sul sistema, il tempo speso per l' avvio può diminuire."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15465
@@ -23814,6 +24777,12 @@ msgid ""
 "applications. For this reason, a custom kernel is useful on a system with a "
 "small amount of RAM."
 msgstr ""
+"Minore uso di memoria. Un kernel personalizzato spesso usa meno memoria di "
+"un kernel <filename>GENERIC</filename> omettendo le funzionalità e i device "
+"driver non usati. Questo è importante perchè il kernel resiede tutto il "
+"tempo nella memoria fisica, impedendo che la memoria venga utilizzata dalle "
+"applicazioni. Per questo motivo, un kernel perosnalizzato è utile su un "
+"sistema con una piccola quantità di RAM."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:15476
@@ -23821,6 +24790,9 @@ msgid ""
 "Additional hardware support. A custom kernel can add support for devices "
 "which are not present in the <filename>GENERIC</filename> kernel."
 msgstr ""
+"Supporto hardware aggiuntivo. Un kernel personalizzato può aggiungere il "
+"supporto per i device che non sono presenti nel kernel <filename>GENERIC</"
+"filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15482
@@ -23828,6 +24800,9 @@ msgid ""
 "Before building a custom kernel, consider the reason for doing so. If there "
 "is a need for specific hardware support, it may already exist as a module."
 msgstr ""
+"Prima di creare un kernel personalizzato, considera i motivi per farlo. Se "
+"c'è necessità di supporto per hardware specifico, potrebbe già esistere un "
+"modulo."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15486
@@ -23840,6 +24815,14 @@ msgid ""
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> wireless Ethernet "
 "driver has the following information in its manual page:"
 msgstr ""
+"I moduli del kernel resiendono in <filename>/boot/kernel</filename> e "
+"possono essere caricati dinamicamente nel kernel in eseguzione usando "
+"<citerefentry><refentrytitle>kldload</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>. La maggior parte dei driver ha un modulo "
+"caricabile e una pagina di manuale. Per esempio, il driver "
+"<citerefentry><refentrytitle>ath</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> per le schede wireless Ethernet ha le seguenti informazioni "
+"nella sua pagina di manuale:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15492
@@ -23851,6 +24834,11 @@ msgid ""
 "\n"
 "    if_ath_load=\"YES\""
 msgstr ""
+"In alternativa, per caricare il driver come un modulo all' avvio del "
+"sistema, mettere la seguente linea in <citerefentry><refentrytitle>loader."
+"conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>:\n"
+"\n"
+"    if_ath_load=\"YES\""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15497
@@ -23858,6 +24846,9 @@ msgid ""
 "Adding <literal>if_ath_load=\"YES\"</literal> to <filename>/boot/loader."
 "conf</filename> will load this module dynamically at boot time."
 msgstr ""
+"Aggiungendo <literal>if_ath_load=\"YES\"</literal> a <filename>/boot/loader."
+"conf</filename> caricherà questo modulo dinamicamente all' avvio del sistema."
+""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15501
@@ -23865,11 +24856,13 @@ msgid ""
 "In some cases, there is no associated module in <filename>/boot/kernel</"
 "filename>. This is mostly true for certain subsystems."
 msgstr ""
+"In qualche caso non c'è un modulo associato in <filename>/boot/kernel</"
+"filename>. Questo è vero principalemente per alcuni sottosistemi."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:15518
 msgid "Finding the System Hardware"
-msgstr ""
+msgstr "Trovate l' Hardware del Sistema"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15520
@@ -23880,6 +24873,12 @@ msgid ""
 "class=\"registered\">Microsoft</trademark>'s <application>Device Manager</"
 "application> contains information about installed devices."
 msgstr ""
+"Prima di modificare il file di configurazione del kernel, è raccomandato "
+"ottenere una lista dell' hardware della macchina. In un ambiente con più "
+"sistemi operativi la lista può essere creata da un altro sistema operativo. "
+"Per esempio, il <application>Device Manager</application> di <trademark "
+"class=\"registered\">Microsoft</trademark> ha informazioni sui dispositivi "
+"installati."
 
 #. (itstool) path: note/para
 #: book.translate.xml:15528
@@ -23889,6 +24888,10 @@ msgid ""
 "<application>System</application> icon which can be used to access "
 "<application>Device Manager</application>."
 msgstr ""
+"Qualche versione di <trademark class=\"registered\">Microsoft</"
+"trademark> <trademark class=\"registered\">Windows</trademark> ha un' icona "
+"di <application>Systema</application> che può essere usata per accedere al "
+"<application>Device Manager</application>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15533
@@ -23901,6 +24904,14 @@ msgid ""
 "indicate that the <citerefentry><refentrytitle>psm</"
 "refentrytitle><manvolnum>4</manvolnum></citerefentry> driver found a mouse:"
 msgstr ""
+"Se FreeBSD è l' unico sistema operativo installato, usa "
+"<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> per determinare l' hardware che è stato trovato e listato "
+"durante il rilevamento del boot. La maggior parte dei driver su FreeBSD ha "
+"una pagina di manuale che lista l' hardware supportato da quel driver. Per "
+"esempio, le seguenti linee indicano che il driver "
+"<citerefentry><refentrytitle>psm</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> ha trovato un mouse:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15540
@@ -23911,6 +24922,10 @@ msgid ""
 "psm0: [ITHREAD]\n"
 "psm0: model Generic PS/2 mouse, device ID 0"
 msgstr ""
+"psm0: &lt;PS/2 Mouse&gt; irq 12 on atkbdc0\n"
+"psm0: [GIANT-LOCKED]\n"
+"psm0: [ITHREAD]\n"
+"psm0: model Generic PS/2 mouse, device ID 0"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15545
@@ -23918,6 +24933,8 @@ msgid ""
 "Since this hardware exists, this driver should not be removed from a custom "
 "kernel configuration file."
 msgstr ""
+"Siccome questo hardware esiste, questo driver non dovrebbe essere rimosso da "
+"un file di configurazione del kernel personalizzato."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15548
@@ -23926,6 +24943,9 @@ msgid ""
 "the boot probe output, instead read the contents of <filename>/var/run/dmesg."
 "boot</filename>."
 msgstr ""
+"Se l' output di <command>dmesg</command> non mostra il risultato del "
+"rilevamento del boot, leggi il contenuto di <filename>/var/run/dmesg.boot</"
+"filename>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15552
@@ -23934,6 +24954,10 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, which provides more "
 "verbose output. For example:"
 msgstr ""
+"Un altro strumento per scoprire l' hardware è "
+"<citerefentry><refentrytitle>pciconf</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, che fornisce un output più dettagliato. Per "
+"esempio:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15555
@@ -23947,6 +24971,13 @@ msgid ""
 "    class      = network\n"
 "    subclass   = ethernet"
 msgstr ""
+"<prompt>%</prompt> <userinput>pciconf -lv</userinput>\n"
+"ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev="
+"0x01 hdr=0x00\n"
+"    vendor     = 'Atheros Communications Inc.'\n"
+"    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n"
+"    class      = network\n"
+"    subclass   = ethernet"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15562
@@ -23954,6 +24985,8 @@ msgid ""
 "This output shows that the <filename>ath</filename> driver located a "
 "wireless Ethernet device."
 msgstr ""
+"Questo output mostra che il driver <filename>ath</filename> ha trovato un "
+"dispositivo Ethernet wireless."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15565
@@ -23963,6 +24996,11 @@ msgid ""
 "useful information. For example, it can be used to display a list of manual "
 "pages which contain a particular device brand or name:"
 msgstr ""
+"I' opzione <option>-k</option> di <citerefentry><refentrytitle>man</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> può essere usato per "
+"fornire informazioni utili. Per esempio, può essere usato per mostrare una "
+"lista di pagine di manuale che contengono un particolare nome o marca del "
+"dispositivo:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15570
@@ -23973,6 +25011,10 @@ msgid ""
 "ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
 "ath_hal(4)               - Atheros Hardware Access Layer (HAL)"
 msgstr ""
+"<prompt>#</prompt> <userinput>man -k <replaceable>Atheros</replaceable></"
+"userinput>\n"
+"ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
+"ath_hal(4)               - Atheros Hardware Access Layer (HAL)"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15574
@@ -23981,12 +25023,15 @@ msgid ""
 "drivers for installed hardware are not removed as the custom kernel "
 "configuration is edited."
 msgstr ""
+"Una volta che la lista dell' hardware è stata creata, facci riferimento per "
+"assicurarti che i driver per l' hardware installato non siano rimossi mentre "
+"viene modificato il file di configurazione del kernel."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: sect2/title
 #: book.translate.xml:15591 book.translate.xml:44390
 msgid "The Configuration File"
-msgstr ""
+msgstr "Il File di Configurazione"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15593
@@ -23994,6 +25039,9 @@ msgid ""
 "In order to create a custom kernel configuration file and build a custom "
 "kernel, the full FreeBSD source tree must first be installed."
 msgstr ""
+"Al fine di creare un file di configurazione del kernel personalizzato e "
+"costruire un kernel personalizzato, tutti i file sorgente di FreeBSD devono "
+"essere prima installati."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15597
@@ -24002,6 +25050,10 @@ msgid ""
 "not been installed. Source can be installed using <application>Subversion</"
 "application> and the instructions in <xref linkend=\"svn\"/>."
 msgstr ""
+"Se <filename>/usr/src/</filename> non esiste o è vuoto, i sorgenti non sono "
+"stati installati. I sorgenti possono essere installati usando "
+"<application>Subversion</application> e le istruzioni in <xref linkend="
+"\"svn\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15602
@@ -24018,6 +25070,17 @@ msgid ""
 "<filename>GENERIC</filename> kernel configuration file for that architecture."
 ""
 msgstr ""
+"Una volta che i sorgenti sono stati installati, rivedi il contenuto di "
+"<filename>/usr/src/sys</filename>. Questa directory contiene una serie di "
+"sottodirectory, comprese quelle che rappresentano le seguenti architetture "
+"supportate: <filename>amd64</filename>, <filename>i386</filename>, "
+"<filename>ia64</filename>, <filename>pc98</filename>, <filename>powerpc</"
+"filename>, e <filename>sparc64</filename>. Ogni cosa in una particolare "
+"directory dell' architettura tratta solo con quella architettura mentre il "
+"resto del codice è un codice indipendente dalla macchina comune a tutte le "
+"piattaforme. Ogni architettura supportata ha una sottodirectory "
+"<filename>conf</filename> che contiene il file di configurazione del kernel "
+"<filename>GENERIC</filename> per quella architettura."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15616
@@ -24030,6 +25093,13 @@ msgid ""
 "of the <filename>GENERIC</filename> configuration file for the "
 "<literal>amd64</literal> architecture:"
 msgstr ""
+"Non fare modifiche a <filename>GENERIC</filename>. Invece, copia il file con "
+"un nome diverso e apporta le modifiche alla copia. La convenzione prevede "
+"l'uso di un nome con tutte le lettere maiuscole. Quando mantieni più "
+"macchine FreeBSD con hardware diverso, è una buona idea chiamarlo come l' "
+"hostname della macchina. Questo esempio crea una copia, chiamata "
+"<filename>MYKERNEL</filename>, del file di configurazione <filename>GENERIC</"
+"filename> per l' architettura <literal>amd64</literal>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:15625
@@ -24040,6 +25110,10 @@ msgid ""
 "<prompt>#</prompt> <userinput>cp GENERIC <replaceable>MYKERNEL</"
 "replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/sys/<replaceable>amd64</"
+"replaceable>/conf</userinput>\n"
+"<prompt>#</prompt> <userinput>cp GENERIC <replaceable>MYKERNEL</"
+"replaceable></userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15628
@@ -24049,21 +25123,27 @@ msgid ""
 "is <application>vi</application>, though an easier editor for beginners, "
 "called <application>ee</application>, is also installed with FreeBSD."
 msgstr ""
+"Ora <filename><replaceable>MYKERNEL</replaceable></filename> può essere "
+"personalizzato con un qualunque editor di testo <acronym>ASCII</acronym>. L' "
+"editor predefinito è <application>vi</application>, sebbene anche un editor "
+"più semplice per principianti, chiamato <application>ee</application>, è "
+"installato con  FreeBSD."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:15635
 msgid "<primary>kernel</primary> <secondary>NOTES</secondary>"
-msgstr ""
+msgstr "<primary>kernel</primary> <secondary>NOTE</secondary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:15639
 msgid "<primary>NOTES</primary>"
-msgstr ""
+msgstr "<primary>NOTE</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:15640
 msgid "<primary>kernel</primary> <secondary>configuration file</secondary>"
 msgstr ""
+"<primary>kernel</primary> <secondary>file di configurazione</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15645
@@ -24076,6 +25156,14 @@ msgid ""
 "or subsystem. Do not add or remove a <literal>#</literal> for any line that "
 "you do not understand."
 msgstr ""
+"Il formato del file di configurazione del kernel è semplice. Ogni linea "
+"contiene una parola chiave che rappresenta un dispositivo o un sottosistema, "
+"un argomento, e una breve descrizione. Qualsiesi testo dopo un <literal>#</"
+"literal> è considerato un commento ed ignorato. Per rimuovere il supporto "
+"del kernel per un dispositivo o sottosistema, metti un <literal>#</literal> "
+"all' inizio della linea che rappresenta quel dispositivo o sottosistema. Non "
+"aggiungere o rimuovere un <literal>#</literal> per qualsiesi linea che non "
+"comprendi."
 
 #. (itstool) path: warning/para
 #: book.translate.xml:15656
@@ -24086,6 +25174,12 @@ msgid ""
 "the kernel configuration file, a system using <acronym>ATA</acronym> disk "
 "drivers may not boot. When in doubt, just leave support in the kernel."
 msgstr ""
+"È semplice rimuovere il supporto per un dispositivo o un opzione e finire "
+"con un kernel difettoso. Per esempio, se il driver "
+"<citerefentry><refentrytitle>ata</refentrytitle><manvolnum>4</manvolnum></"
+"citerefentry> è rimosso dal file di configurazione del kernel, un sistema "
+"che usa il driver del disco <acronym>ATA</acronym> può non avviarsi. Quando "
+"sei in dubbio, semplicemente lascia il support nel kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15663
@@ -24096,6 +25190,11 @@ msgid ""
 "For architecture independent options, refer to <filename>/usr/src/sys/conf/"
 "NOTES</filename>."
 msgstr ""
+"In aggiunta alla breve descrizione fornita in questo file, descrizioni "
+"aggiuntive sono contenute in <filename>NOTES</filename>, che possono essere "
+"trovati nella stessa directory come <filename>GENERIC</filename> per quella "
+"architettura. Per le opzioni indipendenti dall' architettura, fare "
+"riferimento a <filename>/usr/src/sys/conf/NOTES</filename>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:15671
@@ -24103,6 +25202,9 @@ msgid ""
 "When finished customizing the kernel configuration file, save a backup copy "
 "to a location outside of <filename>/usr/src</filename>."
 msgstr ""
+"Quando la personalizzazione del file di configurazione del kernel è finita, "
+"salva una copia di riserva in una posizione fuori da <filename>/usr/src</"
+"filename>."
 
 #. (itstool) path: tip/para
 #: book.translate.xml:15675
@@ -24110,6 +25212,8 @@ msgid ""
 "Alternately, keep the kernel configuration file elsewhere and create a "
 "symbolic link to the file:"
 msgstr ""
+"In alternativa, mantieni il file di configurazione del kernel altrove e crea "
+"un collegamento simbolico al file:"
 
 #. (itstool) path: tip/screen
 #: book.translate.xml:15678
@@ -24120,6 +25224,10 @@ msgid ""
 "<prompt>#</prompt> <userinput>cp GENERIC /root/kernels/MYKERNEL</userinput>\n"
 "<prompt>#</prompt> <userinput>ln -s /root/kernels/MYKERNEL</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/sys/amd64/conf</userinput>\n"
+"<prompt>#</prompt> <userinput>mkdir /root/kernels</userinput>\n"
+"<prompt>#</prompt> <userinput>cp GENERIC /root/kernels/MYKERNEL</userinput>\n"
+"<prompt>#</prompt> <userinput>ln -s /root/kernels/MYKERNEL</userinput>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15684
@@ -24131,6 +25239,13 @@ msgid ""
 "required, this allows a delta to be maintained with respect to "
 "<filename>GENERIC</filename>, as seen in this example:"
 msgstr ""
+"Una direttiva <literal>include</literal> è disponibile per l' uso nei file "
+"di configurazione. Questo permette a un altro file di configurazione di "
+"essere incluso in quello corrente, rendendo semplice mantenere piccoli cambi "
+"relativi a un file esistente. Se sono richiesti solo un piccolo numero di "
+"opzioni o driver da aggiungere, questo permette a una versione delta di "
+"essere mantenuta rispettando <filename>GENERIC</filename>, come visto in "
+"questo esempio:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:15692
@@ -24144,6 +25259,13 @@ msgid ""
 "options         IPFIREWALL_DEFAULT_TO_ACCEPT\n"
 "options         IPDIVERT"
 msgstr ""
+"include GENERIC\n"
+"ident MYKERNEL\n"
+"\n"
+"options         IPFIREWALL\n"
+"options         DUMMYNET\n"
+"options         IPFIREWALL_DEFAULT_TO_ACCEPT\n"
+"options         IPDIVERT"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:15700
@@ -24157,6 +25279,14 @@ msgid ""
 "<citerefentry><refentrytitle>config</refentrytitle><manvolnum>5</manvolnum></"
 "citerefentry>."
 msgstr ""
+"Usando questo metodo, il file di configurazione locale esprime le differenza "
+"locali da un kernel <filename>GENERIC</filename>. Quando sono eseguiti gli "
+"aggiornamenti, nuove funzionalià aggiunte a <filename>GENERIC</filename> "
+"saranno aggiunte al kernel locale a meno che non ne sia specificamente "
+"impedito l'uso tramite <literal>nooptions</literal> o <literal>nodevice</"
+"literal>. Un elenco completo delle direttive di configurazione e le relative "
+"descrizioni sono disponibili in <citerefentry><refentrytitle>config</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>."
 
 #. (itstool) path: note/para
 #: book.translate.xml:15710
@@ -24164,6 +25294,8 @@ msgid ""
 "To build a file which contains all available options, run the following "
 "command as <systemitem class=\"username\">root</systemitem>:"
 msgstr ""
+"Per creare un file che contiene tutte le opzioni disponibil, esegui il "
+"seguente comando come <systemitem class=\"username\">root</systemitem>:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:15713
@@ -24172,11 +25304,13 @@ msgid ""
 "<prompt>#</prompt> <userinput>cd /usr/src/sys/<replaceable>arch</"
 "replaceable>/conf &amp;&amp; make LINT</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /usr/src/sys/<replaceable>arch</"
+"replaceable>/conf &amp;&amp; make LINT</userinput>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:16529
 msgid "Building and Installing a Custom Kernel"
-msgstr ""
+msgstr "Creare e Installare un Kernel Personalizzato"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16531
@@ -24184,27 +25318,31 @@ msgid ""
 "Once the edits to the custom configuration file have been saved, the source "
 "code for the kernel can be compiled using the following steps:"
 msgstr ""
+"Una volta che le modifiche al file di configurazione personalizzato sono "
+"state salvate, il codice sorgente per il kernel può essere compilato usando "
+"i seguenti passi:"
 
 #. (itstool) path: procedure/title
 #: book.translate.xml:16536
 msgid "Building a Kernel"
-msgstr ""
+msgstr "Creare un Kernel"
 
 #. (itstool) path: procedure/indexterm
 #: book.translate.xml:16538
 msgid "<primary>kernel</primary> <secondary>building / installing</secondary>"
 msgstr ""
+"<primary>kernel</primary> <secondary>creazione / installazione</secondary>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16544
 msgid "Change to this directory:"
-msgstr ""
+msgstr "Passare a questa directory"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16546
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>cd /usr/src</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>cd /usr/src</userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16550
@@ -24212,6 +25350,8 @@ msgid ""
 "Compile the new kernel by specifying the name of the custom kernel "
 "configuration file:"
 msgstr ""
+"Compila il nuovo kernel specificando il nome del file personalizzato di "
+"configurazione del kernel:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16553
@@ -24220,6 +25360,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make buildkernel KERNCONF="
 "<replaceable>MYKERNEL</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make buildkernel KERNCONF="
+"<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16557
@@ -24229,6 +25371,10 @@ msgid ""
 "kernel</filename> and save the old kernel to <filename>/boot/kernel.old/"
 "kernel</filename>:"
 msgstr ""
+"Installa il nuovo kernel associato al file di configurazione del kernel "
+"specificato. Questo comando copierà il nuovo kernel in <filename>/boot/"
+"kernel/kernel</filename> e salverà il vecchio kernel in <filename>/boot/"
+"kernel.old/kernel</filename>:"
 
 #. (itstool) path: step/screen
 #: book.translate.xml:16563
@@ -24237,6 +25383,8 @@ msgid ""
 "<prompt>#</prompt> <userinput>make installkernel KERNCONF="
 "<replaceable>MYKERNEL</replaceable></userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>make installkernel KERNCONF="
+"<replaceable>MYKERNEL</replaceable></userinput>"
 
 #. (itstool) path: step/para
 #: book.translate.xml:16567
@@ -24244,6 +25392,8 @@ msgid ""
 "Shutdown the system and reboot into the new kernel. If something goes wrong, "
 "refer to <xref linkend=\"kernelconfig-noboot\"/>."
 msgstr ""
+"Arresta il sistema e riavvia nel nuovo kernel. Se qualcosa va storto, fai "
+"riferimento a  <xref linkend=\"kernelconfig-noboot\"/>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16572
@@ -24252,6 +25402,10 @@ msgid ""
 " To update a kernel faster or to build only custom modules, edit <filename>/"
 "etc/make.conf</filename> before starting to build the kernel."
 msgstr ""
+"Di default, quando un kernel personalizzato è compilato, tutti i moduli del "
+"kernel sono ricreati. Per aggiornare un kernel pià velocemente o per creare "
+"solo moduli personalizzati, modifica <filename>/etc/make.conf</filename> "
+"prima di iniziare a creare il kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16577
@@ -24259,12 +25413,14 @@ msgid ""
 "For example, this variable specifies the list of modules to build instead of "
 "using the default of building all modules:"
 msgstr ""
+"Per esempio, questa variabile specifica la lista dei moduli da creare invece "
+"di costruirli tutti come predefinito:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:16581
 #, no-wrap
 msgid "MODULES_OVERRIDE = linux acpi"
-msgstr ""
+msgstr "MODULES_OVERRIDE = linux acpi"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16583
@@ -24272,12 +25428,14 @@ msgid ""
 "Alternately, this variable lists which modules to exclude from the build "
 "process:"
 msgstr ""
+"Alternativamente, questa variabile elenca quali moduli escludere dal "
+"processo di compilazione:"
 
 #. (itstool) path: sect1/programlisting
 #: book.translate.xml:16586
 #, no-wrap
 msgid "WITHOUT_MODULES = linux acpi sound"
-msgstr ""
+msgstr "WITHOUT_MODULES = linux acpi sound"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16588
@@ -24286,16 +25444,19 @@ msgid ""
 "<citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</"
 "manvolnum></citerefentry> for details."
 msgstr ""
+"Sono disponibili variabili aggiuntive. Fai riferimento a "
+"<citerefentry><refentrytitle>make.conf</refentrytitle><manvolnum>5</"
+"manvolnum></citerefentry> per i dettagli."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:16591
 msgid "<primary><filename>/boot/kernel.old</filename></primary>"
-msgstr ""
+msgstr "<primary><filename>/boot/kernel.old</filename></primary>"
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:16597
 msgid "If Something Goes Wrong"
-msgstr ""
+msgstr "Se Qualcosa Va Male"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:16599
@@ -24303,11 +25464,13 @@ msgid ""
 "There are four categories of trouble that can occur when building a custom "
 "kernel:"
 msgstr ""
+"Esistono quattro categorie di problemi che possono verificarsi durante la "
+"creazione di un kernel personalizzato:"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16604
 msgid "<command>config</command> fails"
-msgstr ""
+msgstr "<command>config</command> fallisce"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16607
@@ -24317,17 +25480,21 @@ msgid ""
 "is typed correctly by comparing it to <filename>GENERIC</filename> or "
 "<filename>NOTES</filename>:"
 msgstr ""
+"Se <command>config</command> fallisce, mostrerà il numero di linea scorretto."
+" Come esempio, per il seguente messaggio, assicurati che la linea 17 sia "
+"stata digitata correttamente confrontandola con <filename>GENERIC</filename> "
+"o <filename>NOTES</filename>:"
 
 #. (itstool) path: listitem/screen
 #: book.translate.xml:16613
 #, no-wrap
 msgid "config: line 17: syntax error"
-msgstr ""
+msgstr "config: line 17: syntax error"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16618
 msgid "<command>make</command> fails"
-msgstr ""
+msgstr "<command>make</command> fallisce"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16621
@@ -24339,11 +25506,18 @@ msgid ""
 "mailman/listinfo/freebsd-questions\">FreeBSD general questions mailing list</"
 "link> which contains the kernel configuration file."
 msgstr ""
+"Se <command>make</command> fallisce, di solito è dovuto a un errore nel file "
+"di configurazione del kernel che non è abbastanza grave da essere scovato da "
+"<command>config</command>. Rivedi la configurazione, e se il problema non è "
+"evidente, scrivi un' email alla <link xlink:href=\"http://lists.FreeBSD.org/"
+"mailman/listinfo/freebsd-questions\">mailing list di domande generali su "
+"FreeBSD (FreeBSD general questions mailing list)</link> che contenga il fire "
+"di configurazione del kernel."
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16631
 msgid "The kernel does not boot"
-msgstr ""
+msgstr "Il kernel non si avvia"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16634
@@ -24356,6 +25530,14 @@ msgid ""
 "prompt, type <command>boot <replaceable>kernel.old</replaceable></command>, "
 "or the name of any other kernel that is known to boot properly."
 msgstr ""
+"Se il kernel non si avvia o fallisce nel riconoscere i dispositivi, non "
+"andare in panico! Fortunatamente, FreeBSD ha un eccellente meccanismo di "
+"revovery dai kernel incompatibili. Semplicemente scegli il kernel da avviare "
+"dal boot loader di FreeBSD. È possibile accedervi quando appare il menu di "
+"avvio del sistema selezionando l' opzione <quote>Escape to a loader prompt</"
+"quote>. Dal prompt, digita <command>boot <replaceable>kernel.old</"
+"replaceable></command>, o il nome di ogni altro kernel noto per l' avvio "
+"corretto."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16646
@@ -24367,6 +25549,11 @@ msgid ""
 "manvolnum></citerefentry> will print the kernel messages from the current "
 "boot."
 msgstr ""
+"Dopo l' avvio con un kernel corretto, verifica il file di configurazione e "
+"prova a recrearlo di nuovo. Una risorsa utile è <filename>/var/log/messages</"
+"filename> che registra i messaggi del kernel da ogni avvio corretto. Anche, "
+"<citerefentry><refentrytitle>dmesg</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> stamperà i messaggi del kernel dall' avvio corrente."
 
 #. (itstool) path: note/para
 #: book.translate.xml:16654
@@ -24379,6 +25566,14 @@ msgid ""
 "may not be bootable. As soon as possible, move the working kernel by "
 "renaming the directory containing the good kernel:"
 msgstr ""
+"Durante la risoluzione dei problemi di un kernel, assicurarsi di conservare "
+"una copia di <filename>GENERIC</filename>, o qualche altro kernel noto per "
+"funzionare, con un nome diverso che non verrà cancellato nella compilazione "
+"successiva. Questo è importante perchè ogni volta che un nuovo kernel è "
+"installato, <filename>kernel.old</filename> è sovrascritto con l' ultimo "
+"kernel installato, che può o non può essere avviabile. Appena possibile, "
+"sposta il kernel funzionante rinominando la directory contenente il kernel "
+"valido:"
 
 #. (itstool) path: note/screen
 #: book.translate.xml:16664
@@ -24389,6 +25584,10 @@ msgid ""
 "<prompt>#</prompt> <userinput>mv /boot/<replaceable>kernel.good</"
 "replaceable> /boot/kernel</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>mv /boot/kernel <replaceable>/boot/kernel.bad</"
+"replaceable></userinput>\n"
+"<prompt>#</prompt> <userinput>mv /boot/<replaceable>kernel.good</"
+"replaceable> /boot/kernel</userinput>"
 
 #. (itstool) path: varlistentry/term
 #: book.translate.xml:16671
@@ -24396,6 +25595,8 @@ msgid ""
 "The kernel works, but <citerefentry><refentrytitle>ps</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry> does not"
 msgstr ""
+"Il kernel funziona, ma <citerefentry><refentrytitle>ps</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry> no"
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:16674
@@ -24411,6 +25612,16 @@ msgid ""
 "idea to use a different version of the kernel than the rest of the operating "
 "system."
 msgstr ""
+"Se la versione del kernel differisce da quella con cui le utility del "
+"sistema sono state create, per esempio, un kernel creato dai sorgenti -"
+"CURRENT è installato su un sistema RELEASE, molti comandi per lo status del "
+"sistema come <citerefentry><refentrytitle>ps</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry> e <citerefentry><refentrytitle>vmstat</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> non funzioneranno. Per "
+"risolvere, <link linkend=\"makeworld\">ricompila e installa world</link> "
+"contruito con la stessa versione dei sorgenti del kernel. Non è mai una "
+"buona idea usare una versione differente del kernel rispetto al resto del "
+"sistema operativo."
 
 #. (itstool) path: info/title
 #: book.translate.xml:16699
