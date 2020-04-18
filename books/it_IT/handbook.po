@@ -17,7 +17,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-04-18 11:53-0400\n"
+"PO-Revision-Date: 2020-04-18 12:20-0400\n"
 "Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
@@ -16438,7 +16438,7 @@ msgstr ""
 #. (itstool) path: chapter/title
 #: book.translate.xml:10573
 msgid "The X Window System"
-msgstr "L'X Window System"
+msgstr "Il sistema X Window"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:10578
@@ -16453,8 +16453,8 @@ msgstr ""
 "Una installazione di FreeBSD effettuata usando <application>bsdinstall</"
 "application> non installa automaticamente alcune interfaccia utente grafica. "
 "Questo capitolo descrive come installare e configurare <application>Xorg</"
-"application>, che rende disponibile come open source l'X Window System usato "
-"per fornire un ambiente grafico. In seguito descrive come trovare e "
+"application>, che rende disponibile come open source il sistema X Window "
+"usato per fornire un ambiente grafico. In seguito descrive come trovare e "
 "installare un ambiente desktop o un window manager."
 
 #. (itstool) path: note/para
@@ -16485,7 +16485,7 @@ msgstr ""
 #: book.translate.xml:10601
 msgid ""
 "The various components of the X Window System, and how they interoperate."
-msgstr "I vari componenti dell'X Window System, e come si integrano."
+msgstr "I vari componenti del sistema X Window, e come si integrano."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:10606
