@@ -9,6 +9,7 @@
 # Guido Falsi <madpilot@FreeBSD.org>, 2019. #zanata
 # Paolo Savini <paolo.savini@embecosm.com>, 2019. #zanata
 # Alessandro Russo <alessandrorusso_87@yahoo.com>, 2020. #zanata
+# Alfonso Siciliano <alfsiciliano@gmail.com>, 2020. #zanata
 # Guido Falsi <madpilot@FreeBSD.org>, 2020. #zanata
 msgid ""
 msgstr ""
@@ -18,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-04-19 09:34-0400\n"
-"Last-Translator: Alessandro Russo <alessandrorusso_87@yahoo.com>\n"
+"PO-Revision-Date: 2020-05-11 04:31-0400\n"
+"Last-Translator: Guido Falsi <madpilot@FreeBSD.org>\n"
 "Language-Team: Italian <>\n"
 "Language: it\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -19588,7 +19589,7 @@ msgstr ""
 #. (itstool) path: sect1/title
 #: book.translate.xml:12178
 msgid "Installing Compiz Fusion"
-msgstr ""
+msgstr "Installare Compiz Fusion"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12180
@@ -19596,6 +19597,8 @@ msgid ""
 "One way to make using a desktop computer more pleasant is with nice 3D "
 "effects."
 msgstr ""
+"Un modo per rendere l'uso di un computer desktop più piacevole è tramite "
+"alcuni begli effetti 3D."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:12183
@@ -19604,11 +19607,14 @@ msgid ""
 "configuring it requires a few steps that are not described in the port's "
 "documentation."
 msgstr ""
+"Installare il pacchetto <application>Compiz Fusion</application> è semplice, "
+"ma per configurarlo sono richiesti alcuni passaggi non descritti nella "
+"documentazione del port."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:12188
 msgid "Setting up the FreeBSD nVidia Driver"
-msgstr ""
+msgstr "Impostare il Driver nVidia per FreeBSD"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12190
@@ -19618,6 +19624,11 @@ msgid ""
 " Users of other graphics cards can skip this section and continue with the "
 "<filename>xorg.conf</filename> configuration."
 msgstr ""
+"Gli effetti grafici per il desktop possono causare un forte carico sulla "
+"scheda grafica. Per una scheda grafica nVidia è necessario usare il driver "
+"proprietario per ottenere buone prestazioni. Gli utilizzatori di altre "
+"schede grafiche possono saltare questa sezione e procedere con la "
+"configurazione di <filename>xorg.conf</filename>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:12196
@@ -28280,11 +28291,13 @@ msgid ""
 "On 64-bit machines, <filename>/etc/rc.d/abi</filename> will automatically "
 "load the module for 64-bit emulation."
 msgstr ""
+"Sulle macchine a 64-bit, <filename>/etc/rc.d/abi</filename> caricherà "
+"automaticamente il modulo per l'emulazione dei 64-bit."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:17965
 msgid "<primary>kernel options</primary> <secondary>COMPAT_LINUX</secondary>"
-msgstr ""
+msgstr "<primary>kernel options</primary> <secondary>COMPAT_LINUX</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:17970
@@ -28294,16 +28307,20 @@ msgid ""
 "possible to link the emulation functionality statically into a custom kernel."
 ""
 msgstr ""
+"Siccome il livello per la compatibilità con i binari Linux ha ottenuto il "
+"supporto per entrambe le versioni dei binari a 32 e 64-bit (sugli host 64-"
+"bit x86), non è più possibile collegare staticamente la funzionalità di "
+"emulazione in un kernel personalizzato."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:17976
 msgid "Installing Additional Libraries Manually"
-msgstr ""
+msgstr "Installare manualmente le librerie aggiuntive."
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:17978
 msgid "<primary>shared libraries</primary>"
-msgstr ""
+msgstr "<primary>librerie condivise</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17982
@@ -28314,6 +28331,12 @@ msgid ""
 "shared libraries the <trademark class=\"registered\">Linux</trademark> "
 "binary needs and install them manually."
 msgstr ""
+"Se, dopo aver configurato la compatibilità con i binari <trademark class="
+"\"registered\">Linux</trademark>, un'applicazione <trademark class="
+"\"registered\">Linux</trademark> reclama l'utilizzo di librerie condivise "
+"mancanti, bisogna determinare quali ulteriori librerie condivise sono "
+"richieste dal binario <trademark class=\"registered\">Linux</trademark> e "
+"successivamente procedere alla loro installazione manuale."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:17987
@@ -28325,6 +28348,13 @@ msgid ""
 "\"registered\">Linux</trademark> system that has <application>Doom</"
 "application> installed:"
 msgstr ""
+"Da un sistema <trademark class=\"registered\">Linux</trademark>, possiamo "
+"utilizzare l'istruzione <command>ldd</command> per determinare quali sono le "
+"librerie condivise richieste da un'applicazione. Ad esempio, per controllare "
+"quali librerie condivise sono necessarie per il funzionamento di "
+"<command>linuxdoom</command>, basterà lanciare questo comando daun sistema "
+"<trademark class=\"registered\">Linux</trademark> che ha installato "
+"l'applicazione <application>Doom</application>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:17994
@@ -28335,11 +28365,15 @@ msgid ""
 "libX11.so.3 (DLL Jump 3.1) =&gt; /usr/X11/lib/libX11.so.3.1.0\n"
 "libc.so.4 (DLL Jump 4.5pl26) =&gt; /lib/libc.so.4.6.29"
 msgstr ""
+"<prompt>%</prompt> <userinput>ldd linuxdoom</userinput>\n"
+"libXt.so.3 (DLL Jump 3.1) =&gt; /usr/X11/lib/libXt.so.3.1.0\n"
+"libX11.so.3 (DLL Jump 3.1) =&gt; /usr/X11/lib/libX11.so.3.1.0\n"
+"libc.so.4 (DLL Jump 4.5pl26) =&gt; /lib/libc.so.4.6.29"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:17999
 msgid "<primary>symbolic links</primary>"
-msgstr ""
+msgstr "<primary>link simbolici</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18003
@@ -28350,6 +28384,11 @@ msgid ""
 "links to the names in the first column. This example will result in the "
 "following files on the FreeBSD system:"
 msgstr ""
+"Successivamente, copiare tutti i file nell'ultima colonna dell'output dal "
+"sistema <trademark class=\"registered\">Linux</trademark> al file <filename>/"
+"compat/linux</filename> su FreeBSD. Una volta copiati, creare il link "
+"simbolico ai nomi della prima colonna. Questo esempio mostra il risultato "
+"del file sopracitato in un sistema FreeBSD:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18010
@@ -28362,6 +28401,12 @@ msgid ""
 "/compat/linux/lib/libc.so.4.6.29\n"
 "/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29"
 msgstr ""
+"/compat/linux/usr/X11/lib/libXt.so.3.1.0\n"
+"/compat/linux/usr/X11/lib/libXt.so.3 -&gt; libXt.so.3.1.0\n"
+"/compat/linux/usr/X11/lib/libX11.so.3.1.0\n"
+"/compat/linux/usr/X11/lib/libX11.so.3 -&gt; libX11.so.3.1.0\n"
+"/compat/linux/lib/libc.so.4.6.29\n"
+"/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18017
@@ -28373,11 +28418,18 @@ msgid ""
 "advisable to copy the shared library if it is a newer version, though. The "
 "old one can be removed, as long as the symbolic link points to the new one."
 msgstr ""
+"Se una libreria condivisa per <trademark class=\"registered\">Linux</"
+"trademark> è già presente con un numero di versione maggiore rispetto a "
+"quello presente nella prima colonna dell'output del comando <command>ldd</"
+"command>, non sarà necessario copiarlo al file citato dall'ultima colonna, "
+"poiché la libreria già esistente dovrebbe funzionare. La versione più "
+"vecchia può essere rimossa, fin quando il link simbolico punta alla nuova "
+"versione."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18025
 msgid "For example, these libraries already exist on the FreeBSD system:"
-msgstr ""
+msgstr "Ad esempio, queste librerie già esistono su un sistema FreeBSD:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18028
@@ -28386,18 +28438,22 @@ msgid ""
 "/compat/linux/lib/libc.so.4.6.27\n"
 "/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.27"
 msgstr ""
+"/compat/linux/lib/libc.so.4.6.27\n"
+"/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.27"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18031
 msgid ""
 "and <command>ldd</command> indicates that a binary requires a later version:"
 msgstr ""
+"e il comando <command>ldd</command> indica che il binario necessita di una "
+"versione successiva:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18034
 #, no-wrap
 msgid "libc.so.4 (DLL Jump 4.5pl26) -&gt; libc.so.4.6.29"
-msgstr ""
+msgstr "libc.so.4 (DLL Jump 4.5pl26) -&gt; libc.so.4.6.29"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18036
@@ -28407,6 +28463,11 @@ msgid ""
 "However, it is safe to replace the existing <filename>libc.so</filename> "
 "with the newer version:"
 msgstr ""
+"Poiché la versione esistente della libreria è datata solo di una o due "
+"valori delle ultime cifre, rispetto a quella richiesta, il programma "
+"dovrebbe funzionare lo stesso, anche con una versione più vecchia. Comunque, "
+"è più sicuro sostituire l'esistente <filename>libc.so</filename> con una "
+"versione aggiornata:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18042
@@ -28415,6 +28476,8 @@ msgid ""
 "/compat/linux/lib/libc.so.4.6.29\n"
 "/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29"
 msgstr ""
+"/compat/linux/lib/libc.so.4.6.29\n"
+"/compat/linux/lib/libc.so.4 -&gt; libc.so.4.6.29"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18045
@@ -28427,6 +28490,14 @@ msgid ""
 "system to be able to run newly installed <trademark class="
 "\"registered\">Linux</trademark> binaries without any extra work."
 msgstr ""
+"Di solito, bisognerà procedere alle librerie condivise necessarie per i "
+"binari <trademark class=\"registered\">Linux</trademark> solo le prime volte "
+"che un programma per <trademark class=\"registered\">Linux</trademark> viene "
+"installato. Dopo un po' infatti, nel sistema con FreeBSD saranno presenti "
+"librerie condivise per <trademark class=\"registered\">Linux</trademark> in "
+"numero sufficiente per l'installazione e l'esecuzione dei nuovi binari "
+"<trademark class=\"registered\">Linux</trademark> installati, senza "
+"necessità di ulteriore lavoro."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18054
@@ -28434,11 +28505,13 @@ msgid ""
 "Installing <trademark class=\"registered\">Linux</trademark> <acronym>ELF</"
 "acronym> Binaries"
 msgstr ""
+"Installare i binari <acronym>ELF</acronym> per <trademark class="
+"\"registered\">Linux</trademark>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:18057
 msgid "<primary>Linux</primary> <secondary>ELF binaries</secondary>"
-msgstr ""
+msgstr "<primary>binari ELF</primary> <secondary>Linux</secondary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18062
@@ -28447,6 +28520,9 @@ msgid ""
 "unbranded <acronym>ELF</acronym> binary is executed, it will generate an "
 "error message:"
 msgstr ""
+"I binari <acronym>ELF</acronym> necessitano, a volte, di un ulteriore "
+"passaggio per completare la loro installazione. Quando viene eseguito un "
+"binario <acronym>ELF</acronym>, genererà il seguente errore:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18066
@@ -28456,6 +28532,9 @@ msgid ""
 "ELF binary type not known\n"
 "Abort"
 msgstr ""
+"<prompt>%</prompt> <userinput>./my-linux-elf-binary</userinput>\n"
+"ELF binary type not known\n"
+"Abort"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18070
@@ -28465,6 +28544,11 @@ msgid ""
 "binary, use <citerefentry><refentrytitle>brandelf</"
 "refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 msgstr ""
+"Per aiutare il kernel FreeBSD nel riconoscere un binario <acronym>ELF</"
+"acronym> per FreeBSD da uno per <trademark class=\"registered\">Linux</"
+"trademark> non marchiato, sarà necessario usare "
+"<citerefentry><refentrytitle>brandelf</refentrytitle><manvolnum>1</"
+"manvolnum></citerefentry>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18074
@@ -28473,11 +28557,13 @@ msgid ""
 "<prompt>%</prompt> <userinput>brandelf -t Linux my-linux-elf-binary</"
 "userinput>"
 msgstr ""
+"<prompt>%</prompt> <userinput>brandelf -t Linux my-linux-elf-binary</"
+"userinput>"
 
 #. (itstool) path: sect2/indexterm
 #: book.translate.xml:18076
 msgid "<primary>GNU toolchain</primary>"
-msgstr ""
+msgstr "<primary>GNU toolchain</primary>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18080
@@ -28486,6 +28572,8 @@ msgid ""
 "<acronym>ELF</acronym> binaries automatically, this step is usually not "
 "necessary."
 msgstr ""
+"Poichè la GNU toolchain imposta automaticamente l'appropriato marchio in un "
+"binario <acronym>ELF</acronym>, questo passaggio di solito non è necessario."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18086
@@ -28493,6 +28581,8 @@ msgid ""
 "Installing a <trademark class=\"registered\">Linux</trademark> <acronym>RPM</"
 "acronym> Based Application"
 msgstr ""
+"Installare un applicazione per <trademark class=\"registered\">Linux</"
+"trademark> in <acronym>RPM</acronym>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18089
@@ -28503,6 +28593,11 @@ msgid ""
 "\"username\">root</systemitem> can use this command to install a <filename>."
 "rpm</filename>:"
 msgstr ""
+"Per installare una applicazione <trademark class=\"registered\">Linux</"
+"trademark> in formato <acronym>RPM</acronym>, installare prima il package o "
+"il port <package>archivers/rpm4</package>. Successivamente, l'utente "
+"<systemitem class=\"username\">root</systemitem> può utilizzare il seguente "
+"comando per installare il file <filename>.rpm</filename>:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18096
@@ -28512,6 +28607,9 @@ msgid ""
 "<prompt>#</prompt> <userinput>rpm2cpio &lt; /path/to/linux.archive.rpm | "
 "cpio -id</userinput>"
 msgstr ""
+"<prompt>#</prompt> <userinput>cd /compat/linux</userinput>\n"
+"<prompt>#</prompt> <userinput>rpm2cpio &lt; /path/to/linux.archive.rpm | "
+"cpio -id</userinput>"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18099
@@ -28519,16 +28617,19 @@ msgid ""
 "If necessary, <command>brandelf</command> the installed <acronym>ELF</"
 "acronym> binaries. Note that this will prevent a clean uninstall."
 msgstr ""
+"Se necessario, <command>brandelf</command> il binario <acronym>ELF</acronym> "
+"installato. Attenzione, questo non permetterà di effettuare una "
+"disinstallazione pulita."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:18105
 msgid "Configuring the Hostname Resolver"
-msgstr ""
+msgstr "Configuring the Hostname Resolver"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18107
 msgid "If <acronym>DNS</acronym> does not work or this error appears:"
-msgstr ""
+msgstr "Se il <acronym>DNS</acronym> non funziona, o appare questo errore:"
 
 #. (itstool) path: sect2/screen
 #: book.translate.xml:18110
@@ -28537,18 +28638,22 @@ msgid ""
 "resolv+: \"bind\" is an invalid keyword resolv+:\n"
 "\"hosts\" is an invalid keyword"
 msgstr ""
+"resolv+: \"bind\" is an invalid keyword resolv+:\n"
+"\"hosts\" is an invalid keyword"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18113
 msgid "configure <filename>/compat/linux/etc/host.conf</filename> as follows:"
 msgstr ""
+"configurare <filename>/compat/linux/etc/host.conf</filename> come segue:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:18116
 #, no-wrap
 msgid "order hosts, bind\n"
 "multi on"
-msgstr ""
+msgstr "order hosts, bind\n"
+"multi on"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:18119
@@ -28560,11 +28665,18 @@ msgid ""
 "about the incompatible FreeBSD syntax. Remove <literal>bind</literal> if a "
 "name server is not configured using <filename>/etc/resolv.conf</filename>."
 msgstr ""
+"Questo specifica che <filename>/etc/hosts</filename> viene cercato come "
+"prima scelta, e <acronym>DNS</acronym> come seconda. Quando <filename>/"
+"compat/linux/etc/host.conf</filename> non esiste, le applicazioni <trademark "
+"class=\"registered\">Linux</trademark> utilizzeranno <filename>/etc/host."
+"conf</filename> and lamenteranno una sintassi incompatibile con FreeBSD. In "
+"tal caso rimuovere <literal>bind</literal> se un name server non è "
+"configurato usando <filename>/etc/resolv.conf</filename>."
 
 #. (itstool) path: sect1/title
 #: book.translate.xml:18954 book.translate.xml:40111 book.translate.xml:51399
 msgid "Advanced Topics"
-msgstr ""
+msgstr "Argomenti avanzati"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18956
@@ -28576,11 +28688,17 @@ msgid ""
 "(Message ID: <literal>&lt;199906020108.SAA07001@usr09.primenet.com&gt;</"
 "literal>)."
 msgstr ""
+"Questa sezione descrive come funziona la compatibilità con i binari "
+"<trademark class=\"registered\">Linux</trademark>, basandosi su una email "
+"scritta sulla <link xlink:href=\"http://lists.FreeBSD.org/mailman/listinfo/"
+"freebsd-chat\">FreeBSD chat mailing list</link> da Terry Lambert "
+"<email>tlambert@primenet.com</email> (Message ID: <literal>&lt;199906020108."
+"SAA07001@usr09.primenet.com&gt;</literal>)."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:18961
 msgid "<primary>execution class loader</primary>"
-msgstr ""
+msgstr "<primary>execution class loader</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18963
@@ -28589,6 +28707,10 @@ msgid ""
 "This is a wedge into the <citerefentry><refentrytitle>execve</"
 "refentrytitle><manvolnum>2</manvolnum></citerefentry> system call."
 msgstr ""
+"FreeBSD è dotato di un'astrazione denominata <quote>execution class loader</"
+"quote>. Questo è un cuneo nella system call "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18967
@@ -28598,6 +28720,10 @@ msgid ""
 "see if it was a binary known to the system, and if so, invoked the binary "
 "loader."
 msgstr ""
+"Storicamente, il loader <trademark class=\"registered\">UNIX</trademark>, "
+"esamina il numero magico (generalmente i primi 4 o 8 bytes del file) per "
+"capire se si tratta di un binario conosciuto dal sistema, e se così invocare "
+"il binary loader."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18972
@@ -28608,6 +28734,11 @@ msgid ""
 "executing it as shell commands. The assumption was a default of "
 "<quote>whatever the current shell is</quote>."
 msgstr ""
+"Se il tipo di binario non è riconosciuto dal sistema, la system call "
+"<citerefentry><refentrytitle>execve</refentrytitle><manvolnum>2</manvolnum></"
+"citerefentry> ritorna una risposta di fallimento, e la shell prova ad "
+"eseguirlo come un comando per shell. Questo comportamento è assunto di "
+"default da <quote> qualsiasi versione di shell</quote>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18978
@@ -28618,6 +28749,12 @@ msgid ""
 "<citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></"
 "citerefentry> shell instead."
 msgstr ""
+"Successivamente, è stato implementato un hack per "
+"<citerefentry><refentrytitle>sh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> per esaminare i primi due caratteri, e se fossero stati uguali "
+"a <literal>:\\n</literal>, avrebbe invocato in alternativa la shell "
+"<citerefentry><refentrytitle>csh</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18982
@@ -28626,16 +28763,19 @@ msgid ""
 "to the <literal>#!</literal> loader for running shell interpreters or shell "
 "scripts."
 msgstr ""
+"FreeBSD ha una lista di loader, piuttosto che un singolo loader, con un "
+"fallback al loader <literal>#!</literal>, per eseguire interpreti o script "
+"di shell."
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:18986
 msgid "<primary>ELF</primary>"
-msgstr ""
+msgstr "<primary>ELF</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:18990 book.translate.xml:53449
 msgid "<primary>Solaris</primary>"
-msgstr ""
+msgstr "<primary>Solaris</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:18994
@@ -28646,6 +28786,11 @@ msgid ""
 "comment section in the ELF image, and which is not present on SVR4/"
 "<trademark>Solaris</trademark> ELF binaries."
 msgstr ""
+"Per il supporto a <trademark class=\"registered\">Linux</trademark> "
+"<acronym>ABI</acronym>, FreeBSD osserva il numero magico come un binario ELF."
+" Il loader ELF cerca la presenza di uno specifico <emphasis>marchio</"
+"emphasis>, il quale è un commento presente dell'immagine dell'ELF, e che non "
+"è presente sui binari SVR4/<trademark>Solaris</trademark> ELF."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19000
@@ -28655,17 +28800,21 @@ msgid ""
 "using <citerefentry><refentrytitle>brandelf</refentrytitle><manvolnum>1</"
 "manvolnum></citerefentry>:"
 msgstr ""
+"Per il funzionamento dei binari <trademark class=\"registered\">Linux</"
+"trademark>, questi devono essere <emphasis>marchiati</emphasis> come di tipo "
+"<literal>Linux</literal> usando <citerefentry><refentrytitle>brandelf</"
+"refentrytitle><manvolnum>1</manvolnum></citerefentry>:"
 
 #. (itstool) path: sect1/screen
 #: book.translate.xml:19004
 #, no-wrap
 msgid "<prompt>#</prompt> <userinput>brandelf -t Linux file</userinput>"
-msgstr ""
+msgstr "<prompt>#</prompt> <userinput>brandelf -t Linux file</userinput>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:19006
 msgid "<primary>ELF</primary> <secondary>branding</secondary>"
-msgstr ""
+msgstr "<primary>ELF</primary> <secondary>branding</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19011
@@ -28677,6 +28826,12 @@ msgid ""
 "several other (minor) fix-ups that are handled by the <trademark class="
 "\"registered\">Linux</trademark> kernel module."
 msgstr ""
+"Quando il loader ELF riconosce il marchio <literal>Linux</literal>, "
+"sostituisce il puntatore del loader nella struttura presente in "
+"<literal>proc</literal>. Tutte le chiamate di sistema sono indicizzate "
+"tramite questo puntatore. In aggiunta, il modulo <trademark class="
+"\"registered\">Linux</trademark> del kernel, contrassegna il processo come "
+"gestore speciale del trap vector, e gestisce altri (minori) problematiche."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19019
@@ -28685,6 +28840,10 @@ msgid ""
 "contains, among other things, a list of <literal>sysent[]</literal> entries "
 "whose addresses reside in the kernel module."
 msgstr ""
+"Il vettore delle sistem call di <trademark class=\"registered\">Linux</"
+"trademark> contiene, tra le altre cose, una lista delle voci "
+"<literal>sysent[]</literal>, i cui indirizzi risiedono nel modulo del kernel."
+""
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19023
@@ -28695,6 +28854,11 @@ msgid ""
 "class=\"registered\">Linux</trademark>, not the FreeBSD, system call entry "
 "points."
 msgstr ""
+"Quando una system call è chiamata da un binario per <trademark class="
+"\"registered\">Linux</trademark>, il trap code dereferenzia il puntatore "
+"della system call dalla struttura di <literal>proc</literal>, ed utilizza i "
+"punti di accesso alle chiamate di sistema di <trademark class="
+"\"registered\">Linux</trademark>, non di FreeBSD."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19028
@@ -28718,6 +28882,25 @@ msgid ""
 "\"registered\">Linux</trademark> binaries cannot tell they are not running "
 "on <trademark class=\"registered\">Linux</trademark>."
 msgstr ""
+"La modalità <trademark class=\"registered\">Linux</trademark> cerca "
+"dinamicamente i <emphasis>reroots</emphasis>. Questo equivale in effetti, "
+"alla opzione <option>union</option> per il mount del filesystem. Come primo "
+"step, è fatto un tentativo di trovare i file in <filename>/compat/linux/"
+"<replaceable>original-path</replaceable></filename>. Se la ricerca non va a "
+"buon fine, la ricerca è fatta in <filename>/<replaceable>original-path</"
+"replaceable></filename>. Questo assicura che i binari che necessitano di "
+"altri binari possano essere eseguiti. Ad esempio, le toolchain <trademark "
+"class=\"registered\">Linux</trademark> possono tutte essere eseguite con il "
+"supporto <trademark class=\"registered\">Linux</trademark> <acronym>ABI</"
+"acronym>. Questo significa anche che i binari <trademark class="
+"\"registered\">Linux</trademark> possono caricare ed eseguire i binari "
+"FreeBSD, se non sono presenti i relativi binari <trademark class="
+"\"registered\">Linux</trademark> corrispondenti, e che il comando "
+"<citerefentry><refentrytitle>uname</refentrytitle><manvolnum>1</manvolnum></"
+"citerefentry> può essere posto nella directory tree <filename>/compat/linux</"
+"filename> per assicurarsi che il binario per <trademark class="
+"\"registered\">Linux</trademark> non possa dire di non essere in esecuzione "
+"su <trademark class=\"registered\">Linux</trademark>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19045
@@ -28736,6 +28919,20 @@ msgid ""
 "\"registered\">Linux</trademark> <emphasis>glue</emphasis> functions can be "
 "statically linked, or they can be accessed via a kernel module."
 msgstr ""
+"In effetti, c'è un kernel <trademark class=\"registered\">Linux</trademark> "
+"presente nel kernel di FreeBSD. Le varie funzioni sottostanti che "
+"implementano tutti i servizi forniti dal kernel sono identiche a entrambe le "
+"voci della tabella delle system call di FreeBSD e di <trademark class="
+"\"registered\">Linux</trademark>: operazioni sul file system, operazioni "
+"sulla memoria virtuale, signal delivery, e System V IPC. L'unica differenza "
+"è che i binari FreeBSD utilizzano le funzioni <emphasis>collanti</emphasis> "
+"di FreeBSD, mentre i binari <trademark class=\"registered\">Linux</"
+"trademark> utilizzano quelle <emphasis>collanti</emphasis> di <trademark "
+"class=\"registered\">Linux</trademark>. Le funzioni <emphasis>colleganti</"
+"emphasis> di FreeBSD  sono staticamente linkate nel kernel, mentre le "
+"rispettive funzioni <emphasis>colleganti</emphasis> di <trademark class="
+"\"registered\">Linux</trademark> possono essere linkate staticamente, oppure "
+"saranno accessibili tramite un modulo del kernel."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19058
@@ -28748,11 +28945,18 @@ msgid ""
 "\"registered\">Linux</trademark> binaries was not true, since the code was "
 "not compiled in."
 msgstr ""
+"Tecnicamente, questa non è una emulazione, ma una implementazione di "
+"<acronym>ABI</acronym>. A volte è chiamata <quote>emulazione di<trademark "
+"class=\"registered\">Linux</trademark></quote> poichè l'implementazione è "
+"stata fatta in un periodo storico in cui non esistevano altre parole per "
+"descrivere cosa stava succedendo. Dire che FreeBSD esegue i binari "
+"<trademark class=\"registered\">Linux</trademark> non è vero, non essendoci "
+"il codice compilato."
 
 #. (itstool) path: part/title
 #: book.translate.xml:19070
 msgid "System Administration"
-msgstr ""
+msgstr "Amministrazione di sistema"
 
 #. (itstool) path: partintro/para
 #: book.translate.xml:19073
@@ -28762,6 +28966,10 @@ msgid ""
 "reading the chapter, and also details what the reader is expected to know "
 "before tackling the material."
 msgstr ""
+"I prossimi capitoli tratteranno tutti gli aspetti dell'amministrazione di un "
+"sistema FreeBSD. Ciascun capitolo inizia descrivendo cosa verrà appreso con "
+"la sua lettura,  specificando cosa quali sono le conoscenze richieste dal "
+"lettore prima di iniziare."
 
 #. (itstool) path: partintro/para
 #: book.translate.xml:19079
@@ -28770,11 +28978,14 @@ msgid ""
 "not need to be read in any particular order, nor must all of them be read "
 "before beginning to use FreeBSD."
 msgstr ""
+"Questi capitolo sono realizzati per essere letti quando c'è bisogno "
+"dell'informazione. Non c'è bisogno di leggerli in un ordine particolare, né "
+"è necessario leggerli tutti prima di iniziare ad utilizzare FreeBSD."
 
 #. (itstool) path: info/title
 #: book.translate.xml:19094
 msgid "Configuration and Tuning"
-msgstr ""
+msgstr "Configurazione e messa a punto"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:19097
@@ -28782,6 +28993,8 @@ msgid ""
 "<personname> <firstname>Chern</firstname> <surname>Lee</surname> </"
 "personname> <contrib>Written by </contrib>"
 msgstr ""
+"<personname> <firstname>Chern</firstname> <surname>Lee</surname> </"
+"personname> <contrib>Written by </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:19107
@@ -28789,6 +29002,8 @@ msgid ""
 "<personname> <firstname>Mike</firstname> <surname>Smith</surname> </"
 "personname> <contrib>Based on a tutorial written by </contrib>"
 msgstr ""
+"<personname> <firstname>Mike</firstname> <surname>Smith</surname> </"
+"personname> <contrib>Based on a tutorial written by </contrib>"
 
 #. (itstool) path: authorgroup/author
 #: book.translate.xml:19117
@@ -28796,16 +29011,18 @@ msgid ""
 "<personname> <firstname>Matt</firstname> <surname>Dillon</surname> </"
 "personname> <contrib>Also based on tuning(7) written by </contrib>"
 msgstr ""
+"<personname> <firstname>Matt</firstname> <surname>Dillon</surname> </"
+"personname> <contrib>Also based on tuning(7) written by </contrib>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:19130
 msgid "<primary>system configuration</primary>"
-msgstr ""
+msgstr "<primary>Configurazione di sistema</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:19133
 msgid "<primary>system optimization</primary>"
-msgstr ""
+msgstr "<primary>Ottimizzazione del sistema</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19137
@@ -28814,6 +29031,10 @@ msgid ""
 "chapter explains much of the FreeBSD configuration process, including some "
 "of the parameters which can be set to tune a FreeBSD system."
 msgstr ""
+"Uno degli aspetti più importati di FreeBSD è la corretta configurazione di "
+"sistema. il capitolo spiega gran parte del processo di configurazione di "
+"FreeBSD, inclusi alcuni dei parametri che possono essere impostati per "
+"mettere a punto un sistema FreeBSD."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19146
@@ -28821,22 +29042,26 @@ msgid ""
 "The basics of <filename>rc.conf</filename> configuration and <filename>/usr/"
 "local/etc/rc.d</filename> startup scripts."
 msgstr ""
+"Le basi della configurazione di <filename>rc.conf</filename> e gli script di "
+"avvio di <filename>/usr/local/etc/rc.d</filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19152
 msgid "How to configure and test a network card."
-msgstr ""
+msgstr "Come configurare e testare una scheda di rete."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19156
 msgid "How to configure virtual hosts on network devices."
-msgstr ""
+msgstr "Come configurare host virtuali sui dispositivi di rete."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19161
 msgid ""
 "How to use the various configuration files in <filename>/etc</filename>."
 msgstr ""
+"Come usare i vari file di configurazione contenuti in <filename>/etc</"
+"filename>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19166
@@ -28844,11 +29069,16 @@ msgid ""
 "How to tune FreeBSD using <citerefentry><refentrytitle>sysctl</"
 "refentrytitle><manvolnum>8</manvolnum></citerefentry> variables."
 msgstr ""
+"Come configurare FreeBSD usando le variabili "
+"<citerefentry><refentrytitle>sysctl</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19170
 msgid "How to tune disk performance and modify kernel limitations."
 msgstr ""
+"Come ottimizzare le prestazioni del disco e modificare le limitazioni del "
+"kernel."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19179 book.translate.xml:29287 book.translate.xml:31034
@@ -28857,6 +29087,8 @@ msgid ""
 "Understand <trademark class=\"registered\">UNIX</trademark> and FreeBSD "
 "basics (<xref linkend=\"basics\"/>)."
 msgstr ""
+"Comprendere le basi di <trademark class=\"registered\">UNIX</trademark> e di "
+"FreeBSD (<xref linkend=\"basics\"/>)."
 
 #. (itstool) path: listitem/para
 #: book.translate.xml:19184
@@ -28864,16 +29096,18 @@ msgid ""
 "Be familiar with the basics of kernel configuration and compilation (<xref "
 "linkend=\"kernelconfig\"/>)."
 msgstr ""
+"Familiarizzare con le basi di configurazione e compilazione del kernel "
+"(<xref linkend=\"kernelconfig\"/>)."
 
 #. (itstool) path: info/title
 #: book.translate.xml:19192
 msgid "Starting Services"
-msgstr ""
+msgstr "Avviare i servizi"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:19205
 msgid "<primary>services</primary>"
-msgstr ""
+msgstr "<primary>servizi</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19209
@@ -28885,6 +29119,13 @@ msgid ""
 "during system initialization. This section explains the procedures available "
 "for starting third party software."
 msgstr ""
+"Molti utenti installano software di terze parti su FreeBSD tramite la Ports "
+"Collection e necessitano che i servizi installati vengano avviati con "
+"l'inizializzazione del sistema. I servizi, come <package>mail/postfix</"
+"package> o <package>www/apache22</package> sono solo due tra i molti "
+"pacchetti che possono essere avviati durante la fase di avvio del sistema. "
+"Questa sezione spiega le procedure disponibili per avviare i software di "
+"terze parti."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19218
@@ -28893,11 +29134,14 @@ msgid ""
 "<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry>, are started through the system startup scripts."
 msgstr ""
+"In FreeBSD, molti servizi inclusi, come <citerefentry><refentrytitle>cron</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry>, sono avviati tramite "
+"gli script di avvio di sistema."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:19222
 msgid "Extended Application Configuration"
-msgstr ""
+msgstr "Extended Application Configuration"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19224
@@ -28909,6 +29153,13 @@ msgid ""
 "through <filename>/etc/rc.conf</filename> in place of hard coded flags in "
 "the startup script. A basic script may look similar to the following:"
 msgstr ""
+"Ora che FreeBSD include <filename>rc.d</filename>, la configurazione "
+"dell'avvio delle applicazioni è più semplice e fornita di maggiori "
+"funzionalità. Utilizzando le keyword di cui abbiamo parlato in <xref linkend="
+"\"configtuning-rcd\"/>, le applicazioni possono essere avviate dopo alcuni "
+"altri servizi e flag aggiuntivi possono essere passati attraverso <filename>/"
+"etc/rc.conf</filename> al posto dei flag codificati nello script di avvio. "
+"Uno script di base potrebbe essere simile al seguente:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19233
@@ -28938,6 +29189,29 @@ msgid ""
 "\n"
 "run_rc_command \"$1\""
 msgstr ""
+"#!/bin/sh\n"
+"#\n"
+"# PROVIDE: utility\n"
+"# REQUIRE: DAEMON\n"
+"# KEYWORD: shutdown\n"
+"\n"
+". /etc/rc.subr\n"
+"\n"
+"name=utility\n"
+"rcvar=utility_enable\n"
+"\n"
+"command=\"/usr/local/sbin/utility\"\n"
+"\n"
+"load_rc_config $name\n"
+"\n"
+"#\n"
+"# DO NOT CHANGE THESE DEFAULT VALUES HERE\n"
+"# SET THEM IN THE /etc/rc.conf FILE\n"
+"#\n"
+"utility_enable=${utility_enable-\"NO\"}\n"
+"pidfile=${utility_pidfile-\"/var/run/utility.pid\"}\n"
+"\n"
+"run_rc_command \"$1\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19257
@@ -28946,6 +29220,9 @@ msgid ""
 "started after the <literal>DAEMON</literal> pseudo-service. It also provides "
 "a method for setting and tracking the process ID (<acronym>PID</acronym>)."
 msgstr ""
+"Questo script permetterà che l'avvio della <literal>utility</literal> dopo "
+"lo pseudo servizio del <literal>DAEMON</literal>. Fornisce anche un metodo "
+"per impostare e tracciare l'ID del processo (<acronym>PID</acronym>)."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19263
@@ -28953,12 +29230,14 @@ msgid ""
 "This application could then have the following line placed in <filename>/etc/"
 "rc.conf</filename>:"
 msgstr ""
+"Questa applicazione potrebbe quindi avere la seguente riga in <filename> /"
+"etc/rc.conf </filename>:"
 
 #. (itstool) path: sect2/programlisting
 #: book.translate.xml:19266
 #, no-wrap
 msgid "utility_enable=\"YES\""
-msgstr ""
+msgstr "utility_enable=\"YES\""
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19268
@@ -28969,11 +29248,17 @@ msgid ""
 "refentrytitle><manvolnum>8</manvolnum></citerefentry>, and provides for "
 "easier configuration via <filename>rc.conf</filename>."
 msgstr ""
+"Questo metodo consente una più semplice manipolazione degli argomenti della "
+"riga di comando, incluso le funzioni predefinite fornite in <filename>/etc/"
+"rc.subr</filename>, la compatibilità con "
+"<citerefentry><refentrytitle>rcorder</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>, e fornisce una più facile configurazione "
+"attraverso <filename>rc.conf</filename>."
 
 #. (itstool) path: sect2/title
 #: book.translate.xml:19276
 msgid "Using Services to Start Services"
-msgstr ""
+msgstr "Usare i servizi per avviare i servizi"
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19278
@@ -28984,6 +29269,12 @@ msgid ""
 "citerefentry> and its configuration is described in depth in <xref linkend="
 "\"network-inetd\"/>."
 msgstr ""
+"Altri servizi possono essere avviati tramite "
+"<citerefentry><refentrytitle>inetd</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>. Come funziona <citerefentry><refentrytitle>inetd</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> e la sua "
+"configurazione sono spiegati in maniera approfondita in <xref linkend="
+"\"network-inetd\"/>."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19283
@@ -28997,6 +29288,14 @@ msgid ""
 "manvolnum></citerefentry>. This allows regular users to start and maintain "
 "their own applications."
 msgstr ""
+"In alcuni casi, sarebbe più sensato utilizzare "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> per avviare i servizi di sistema. Questo approccio ha molti "
+"vantaggi, poichè <citerefentry><refentrytitle>cron</"
+"refentrytitle><manvolnum>8</manvolnum></citerefentry> avvia questi processi "
+"come il proprietario del <citerefentry><refentrytitle>crontab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry>. Questo permette agli "
+"utenti regolari si avviare e manutenere le proprie applicazioni."
 
 #. (itstool) path: sect2/para
 #: book.translate.xml:19290
@@ -29007,6 +29306,13 @@ msgid ""
 "<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
 "citerefentry> is started, normally during system initialization."
 msgstr ""
+"La funzionalità <literal>@reboot</literal> di "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry>, potrebbe essere utilizzata al posto della specifica del tempo."
+" Questo permette al job di funzionare quando "
+"<citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</manvolnum></"
+"citerefentry> viene avviato, normalmente durante la fase di avvio del "
+"sistema."
 
 #. (itstool) path: info/title
 #: book.translate.xml:19299
@@ -29014,11 +29320,13 @@ msgid ""
 "Configuring <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</"
 "manvolnum></citerefentry>"
 msgstr ""
+"Configurare <citerefentry><refentrytitle>cron</refentrytitle><manvolnum>8</"
+"manvolnum></citerefentry>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:19312
 msgid "<primary>cron</primary> <secondary>configuration</secondary>"
-msgstr ""
+msgstr "<primary>cron</primary> <secondary>configuration</secondary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19317
@@ -29031,6 +29339,13 @@ msgid ""
 "specified times. Each entry in a crontab defines a task to run and is known "
 "as a <firstterm>cron job</firstterm>."
 msgstr ""
+"Uno dei tool più utili di FreeBSD è <application>cron</application>. Questa "
+"utility viene eseguita in background e controlla regolarmente la <filename>/"
+"etc/crontab</filename> per le attività da eseguire, e cerca i file di tipo "
+"crontab personalizzati in <filename>/var/cron/tabs</filename>. Questi file "
+"sono usati per programmare le attività che <application>cron</application> "
+"avvia ad un tempo specifico. Ciascuna istruzione in crontab definisce "
+"un'attività da avviare ed è anche chiamata <firstterm>cron job</firstterm>."
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:19327
@@ -33496,18 +33811,21 @@ msgstr ""
 
 #. (itstool) path: chapter/title
 #: book.translate.xml:22603
+#, fuzzy
 msgid "The FreeBSD Booting Process"
-msgstr ""
+msgstr "La procedura di Avvio di FreeBSD"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:22608
+#, fuzzy
 msgid "<primary>booting</primary>"
-msgstr ""
+msgstr "<primary>booting</primary>"
 
 #. (itstool) path: sect1/indexterm
 #: book.translate.xml:22609
+#, fuzzy
 msgid "<primary>bootstrap</primary>"
-msgstr ""
+msgstr "<primary>bootstrap</primary>"
 
 #. (itstool) path: sect1/para
 #: book.translate.xml:22611
